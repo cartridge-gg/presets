@@ -1,0 +1,46 @@
+{
+  "name": "@cartridge/controller-presets",
+  "version": "0.0.1",
+  "description": "Cartridge Controller Presets",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build:configs": "tsx scripts/generate-configs.ts && prettier --write src/generated/controller-configs.ts",
+    "build": "pnpm build:configs && tsup --dts-resolve",
+    "fetch:erc20": "tsx scripts/fetch-erc20.ts && prettier --write src/generated/erc20-metadata.ts",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\""
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "./generated/controller-configs": "./dist/generated/controller-configs.js",
+    "./generated/erc20-metadata": "./dist/generated/erc20-metadata.js"
+  },
+  "tsup": {
+    "entry": [
+      "src/**"
+    ],
+    "format": [
+      "esm"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@starknet-io/types-js": "0.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "prettier": "^2.7.1",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.5",
+    "starknet": "6.11.0"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+}
