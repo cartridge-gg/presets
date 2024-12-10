@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#5bc3e6"
     },
-    "cover": "/whitelabel/zkube/cover.png",
-    "icon": "/whitelabel/zkube/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "zKube"
   }
 }

@@ -11,7 +11,27 @@ function loadConfigFromJson(gamePath: string): any {
   try {
     const configPath = path.join(whitelabelPath, gamePath, "config.json");
     const configContent = fs.readFileSync(configPath, "utf-8");
-    return JSON.parse(configContent);
+    const config = JSON.parse(configContent);
+
+    // Add CDN URLs for theme assets
+    if (config.theme) {
+      if (config.theme.cover) {
+        if (typeof config.theme.cover === 'object') {
+          // Handle light/dark cover variants
+          config.theme.cover = {
+            light: `https://static.cartridge.gg/presets/${gamePath}/${config.theme.cover.light}`,
+            dark: `https://static.cartridge.gg/presets/${gamePath}/${config.theme.cover.dark}`
+          };
+        } else {
+          config.theme.cover = `https://static.cartridge.gg/presets/${gamePath}/${config.theme.cover}`;
+        }
+      }
+      if (config.theme.icon) {
+        config.theme.icon = `https://static.cartridge.gg/presets/${gamePath}/${config.theme.icon}`;
+      }
+    }
+
+    return config;
   } catch (error) {
     console.warn(`Failed to load config for ${gamePath}:`, error);
     return null;

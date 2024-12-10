@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#EF9758"
     },
-    "cover": "/whitelabel/pistols/cover.png",
-    "icon": "/whitelabel/pistols/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Pistols at Ten Blocks"
   }
 }

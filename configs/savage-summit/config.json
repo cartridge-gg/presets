@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#fbf7da"
     },
-    "cover": "/whitelabel/savage-summit/cover.png",
-    "icon": "/whitelabel/savage-summit/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Savage Summit"
   }
 }

@@ -2,10 +2,10 @@
   "origin": "*",
   "theme": {
     "name": "Cartridge",
-    "icon": "/whitelabel/cartridge/icon.svg",
+    "icon": "icon.svg",
     "cover": {
-      "light": "/whitelabel/cartridge/cover-light.png",
-      "dark": "/whitelabel/cartridge/cover-dark.png"
+      "light": "cover-light.png",
+      "dark": "cover-dark.png"
     }
   }
 }

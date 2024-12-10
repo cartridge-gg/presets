@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#F59100"
     },
-    "cover": "/whitelabel/dark-shuffle/cover.png",
-    "icon": "/whitelabel/dark-shuffle/icon.svg",
+    "cover": "cover.png",
+    "icon": "icon.svg",
     "name": "Dark Shuffle"
   }
 }

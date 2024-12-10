@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#E1CC89"
     },
-    "cover": "/whitelabel/force-prime/cover.png",
-    "icon": "/whitelabel/force-prime/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Force Prime"
   }
 }

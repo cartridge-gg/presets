@@ -395,8 +395,8 @@
   },
   "theme": {
     "name": "Eternum",
-    "icon": "/whitelabel/eternum/icon.svg",
-    "cover": "/whitelabel/eternum/cover.png",
+    "icon": "icon.svg",
+    "cover": "cover.png",
     "colors": {
       "primary": "#dc8b07"
     }

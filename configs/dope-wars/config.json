@@ -77,8 +77,8 @@
     "colors": {
       "primary": "#11ED83"
     },
-    "cover": "/whitelabel/dope-wars/cover.png",
-    "icon": "/whitelabel/dope-wars/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Dope Wars"
   }
 }

@@ -5,8 +5,8 @@
       "primary": "#7C00B1",
       "primaryForeground": "white"
     },
-    "cover": "/whitelabel/pixelaw/cover.png",
-    "icon": "/whitelabel/pixelaw/icon.svg",
+    "cover": "cover.png",
+    "icon": "icon.svg",
     "name": "Pixelaw"
   }
 }
