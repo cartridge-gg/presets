@@ -534,7 +534,7 @@ export const configs: ControllerConfigs = {
           domain: {
             name: "Eternum",
             version: "1",
-            chainId: "SN_SEPOLIA",
+            chainId: "SN_MAIN",
             revision: "1",
           },
         },
