@@ -1,5 +1,5 @@
 {
-  "name": "@cartridge/controller-presets",
+  "name": "@cartridge/presets",
   "version": "0.0.1",
   "description": "Cartridge Controller Presets",
   "module": "dist/index.js",
