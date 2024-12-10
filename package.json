@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "build:configs": "tsx scripts/generate-configs.ts && prettier --write src/generated/controller-configs.ts",
-    "build": "pnpm build:configs && pnpm build:assets && tsup --dts-resolve",
+    "build": "pnpm build:configs && tsup --dts-resolve",
     "fetch:erc20": "tsx scripts/fetch-erc20.ts && prettier --write src/generated/erc20-metadata.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\""
