@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#B0CAF8"
     },
-    "cover": "/whitelabel/paved/cover.png",
-    "icon": "/whitelabel/paved/icon.svg",
+    "cover": "cover.png",
+    "icon": "icon.svg",
     "name": "Paved"
   }
 }

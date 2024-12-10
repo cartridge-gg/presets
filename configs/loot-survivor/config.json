@@ -53,8 +53,8 @@
     "colors": {
       "primary": "#33FF33"
     },
-    "cover": "/whitelabel/loot-survivor/cover.png",
-    "icon": "/whitelabel/loot-survivor/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Loot Survivor"
   }
 }

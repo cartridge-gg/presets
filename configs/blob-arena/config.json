@@ -4,8 +4,8 @@
     "colors": {
       "primary": "#980f06"
     },
-    "cover": "/whitelabel/blob-arena/cover.png",
-    "icon": "/whitelabel/blob-arena/icon.png",
+    "cover": "cover.png",
+    "icon": "icon.png",
     "name": "Blob Arena"
   }
 }
