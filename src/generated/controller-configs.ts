@@ -123,9 +123,9 @@ export const configs: ControllerConfigs = {
     origin: "eternum.realms.world",
     policies: {
       contracts: {
-        "0x047d88C65A627b38d728a783382Af648D79AED80Bf396047F9E839e8501d7F6D": {
+        "0x4ed3a7c5f53c6e96186eaf1b670bd2e2a3699c08e070aedf4e5fc6ac246ddc1": {
           name: "Pillage",
-          description: "Allows you raid a structure and pillage resources",
+          description: "Allows you to raid a structure and pillage resources",
           methods: [
             {
               name: "Battle Pillage",
@@ -134,7 +134,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x001cE27792b23cE379398F5468b69739e89314b2657Cfa3A9c388BDFD33DcFbf": {
+        "0x2620f65aa2fd72d705306ada1ee7410023a3df03da9291f1ccb744fabfebc0": {
           name: "Battle contract",
           description: "Required to engage in battles",
           methods: [
@@ -163,9 +163,14 @@ export const configs: ControllerConfigs = {
               description: "Claim a structure after a battle",
               entrypoint: "battle_claim",
             },
+            {
+              name: "Battle Resolve",
+              description: "Reopens the bank after battle",
+              entrypoint: "battle_resolve",
+            },
           ],
         },
-        "0x03c212B90cC4f236BE2C014e0EE0D870277b2cC313217a73D41387E255e806ED": {
+        "0x6bf57710571fd159e71b1ed155bb0759027e416c88a06556f321c94c214e768": {
           name: "Leave battle contract",
           description: "Allows armies to leave a battle",
           methods: [
@@ -181,7 +186,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x036b82076142f07fbD8bF7B2CABF2e6B190082c0b242c6eCC5e14B2C96d1763c": {
+        "0x4b6a35c0c541467674ebb9640113a6d79c6f5a468796e9299b8e484a770032a": {
           name: "Building contract",
           description: "Allows to manage buildings",
           methods: [
@@ -207,7 +212,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x012A0ca4558518d6aF296b8F393a917Bb89b3e78Ba33544814B7D9138cE4816e": {
+        "0x57d514154bb4dc319539d4e338312a41c248fb6a5122f82b2f2e11ddd3e67e4": {
           name: "Guild contract",
           description: "Allows guild utilities",
           methods: [
@@ -227,11 +232,6 @@ export const configs: ControllerConfigs = {
               entrypoint: "whitelist_player",
             },
             {
-              name: "Leave Guild",
-              description: "Exit the current guild",
-              entrypoint: "leave_guild",
-            },
-            {
               name: "Transfer Guild Ownership",
               description: "Transfer ownership of the guild to another player",
               entrypoint: "transfer_guild_ownership",
@@ -248,10 +248,15 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x03BA22B088a94093F781A968E3f82a88B2Ab5047e9C309C93066f00E37334dE6": {
+        "0x2fcc3c1691387321c2f4d6310eda7a14365bd274c1a37ed3948d2e93a56f821": {
           name: "Hyperstructure contract",
           description: "Handles the creation and management of hyperstructures",
           methods: [
+            {
+              name: "Get Points",
+              description: "Gets your total number of points",
+              entrypoint: "get_points",
+            },
             {
               name: "Create",
               description: "Create a new hyperstructure",
@@ -282,7 +287,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x07a5e4dFaBA7AcEd9ADD65913d44311D74E12F85C55503EBF903103B102847e5": {
+        "0xa052c5ca082356bcc8457f0f805eaf18f97d0fdddde3f90f5b238923859ed4": {
           name: "AMM liquidity contract",
           description: "Manages liquidity for the Automated Market Maker",
           methods: [
@@ -298,7 +303,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x00CC0C73458864B9e0e884DE532b7EBFbe757E7429fB2c736aBd5E129e5FB81A": {
+        "0x4a212c52c4035bc9bd170125216604f406dcd75b41be11d3b4d89047366d84d": {
           name: "Exploration contract",
           description: "Allows you to move to unexplored hexes on the map",
           methods: [
@@ -309,7 +314,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x027952F3C1C681790a168E5422C21278d925CD1BDD8DAf1CdE8E63aFDfD19E20": {
+        "0x7e3bae0e253a0131063b63ee4d7b27b50329c617ae88b82d529a70f1a11c63": {
           name: "Naming contract",
           description: "Manages entity naming in the game",
           methods: [
@@ -318,9 +323,14 @@ export const configs: ControllerConfigs = {
               description: "Assign a custom name to a game entity",
               entrypoint: "set_entity_name",
             },
+            {
+              name: "Set Address Name",
+              description: "Assign a custom name to a user's address",
+              entrypoint: "set_address_name",
+            },
           ],
         },
-        "0x024A8AFd7523e933d37eA2c91aD629fCCde8Ce23cEFA3c324C6248Ca929e3862": {
+        "0x1b480f620ea35431ab43dba634795b14f547ef3e77370db6f0a31f2fdc21d86": {
           name: "Realms contract",
           description: "Manages realm-related actions",
           methods: [
@@ -336,7 +346,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x0161A4CF2e207359dC7Dbf912b21e9099B7729bedE2544F849F384fCb166a109": {
+        "0x691a60b709ca5c1c5ff86824831f84deb26f0f5d07d70c0f807eab48110d2f6": {
           name: "Resource bridge contract",
           description: "Manages bridge transfers between L2 and Eternum",
           methods: [
@@ -362,7 +372,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x0763fa425503dB5D4bdfF040f6f7509E6eCd8e3F7E75450B9b28f8fc4cDD2877": {
+        "0x42c0303a2119a9e20daa60e83c48221cdf1bb2a4c009bab031d1cd3555a127e": {
           name: "Resource contract",
           description: "In-game resource management",
           methods: [
@@ -383,7 +393,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x030a4A6472FF2BcFc68d709802E5A9F31F5AC01D04fa97e37D32CE7568741262": {
+        "0x4f92a1d00d3aec8cece60fc2d0fc236fe1d95c54ff0ceb2f393fbc7e0863d8e": {
           name: "AMM swap contract",
           description: "Handles token swaps in the Automated Market Maker",
           methods: [
@@ -399,7 +409,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x0003A6bBB82F9E670c99647F3B0C4AaF1Be82Be712E1A393336B79B9DAB44cc5": {
+        "0x7e2b1334398fafbe640f34bacae99b649d633417960ee397b6a8fb117fec819": {
           name: "Market contract",
           description: "Manages trading orders in the in-game market",
           methods: [
@@ -425,7 +435,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x0119Bf067E05955c0F17f1d4900977fAcBDc10e046E2319FD4d1320f5cc8Be38": {
+        "0x4069c2be57f08fef9f31afc85a5b4c03c208ebdb278b9d853606caa7a9cbee6": {
           name: "Map travel contract",
           description: "Manages player movement across the game map",
           methods: [
@@ -436,7 +446,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x046998418397972011E93D370c2f7ac06184AD7Ed9e0811C5c9f88C1feF9445F": {
+        "0x26be0ed574aa9ee6f73b53b12f0a199ddbf4ac697470316cdb3d9d1f5680cab": {
           name: "Army contract",
           description: "Manages army-related actions",
           methods: [
@@ -459,6 +469,19 @@ export const configs: ControllerConfigs = {
               name: "Army Merge Troops",
               description: "Merge troops from multiple armies",
               entrypoint: "army_merge_troops",
+            },
+          ],
+        },
+        "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+          name: "VRF Provider",
+          description:
+            "Verifiable Random Function contract, allows randomness in the game",
+          methods: [
+            {
+              name: "Request Random",
+              description:
+                "Allows requesting random numbers from the VRF provider",
+              entrypoint: "request_random",
             },
           ],
         },
