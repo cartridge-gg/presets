@@ -1,0 +1,47 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: "read"
+      id-token: "write"
+
+    steps:
+      - uses: "actions/checkout@v4"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: "9.12.3"
+
+      - run: pnpm install
+      - run: pnpm build
+
+      - run: |
+          if [[ -n "$(git status --porcelain src/)" ]]; then
+            echo "Found changes in src/ directory after build"
+            exit 1
+          fi
+
+      - if: github.ref == 'refs/heads/main'
+        uses: "google-github-actions/auth@v2"
+        with:
+          project_id: c7e-prod
+          workload_identity_provider: "projects/276773611885/locations/global/workloadIdentityPools/github/providers/presets-repo"
+
+      - if: github.ref == 'refs/heads/main'
+        uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "configs"
+          destination: "c7e-prod-static/presets"
+          parent: false

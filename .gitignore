@@ -185,3 +185,7 @@ lcov.info
 
 account.json
 keystore.json
+
+dist/
+node_modules/
+.env
