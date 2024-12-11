@@ -7533,304 +7533,314 @@ var metadata = [
     hidden: true
   },
   {
-    name: "Wood",
-    symbol: "WOOD",
+    name: "Lords",
+    symbol: "LORDS",
     decimals: 18,
-    l2_token_address: "0x02ba228a51609b5ec116ab57f80d86cb5c397c4fbcbcf7ff961eec856bd3e3a3",
-    sort_order: 10,
+    l2_token_address: "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49",
+    sort_order: 1,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/3.png"
+    logo_url: "https://eternum.realms.world/images/resources/coin.png"
   },
   {
-    name: "Stone",
-    symbol: "STONE",
+    name: "Ancien Fragments",
+    symbol: "ANCIENT_FRAGMENT",
     decimals: 18,
-    l2_token_address: "0x03b0e2566bb7465505b63b04a59cb671856f5eb29dc95e6f2ead5096f8be4873",
-    sort_order: 11,
+    l2_token_address: "0x0695b08ecdfdd828c2e6267da62f59e6d7543e690ef56a484df25c8566b332a5",
+    sort_order: 2,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/1.png"
-  },
-  {
-    name: "Coal",
-    symbol: "COAL",
-    decimals: 18,
-    l2_token_address: "0x06566bc4cdc093e8ba4c37d1489ee358f7ea8ca821216de916dd1b760836c198",
-    sort_order: 12,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/2.png"
-  },
-  {
-    name: "Copper",
-    symbol: "COPPER",
-    decimals: 18,
-    l2_token_address: "0x0226f2a211797f0b5f059ed191402138867aa68056befe690877685b7cea6be7",
-    sort_order: 13,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/4.png"
-  },
-  {
-    name: "Ironwood",
-    symbol: "IRONWOOD",
-    decimals: 18,
-    l2_token_address: "0x02633e8895ca0636d0a6c73d79d2ef9fc29e08ef156eae610d3519b885a7990c",
-    sort_order: 14,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/5.png"
-  },
-  {
-    name: "Obsidian",
-    symbol: "OBSIDIAN",
-    decimals: 18,
-    l2_token_address: "0x002b8aa2cd139950063f6103f4b874b22ee55af2d4da6e57f030e09bc68a8630",
-    sort_order: 15,
-    total_supply: 1e9,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/6.png"
-  },
-  {
-    name: "Gold",
-    symbol: "GOLD",
-    decimals: 18,
-    l2_token_address: "0x054a498b527fe1c351783a384d61433802e686208566febc000472fff271cb16",
-    sort_order: 16,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/7.png"
-  },
-  {
-    name: "Silver",
-    symbol: "SILVER",
-    decimals: 18,
-    l2_token_address: "0x054a498b527fe1c351783a384d61433802e686208566febc000472fff271cb16",
-    sort_order: 17,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/8.png"
-  },
-  {
-    name: "Mithral",
-    symbol: "MITHRAL",
-    decimals: 18,
-    l2_token_address: "0x009ce75a6cce7e8769a40cf8b6827afbadeed45a2e46592f71162c4776ba1e8a",
-    sort_order: 18,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/9.png"
-  },
-  {
-    name: "Alchemical Silver",
-    symbol: "ALCHEMICALSILVER",
-    decimals: 18,
-    l2_token_address: "0x03b7ddd64aa34c2f1760d1df1491ea0635b091656d5948907918e24f2eb2d52d",
-    sort_order: 19,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/10.png"
-  },
-  {
-    name: "Coldiron",
-    symbol: "COLDIRON",
-    decimals: 18,
-    l2_token_address: "0x075344f33f04af309489e79c68756dea03ea3fd01fe7d46c82adb472f06f8a7b",
-    sort_order: 20,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/11.png"
-  },
-  {
-    name: "Deep Crystal",
-    symbol: "DEEPCRYSTAL",
-    decimals: 18,
-    l2_token_address: "0x0213b5e6b8c8becd0ca2e374af621f22db8a710be13a11c17f6ca1276aedc105",
-    sort_order: 21,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/12.png"
-  },
-  {
-    name: "Ruby",
-    symbol: "RUBY",
-    decimals: 18,
-    l2_token_address: "0x064e7ea569f8c9bcf406a377de657d3e196f2a93466912d8072f0b95a3c3a61b",
-    sort_order: 22,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/13.png"
-  },
-  {
-    name: "Diamonds",
-    symbol: "DIAMONDS",
-    decimals: 18,
-    l2_token_address: "0x06ce4708f2f0b980e2fc8c03ee857dcedc6311f2872db52a6b65983f9943d29f",
-    sort_order: 23,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/14.png"
-  },
-  {
-    name: "Hartwood",
-    symbol: "HARTWOOD",
-    decimals: 18,
-    l2_token_address: "0x05480b7e09748ecc437c2afd4550c5c609740b55aba37a729a1c9e35bb99ccb5",
-    sort_order: 24,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/15.png"
-  },
-  {
-    name: "Ignium",
-    symbol: "IGNIUM",
-    decimals: 18,
-    l2_token_address: "0x079a5bfdddc80d9de88375c9b642f14043811898be1a5c7d52e0fac746aa98b9",
-    sort_order: 25,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/16.png"
-  },
-  {
-    name: "Twilight Quartz",
-    symbol: "TWILIGHTQUARTZ",
-    decimals: 18,
-    l2_token_address: "0x01ec8bf7ba63df0312aed0dafce9ad3ff58dc93c14323b0401327911c0ade6cc",
-    sort_order: 26,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/17.png"
-  },
-  {
-    name: "True Ice",
-    symbol: "TRUEICE",
-    decimals: 18,
-    l2_token_address: "0x05990caa02144c3ae3fd900883ddd4f72cd2534745b6d2f9aecd7c57d204c2b5",
-    sort_order: 27,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/18.png"
-  },
-  {
-    name: "Adamantine",
-    symbol: "ADAMANTINE",
-    decimals: 18,
-    l2_token_address: "0x054da984a2829eb1e25a557a3309bdbde902ed55fe6203f7e79ca9300beff593",
-    sort_order: 28,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/19.png"
-  },
-  {
-    name: "Sapphire",
-    symbol: "SAPPHIRE",
-    decimals: 18,
-    l2_token_address: "0x06582911c31a0f70eeda8b286e9aee3d8281b02fffd9ee71c2ee966325a4d22a",
-    sort_order: 29,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/20.png"
-  },
-  {
-    name: "Ethereal Silica",
-    symbol: "ETHEREALSILICA",
-    decimals: 18,
-    l2_token_address: "0x06d76f5d2ee27c1cd81cd4ae20eee7f01b48ac9a881db26981ff723d433324fb",
-    sort_order: 30,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/21.png"
-  },
-  {
-    name: "Dragonhide",
-    symbol: "DRAGONHIDE",
-    decimals: 18,
-    l2_token_address: "0x068391870e18ef69a7afc352d3913c3640ba45302793dbc87febba7a511a35a5",
-    sort_order: 31,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/22.png"
-  },
-  {
-    name: "Earthen Shard",
-    symbol: "EARTHENSHARD",
-    decimals: 18,
-    l2_token_address: "0x04cc157b6a0e76ed72bcab60fc60a89ef9bfd8a65f6d78bcaec94bbff53151df",
-    sort_order: 7,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/29.png"
-  },
-  {
-    name: "Donkey",
-    symbol: "DONKEY",
-    decimals: 18,
-    l2_token_address: "0x03ea3033d73885701002545eb3d6c88b6faf3b4e68b2847f1dd39b7ed399c546",
-    sort_order: 6,
-    total_supply: null,
-    hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/249.png"
+    logo_url: "https://eternum.realms.world/images/resources/29.png"
   },
   {
     name: "Knight",
     symbol: "KNIGHT",
     decimals: 18,
-    l2_token_address: "0x01abea2d2d91596a3c35a0a0ff7d06678d8dc504ebc09f4ad71aaf5e9087d7b1",
-    sort_order: 35,
+    l2_token_address: "0x00ac965f9e67164723c16735a9da8dbc9eb8e43b1bd0323591e87c056badf606",
+    sort_order: 3,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/250.png"
+    logo_url: "https://eternum.realms.world/images/icons/250.png"
   },
   {
     name: "Crossbowman",
     symbol: "CROSSBOWMAN",
     decimals: 18,
-    l2_token_address: "0x025d407fde6c2de105fbee1447babe9e4f33cb401ab03a2073cb39601a6c3f55",
-    sort_order: 36,
+    l2_token_address: "0x067e4ac00a241be06ba6afc11fa2715ec7da0c42c05a67ef6ecfcfeda725aaa8",
+    sort_order: 4,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/251.png"
+    logo_url: "https://eternum.realms.world/images/icons/251.png"
   },
   {
     name: "Paladin",
     symbol: "PALADIN",
     decimals: 18,
-    l2_token_address: "0x051b833ab58831bfb965d589811f3dd92a3d0718eaa30879270a7471fce98f80",
-    sort_order: 37,
+    l2_token_address: "0x03bc86299bee061c7c8d7546ccb62b9daf9bffc653b1508facb722c6593874bc",
+    sort_order: 5,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/252.png"
+    logo_url: "https://eternum.realms.world/images/icons/252.png"
+  },
+  {
+    name: "Donkey",
+    symbol: "DONKEY",
+    decimals: 18,
+    l2_token_address: "0x0264be95a4a2ace20add68cb321acdccd2f9f8440ee1c7abd85da44ddab01085",
+    sort_order: 6,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/buildings/thumb/trade.png"
   },
   {
     name: "Wheat",
     symbol: "WHEAT",
     decimals: 18,
-    l2_token_address: "0x01dac690e70caa9c9ee1958404f83af4ed781d97966964d2ae7d6a9f2e1925ff",
-    sort_order: 38,
+    l2_token_address: "0x057a3f1ee475e072ce3be41785c0e889b7295d7a0dcc22b992c5b9408dbeb280",
+    sort_order: 7,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/254.png"
+    logo_url: "https://eternum.realms.world/images/resources/254.png"
   },
   {
     name: "Fish",
     symbol: "FISH",
     decimals: 18,
-    l2_token_address: "0x02954d5c5fc18062b60038eb1a561b1ccfedeeb1a8b203c78311f78892ba77b1",
-    sort_order: 39,
+    l2_token_address: "0x027719173cfe10f1aa38d2aaed0a075b6077290f1e817aa3485d2b828394f4d9",
+    sort_order: 8,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/255.png"
+    logo_url: "https://eternum.realms.world/images/resources/255.png"
   },
   {
-    name: "Lords",
-    symbol: "LORDS",
+    name: "Wood",
+    symbol: "WOOD",
     decimals: 18,
-    l2_token_address: "0x0342ad5cc14002c005a5cedcfce2bd3af98d5e7fb79e9bf949b3a91cf145d72e",
-    sort_order: 5,
+    l2_token_address: "0x040d8907cec0f7ae9c364dfb12485a1314d84c129bf1898d2f3d4b7fcc7d44f4",
+    sort_order: 9,
     total_supply: null,
     hidden: true,
-    logo_url: "https://next-eternum.realms.world/images/resources/coin.png"
+    logo_url: "https://eternum.realms.world/images/resources/1.png"
+  },
+  {
+    name: "Stone",
+    symbol: "STONE",
+    decimals: 18,
+    l2_token_address: "0x0439a1c010e3e1bb2d43d43411000893c0042bd88f6c701611a0ea914d426da4",
+    sort_order: 10,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/2.png"
+  },
+  {
+    name: "Coal",
+    symbol: "COAL",
+    decimals: 18,
+    l2_token_address: "0x00ce635e3f241b0ae78c46a929d84a9101910188f9c4024eaa7559556503c31a",
+    sort_order: 11,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/3.png"
+  },
+  {
+    name: "Copper",
+    symbol: "COPPER",
+    decimals: 18,
+    l2_token_address: "0x066ed5c928ee027a9419ace1cbea8389885161db5572a7c5c4fef2310e9bf494",
+    sort_order: 12,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/4.png"
+  },
+  {
+    name: "Obsidian",
+    symbol: "OBSIDIAN",
+    decimals: 18,
+    l2_token_address: "0x03b6448d09dcd023507376402686261f5d6739455fa02f804907b066e488da66",
+    sort_order: 13,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/5.png"
+  },
+  {
+    name: "Silver",
+    symbol: "SILVER",
+    decimals: 18,
+    l2_token_address: "0x06fe21d2d4a8a05bdb70f09c9250af9870020d5dcc35f410b4a39d6605c3e353",
+    sort_order: 14,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/6.png"
+  },
+  {
+    name: "Ironwood",
+    symbol: "IRONWOOD",
+    decimals: 18,
+    l2_token_address: "0x01720cf6318bff45e62acc588680ae3cd4d5f8465b1d52cb710533c9299b031a",
+    sort_order: 15,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/7.png"
+  },
+  {
+    name: "Cold Iron",
+    symbol: "COLDIRON",
+    decimals: 18,
+    l2_token_address: "0x0555d713e59d4ff96b7960447e9bc9e79bfdeab5b0eea74e3df81bce61cfbc77",
+    sort_order: 16,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/8.png"
+  },
+  {
+    name: "Gold",
+    symbol: "GOLD",
+    decimals: 18,
+    l2_token_address: "0x000dff9dca192609c4e86ab3be22c7ec1e968876c992d21986f3c542be97fa2f",
+    sort_order: 17,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/9.png"
+  },
+  {
+    name: "Hartwood",
+    symbol: "HARTWOOD",
+    decimals: 18,
+    l2_token_address: "0x05620aa7170cd66dbcbc37d03087bfe4633ffef91d3e4d97b501de906004f79b",
+    sort_order: 18,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/10.png"
+  },
+  {
+    name: "Diamonds",
+    symbol: "DIAMONDS",
+    decimals: 18,
+    l2_token_address: "0x00e03ea8ae385f64754820af5c01c36abf1b8130dd6797d3fd9d430e4114e876",
+    sort_order: 19,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/11.png"
+  },
+  {
+    name: "Sapphire",
+    symbol: "SAPPHIRE",
+    decimals: 18,
+    l2_token_address: "0x02f8dd022568af8f9f718aa37707a9b858529db56910633a160456838b6cbcbc",
+    sort_order: 20,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/12.png"
+  },
+  {
+    name: "Ruby",
+    symbol: "RUBY",
+    decimals: 18,
+    l2_token_address: "0x03d9b66720959d0e7687b898292c10e62e78626f2dba5e1909961a2ce3f86612",
+    sort_order: 21,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/13.png"
+  },
+  {
+    name: "Deep Crystal",
+    symbol: "DEEPCRYSTAL",
+    decimals: 18,
+    l2_token_address: "0x01d655ac834d38df7921074fc1588411e202b1af83307cbd996983aff52db3a8",
+    sort_order: 22,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/14.png"
+  },
+  {
+    name: "Ignium",
+    symbol: "IGNIUM",
+    decimals: 18,
+    l2_token_address: "0x0625c1f789b03ebebc7a9322366f38ebad1f693b84b2abd8cb8f5b2748b0cdd5",
+    sort_order: 23,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/15.png"
+  },
+  {
+    name: "Ethereal Silica",
+    symbol: "ETHEREALSILICA",
+    decimals: 18,
+    l2_token_address: "0x068b6e23cbbd58a644700f55e96c83580921e9f521b6e5175396b53ba7910e7d",
+    sort_order: 24,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/16.png"
+  },
+  {
+    name: "True Ice",
+    symbol: "TRUEICE",
+    decimals: 18,
+    l2_token_address: "0x04485f5a6e16562e1c761cd348e63256d00389e3ddf4f5d98afe7ab44c57c481",
+    sort_order: 25,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/17.png"
+  },
+  {
+    name: "Twilight Quartz",
+    symbol: "TWILIGHTQUARTZ",
+    decimals: 18,
+    l2_token_address: "0x035e24c02409c3cfe8d5646399a62c4d102bb782938d5f5180e92c9c62d3faf7",
+    sort_order: 26,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/18.png"
+  },
+  {
+    name: "Alchemical Silver",
+    symbol: "ALCHEMICALSILVER",
+    decimals: 18,
+    l2_token_address: "0x03956a5301e99522038a2e7dcb9c2a89bf087ffa79310ee0a508b5538efd8ddd",
+    sort_order: 27,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/19.png"
+  },
+  {
+    name: "Adamantine",
+    symbol: "ADAMANTINE",
+    decimals: 18,
+    l2_token_address: "0x0367f838f85a2f5e1580d6f011e4476f581083314cff8721ba3dda9706076eed",
+    sort_order: 28,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/20.png"
+  },
+  {
+    name: "Mithral",
+    symbol: "MITHRAL",
+    decimals: 18,
+    l2_token_address: "0x0067ba235c569c23877064b2ac6ebd4d79f32d3c00f5fab8e28a3b5700b957f6",
+    sort_order: 29,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/21.png"
+  },
+  {
+    name: "Dragon Hide",
+    symbol: "DRAGONHIDE",
+    decimals: 18,
+    l2_token_address: "0x03bf856515bece3c93f5061b7941b8645f817a0acab93c758b8c7b4bc0afa3c6",
+    sort_order: 30,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/22.png"
+  },
+  {
+    name: "Demon Hide",
+    symbol: "DEMONHIDE",
+    decimals: 18,
+    l2_token_address: "0x03b847fbef9d344ba968edc945100e6ab0258a4b1b91f8665f85a3d814c3e4d4",
+    sort_order: 31,
+    total_supply: null,
+    hidden: true,
+    logo_url: "https://eternum.realms.world/images/resources/22.png"
   }
 ];
 export {
