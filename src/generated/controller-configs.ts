@@ -335,6 +335,11 @@ export const configs: ControllerConfigs = {
           description: "Manages realm-related actions",
           methods: [
             {
+              name: "Create a realm",
+              description: "Create a new realm",
+              entrypoint: "create",
+            },
+            {
               name: "Upgrade Level",
               description: "Upgrade the level of a realm",
               entrypoint: "upgrade_level",
@@ -482,6 +487,17 @@ export const configs: ControllerConfigs = {
               description:
                 "Allows requesting random numbers from the VRF provider",
               entrypoint: "request_random",
+            },
+          ],
+        },
+        "0x057675b9c0bd62b096a2e15502a37b290fa766ead21c33eda42993e48a714b80": {
+          name: "Season pass ERC20 contract",
+          description: "Manages the season passes",
+          methods: [
+            {
+              name: "Approve for all",
+              description: "Approves transfer of season pass",
+              entrypoint: "set_approval_for_all",
             },
           ],
         },
