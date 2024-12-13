@@ -8306,7 +8306,7 @@ var metadata = [
     sort_order: 1,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/coin.png"
+    logo_url: "https://empire.realms.world/images/resources/coin.png"
   },
   {
     name: "Ancien Fragments",
@@ -8316,7 +8316,7 @@ var metadata = [
     sort_order: 2,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/29.png"
+    logo_url: "https://empire.realms.world/images/resources/29.png"
   },
   {
     name: "Knight",
@@ -8326,7 +8326,7 @@ var metadata = [
     sort_order: 3,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/icons/250.png"
+    logo_url: "https://empire.realms.world/images/icons/250.png"
   },
   {
     name: "Crossbowman",
@@ -8336,7 +8336,7 @@ var metadata = [
     sort_order: 4,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/icons/251.png"
+    logo_url: "https://empire.realms.world/images/icons/251.png"
   },
   {
     name: "Paladin",
@@ -8346,7 +8346,7 @@ var metadata = [
     sort_order: 5,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/icons/252.png"
+    logo_url: "https://empire.realms.world/images/icons/252.png"
   },
   {
     name: "Donkey",
@@ -8356,7 +8356,7 @@ var metadata = [
     sort_order: 6,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/buildings/thumb/trade.png"
+    logo_url: "https://empire.realms.world/images/buildings/thumb/trade.png"
   },
   {
     name: "Wheat",
@@ -8366,7 +8366,7 @@ var metadata = [
     sort_order: 7,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/254.png"
+    logo_url: "https://empire.realms.world/images/resources/254.png"
   },
   {
     name: "Fish",
@@ -8376,7 +8376,7 @@ var metadata = [
     sort_order: 8,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/255.png"
+    logo_url: "https://empire.realms.world/images/resources/255.png"
   },
   {
     name: "Wood",
@@ -8386,7 +8386,7 @@ var metadata = [
     sort_order: 9,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/1.png"
+    logo_url: "https://empire.realms.world/images/resources/1.png"
   },
   {
     name: "Stone",
@@ -8396,7 +8396,7 @@ var metadata = [
     sort_order: 10,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/2.png"
+    logo_url: "https://empire.realms.world/images/resources/2.png"
   },
   {
     name: "Coal",
@@ -8406,7 +8406,7 @@ var metadata = [
     sort_order: 11,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/3.png"
+    logo_url: "https://empire.realms.world/images/resources/3.png"
   },
   {
     name: "Copper",
@@ -8416,7 +8416,7 @@ var metadata = [
     sort_order: 12,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/4.png"
+    logo_url: "https://empire.realms.world/images/resources/4.png"
   },
   {
     name: "Obsidian",
@@ -8426,7 +8426,7 @@ var metadata = [
     sort_order: 13,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/5.png"
+    logo_url: "https://empire.realms.world/images/resources/5.png"
   },
   {
     name: "Silver",
@@ -8436,7 +8436,7 @@ var metadata = [
     sort_order: 14,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/6.png"
+    logo_url: "https://empire.realms.world/images/resources/6.png"
   },
   {
     name: "Ironwood",
@@ -8446,7 +8446,7 @@ var metadata = [
     sort_order: 15,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/7.png"
+    logo_url: "https://empire.realms.world/images/resources/7.png"
   },
   {
     name: "Cold Iron",
@@ -8456,7 +8456,7 @@ var metadata = [
     sort_order: 16,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/8.png"
+    logo_url: "https://empire.realms.world/images/resources/8.png"
   },
   {
     name: "Gold",
@@ -8466,7 +8466,7 @@ var metadata = [
     sort_order: 17,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/9.png"
+    logo_url: "https://empire.realms.world/images/resources/9.png"
   },
   {
     name: "Hartwood",
@@ -8476,7 +8476,7 @@ var metadata = [
     sort_order: 18,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/10.png"
+    logo_url: "https://empire.realms.world/images/resources/10.png"
   },
   {
     name: "Diamonds",
@@ -8486,7 +8486,7 @@ var metadata = [
     sort_order: 19,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/11.png"
+    logo_url: "https://empire.realms.world/images/resources/11.png"
   },
   {
     name: "Sapphire",
@@ -8496,7 +8496,7 @@ var metadata = [
     sort_order: 20,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/12.png"
+    logo_url: "https://empire.realms.world/images/resources/12.png"
   },
   {
     name: "Ruby",
@@ -8506,7 +8506,7 @@ var metadata = [
     sort_order: 21,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/13.png"
+    logo_url: "https://empire.realms.world/images/resources/13.png"
   },
   {
     name: "Deep Crystal",
@@ -8516,7 +8516,7 @@ var metadata = [
     sort_order: 22,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/14.png"
+    logo_url: "https://empire.realms.world/images/resources/14.png"
   },
   {
     name: "Ignium",
@@ -8526,7 +8526,7 @@ var metadata = [
     sort_order: 23,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/15.png"
+    logo_url: "https://empire.realms.world/images/resources/15.png"
   },
   {
     name: "Ethereal Silica",
@@ -8536,7 +8536,7 @@ var metadata = [
     sort_order: 24,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/16.png"
+    logo_url: "https://empire.realms.world/images/resources/16.png"
   },
   {
     name: "True Ice",
@@ -8546,7 +8546,7 @@ var metadata = [
     sort_order: 25,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/17.png"
+    logo_url: "https://empire.realms.world/images/resources/17.png"
   },
   {
     name: "Twilight Quartz",
@@ -8556,7 +8556,7 @@ var metadata = [
     sort_order: 26,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/18.png"
+    logo_url: "https://empire.realms.world/images/resources/18.png"
   },
   {
     name: "Alchemical Silver",
@@ -8566,7 +8566,7 @@ var metadata = [
     sort_order: 27,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/19.png"
+    logo_url: "https://empire.realms.world/images/resources/19.png"
   },
   {
     name: "Adamantine",
@@ -8576,7 +8576,7 @@ var metadata = [
     sort_order: 28,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/20.png"
+    logo_url: "https://empire.realms.world/images/resources/20.png"
   },
   {
     name: "Mithral",
@@ -8586,7 +8586,7 @@ var metadata = [
     sort_order: 29,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/21.png"
+    logo_url: "https://empire.realms.world/images/resources/21.png"
   },
   {
     name: "Dragon Hide",
@@ -8596,7 +8596,7 @@ var metadata = [
     sort_order: 30,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/22.png"
+    logo_url: "https://empire.realms.world/images/resources/22.png"
   },
   {
     name: "Demon Hide",
@@ -8606,7 +8606,7 @@ var metadata = [
     sort_order: 31,
     total_supply: null,
     hidden: true,
-    logo_url: "https://eternum.realms.world/images/resources/22.png"
+    logo_url: "https://empire.realms.world/images/resources/22.png"
   }
 ];
 
