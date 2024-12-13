@@ -119,7 +119,7 @@ export const configs: ControllerConfigs = {
       name: "Dope Wars",
     },
   },
-  "dragark": {
+  dragark: {
     origin: "https://dragark.net",
     theme: {
       colors: {

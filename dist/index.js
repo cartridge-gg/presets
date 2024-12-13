@@ -117,6 +117,17 @@ var configs = {
       name: "Dope Wars"
     }
   },
+  dragark: {
+    origin: "https://dragark.net",
+    theme: {
+      colors: {
+        primary: "#ED1138"
+      },
+      cover: "https://static.cartridge.gg/presets/dragark/cover.png",
+      icon: "https://static.cartridge.gg/presets/dragark/icon.png",
+      name: "Dragark"
+    }
+  },
   eternum: {
     origin: "eternum.realms.world",
     policies: {

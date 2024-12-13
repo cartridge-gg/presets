@@ -1,0 +1,11 @@
+{
+    "origin": "https://dragark.net",
+    "theme": {
+        "colors": {
+            "primary": "#ED1138"
+        },
+        "cover": "cover.png",
+        "icon": "icon.png",
+        "name": "Dragark"
+    }
+}
