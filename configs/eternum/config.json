@@ -397,7 +397,7 @@
               "type": "shortstring"
             }
           ],
-          "eternum-Message": [
+          "s0_eternum-Message": [
             {
               "name": "identity",
               "type": "ContractAddress"
@@ -420,7 +420,7 @@
             }
           ]
         },
-        "primaryType": "eternum-Message",
+        "primaryType": "s0_eternum-Message",
         "domain": {
           "name": "Eternum",
           "version": "1",
