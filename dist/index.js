@@ -527,7 +527,7 @@ var configs = {
                 type: "shortstring"
               }
             ],
-            "eternum-Message": [
+            "s0_eternum-Message": [
               {
                 name: "identity",
                 type: "ContractAddress"
@@ -550,7 +550,7 @@ var configs = {
               }
             ]
           },
-          primaryType: "eternum-Message",
+          primaryType: "s0_eternum-Message",
           domain: {
             name: "Eternum",
             version: "1",
