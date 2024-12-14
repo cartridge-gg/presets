@@ -534,7 +534,7 @@ export const configs: ControllerConfigs = {
                 type: "shortstring",
               },
             ],
-            "eternum-Message": [
+            "s0_eternum-Message": [
               {
                 name: "identity",
                 type: "ContractAddress",
@@ -557,7 +557,7 @@ export const configs: ControllerConfigs = {
               },
             ],
           },
-          primaryType: "eternum-Message",
+          primaryType: "s0_eternum-Message",
           domain: {
             name: "Eternum",
             version: "1",
