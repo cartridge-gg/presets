@@ -397,7 +397,7 @@
               "type": "shortstring"
             }
           ],
-          "eternum-Message": [
+          "s0_eternum-Message": [
             {
               "name": "identity",
               "type": "ContractAddress"
