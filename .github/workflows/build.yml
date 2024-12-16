@@ -66,8 +66,11 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Create and switch to new branch
-        run: git checkout -b update-presets-${{ steps.sha.outputs.SHORT_SHA }}
+      - name: Switch to or create update branch
+        run: |
+          git fetch origin
+          git checkout -B update-presets || git checkout update-presets
+          git reset --hard origin/main
 
       - uses: pnpm/action-setup@v2
         with:
@@ -84,14 +87,21 @@ jobs:
         run: |
           git add package.json pnpm-lock.yaml
           git commit -m "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}"
-          git push origin update-presets-${{ steps.sha.outputs.SHORT_SHA }}
+          git push -f origin update-presets
 
-      - name: Create Pull Request
+      - name: Create or update Pull Request
         env:
           GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
         run: |
-          gh pr create \
-            --title "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}" \
-            --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}" \
-            --repo cartridge-gg/controller \
-            --base main
+          if ! gh pr view update-presets &>/dev/null; then
+            gh pr create \
+              --title "chore: update @cartridge/presets" \
+              --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}" \
+              --repo cartridge-gg/controller \
+              --base main \
+              --head update-presets
+          else
+            gh pr edit update-presets \
+              --title "chore: update @cartridge/presets" \
+              --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}"
+          fi
