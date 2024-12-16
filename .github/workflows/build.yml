@@ -46,3 +46,45 @@ jobs:
           path: "configs"
           destination: "c7e-prod-static/presets"
           parent: false
+
+  update-controller:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "actions/checkout@v4"
+        with:
+          repository: cartridge-gg/controller
+          token: ${{ secrets.CREATE_PR_TOKEN }}
+
+      - name: Get short SHA
+        id: sha
+        run: echo "SHORT_SHA=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Create and switch to new branch
+        run: git checkout -b update-presets-${{ steps.sha.outputs.SHORT_SHA }}
+
+      - name: Update package.json
+        run: |
+          jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' package.json > tmp.json && mv tmp.json package.json
+
+      - name: Commit and push changes
+        run: |
+          git add package.json
+          git commit -m "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}"
+          git push origin update-presets-${{ steps.sha.outputs.SHORT_SHA }}
+
+      - name: Create Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
+        run: |
+          gh pr create \
+            --title "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}" \
+            --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}" \
+            --repo cartridge-gg/controller \
+            --base main
