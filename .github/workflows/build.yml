@@ -69,13 +69,20 @@ jobs:
       - name: Create and switch to new branch
         run: git checkout -b update-presets-${{ steps.sha.outputs.SHORT_SHA }}
 
+      - uses: pnpm/action-setup@v2
+        with:
+          version: "9.12.3"
+
       - name: Update package.json
         run: |
           jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' package.json > tmp.json && mv tmp.json package.json
 
+      - name: Update lockfile
+        run: pnpm install
+
       - name: Commit and push changes
         run: |
-          git add package.json
+          git add package.json pnpm-lock.yaml
           git commit -m "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}"
           git push origin update-presets-${{ steps.sha.outputs.SHORT_SHA }}
 
