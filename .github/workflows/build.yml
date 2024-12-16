@@ -78,7 +78,7 @@ jobs:
           jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' package.json > tmp.json && mv tmp.json package.json
 
       - name: Update lockfile
-        run: pnpm install
+        run: pnpm install --no-frozen-lockfile
 
       - name: Commit and push changes
         run: |
