@@ -93,7 +93,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
         run: |
-          if ! gh pr view update-presets &>/dev/null; then
+          if ! gh pr list --head update-presets --state open | grep -q .; then
             gh pr create \
               --title "chore: update @cartridge/presets" \
               --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}" \
