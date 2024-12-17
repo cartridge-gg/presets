@@ -123,7 +123,7 @@ export const configs: ControllerConfigs = {
     origin: "https://dragark.net",
     theme: {
       colors: {
-        primary: "#ED1138",
+        primary: "#71EB34",
       },
       cover: "https://static.cartridge.gg/presets/dragark/cover.png",
       icon: "https://static.cartridge.gg/presets/dragark/icon.png",
