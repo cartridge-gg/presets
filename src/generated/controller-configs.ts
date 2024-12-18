@@ -131,7 +131,7 @@ export const configs: ControllerConfigs = {
     },
   },
   eternum: {
-    origin: "eternum.realms.world",
+    origin: ["eternum.realms.world", "empire.realms.world"],
     policies: {
       contracts: {
         "0x4ed3a7c5f53c6e96186eaf1b670bd2e2a3699c08e070aedf4e5fc6ac246ddc1": {
