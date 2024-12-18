@@ -3,7 +3,7 @@ import { ControllerConfigs } from "../";
 
 export const configs: ControllerConfigs = {
   "blob-arena": {
-    origin: "https://www.blobarena.xyz",
+    origin: "blobarena.xyz",
     theme: {
       colors: {
         primary: "#980f06",
@@ -25,7 +25,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "dark-shuffle": {
-    origin: "https://darkshuffle.dev",
+    origin: "darkshuffle.dev",
     theme: {
       colors: {
         primary: "#F59100",
@@ -120,7 +120,7 @@ export const configs: ControllerConfigs = {
     },
   },
   dragark: {
-    origin: "https://dragark.net",
+    origin: "dragark.net",
     theme: {
       colors: {
         primary: "#71EB34",
@@ -577,7 +577,7 @@ export const configs: ControllerConfigs = {
     },
   },
   flippyflop: {
-    origin: "https://flippyflop.gg",
+    origin: "flippyflop.gg",
     theme: {
       colors: {
         primary: "#F38332",
@@ -588,7 +588,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "force-prime": {
-    origin: "https://forceprime.io",
+    origin: "forceprime.io",
     theme: {
       colors: {
         primary: "#E1CC89",
@@ -599,7 +599,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "jokers-of-neon": {
-    origin: "https://jokersofneon.com",
+    origin: "jokersofneon.com",
     theme: {
       colors: {
         primary: "#A144B2",
@@ -610,7 +610,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "loot-survivor": {
-    origin: "https://lootsurvivor.io",
+    origin: "lootsurvivor.io",
     policies: {
       contracts: {
         "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49": {
@@ -670,7 +670,7 @@ export const configs: ControllerConfigs = {
     },
   },
   paved: {
-    origin: "https://paved.gg",
+    origin: "paved.gg",
     theme: {
       colors: {
         primary: "#B0CAF8",
@@ -681,7 +681,7 @@ export const configs: ControllerConfigs = {
     },
   },
   pistols: {
-    origin: "https://pistols.underware.gg",
+    origin: "pistols.underware.gg",
     theme: {
       colors: {
         primary: "#EF9758",
@@ -692,7 +692,7 @@ export const configs: ControllerConfigs = {
     },
   },
   pixelaw: {
-    origin: "https://dojo.pixelaw.xyz",
+    origin: "dojo.pixelaw.xyz",
     theme: {
       colors: {
         primary: "#7C00B1",
@@ -704,7 +704,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "realm-of-ra": {
-    origin: "https://mancala.realmofra.com",
+    origin: "mancala.realmofra.com",
     theme: {
       colors: {
         primary: "#de9534",
@@ -715,7 +715,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "savage-summit": {
-    origin: "",
+    origin: "savagesummit.io",
     theme: {
       colors: {
         primary: "#fbf7da",
@@ -737,7 +737,7 @@ export const configs: ControllerConfigs = {
     },
   },
   zkastle: {
-    origin: "https://zkastle.vercel.app",
+    origin: "zkastle.vercel.app",
     theme: {
       colors: {
         primary: "#E50D2C",
@@ -748,7 +748,7 @@ export const configs: ControllerConfigs = {
     },
   },
   zktt: {
-    origin: "https://zktable.top",
+    origin: "zktable.top",
     theme: {
       colors: {
         primary: "#FFFFFF",
@@ -759,7 +759,7 @@ export const configs: ControllerConfigs = {
     },
   },
   zkube: {
-    origin: "https://zkube.vercel.app",
+    origin: "app.zkube.xyz",
     theme: {
       colors: {
         primary: "#5bc3e6",
