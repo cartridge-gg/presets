@@ -512,6 +512,22 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
+        "0x4b5e65a9617c7ba3c7ea64324ff4338a400adb1a3cfe903b3f8b647cbb59fb7": {
+          name: "Season Systems",
+          description: "Register and claim",
+          methods: [
+            {
+              name: "Register",
+              description: "Registers to leaderboard",
+              entrypoint: "register_to_leaderboard",
+            },
+            {
+              name: "Claim",
+              description: "Claim",
+              entrypoint: "claim_leaderboard_rewards",
+            },
+          ],
+        },
       },
       messages: [
         {
