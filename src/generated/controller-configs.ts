@@ -25,7 +25,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "dark-shuffle": {
-    origin: "darkshuffle.dev",
+    origin: "darkshuffle.io",
     theme: {
       colors: {
         primary: "#F59100",
@@ -629,16 +629,6 @@ export const configs: ControllerConfigs = {
     origin: "lootsurvivor.io",
     policies: {
       contracts: {
-        "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49": {
-          methods: [
-            {
-              entrypoint: "approve",
-            },
-            {
-              entrypoint: "mint_lords",
-            },
-          ],
-        },
         "0x0305f26ad19e0a10715d9f3137573d3a543de7b707967cd85d11234d6ec0fb7e": {
           methods: [
             {
@@ -667,10 +657,13 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
+        "0x3347382d530ff6acb9283ac1d78471187aae8a4690e9316bb4e3c3365ff7a86": {
           methods: [
             {
-              entrypoint: "approve",
+              entrypoint: "enter_tournament",
+            },
+            {
+              entrypoint: "start_tournament",
             },
           ],
         },
