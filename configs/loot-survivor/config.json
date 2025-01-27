@@ -31,12 +31,12 @@
         ]
       },
       "0x3347382d530ff6acb9283ac1d78471187aae8a4690e9316bb4e3c3365ff7a86": {
-        methods: [
+        "methods": [
           {
-            entrypoint: "enter_tournament",
+            "entrypoint": "enter_tournament",
           },
           {
-            entrypoint: "start_tournament",
+            "entrypoint": "start_tournament",
           },
         ],
       },
