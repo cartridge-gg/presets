@@ -37,6 +37,12 @@ type Method = {
     name?: string;
     description?: string;
     entrypoint: string;
+    /**
+     * Whether the method is togglable by the user.
+     * If true, user can't toggle the method.
+     * @default false
+     */
+    isRequired?: boolean | false;
 };
 type SignMessagePolicy = TypedDataPolicy & {
     name?: string;
