@@ -33,6 +33,17 @@ var configs = {
       name: "Dark Shuffle"
     }
   },
+  dominion: {
+    origin: "https://dominion.fun",
+    theme: {
+      colors: {
+        primary: "#19cfff"
+      },
+      cover: "https://static.cartridge.gg/presets/dominion/cover.png",
+      icon: "https://static.cartridge.gg/presets/dominion/icon.svg",
+      name: "Dominion"
+    }
+  },
   "dope-wars": {
     origin: "dopewars.game",
     policies: {
