@@ -1,5 +1,5 @@
+import type { TypedData } from "@starknet-io/types-js";
 import { configs } from "./generated/controller-configs";
-import { TypedData } from "@starknet-io/types-js";
 import { metadata } from "./generated/erc20-metadata";
 
 export const controllerConfigs = configs;
@@ -48,6 +48,12 @@ export type Method = {
   name?: string;
   description?: string;
   entrypoint: string;
+  /**
+   * Whether the method is togglable by the user.
+   * If true, user can't toggle the method.
+   * @default false
+   */
+  isRequired?: boolean | false;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
