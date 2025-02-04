@@ -1,0 +1,11 @@
+{
+  "origin": "nums.gg",
+  "theme": {
+    "colors": {
+      "primary": "#9E84E9"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Nums"
+  }
+}
