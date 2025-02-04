@@ -671,6 +671,17 @@ var configs = {
       name: "Loot Survivor"
     }
   },
+  nums: {
+    origin: "nums.gg",
+    theme: {
+      colors: {
+        primary: "#9E84E9"
+      },
+      cover: "https://static.cartridge.gg/presets/nums/cover.png",
+      icon: "https://static.cartridge.gg/presets/nums/icon.png",
+      name: "Nums"
+    }
+  },
   paved: {
     origin: "paved.gg",
     theme: {
