@@ -33,6 +33,17 @@ var configs = {
       name: "Dark Shuffle"
     }
   },
+  dominion: {
+    origin: "https://dominion.fun",
+    theme: {
+      colors: {
+        primary: "#19cfff"
+      },
+      cover: "https://static.cartridge.gg/presets/dominion/cover.png",
+      icon: "https://static.cartridge.gg/presets/dominion/icon.svg",
+      name: "Dominion"
+    }
+  },
   "dope-wars": {
     origin: "dopewars.game",
     policies: {
@@ -669,6 +680,17 @@ var configs = {
       cover: "https://static.cartridge.gg/presets/loot-survivor/cover.png",
       icon: "https://static.cartridge.gg/presets/loot-survivor/icon.png",
       name: "Loot Survivor"
+    }
+  },
+  nums: {
+    origin: "nums.gg",
+    theme: {
+      colors: {
+        primary: "#9E84E9"
+      },
+      cover: "https://static.cartridge.gg/presets/nums/cover.png",
+      icon: "https://static.cartridge.gg/presets/nums/icon.png",
+      name: "Nums"
     }
   },
   paved: {
