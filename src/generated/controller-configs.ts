@@ -132,6 +132,217 @@ export const configs: ControllerConfigs = {
   },
   dragark: {
     origin: "dragark.net",
+    policies: {
+      contracts: {
+        "0x62525c1337037a6a50a61f12045630a271758a350e57616e79a6ed14004ce74": {
+          name: "Achievement Systems",
+          description: "Allows you to interact with achievement features.",
+          methods: [
+            {
+              name: "Claim Achievement Reward",
+              description: "A method to claim your achievement reward.",
+              entrypoint: "claim_achievement_reward",
+            },
+          ],
+        },
+        "0xa5a3284a1e3ce9887b50876acee14a1af9705659b3ad053deff80d84c5555a": {
+          name: "Dragon Systems",
+          description: "Allows you to interact with dragon features.",
+          methods: [
+            {
+              name: "Activate Dragon",
+              description:
+                "A method to activate the Dragark NFT into the game.",
+              entrypoint: "activate_dragon",
+            },
+            {
+              name: "Deactivate Dragon",
+              description:
+                "A method to deactivate Dragark NFT out of the game.",
+              entrypoint: "deactivate_dragon",
+            },
+            {
+              name: "Claim Default Dragon",
+              description: "A method to claim the default Dragark.",
+              entrypoint: "claim_default_dragon",
+            },
+            {
+              name: "Upgrade Dragon",
+              description: "A method to upgrade the Dragark's level.",
+              entrypoint: "upgrade_dragon",
+            },
+          ],
+        },
+        "0x456e9a70c1a8ce2e340592d1a885f2ac152349d785a6aef4d640d9a09f9a1bd": {
+          name: "Island Systems",
+          description: "Allows you to interact with island features.",
+          methods: [
+            {
+              name: "Claim Resources",
+              description: "A method to claim the island's rescources.",
+              entrypoint: "claim_resources",
+            },
+            {
+              name: "Claim Resources Islands",
+              description: "A method to claim rescources on multiple islands.",
+              entrypoint: "claim_resources_islands",
+            },
+          ],
+        },
+        "0x2f77a88ac64fd1473ea067ea176ae3805224a2ba5173c63c77d0f214c01ac5d": {
+          name: "Journey Systems",
+          description: "Allows you to interact with journey features.",
+          methods: [
+            {
+              name: "Start Journey",
+              description: "A method to start a new journey to other island.",
+              entrypoint: "start_journey",
+            },
+            {
+              name: "Finish Journey",
+              description: "A method to finish a started journey.",
+              entrypoint: "finish_journey",
+            },
+          ],
+        },
+        "0x1ca130b614f063a24dafad53db11cbb914fa7cff2eac23df1c32f5ff71a8ec2": {
+          name: "Map Systems",
+          description: "Allows you to interact with map features.",
+          methods: [
+            {
+              name: "Join Map",
+              description: "A method to join the map.",
+              entrypoint: "join_map",
+            },
+            {
+              name: "Rejoin Map",
+              description: "A method to rejoin the map.",
+              entrypoint: "re_join_map",
+            },
+          ],
+        },
+        "0x272741bbe4abc02c8be4b094ca642e1df573e99e06f85f649bc35dd26ae4543": {
+          name: "Mission Systems",
+          description: "Allows you to interact with mission features.",
+          methods: [
+            {
+              name: "Claim Mission Reward",
+              description: "A method to claim your mission reward.",
+              entrypoint: "claim_mission_reward",
+            },
+          ],
+        },
+        "0x54ad7af1fc62a786c9023d9f3ef8e8abf8cf332649b784188c1b25d2cb384b2": {
+          name: "Player Systems",
+          description: "Allows you to interact with player features.",
+          methods: [
+            {
+              name: "Buy Energy",
+              description: "A method to buy energy used in scouting the map.",
+              entrypoint: "buy_energy",
+            },
+            {
+              name: "Claim Reward",
+              description: "A method to claim your reward.",
+              entrypoint: "claim_reward",
+            },
+            {
+              name: "Upgrade Account Level",
+              description: "A method to upgrade your account level.",
+              entrypoint: "upgrade_account_level",
+            },
+            {
+              name: "Upgrade Invitation Level",
+              description: "A method to upgrade your invitation level.",
+              entrypoint: "upgrade_invitation_level",
+            },
+            {
+              name: "Redeem Invite Code",
+              description: "A method to redeem invite code.",
+              entrypoint: "redeem_invite_code",
+            },
+            {
+              name: "Buy Resources Pack",
+              description: "A method to buy resources pack.",
+              entrypoint: "buy_resources_pack",
+            },
+            {
+              name: "Activate Element NFT",
+              description:
+                "A method to activate the Element NFT into the game.",
+              entrypoint: "activate_element_nft",
+            },
+            {
+              name: "Claim Pool Share Reward",
+              description: "A method to claim your Pool Share reward.",
+              entrypoint: "claim_pool_share_reward",
+            },
+          ],
+        },
+        "0x68717880bd76fda6790e895e937e2c638213e7b9aa07385231bbf17dfe8a78c": {
+          name: "Scout Systems",
+          description: "Allows you to interact with scout features.",
+          methods: [
+            {
+              name: "Scout",
+              description: "A method to scout the map.",
+              entrypoint: "scout",
+            },
+          ],
+        },
+        "0x14705481d28fab7bb37d6cb19d3392d39f838a1d5572b8c8f18e85e0c4b8918": {
+          name: "Shield Systems",
+          description: "Allows you to interact with shield features.",
+          methods: [
+            {
+              name: "Activate Shield",
+              description:
+                "A method to activate a shield to protect your island.",
+              entrypoint: "activate_shield",
+            },
+            {
+              name: "Deactivate Shield",
+              description: "A method to deactivate a shield from your island.",
+              entrypoint: "deactivate_shield",
+            },
+            {
+              name: "Buy Shield",
+              description: "A method to buy a shield.",
+              entrypoint: "buy_shield",
+            },
+          ],
+        },
+        "0x23d6a41c06e2d7b60437ba4da3eca857cf9a0b94f3548396829365a0a299c63": {
+          name: "Star Shop Systems",
+          description: "Allows you to interact with star shop features.",
+          methods: [
+            {
+              name: "Buy Item Star Shop",
+              description: "A method to buy item from the Star Shop.",
+              entrypoint: "buy_item_star_shop",
+            },
+          ],
+        },
+        "0x511a78a1c4b33bedc4ff7d9b37eb7481bcdff77c5c2cb6f67390d43657749d0": {
+          name: "Treasure Hunt Systems",
+          description: "Allows you to interact with treasure hunt features.",
+          methods: [
+            {
+              name: "Insert Dragon Treasure Hunt",
+              description:
+                "A method to insert your Dragarks to start a new treasure hunt.",
+              entrypoint: "insert_dragon_treasure_hunt",
+            },
+            {
+              name: "End Treasure Hunt",
+              description:
+                "A method to end an existing treasure hunt and claim rewards.",
+              entrypoint: "end_treasure_hunt",
+            },
+          ],
+        },
+      },
+    },
     theme: {
       colors: {
         primary: "#71EB34",
