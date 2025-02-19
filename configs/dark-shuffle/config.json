@@ -1,5 +1,8 @@
 {
-  "origin": "darkshuffle.io",
+  "origin": [
+    "darkshuffle.io",
+    "darkshuffle.dev"
+  ],
   "theme": {
     "colors": {
       "primary": "#F59100"
@@ -7,5 +10,55 @@
     "cover": "cover.png",
     "icon": "icon.svg",
     "name": "Dark Shuffle"
+  },
+  "policies": {
+    "contracts": {
+      "0x075d23bb8e9ffe2257d8e96134bb3c182f23d644edbd88cb5c2ae7806fd34f74": {
+        "name": "game_systems",
+        "methods": [
+          {
+            "entrypoint": "mint"
+          },
+          {
+            "entrypoint": "start_game"
+          }
+        ]
+      },
+      "0x04a934cedc990f70c420d707d3422d88a65e8e6e5405a8d2e598231b7126860c": {
+        "name": "battle_systems",
+        "methods": [
+          {
+            "entrypoint": "battle_actions"
+          }
+        ]
+      },
+      "0x02ae336562b579fd6d1558e44fe883cd2747307bc8aa4f755cc41cb2aa02c18c": {
+        "name": "draft_systems",
+        "methods": [
+          {
+            "entrypoint": "pick_card"
+          }
+        ]
+      },
+      "0x00c9309fe5d9d042a3b52d015cc400be0e7b682eb1f5ab6cf794fd919d04dcb1": {
+        "name": "map_systems",
+        "methods": [
+          {
+            "entrypoint": "generate_tree"
+          },
+          {
+            "entrypoint": "select_node"
+          }
+        ]
+      },
+      "0x02dd237c450403a94ca6a0d508b33474205cb00f1ec953214f49d55f4e204a77": {
+        "name": "tournament_component", 
+        "methods": [
+          {
+            "entrypoint": "enter_tournament"
+          }
+        ]
+      }
+    }
   }
 }
