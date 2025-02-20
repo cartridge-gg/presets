@@ -36,7 +36,7 @@ export const configs: ControllerConfigs = {
     },
     policies: {
       contracts: {
-        "0x075d23bb8e9ffe2257d8e96134bb3c182f23d644edbd88cb5c2ae7806fd34f74": {
+        "0x06f32edb41a707fc6e368b37dd74890b1a518f5fba6b7fef7061ef72afc27336": {
           name: "game_systems",
           methods: [
             {
@@ -47,7 +47,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x04a934cedc990f70c420d707d3422d88a65e8e6e5405a8d2e598231b7126860c": {
+        "0x06b3c8954b11f8fab32dc9044a813222a4633d40dec458d32db442dda2f0d315": {
           name: "battle_systems",
           methods: [
             {
@@ -55,7 +55,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x02ae336562b579fd6d1558e44fe883cd2747307bc8aa4f755cc41cb2aa02c18c": {
+        "0x05070fada9203c66f5aefb2f932b867e8dc606addc1bd82abb0a112a810e9d91": {
           name: "draft_systems",
           methods: [
             {
@@ -63,7 +63,7 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
-        "0x00c9309fe5d9d042a3b52d015cc400be0e7b682eb1f5ab6cf794fd919d04dcb1": {
+        "0x063a0a2cc978d6cd4ff2e66b62e00205d0069bd5b766c5319dbf7781a53d28e5": {
           name: "map_systems",
           methods: [
             {
