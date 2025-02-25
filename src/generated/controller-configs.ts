@@ -999,6 +999,22 @@ export const configs: ControllerConfigs = {
             },
           ],
         },
+        "0x4d776373427434a22f7d60d0f7fe0e336fd830edf4294acec33d9f2e1275327": {
+          name: "Social",
+          description: "Social contract to manage your social activities",
+          methods: [
+            {
+              name: "pin",
+              entrypoint: "pin",
+              description: "Pin an achievement.",
+            },
+            {
+              name: "unpin",
+              entrypoint: "unpin",
+              description: "Unpin an achievement.",
+            },
+          ],
+        },
       },
     },
     theme: {
