@@ -951,7 +951,56 @@ export const configs: ControllerConfigs = {
     },
   },
   nums: {
-    origin: "nums.gg",
+    origin: ["nums.gg", "www.nums.gg"],
+    policies: {
+      contracts: {
+        "0x07ccfbc43c109efd466638defa52702382ace922051d35a0554b5ccd02a8f155": {
+          name: "Game Actions",
+          methods: [
+            {
+              name: "Create Game",
+              entrypoint: "create_game",
+              description: "Creates a new game",
+            },
+            {
+              name: "Set Slot",
+              entrypoint: "set_slot",
+              description: "Sets one slot for the game",
+            },
+          ],
+        },
+        "0x00ea44dd8e971d3af9f99568577bf14b0a80a7f7763fa6281840ab68a8a53ba9": {
+          name: "Claim Actions",
+          methods: [
+            {
+              name: "Claim Appchain Reward",
+              entrypoint: "claim_reward",
+              description: "Claims token rewards on Appchain",
+            },
+          ],
+        },
+        "0x03ee42961dc151d740df95c44b929abe85cf66e8444e0279252dd99b055c64b0": {
+          name: "Rewards Claim",
+          methods: [
+            {
+              name: "Consume Reward on Starknet",
+              entrypoint: "consume_claim_reward",
+              description: "Consumes a claim reward message on Starknet",
+            },
+          ],
+        },
+        "0x7ed472bdde3b19a5cf2334ad0f368426272f477938270b1b04259f159bdc0e2": {
+          name: "VRF Provider",
+          methods: [
+            {
+              name: "Request Random",
+              entrypoint: "request_random",
+              description: "Requests a random number from the VRF contract",
+            },
+          ],
+        },
+      },
+    },
     theme: {
       colors: {
         primary: "#9E84E9",
