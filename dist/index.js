@@ -938,7 +938,7 @@ var configs = {
     }
   },
   nums: {
-    origin: "nums.gg",
+    origin: ["nums.gg", "www.nums.gg"],
     theme: {
       colors: {
         primary: "#9E84E9"
