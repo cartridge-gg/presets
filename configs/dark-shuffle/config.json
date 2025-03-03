@@ -13,7 +13,7 @@
   },
   "policies": {
     "contracts": {
-      "0x02ffe2edea10d1622b9cc65ce18b441755f322253e24e6cd862518ab037009f5": {
+      "0x020fc3c9efd0dde5f53642dac7f53638aeaae98ff9af5f1642546f389ce9dec5": {
         "name": "game_systems",
         "methods": [
           {
@@ -24,7 +24,7 @@
           }
         ]
       },
-      "0x04f6fe2579cbce8bc7e4a960a2c07ff7ef82882b9d179b3e9d8d18c6236d80ee": {
+      "0x036d27fb8604302b7e4f747a73a84b7c9ae9106f3c5f65e51e934fac9f7c753f": {
         "name": "battle_systems",
         "methods": [
           {
@@ -32,7 +32,7 @@
           }
         ]
       },
-      "0x06f83dba9eaaa4a3615914b20a4d270d25bcd2fd8cd61dca0d5381575d581d15": {
+      "0x046f9c2f2f3144059f7332bd989151f782f462f4ea6e3755c2f7b3eac49be73d": {
         "name": "draft_systems",
         "methods": [
           {
@@ -40,7 +40,7 @@
           }
         ]
       },
-      "0x05d11631f860069377142f87303f2b741803d1e811f894c3f43b0e207088f9b3": {
+      "0x045543452215a2b416d8c52e5a475e7e0eed2e7cbaf5a699ae5fc0599f4afae9": {
         "name": "map_systems",
         "methods": [
           {
@@ -51,7 +51,7 @@
           }
         ]
       },
-      "0x3d445b63c8653983b8a5b8c5c0e52f7b944f9ce3b3ecf2cb208921e400feec1": {
+      "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
         "name": "tournament_component", 
         "methods": [
           {
