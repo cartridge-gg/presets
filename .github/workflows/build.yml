@@ -76,16 +76,16 @@ jobs:
         with:
           version: "9.12.3"
 
-      - name: Update package.json
+      - name: Update pnpm-workspace.yaml
         run: |
-          jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' package.json > tmp.json && mv tmp.json package.json
+          yq -i '.catalog["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' pnpm-workspace.yaml
 
       - name: Update lockfile
         run: pnpm install --no-frozen-lockfile
 
       - name: Commit and push changes
         run: |
-          git add package.json pnpm-lock.yaml
+          git add pnpm-workspace.yaml pnpm-lock.yaml
           git commit -m "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}"
           git push -f origin update-presets
 
