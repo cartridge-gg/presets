@@ -13,6 +13,44 @@ export const configs: ControllerConfigs = {
       name: "Blob Arena",
     },
   },
+  budokan: {
+    origin: "budokan.gg",
+    policies: {
+      contracts: {
+        "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
+          name: "Budokan",
+          methods: [
+            {
+              entrypoint: "create_tournament",
+            },
+            {
+              entrypoint: "enter_tournament",
+            },
+            {
+              entrypoint: "submit_score",
+            },
+            {
+              entrypoint: "claim_prize",
+            },
+            {
+              entrypoint: "add_prize",
+            },
+            {
+              entrypoint: "register_token",
+            },
+          ],
+        },
+      },
+    },
+    theme: {
+      colors: {
+        primary: "#B1B97A",
+      },
+      cover: "https://static.cartridge.gg/presets/budokan/cover.png",
+      icon: "https://static.cartridge.gg/presets/budokan/icon.png",
+      name: "Budokan",
+    },
+  },
   cartridge: {
     origin: "*",
     theme: {
