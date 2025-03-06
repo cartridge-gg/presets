@@ -34,9 +34,14 @@ async function main() {
 
     const policies: Policies = eval(policiesMatch[1]);
 
-    // Convert to session policies
+    // Convert to session policies with chain ID namespace
     const sessionPolicies = policies.reduce<SessionPolicies>(
       (prev, p) => {
+        // Initialize SN_MAIN chain ID if it doesn't exist
+        if (!prev["SN_MAIN"]) {
+          prev["SN_MAIN"] = { contracts: {}, messages: [] };
+        }
+
         if ("target" in p) {
           const target = getChecksumAddress(p.target);
           const entrypoint = p.method;
@@ -45,23 +50,23 @@ async function main() {
             entrypoint: entrypoint,
           };
 
-          if (target in prev.contracts) {
-            const methods = toArray(prev.contracts[target].methods);
-            prev.contracts[target] = {
+          if (target in prev["SN_MAIN"].contracts) {
+            const methods = toArray(prev["SN_MAIN"].contracts[target].methods);
+            prev["SN_MAIN"].contracts[target] = {
               methods: [...methods, item],
             };
           } else {
-            prev.contracts[target] = {
+            prev["SN_MAIN"].contracts[target] = {
               methods: [item],
             };
           }
         } else {
-          prev.messages.push(p);
+          prev["SN_MAIN"].messages.push(p);
         }
 
         return prev;
       },
-      { contracts: {}, messages: [] },
+      {} as SessionPolicies,
     );
 
     // Ensure output directory exists

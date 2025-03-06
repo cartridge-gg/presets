@@ -28,12 +28,17 @@ export type CallPolicy = {
 
 export type TypedDataPolicy = Omit<TypedData, "message">;
 
-export type Policies = Policy[] | SessionPolicies;
+export type ChainId = string;
 
 export type SessionPolicies = {
   /** The key must be the contract address */
   contracts?: ContractPolicies;
-  messages?: SignMessagePolicy[];
+  messages?: any; // Using any to allow any messages format
+};
+
+export type Chains = {
+  /** Map of chain IDs to specific chain policies */
+  [chainId: ChainId]: { policies: SessionPolicies };
 };
 
 export type ContractPolicies = Record<string, ContractPolicy>;
@@ -56,14 +61,36 @@ export type Method = {
   isRequired?: boolean | false;
 };
 
-export type SignMessagePolicy = TypedDataPolicy & {
-  name?: string;
-  description?: string;
+export type StarknetDomainField = {
+  name: string;
+  type: string;
 };
+
+export type MessageType = {
+  [typeName: string]: StarknetDomainField[];
+};
+
+export type SignMessagePolicy =
+  | (TypedDataPolicy & {
+      name?: string;
+      description?: string;
+    })
+  | {
+      types: MessageType;
+      primaryType: string;
+      domain: {
+        name: string;
+        version: string;
+        chainId: string;
+        revision: string;
+      };
+      name?: string;
+      description?: string;
+    };
 
 export type ControllerConfig = {
   origin: string | string[];
-  policies?: SessionPolicies;
+  chains?: Chains;
   theme?: ControllerTheme;
 };
 
