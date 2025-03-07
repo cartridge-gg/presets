@@ -21,11 +21,17 @@ type CallPolicy = {
     description?: string;
 };
 type TypedDataPolicy = Omit<TypedData, "message">;
-type Policies = Policy[] | SessionPolicies;
+type ChainId = string;
 type SessionPolicies = {
     /** The key must be the contract address */
     contracts?: ContractPolicies;
-    messages?: SignMessagePolicy[];
+    messages?: any;
+};
+type Chains = {
+    /** Map of chain IDs to specific chain policies */
+    [chainId: ChainId]: {
+        policies: SessionPolicies;
+    };
 };
 type ContractPolicies = Record<string, ContractPolicy>;
 type ContractPolicy = {
@@ -44,13 +50,31 @@ type Method = {
      */
     isRequired?: boolean | false;
 };
-type SignMessagePolicy = TypedDataPolicy & {
+type StarknetDomainField = {
+    name: string;
+    type: string;
+};
+type MessageType = {
+    [typeName: string]: StarknetDomainField[];
+};
+type SignMessagePolicy = (TypedDataPolicy & {
+    name?: string;
+    description?: string;
+}) | {
+    types: MessageType;
+    primaryType: string;
+    domain: {
+        name: string;
+        version: string;
+        chainId: string;
+        revision: string;
+    };
     name?: string;
     description?: string;
 };
 type ControllerConfig = {
     origin: string | string[];
-    policies?: SessionPolicies;
+    chains?: Chains;
     theme?: ControllerTheme;
 };
 type ControllerConfigs = Record<string, ControllerConfig>;
@@ -71,4 +95,4 @@ type ThemeValue<T> = T | {
     light: T;
 };
 
-export { type CallPolicy, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type Method, type Policies, type Policy, type SessionPolicies, type SignMessagePolicy, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };
+export { type CallPolicy, type ChainId, type Chains, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type MessageType, type Method, type Policy, type SessionPolicies, type SignMessagePolicy, type StarknetDomainField, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };

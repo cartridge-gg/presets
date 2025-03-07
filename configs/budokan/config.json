@@ -1,29 +1,33 @@
 {
   "origin": "budokan.gg",
-  "policies": {
-    "contracts": {
-      "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
-        "name": "Budokan",
-        "methods": [
-          {
-            "entrypoint": "create_tournament"
-          },
-          {
-            "entrypoint": "enter_tournament"
-          },
-          {
-            "entrypoint": "submit_score"
-          },
-          {
-            "entrypoint": "claim_prize"
-          },
-          {
-            "entrypoint": "add_prize"
-          },
-          {
-            "entrypoint": "register_token"
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
+            "name": "Budokan",
+            "methods": [
+              {
+                "entrypoint": "create_tournament"
+              },
+              {
+                "entrypoint": "enter_tournament"
+              },
+              {
+                "entrypoint": "submit_score"
+              },
+              {
+                "entrypoint": "claim_prize"
+              },
+              {
+                "entrypoint": "add_prize"
+              },
+              {
+                "entrypoint": "register_token"
+              }
+            ]
           }
-        ]
+        }
       }
     }
   },

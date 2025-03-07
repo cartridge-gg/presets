@@ -11,53 +11,57 @@
     "icon": "icon.svg",
     "name": "Dark Shuffle"
   },
-  "policies": {
-    "contracts": {
-      "0x020fc3c9efd0dde5f53642dac7f53638aeaae98ff9af5f1642546f389ce9dec5": {
-        "name": "game_systems",
-        "methods": [
-          {
-            "entrypoint": "mint"
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x020fc3c9efd0dde5f53642dac7f53638aeaae98ff9af5f1642546f389ce9dec5": {
+            "name": "game_systems",
+            "methods": [
+              {
+                "entrypoint": "mint"
+              },
+              {
+                "entrypoint": "start_game"
+              }
+            ]
           },
-          {
-            "entrypoint": "start_game"
-          }
-        ]
-      },
-      "0x036d27fb8604302b7e4f747a73a84b7c9ae9106f3c5f65e51e934fac9f7c753f": {
-        "name": "battle_systems",
-        "methods": [
-          {
-            "entrypoint": "battle_actions"
-          }
-        ]
-      },
-      "0x046f9c2f2f3144059f7332bd989151f782f462f4ea6e3755c2f7b3eac49be73d": {
-        "name": "draft_systems",
-        "methods": [
-          {
-            "entrypoint": "pick_card"
-          }
-        ]
-      },
-      "0x045543452215a2b416d8c52e5a475e7e0eed2e7cbaf5a699ae5fc0599f4afae9": {
-        "name": "map_systems",
-        "methods": [
-          {
-            "entrypoint": "generate_tree"
+          "0x036d27fb8604302b7e4f747a73a84b7c9ae9106f3c5f65e51e934fac9f7c753f": {
+            "name": "battle_systems",
+            "methods": [
+              {
+                "entrypoint": "battle_actions"
+              }
+            ]
           },
-          {
-            "entrypoint": "select_node"
+          "0x046f9c2f2f3144059f7332bd989151f782f462f4ea6e3755c2f7b3eac49be73d": {
+            "name": "draft_systems",
+            "methods": [
+              {
+                "entrypoint": "pick_card"
+              }
+            ]
+          },
+          "0x045543452215a2b416d8c52e5a475e7e0eed2e7cbaf5a699ae5fc0599f4afae9": {
+            "name": "map_systems",
+            "methods": [
+              {
+                "entrypoint": "generate_tree"
+              },
+              {
+                "entrypoint": "select_node"
+              }
+            ]
+          },
+          "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
+            "name": "tournament_component", 
+            "methods": [
+              {
+                "entrypoint": "enter_tournament"
+              }
+            ]
           }
-        ]
-      },
-      "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6": {
-        "name": "tournament_component", 
-        "methods": [
-          {
-            "entrypoint": "enter_tournament"
-          }
-        ]
+        }
       }
     }
   }
