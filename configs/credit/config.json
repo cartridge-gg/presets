@@ -1,0 +1,8 @@
+{
+  "origin": "*",
+  "theme": {
+    "name": "Credit",
+    "icon": "icon.svg",
+    "cover": "cover.png"
+  }
+}
