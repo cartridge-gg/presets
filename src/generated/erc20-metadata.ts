@@ -287,6 +287,18 @@ export const metadata: EkuboERC20Metadata[] = [
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/6bd6d156-f509-4b51-5dfc-3ee566143600/logo",
   },
   {
+    name: "Nums",
+    symbol: "NUMS",
+    decimals: 18,
+    l2_token_address:
+      "0xe5f10eddc01699dc899a30dbc3c9858148fa4aa0a47c0ffd85f887ffc4653e",
+    sort_order: 1,
+    total_supply: 1,
+    hidden: true,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/90868d05-cb75-4c42-278c-5a540db2cf00/logo",
+  },
+  {
     name: "Flip",
     symbol: "FLIP",
     decimals: 18,
