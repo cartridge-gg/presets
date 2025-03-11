@@ -64,6 +64,14 @@ var configs = {
       }
     }
   },
+  credit: {
+    origin: "*",
+    theme: {
+      name: "Credit",
+      icon: "https://static.cartridge.gg/presets/credit/icon.svg",
+      cover: "https://static.cartridge.gg/presets/credit/cover.png"
+    }
+  },
   "dark-shuffle": {
     origin: ["darkshuffle.io", "darkshuffle.dev"],
     theme: {
