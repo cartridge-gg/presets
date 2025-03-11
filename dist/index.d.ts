@@ -21,6 +21,7 @@ type CallPolicy = {
     description?: string;
 };
 type TypedDataPolicy = Omit<TypedData, "message">;
+type Policies = Policy[] | SessionPolicies;
 type ChainId = string;
 type SessionPolicies = {
     /** The key must be the contract address */
@@ -95,4 +96,4 @@ type ThemeValue<T> = T | {
     light: T;
 };
 
-export { type CallPolicy, type ChainId, type Chains, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type MessageType, type Method, type Policy, type SessionPolicies, type SignMessagePolicy, type StarknetDomainField, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };
+export { type CallPolicy, type ChainId, type Chains, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type MessageType, type Method, type Policies, type Policy, type SessionPolicies, type SignMessagePolicy, type StarknetDomainField, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };

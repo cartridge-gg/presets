@@ -27,6 +27,7 @@ export type CallPolicy = {
 };
 
 export type TypedDataPolicy = Omit<TypedData, "message">;
+export type Policies = Policy[] | SessionPolicies;
 
 export type ChainId = string;
 
