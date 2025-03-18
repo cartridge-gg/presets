@@ -34,7 +34,7 @@ export type ChainId = string;
 export type SessionPolicies = {
   /** The key must be the contract address */
   contracts?: ContractPolicies;
-  messages?: any; // Using any to allow any messages format
+  messages?: SignMessagePolicy[];
 };
 
 export type Chains = {
@@ -62,32 +62,10 @@ export type Method = {
   isRequired?: boolean | false;
 };
 
-export type StarknetDomainField = {
-  name: string;
-  type: string;
+export type SignMessagePolicy = TypedDataPolicy & {
+  name?: string;
+  description?: string;
 };
-
-export type MessageType = {
-  [typeName: string]: StarknetDomainField[];
-};
-
-export type SignMessagePolicy =
-  | (TypedDataPolicy & {
-      name?: string;
-      description?: string;
-    })
-  | {
-      types: MessageType;
-      primaryType: string;
-      domain: {
-        name: string;
-        version: string;
-        chainId: string;
-        revision: string;
-      };
-      name?: string;
-      description?: string;
-    };
 
 export type ControllerConfig = {
   origin: string | string[];
