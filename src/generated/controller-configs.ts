@@ -19,7 +19,7 @@ export const configs: ControllerConfigs = {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x0530d9693304c79b5b506aa2fa09c27681373d71b69a839378ff5fd108aa5fc6":
+            "0x05fb427962210ac4b3be5e23419b0d9e91ca6a9c57b0665d2ca7783092506f6e":
               {
                 name: "Budokan",
                 methods: [
