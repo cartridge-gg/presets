@@ -10,6 +10,7 @@
     "build": "pnpm build:configs && tsup --dts-resolve",
     "build:js": "pnpm build:configs && tsup --no-dts",
     "fetch:erc20": "tsx scripts/fetch-erc20.ts && prettier --write src/generated/erc20-metadata.ts",
+    "image:optimize": "tsx scripts/optimize-images.ts",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\""
   },
@@ -37,11 +38,13 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.0",
+    "@types/sharp": "^0.32.0",
     "prettier": "^2.7.1",
+    "sharp": "^0.33.5",
+    "starknet": "6.11.0",
     "tsup": "^8.0.1",
     "tsx": "^4.7.0",
-    "typescript": "^5.4.5",
-    "starknet": "6.11.0"
+    "typescript": "^5.4.5"
   },
   "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }

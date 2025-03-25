@@ -29,6 +29,10 @@ jobs:
       - run: pnpm install
       - run: pnpm build
 
+      # Process and optimize theme images
+      - name: Process theme images
+        run: pnpm image:optimize
+
       - uses: "google-github-actions/auth@v2"
         with:
           project_id: c7e-prod
@@ -37,6 +41,12 @@ jobs:
       - uses: "google-github-actions/upload-cloud-storage@v2"
         with:
           path: "configs"
+          destination: "c7e-prod-static/presets"
+          parent: false
+
+      - uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "optimized-images"
           destination: "c7e-prod-static/presets"
           parent: false
 

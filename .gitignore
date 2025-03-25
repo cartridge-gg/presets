@@ -185,3 +185,5 @@ keystore.json
 
 node_modules/
 .env
+optimized-images
+dist

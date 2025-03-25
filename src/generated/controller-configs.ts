@@ -11,6 +11,46 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/blob-arena/cover.png",
       icon: "https://static.cartridge.gg/presets/blob-arena/icon.png",
       name: "Blob Arena",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/blob-arena/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/blob-arena/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/blob-arena/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/blob-arena/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/blob-arena/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/blob-arena/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/blob-arena/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/blob-arena/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/blob-arena/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/blob-arena/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/blob-arena/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/blob-arena/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/blob-arena/icon@256.png",
+        },
+      },
     },
     chains: {
       SN_MAIN: {
@@ -263,6 +303,52 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/blob-arena-amma/cover.png",
       icon: "https://static.cartridge.gg/presets/blob-arena-amma/icon.png",
       name: "Blob Arena AMMA",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/blob-arena-amma/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/blob-arena-amma/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/blob-arena-amma/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/blob-arena-amma/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/blob-arena-amma/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/blob-arena-amma/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/blob-arena-amma/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/blob-arena-amma/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/blob-arena-amma/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/blob-arena-amma/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/blob-arena-amma/icon@256.png",
+        },
+      },
     },
   },
   budokan: {
@@ -306,6 +392,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/budokan/cover.png",
       icon: "https://static.cartridge.gg/presets/budokan/icon.png",
       name: "Budokan",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/budokan/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/budokan/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/budokan/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/budokan/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/budokan/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/budokan/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/budokan/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/budokan/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/budokan/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/budokan/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/budokan/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/budokan/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/budokan/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/budokan/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/budokan/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/budokan/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/budokan/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/budokan/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/budokan/icon@256.png",
+        },
+      },
     },
   },
   "bytebeasts-tamagotchi": {
@@ -318,6 +437,52 @@ export const configs: ControllerConfigs = {
         "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover.png",
       icon: "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon.png",
       name: "ByteBeasts-Tamagotchi",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon@256.png",
+        },
+      },
     },
   },
   cartridge: {
@@ -328,6 +493,83 @@ export const configs: ControllerConfigs = {
       cover: {
         light: "https://static.cartridge.gg/presets/cartridge/cover-light.png",
         dark: "https://static.cartridge.gg/presets/cartridge/cover-dark.png",
+      },
+      optimizedCover: {
+        light: {
+          webp: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@768.webp",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1024.webp",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1440.webp",
+          },
+          jpg: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@768.jpg",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1024.jpg",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1440.jpg",
+          },
+          png: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@768.png",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1024.png",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-light@1440.png",
+          },
+        },
+        dark: {
+          webp: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@768.webp",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1024.webp",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1440.webp",
+          },
+          jpg: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@768.jpg",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1024.jpg",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1440.jpg",
+          },
+          png: {
+            "768":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@768.png",
+            "1024":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1024.png",
+            "1440":
+              "https://static.cartridge.gg/presets/cartridge/cover-dark@1440.png",
+          },
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/cartridge/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/cartridge/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/cartridge/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/cartridge/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/cartridge/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/cartridge/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/cartridge/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/cartridge/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/cartridge/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/cartridge/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/cartridge/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/cartridge/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/cartridge/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/cartridge/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/cartridge/icon@256.svg",
+        },
       },
     },
   },
@@ -439,6 +681,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/coloniz/cover.png",
       icon: "https://static.cartridge.gg/presets/coloniz/icon.png",
       name: "Coloniz",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/coloniz/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/coloniz/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/coloniz/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/coloniz/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/coloniz/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/coloniz/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/coloniz/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/coloniz/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/coloniz/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/coloniz/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/coloniz/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/coloniz/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/coloniz/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/coloniz/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/coloniz/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/coloniz/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/coloniz/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/coloniz/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/coloniz/icon@256.png",
+        },
+      },
     },
   },
   credit: {
@@ -447,6 +722,46 @@ export const configs: ControllerConfigs = {
       name: "Credit",
       icon: "https://static.cartridge.gg/presets/credit/icon.svg",
       cover: "https://static.cartridge.gg/presets/credit/cover.png",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/credit/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/credit/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/credit/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/credit/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/credit/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/credit/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/credit/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/credit/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/credit/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/credit/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/credit/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/credit/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/credit/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/credit/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/credit/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/credit/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/credit/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/credit/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/credit/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/credit/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/credit/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/credit/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/credit/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/credit/icon@256.svg",
+        },
+      },
     },
   },
   "dark-shuffle": {
@@ -458,6 +773,61 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/dark-shuffle/cover.png",
       icon: "https://static.cartridge.gg/presets/dark-shuffle/icon.svg",
       name: "Dark Shuffle",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/dark-shuffle/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/dark-shuffle/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/dark-shuffle/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/dark-shuffle/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/dark-shuffle/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/dark-shuffle/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/dark-shuffle/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/dark-shuffle/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/dark-shuffle/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/dark-shuffle/icon@64.svg",
+          "128":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@128.svg",
+          "256":
+            "https://static.cartridge.gg/presets/dark-shuffle/icon@256.svg",
+        },
+      },
     },
     chains: {
       SN_MAIN: {
@@ -519,6 +889,48 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/dominion/cover.png",
       icon: "https://static.cartridge.gg/presets/dominion/icon.svg",
       name: "Dominion",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/dominion/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/dominion/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/dominion/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/dominion/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/dominion/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/dominion/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/dominion/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/dominion/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/dominion/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/dominion/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/dominion/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/dominion/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/dominion/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/dominion/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/dominion/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/dominion/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/dominion/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/dominion/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/dominion/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/dominion/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/dominion/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/dominion/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/dominion/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/dominion/icon@256.svg",
+        },
+      },
     },
   },
   "dope-wars": {
@@ -611,6 +1023,45 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/dope-wars/cover.png",
       icon: "https://static.cartridge.gg/presets/dope-wars/icon.png",
       name: "Dope Wars",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/dope-wars/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/dope-wars/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/dope-wars/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/dope-wars/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/dope-wars/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/dope-wars/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/dope-wars/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/dope-wars/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/dope-wars/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/dope-wars/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/dope-wars/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/dope-wars/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/dope-wars/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/dope-wars/icon@256.png",
+        },
+      },
     },
   },
   dragark: {
@@ -854,6 +1305,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/dragark/cover.png",
       icon: "https://static.cartridge.gg/presets/dragark/icon.png",
       name: "Dragark",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/dragark/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/dragark/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/dragark/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/dragark/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/dragark/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/dragark/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/dragark/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/dragark/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/dragark/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/dragark/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/dragark/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/dragark/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/dragark/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/dragark/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/dragark/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/dragark/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/dragark/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/dragark/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/dragark/icon@256.png",
+        },
+      },
     },
   },
   eternum: {
@@ -1346,6 +1830,46 @@ export const configs: ControllerConfigs = {
       colors: {
         primary: "#dc8b07",
       },
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/eternum/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/eternum/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/eternum/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/eternum/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/eternum/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/eternum/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/eternum/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/eternum/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/eternum/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/eternum/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/eternum/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/eternum/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/eternum/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/eternum/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/eternum/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/eternum/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/eternum/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/eternum/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/eternum/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/eternum/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/eternum/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/eternum/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/eternum/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/eternum/icon@256.svg",
+        },
+      },
     },
   },
   flippyflop: {
@@ -1357,6 +1881,46 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/flippyflop/cover.png",
       icon: "https://static.cartridge.gg/presets/flippyflop/icon.png",
       name: "FlippyFlop",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/flippyflop/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/flippyflop/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/flippyflop/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/flippyflop/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/flippyflop/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/flippyflop/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/flippyflop/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/flippyflop/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/flippyflop/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/flippyflop/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/flippyflop/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/flippyflop/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/flippyflop/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/flippyflop/icon@256.png",
+        },
+      },
     },
   },
   "force-prime": {
@@ -1368,6 +1932,50 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/force-prime/cover.png",
       icon: "https://static.cartridge.gg/presets/force-prime/icon.png",
       name: "Force Prime",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/force-prime/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/force-prime/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/force-prime/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/force-prime/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/force-prime/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/force-prime/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/force-prime/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/force-prime/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/force-prime/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/force-prime/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/force-prime/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/force-prime/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/force-prime/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/force-prime/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/force-prime/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/force-prime/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/force-prime/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/force-prime/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/force-prime/icon@256.png",
+        },
+      },
     },
   },
   "jokers-of-neon": {
@@ -1379,6 +1987,52 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/jokers-of-neon/cover.png",
       icon: "https://static.cartridge.gg/presets/jokers-of-neon/icon.png",
       name: "Jokers of Neon",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/jokers-of-neon/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/jokers-of-neon/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/jokers-of-neon/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/jokers-of-neon/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/jokers-of-neon/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/jokers-of-neon/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/jokers-of-neon/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/jokers-of-neon/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/jokers-of-neon/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/jokers-of-neon/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/jokers-of-neon/icon@256.png",
+        },
+      },
     },
   },
   "loot-survivor": {
@@ -1438,6 +2092,52 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/loot-survivor/cover.png",
       icon: "https://static.cartridge.gg/presets/loot-survivor/icon.png",
       name: "Loot Survivor",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/loot-survivor/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/loot-survivor/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/loot-survivor/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/loot-survivor/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/loot-survivor/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/loot-survivor/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/loot-survivor/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/loot-survivor/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/loot-survivor/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/loot-survivor/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/loot-survivor/icon@256.png",
+        },
+      },
     },
   },
   nums: {
@@ -1524,6 +2224,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/nums/cover.png",
       icon: "https://static.cartridge.gg/presets/nums/icon.png",
       name: "Nums",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/nums/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/nums/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/nums/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/nums/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/nums/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/nums/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/nums/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/nums/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/nums/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/nums/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/nums/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/nums/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/nums/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/nums/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/nums/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/nums/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/nums/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/nums/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/nums/icon@256.png",
+        },
+      },
     },
   },
   paved: {
@@ -1535,6 +2268,46 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/paved/cover.png",
       icon: "https://static.cartridge.gg/presets/paved/icon.svg",
       name: "Paved",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/paved/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/paved/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/paved/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/paved/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/paved/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/paved/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/paved/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/paved/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/paved/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/paved/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/paved/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/paved/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/paved/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/paved/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/paved/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/paved/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/paved/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/paved/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/paved/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/paved/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/paved/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/paved/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/paved/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/paved/icon@256.svg",
+        },
+      },
     },
   },
   pistols: {
@@ -1554,6 +2327,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/pistols/cover.png",
       icon: "https://static.cartridge.gg/presets/pistols/icon.png",
       name: "Pistols at Dawn",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/pistols/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/pistols/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/pistols/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/pistols/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/pistols/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/pistols/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/pistols/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/pistols/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/pistols/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/pistols/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/pistols/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/pistols/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/pistols/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/pistols/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/pistols/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/pistols/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/pistols/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/pistols/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/pistols/icon@256.png",
+        },
+      },
     },
     chains: {
       SN_MAIN: {
@@ -1772,6 +2578,46 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/pixelaw/cover.png",
       icon: "https://static.cartridge.gg/presets/pixelaw/icon.svg",
       name: "Pixelaw",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/pixelaw/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/pixelaw/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/pixelaw/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/pixelaw/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/pixelaw/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/pixelaw/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/pixelaw/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/pixelaw/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/pixelaw/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/pixelaw/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/pixelaw/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/pixelaw/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/pixelaw/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/pixelaw/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/pixelaw/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/pixelaw/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/pixelaw/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/pixelaw/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/pixelaw/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/pixelaw/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/pixelaw/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/pixelaw/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/pixelaw/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/pixelaw/icon@256.svg",
+        },
+      },
     },
   },
   "realm-of-ra": {
@@ -1783,6 +2629,50 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/realm-of-ra/cover.png",
       icon: "https://static.cartridge.gg/presets/realm-of-ra/icon.png",
       name: "Realm of Ra",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/realm-of-ra/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/realm-of-ra/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/realm-of-ra/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/realm-of-ra/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/realm-of-ra/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/realm-of-ra/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/realm-of-ra/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/realm-of-ra/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/realm-of-ra/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/realm-of-ra/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/realm-of-ra/icon@256.png",
+        },
+      },
     },
   },
   "savage-summit": {
@@ -1794,6 +2684,52 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/savage-summit/cover.png",
       icon: "https://static.cartridge.gg/presets/savage-summit/icon.png",
       name: "Savage Summit",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/savage-summit/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/savage-summit/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/savage-summit/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/savage-summit/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/savage-summit/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/savage-summit/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/savage-summit/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/savage-summit/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/savage-summit/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/savage-summit/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/savage-summit/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/savage-summit/icon@64.png",
+          "128":
+            "https://static.cartridge.gg/presets/savage-summit/icon@128.png",
+          "256":
+            "https://static.cartridge.gg/presets/savage-summit/icon@256.png",
+        },
+      },
     },
   },
   "tale-weaver": {
@@ -1805,6 +2741,50 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/tale-weaver/cover.png",
       icon: "https://static.cartridge.gg/presets/tale-weaver/icon.png",
       name: "Tale Weaver",
+      optimizedCover: {
+        webp: {
+          "768":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@768.webp",
+          "1024":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1024.webp",
+          "1440":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1440.webp",
+        },
+        jpg: {
+          "768":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@768.jpg",
+          "1024":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1024.jpg",
+          "1440":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1440.jpg",
+        },
+        png: {
+          "768":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@768.png",
+          "1024":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1024.png",
+          "1440":
+            "https://static.cartridge.gg/presets/tale-weaver/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/tale-weaver/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/tale-weaver/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/tale-weaver/icon@64.webp",
+          "128":
+            "https://static.cartridge.gg/presets/tale-weaver/icon@128.webp",
+          "256":
+            "https://static.cartridge.gg/presets/tale-weaver/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/tale-weaver/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/tale-weaver/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/tale-weaver/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/tale-weaver/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/tale-weaver/icon@256.png",
+        },
+      },
     },
   },
   zkastle: {
@@ -1816,6 +2796,46 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/zkastle/cover.png",
       icon: "https://static.cartridge.gg/presets/zkastle/icon.svg",
       name: "zKastle",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/zkastle/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/zkastle/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/zkastle/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/zkastle/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/zkastle/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/zkastle/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/zkastle/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/zkastle/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/zkastle/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/zkastle/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/zkastle/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/zkastle/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/zkastle/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/zkastle/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/zkastle/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/zkastle/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/zkastle/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/zkastle/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/zkastle/icon@256.png",
+        },
+        svg: {
+          "16": "https://static.cartridge.gg/presets/zkastle/icon@16.svg",
+          "32": "https://static.cartridge.gg/presets/zkastle/icon@32.svg",
+          "64": "https://static.cartridge.gg/presets/zkastle/icon@64.svg",
+          "128": "https://static.cartridge.gg/presets/zkastle/icon@128.svg",
+          "256": "https://static.cartridge.gg/presets/zkastle/icon@256.svg",
+        },
+      },
     },
   },
   zktt: {
@@ -1827,6 +2847,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/zktt/cover.png",
       icon: "https://static.cartridge.gg/presets/zktt/icon.png",
       name: "zKTT",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/zktt/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/zktt/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/zktt/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/zktt/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/zktt/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/zktt/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/zktt/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/zktt/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/zktt/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/zktt/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/zktt/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/zktt/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/zktt/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/zktt/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/zktt/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/zktt/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/zktt/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/zktt/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/zktt/icon@256.png",
+        },
+      },
     },
   },
   zkube: {
@@ -1838,6 +2891,39 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/zkube/cover.png",
       icon: "https://static.cartridge.gg/presets/zkube/icon.png",
       name: "zKube",
+      optimizedCover: {
+        webp: {
+          "768": "https://static.cartridge.gg/presets/zkube/cover@768.webp",
+          "1024": "https://static.cartridge.gg/presets/zkube/cover@1024.webp",
+          "1440": "https://static.cartridge.gg/presets/zkube/cover@1440.webp",
+        },
+        jpg: {
+          "768": "https://static.cartridge.gg/presets/zkube/cover@768.jpg",
+          "1024": "https://static.cartridge.gg/presets/zkube/cover@1024.jpg",
+          "1440": "https://static.cartridge.gg/presets/zkube/cover@1440.jpg",
+        },
+        png: {
+          "768": "https://static.cartridge.gg/presets/zkube/cover@768.png",
+          "1024": "https://static.cartridge.gg/presets/zkube/cover@1024.png",
+          "1440": "https://static.cartridge.gg/presets/zkube/cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "https://static.cartridge.gg/presets/zkube/icon@16.webp",
+          "32": "https://static.cartridge.gg/presets/zkube/icon@32.webp",
+          "64": "https://static.cartridge.gg/presets/zkube/icon@64.webp",
+          "128": "https://static.cartridge.gg/presets/zkube/icon@128.webp",
+          "256": "https://static.cartridge.gg/presets/zkube/icon@256.webp",
+        },
+        png: {
+          "16": "https://static.cartridge.gg/presets/zkube/icon@16.png",
+          "32": "https://static.cartridge.gg/presets/zkube/icon@32.png",
+          "64": "https://static.cartridge.gg/presets/zkube/icon@64.png",
+          "128": "https://static.cartridge.gg/presets/zkube/icon@128.png",
+          "256": "https://static.cartridge.gg/presets/zkube/icon@256.png",
+        },
+      },
     },
   },
 };
