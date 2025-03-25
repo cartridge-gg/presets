@@ -56,6 +56,18 @@ export const configs: ControllerConfigs = {
       name: "Budokan",
     },
   },
+  "bytebeasts-tamagotchi": {
+    origin: "bytebeasts.games",
+    theme: {
+      colors: {
+        primary: "#ECECDA",
+      },
+      cover:
+        "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover.png",
+      icon: "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon.png",
+      name: "ByteBeasts-Tamagotchi",
+    },
+  },
   cartridge: {
     origin: "*",
     theme: {
