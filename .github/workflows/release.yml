@@ -44,41 +44,30 @@ jobs:
           destination: "c7e-prod-static/presets"
           parent: false
 
-      # Configure Git and commit build artifacts to release branch
+      # Configure Git and create or recreate release branch
       - name: Configure Git for release branch
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      - name: Checkout or create release branch
+      - name: Create or recreate release branch
         run: |
-          if git ls-remote --exit-code --heads origin release; then
-            git checkout release
-            git pull origin release
-          else
-            git checkout -b release
-          fi
+          # Create a fresh release branch from main
+          git checkout -B release-temp
 
-      - name: Update release branch with main changes
-        run: |
-          git merge main --no-commit --no-ff
-          git reset  # Unstage all changes from the merge
+          # Clean everything except dist/ and package.json
+          git rm -rf .
 
-      - name: Clean and add only dist and package.json
-        run: |
-          # Remove any previously committed dist files to ensure clean state
-          git rm -rf --cached dist/ || true
-          git rm -rf --cached . || true
-
-          # Keep only dist and package.json
-          git add dist/
-          git add package.json
+          # Restore only dist/ and package.json from current commit
+          git checkout HEAD -- dist/
+          git checkout HEAD -- package.json
 
           # Commit changes
+          git add dist/ package.json
           git commit -m "chore: update build artifacts [skip ci]"
 
-          # Push to release branch (preserving history)
-          git push origin release
+          # Force push to release branch
+          git push origin release-temp:release -f
 
       - name: Save commit SHA
         id: save-sha
