@@ -1,18 +1,12 @@
-name: Build and Deploy
+name: Build
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: "read"
-      id-token: "write"
-
     steps:
       - uses: "actions/checkout@v4"
 
@@ -32,76 +26,4 @@ jobs:
           if [[ -n "$(git status --porcelain src/)" ]]; then
             echo "Found changes in src/ directory after build"
             exit 1
-          fi
-
-      - if: github.ref == 'refs/heads/main'
-        uses: "google-github-actions/auth@v2"
-        with:
-          project_id: c7e-prod
-          workload_identity_provider: "projects/276773611885/locations/global/workloadIdentityPools/github/providers/presets-repo"
-
-      - if: github.ref == 'refs/heads/main'
-        uses: "google-github-actions/upload-cloud-storage@v2"
-        with:
-          path: "configs"
-          destination: "c7e-prod-static/presets"
-          parent: false
-
-  update-controller:
-    needs: build
-    if: github.ref == 'refs/heads/main'
-    runs-on: ubuntu-latest
-    steps:
-      - uses: "actions/checkout@v4"
-        with:
-          repository: cartridge-gg/controller
-          token: ${{ secrets.CREATE_PR_TOKEN }}
-
-      - name: Get short SHA
-        id: sha
-        run: echo "SHORT_SHA=$(echo ${{ github.sha }} | cut -c1-7)" >> $GITHUB_OUTPUT
-
-      - name: Configure Git
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-      - name: Switch to or create update branch
-        run: |
-          git fetch origin
-          git checkout -B update-presets || git checkout update-presets
-          git reset --hard origin/main
-
-      - uses: pnpm/action-setup@v2
-        with:
-          version: "9.12.3"
-
-      - name: Update package.json
-        run: |
-          jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ steps.sha.outputs.SHORT_SHA }}"' package.json > tmp.json && mv tmp.json package.json
-
-      - name: Update lockfile
-        run: pnpm install --no-frozen-lockfile
-
-      - name: Commit and push changes
-        run: |
-          git add package.json pnpm-lock.yaml
-          git commit -m "chore: update @cartridge/presets to ${{ steps.sha.outputs.SHORT_SHA }}"
-          git push -f origin update-presets
-
-      - name: Create or update Pull Request
-        env:
-          GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
-        run: |
-          if ! gh pr list --head update-presets --state open | grep -q .; then
-            gh pr create \
-              --title "chore: update @cartridge/presets" \
-              --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}" \
-              --repo cartridge-gg/controller \
-              --base main \
-              --head update-presets
-          else
-            gh pr edit update-presets \
-              --title "chore: update @cartridge/presets" \
-              --body "Updates @cartridge/presets dependency to point to commit ${{ steps.sha.outputs.SHORT_SHA }}"
           fi
