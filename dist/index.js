@@ -11,6 +11,17 @@ var configs = {
       name: "Blob Arena"
     }
   },
+  "blob-arena-amma": {
+    origin: "blobarena.xyz",
+    theme: {
+      colors: {
+        primary: "#D7B000"
+      },
+      cover: "https://static.cartridge.gg/presets/blob-arena-amma/cover.png",
+      icon: "https://static.cartridge.gg/presets/blob-arena-amma/icon.png",
+      name: "Blob Arena AMMA"
+    }
+  },
   budokan: {
     origin: "budokan.gg",
     chains: {
