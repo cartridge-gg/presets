@@ -187,3 +187,4 @@ node_modules/
 .env
 optimized-images
 dist
+built-configs
