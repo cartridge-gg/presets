@@ -8,231 +8,235 @@
     "icon": "icon.png",
     "name": "Blob Arena"
   },
-  "policies": {
-    "contracts": {
-      "0x0170d4eb49bf626342a15cf77b0809baebee30cafbf7884b2d89bbb27e689f6d": {
-        "name": "Lobby Contract",
-        "description": "Game invites and responses",
-        "methods": [
-          {
-            "name": "Send Invite",
-            "entrypoint": "send_invite",
-            "description": "Send users an invite"
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x0170d4eb49bf626342a15cf77b0809baebee30cafbf7884b2d89bbb27e689f6d": {
+            "name": "Lobby Contract",
+            "description": "Game invites and responses",
+            "methods": [
+              {
+                "name": "Send Invite",
+                "entrypoint": "send_invite",
+                "description": "Send users an invite"
+              },
+              {
+                "name": "Rescind Invite",
+                "entrypoint": "rescind_invite",
+                "description": "Rescind a previously sent invite"
+              },
+              {
+                "name": "Respond Invite",
+                "entrypoint": "respond_invite",
+                "description": "Respond to a received invite"
+              },
+              {
+                "name": "Rescind Response",
+                "entrypoint": "rescind_response",
+                "description": "Rescind a previous response to an invite"
+              },
+              {
+                "name": "Reject Invite",
+                "entrypoint": "reject_invite",
+                "description": "Reject a received invite"
+              },
+              {
+                "name": "Reject Response",
+                "entrypoint": "reject_response",
+                "description": "Reject a response to an invite"
+              },
+              {
+                "name": "Accept Response",
+                "entrypoint": "accept_response",
+                "description": "Accept a response to an invite"
+              }
+            ]
           },
-          {
-            "name": "Rescind Invite",
-            "entrypoint": "rescind_invite",
-            "description": "Rescind a previously sent invite"
+          "0x02e4769ec3ac16456e6c6f806efc90f49d46df2a07b431a5a5d8b62e4fb21633": {
+            "name": "Game Contract",
+            "description": "Manages core gameplay interactions",
+            "methods": [
+              {
+                "name": "Start Game",
+                "entrypoint": "start",
+                "description": "Start the game"
+              },
+              {
+                "name": "Commit Attack",
+                "entrypoint": "commit",
+                "description": "Commit an attack in the game"
+              },
+              {
+                "name": "Reveal Attack",
+                "entrypoint": "reveal",
+                "description": "Reveal the committed attack in the game"
+              },
+              {
+                "name": "Run Round",
+                "entrypoint": "run",
+                "description": "Run the next round of the game"
+              },
+              {
+                "name": "Forfeit",
+                "entrypoint": "forfeit",
+                "description": "Forfeit the game"
+              },
+              {
+                "name": "Kick Player",
+                "entrypoint": "kick_player",
+                "description": "Kick an inactive player from the game"
+              }
+            ]
           },
-          {
-            "name": "Respond Invite",
-            "entrypoint": "respond_invite",
-            "description": "Respond to a received invite"
+          "0x220896431692627f8d0caf9ac45e71c3b3d88c7c009acff756ff2081030a2b1": {
+            "name": "Betsy Contract",
+            "description": "Wager operations",
+            "methods": [
+              {
+                "name": "Set Owner's Fee",
+                "entrypoint": "set_owners_fee",
+                "description": "Set the owner's fee"
+              },
+              {
+                "name": "Create Bet",
+                "entrypoint": "create",
+                "description": "Create a bet"
+              },
+              {
+                "name": "Accept Bet",
+                "entrypoint": "accept",
+                "description": "Accept a bet"
+              },
+              {
+                "name": "Reject Bet",
+                "entrypoint": "reject",
+                "description": "Reject a bet"
+              },
+              {
+                "name": "Revoke Bet",
+                "entrypoint": "revoke",
+                "description": "Revoke a bet"
+              },
+              {
+                "name": "Claim Win",
+                "entrypoint": "claim_win",
+                "description": "Claim the win"
+              },
+              {
+                "name": "Approve Release",
+                "entrypoint": "approve_release",
+                "description": "Approve fund release"
+              },
+              {
+                "name": "Revoke Release",
+                "entrypoint": "revoke_release",
+                "description": "Revoke fund release"
+              },
+              {
+                "name": "Release Funds",
+                "entrypoint": "release_funds",
+                "description": "Release funds"
+              }
+            ]
           },
-          {
-            "name": "Rescind Response",
-            "entrypoint": "rescind_response",
-            "description": "Rescind a previous response to an invite"
+          "0x56e5ae9af38c6eb85c226fbadaa31e37b5ee1a5401a9c371f4e7f154b76dce3": {
+            "name": "Arcade Contract",
+            "description": "Minting of arcade Bloberts",
+            "methods": [
+              {
+                "name": "Mint Arcade Blobert",
+                "entrypoint": "mint",
+                "description": "Mint arcade blobert"
+              }
+            ]
           },
-          {
-            "name": "Reject Invite",
-            "entrypoint": "reject_invite",
-            "description": "Reject a received invite"
+          "0x05a929a543e55877c58973a677fbd3b145f5057b39b87c89d879c87715878d52": {
+            "name": "AMMA Contract",
+            "description": "Minting of AMMA Bloberts",
+            "methods": [
+              {
+                "name": "Mint AMMA Blobert",
+                "entrypoint": "mint",
+                "description": "Mint AMMA blobert"
+              }
+            ]
           },
-          {
-            "name": "Reject Response",
-            "entrypoint": "reject_response",
-            "description": "Reject a response to an invite"
+          "0x14aefc8245c5f2c17204857372944aba413ec639547359b629682c542eca555": {
+            "name": "PVE Contract",
+            "description": "Arcade mode contract",
+            "methods": [
+              {
+                "name": "Start Game",
+                "entrypoint": "start_game",
+                "description": "Start the game"
+              },
+              {
+                "name": "Attack",
+                "entrypoint": "attack",
+                "description": "Submit an attack"
+              },
+              {
+                "name": "Start Challenge",
+                "entrypoint": "start_challenge",
+                "description": "Start a challenge"
+              },
+              {
+                "name": "Next Challenge Round",
+                "entrypoint": "next_challenge_round",
+                "description": "Go forward"
+              },
+              {
+                "name": "Respawn Challenge",
+                "entrypoint": "respawn_challenge",
+                "description": "Restart a challenge"
+              },
+              {
+                "name": "End Challenge",
+                "entrypoint": "end_challenge",
+                "description": "End a challenge"
+              },
+              {
+                "name": "Claim Free Game",
+                "entrypoint": "claim_free_game",
+                "description": "Claim an arcade game"
+              }
+            ]
           },
-          {
-            "name": "Accept Response",
-            "entrypoint": "accept_response",
-            "description": "Accept a response to an invite"
+          "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
+            "name": "ETH Token",
+            "description": "ETH ERC20 approval",
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve",
+                "description": "ETH allowance"
+              }
+            ]
+          },
+          "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f": {
+            "name": "LORDS Token",
+            "description": "LORDS ERC20 approval",
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve",
+                "description": "LORDS allowance"
+              }
+            ]
+          },
+          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
+            "name": "STRK Token",
+            "description": "STRK ERC20 approval",
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve",
+                "description": "STRK allowance"
+              }
+            ]
           }
-        ]
-      },
-      "0x02e4769ec3ac16456e6c6f806efc90f49d46df2a07b431a5a5d8b62e4fb21633": {
-        "name": "Game Contract",
-        "description": "Manages core gameplay interactions",
-        "methods": [
-          {
-            "name": "Start Game",
-            "entrypoint": "start",
-            "description": "Start the game"
-          },
-          {
-            "name": "Commit Attack",
-            "entrypoint": "commit",
-            "description": "Commit an attack in the game"
-          },
-          {
-            "name": "Reveal Attack",
-            "entrypoint": "reveal",
-            "description": "Reveal the committed attack in the game"
-          },
-          {
-            "name": "Run Round",
-            "entrypoint": "run",
-            "description": "Run the next round of the game"
-          },
-          {
-            "name": "Forfeit",
-            "entrypoint": "forfeit",
-            "description": "Forfeit the game"
-          },
-          {
-            "name": "Kick Player",
-            "entrypoint": "kick_player",
-            "description": "Kick an inactive player from the game"
-          }
-        ]
-      },
-      "0x220896431692627f8d0caf9ac45e71c3b3d88c7c009acff756ff2081030a2b1": {
-        "name": "Betsy Contract",
-        "description": "Wager operations",
-        "methods": [
-          {
-            "name": "Set Owner's Fee",
-            "entrypoint": "set_owners_fee",
-            "description": "Set the owner's fee"
-          },
-          {
-            "name": "Create Bet",
-            "entrypoint": "create",
-            "description": "Create a bet"
-          },
-          {
-            "name": "Accept Bet",
-            "entrypoint": "accept",
-            "description": "Accept a bet"
-          },
-          {
-            "name": "Reject Bet",
-            "entrypoint": "reject",
-            "description": "Reject a bet"
-          },
-          {
-            "name": "Revoke Bet",
-            "entrypoint": "revoke",
-            "description": "Revoke a bet"
-          },
-          {
-            "name": "Claim Win",
-            "entrypoint": "claim_win",
-            "description": "Claim the win"
-          },
-          {
-            "name": "Approve Release",
-            "entrypoint": "approve_release",
-            "description": "Approve fund release"
-          },
-          {
-            "name": "Revoke Release",
-            "entrypoint": "revoke_release",
-            "description": "Revoke fund release"
-          },
-          {
-            "name": "Release Funds",
-            "entrypoint": "release_funds",
-            "description": "Release funds"
-          }
-        ]
-      },
-      "0x56e5ae9af38c6eb85c226fbadaa31e37b5ee1a5401a9c371f4e7f154b76dce3": {
-        "name": "Arcade Contract",
-        "description": "Minting of arcade Bloberts",
-        "methods": [
-          {
-            "name": "Mint Arcade Blobert",
-            "entrypoint": "mint",
-            "description": "Mint arcade blobert"
-          }
-        ]
-      },
-      "0x05a929a543e55877c58973a677fbd3b145f5057b39b87c89d879c87715878d52": {
-        "name": "AMMA Contract",
-        "description": "Minting of AMMA Bloberts",
-        "methods": [
-          {
-            "name": "Mint AMMA Blobert",
-            "entrypoint": "mint",
-            "description": "Mint AMMA blobert"
-          }
-        ]
-      },
-      "0x14aefc8245c5f2c17204857372944aba413ec639547359b629682c542eca555": {
-        "name": "PVE Contract",
-        "description": "Arcade mode contract",
-        "methods": [
-          {
-            "name": "Start Game",
-            "entrypoint": "start_game",
-            "description": "Start the game"
-          },
-          {
-            "name": "Attack",
-            "entrypoint": "attack",
-            "description": "Submit an attack"
-          },
-          {
-            "name": "Start Challenge",
-            "entrypoint": "start_challenge",
-            "description": "Start a challenge"
-          },
-          {
-            "name": "Next Challenge Round",
-            "entrypoint": "next_challenge_round",
-            "description": "Go forward"
-          },
-          {
-            "name": "Respawn Challenge",
-            "entrypoint": "respawn_challenge",
-            "description": "Restart a challenge"
-          },
-          {
-            "name": "End Challenge",
-            "entrypoint": "end_challenge",
-            "description": "End a challenge"
-          },
-          {
-            "name": "Claim Free Game",
-            "entrypoint": "claim_free_game",
-            "description": "Claim an arcade game"
-          }
-        ]
-      },
-      "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
-        "name": "ETH Token",
-        "description": "ETH ERC20 approval",
-        "methods": [
-          {
-            "name": "Approve",
-            "entrypoint": "approve",
-            "description": "ETH allowance"
-          }
-        ]
-      },
-      "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f": {
-        "name": "LORDS Token",
-        "description": "LORDS ERC20 approval",
-        "methods": [
-          {
-            "name": "Approve",
-            "entrypoint": "approve",
-            "description": "LORDS allowance"
-          }
-        ]
-      },
-      "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
-        "name": "STRK Token",
-        "description": "STRK ERC20 approval",
-        "methods": [
-          {
-            "name": "Approve",
-            "entrypoint": "approve",
-            "description": "STRK allowance"
-          }
-        ]
+        }
       }
     }
   }
