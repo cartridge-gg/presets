@@ -46,7 +46,7 @@ function loadConfigFromJson(gamePath: string): any {
           const coverFile = config.theme.cover;
           // Track original assets
           originalAssets["cover"] = coverFile;
-          
+
           config.theme.cover = `https://static.cartridge.gg/presets/${gamePath}/${coverFile}`;
 
           // Add optimized versions
@@ -61,7 +61,7 @@ function loadConfigFromJson(gamePath: string): any {
         const iconFile = config.theme.icon;
         // Track original assets
         originalAssets["icon"] = iconFile;
-        
+
         config.theme.icon = `https://static.cartridge.gg/presets/${gamePath}/${iconFile}`;
 
         // Add optimized versions
@@ -109,21 +109,15 @@ function generateOptimizedImageUrls(
 
   for (const size of sizes) {
     // WebP versions
-    result.webp[
-      size
-    ] = `${baseName}@${size}.webp`;
+    result.webp[size] = `${baseName}@${size}.webp`;
 
     // Original format version
-    result[originalFormat][
-      size
-    ] = `${baseName}@${size}${originalExt}`;
+    result[originalFormat][size] = `${baseName}@${size}${originalExt}`;
 
     // PNG or JPG versions (if different from original)
     const altFormat = type === "icon" ? "png" : "jpg";
     if (altFormat !== originalFormat) {
-      result[altFormat][
-        size
-      ] = `${baseName}@${size}.${altFormat}`;
+      result[altFormat][size] = `${baseName}@${size}.${altFormat}`;
     }
   }
 
@@ -138,9 +132,9 @@ function generateOptimizedImageUrls(
 async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
   try {
     if (!configData) return;
-    
+
     const { config, originalAssets } = configData;
-    
+
     // Create project directory
     const projectOutputDir = path.join(jsonOutputPath, gamePath);
     if (!fs.existsSync(projectOutputDir)) {
@@ -149,9 +143,13 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
 
     // 1. Copy original assets
     for (const [key, filename] of Object.entries(originalAssets)) {
-      const sourcePath = path.join(whitelabelPath, gamePath, filename as string);
+      const sourcePath = path.join(
+        whitelabelPath,
+        gamePath,
+        filename as string
+      );
       const destPath = path.join(projectOutputDir, filename as string);
-      
+
       if (fs.existsSync(sourcePath)) {
         fs.copyFileSync(sourcePath, destPath);
         console.log(`Copied ${key} asset: ${filename}`);
@@ -162,35 +160,53 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
     const imageOptimizationPromises: Promise<void>[] = [];
     if (config.theme) {
       if (config.theme.optimizedCover && originalAssets["cover"]) {
-        const coverPath = path.join(whitelabelPath, gamePath, originalAssets["cover"]);
+        const coverPath = path.join(
+          whitelabelPath,
+          gamePath,
+          originalAssets["cover"]
+        );
         if (fs.existsSync(coverPath)) {
           imageOptimizationPromises.push(
             optimizeImages(coverPath, projectOutputDir, "cover")
           );
         }
       }
-      
-      if (config.theme.optimizedCover && 
-          originalAssets["cover_light"] && 
-          originalAssets["cover_dark"]) {
-        const coverLightPath = path.join(whitelabelPath, gamePath, originalAssets["cover_light"]);
-        const coverDarkPath = path.join(whitelabelPath, gamePath, originalAssets["cover_dark"]);
-        
+
+      if (
+        config.theme.optimizedCover &&
+        originalAssets["cover_light"] &&
+        originalAssets["cover_dark"]
+      ) {
+        const coverLightPath = path.join(
+          whitelabelPath,
+          gamePath,
+          originalAssets["cover_light"]
+        );
+        const coverDarkPath = path.join(
+          whitelabelPath,
+          gamePath,
+          originalAssets["cover_dark"]
+        );
+
         if (fs.existsSync(coverLightPath)) {
           imageOptimizationPromises.push(
             optimizeImages(coverLightPath, projectOutputDir, "cover")
           );
         }
-        
+
         if (fs.existsSync(coverDarkPath)) {
           imageOptimizationPromises.push(
             optimizeImages(coverDarkPath, projectOutputDir, "cover")
           );
         }
       }
-      
+
       if (config.theme.optimizedIcon && originalAssets["icon"]) {
-        const iconPath = path.join(whitelabelPath, gamePath, originalAssets["icon"]);
+        const iconPath = path.join(
+          whitelabelPath,
+          gamePath,
+          originalAssets["icon"]
+        );
         if (fs.existsSync(iconPath)) {
           imageOptimizationPromises.push(
             optimizeImages(iconPath, projectOutputDir, "icon")
@@ -198,13 +214,13 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
         }
       }
     }
-    
+
     // Wait for all image optimizations to complete
     await Promise.all(imageOptimizationPromises);
 
     // 2. Transform the config to use relative paths instead of CDN paths
     const localConfig = JSON.parse(JSON.stringify(config)); // Deep clone
-    
+
     if (localConfig.theme) {
       if (localConfig.theme.cover) {
         if (typeof localConfig.theme.cover === "object") {
@@ -217,7 +233,7 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
           localConfig.theme.cover = originalAssets["cover"];
         }
       }
-      
+
       if (localConfig.theme.icon) {
         localConfig.theme.icon = originalAssets["icon"];
       }
@@ -226,12 +242,8 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
     // 3. Write the config.json file to the project directory
     const jsonFilePath = path.join(projectOutputDir, "config.json");
     fs.writeFileSync(jsonFilePath, JSON.stringify(localConfig, null, 2));
-    
-    // 4. Also write the standard config file (for backward compatibility)
-    const standardJsonFilePath = path.join(jsonOutputPath, `${gamePath}.json`);
-    fs.writeFileSync(standardJsonFilePath, JSON.stringify(config, null, 2));
-    
-    console.log(`Generated config files for ${gamePath}`);
+
+    console.log(`Generated config file for ${gamePath}`);
   } catch (error) {
     console.error(`Failed to write project config for ${gamePath}:`, error);
   }
@@ -243,26 +255,31 @@ async function writeProjectConfigAndAssets(gamePath: string, configData: any) {
  * @param outputDir - Directory where optimized images will be saved
  * @param type - Either 'icon' or 'cover'
  */
-async function optimizeImages(inputPath: string, outputDir: string, type: "icon" | "cover") {
+async function optimizeImages(
+  inputPath: string,
+  outputDir: string,
+  type: "icon" | "cover"
+) {
   try {
     const filename = path.basename(inputPath);
     const basename = path.parse(filename).name;
     const ext = path.parse(filename).ext;
-    
+
     // Get original dimensions to maintain aspect ratio for covers
     const metadata = await sharp(inputPath).metadata();
-    const aspectRatio = metadata.width && metadata.height 
-      ? metadata.width / metadata.height 
-      : type === "icon" ? 1 : 16/9;
-    
+    const aspectRatio =
+      metadata.width && metadata.height
+        ? metadata.width / metadata.height
+        : type === "icon"
+        ? 1
+        : 16 / 9;
+
     const sizes = type === "icon" ? ICON_SIZES : COVER_SIZES;
-    
+
     for (const size of sizes) {
       // Calculate height based on aspect ratio for covers
-      const height = type === "icon" 
-        ? size 
-        : Math.round(size / aspectRatio);
-      
+      const height = type === "icon" ? size : Math.round(size / aspectRatio);
+
       // Original format
       await resizeAndOptimize(
         inputPath,
@@ -271,7 +288,7 @@ async function optimizeImages(inputPath: string, outputDir: string, type: "icon"
         height,
         { compressionLevel: 9 }
       );
-      
+
       // WebP version
       await resizeAndOptimize(
         inputPath,
@@ -280,7 +297,7 @@ async function optimizeImages(inputPath: string, outputDir: string, type: "icon"
         height,
         { quality: 85 }
       );
-      
+
       // For covers, also create JPEG version
       if (type === "cover") {
         await resizeAndOptimize(
@@ -309,19 +326,19 @@ async function resizeAndOptimize(
 ) {
   try {
     const image = sharp(inputPath).resize(width, height);
-    
+
     // Format based on output file extension
-    if (outputPath.endsWith('.webp')) {
+    if (outputPath.endsWith(".webp")) {
       await image.webp(options).toFile(outputPath);
-    } else if (outputPath.endsWith('.jpg') || outputPath.endsWith('.jpeg')) {
+    } else if (outputPath.endsWith(".jpg") || outputPath.endsWith(".jpeg")) {
       await image.jpeg(options).toFile(outputPath);
-    } else if (outputPath.endsWith('.png')) {
+    } else if (outputPath.endsWith(".png")) {
       await image.png(options).toFile(outputPath);
-    } else if (outputPath.endsWith('.svg')) {
+    } else if (outputPath.endsWith(".svg")) {
       // Just copy SVG files - sharp doesn't process SVGs well
       fs.copyFileSync(inputPath, outputPath);
     }
-    
+
     console.log(`Created optimized image: ${path.basename(outputPath)}`);
   } catch (error) {
     console.error(`Error processing ${inputPath} to ${outputPath}:`, error);
