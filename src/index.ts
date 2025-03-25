@@ -77,10 +77,17 @@ export type ControllerConfigs = Record<string, ControllerConfig>;
 
 export type ColorMode = "light" | "dark";
 
+export type OptimizedImageSet = {
+  webp: Record<number, string>;
+  [format: string]: Record<number, string>;
+};
+
 export type ControllerTheme = {
   name: string;
   icon: string;
   cover: ThemeValue<string>;
+  optimizedIcon?: OptimizedImageSet;
+  optimizedCover?: ThemeValue<OptimizedImageSet>;
   colors?: ControllerColors;
 };
 

@@ -29,6 +29,10 @@ jobs:
       - run: pnpm install
       - run: pnpm build
 
+      # Process and optimize theme images
+      - name: Process theme images
+        run: pnpm image:optimize
+
       - uses: "google-github-actions/auth@v2"
         with:
           project_id: c7e-prod
