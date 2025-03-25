@@ -44,6 +44,12 @@ jobs:
           destination: "c7e-prod-static/presets"
           parent: false
 
+      - uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "optimized-images"
+          destination: "c7e-prod-static/presets"
+          parent: false
+
       # Configure Git and commit build artifacts to release branch
       - name: Configure Git for release branch
         run: |

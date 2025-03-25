@@ -62,10 +62,16 @@ type ControllerConfig = {
 };
 type ControllerConfigs = Record<string, ControllerConfig>;
 type ColorMode = "light" | "dark";
+type OptimizedImageSet = {
+    webp: Record<number, string>;
+    [format: string]: Record<number, string>;
+};
 type ControllerTheme = {
     name: string;
     icon: string;
     cover: ThemeValue<string>;
+    optimizedIcon?: OptimizedImageSet;
+    optimizedCover?: ThemeValue<OptimizedImageSet>;
     colors?: ControllerColors;
 };
 type ControllerColors = {
@@ -78,4 +84,4 @@ type ThemeValue<T> = T | {
     light: T;
 };
 
-export { type CallPolicy, type ChainId, type Chains, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type Method, type Policies, type Policy, type SessionPolicies, type SignMessagePolicy, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };
+export { type CallPolicy, type ChainId, type Chains, type ColorMode, type ContractPolicies, type ContractPolicy, type ControllerColor, type ControllerColors, type ControllerConfig, type ControllerConfigs, type ControllerTheme, type EkuboERC20Metadata, type Method, type OptimizedImageSet, type Policies, type Policy, type SessionPolicies, type SignMessagePolicy, type ThemeValue, type TypedDataPolicy, controllerConfigs, defaultTheme, erc20Metadata };
