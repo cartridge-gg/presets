@@ -55,15 +55,14 @@ jobs:
           # Create a fresh release branch from main
           git checkout -B release-temp
 
-          # Clean everything except dist/ and package.json
-          git rm -rf .
+          # Keep only dist/ and package.json, remove everything else
+          git ls-files | grep -v "^dist/" | grep -v "^package.json" | xargs git rm -f
 
-          # Restore only dist/ and package.json from current commit
-          git checkout HEAD -- dist/
-          git checkout HEAD -- package.json
+          # Make sure all built files in dist/ are included
+          git add -f dist/
+          git add package.json
 
           # Commit changes
-          git add dist/ package.json
           git commit -m "chore: update build artifacts [skip ci]"
 
           # Force push to release branch
