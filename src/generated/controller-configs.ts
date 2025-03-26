@@ -416,7 +416,7 @@ export const configs: ControllerConfigs = {
       cover:
         "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover.png",
       icon: "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon.png",
-      name: "ByteBeasts-Tamagotchi",
+      name: "Tamagotchi",
       optimizedCover: {
         webp: {
           "768": "cover@768.webp",
