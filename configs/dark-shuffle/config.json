@@ -15,8 +15,20 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x444834e7b71749832f0db8c64f17ed1c3af8462c1682c10dcd6068b1c57494b": {
+          "0x051Fea4450Da9D6aeE758BDEbA88B2f665bCbf549D2C61421AA724E9AC0Ced8F": {
+            "name": "VRF Provider",
+            "description": "Provides verifiable random functions",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Request a random number",
+                "entrypoint": "request_random"
+              }
+            ]
+          },
+          "0x0444834e7b71749832f0db8c64f17ed1c3af8462c1682c10dcd6068b1c57494b": {
             "name": "game_systems",
+            "description": "Game mechanics",
             "methods": [
               {
                 "entrypoint": "mint"
@@ -35,8 +47,9 @@
               }
             ]
           },
-          "0x6633dc0c8e3956fd8d87f68e5a4324cb20270b442a532f4d4179d85c389b324": {
+          "0x06633dc0c8e3956fd8d87f68e5a4324cb20270b442a532f4d4179d85c389b324": {
             "name": "battle_systems",
+            "description": "Battle mechanics",
             "methods": [
               {
                 "entrypoint": "battle_actions"
