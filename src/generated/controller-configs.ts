@@ -767,9 +767,22 @@ export const configs: ControllerConfigs = {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x0320f977f47f0885e376b781d9e244d9f59f10154ce844ae1815c919f0374726":
+            "0x051Fea4450Da9D6aeE758BDEbA88B2f665bCbf549D2C61421AA724E9AC0Ced8F":
+              {
+                name: "VRF Provider",
+                description: "Provides verifiable random functions",
+                methods: [
+                  {
+                    name: "Request Random",
+                    description: "Request a random number",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+            "0x0444834e7b71749832f0db8c64f17ed1c3af8462c1682c10dcd6068b1c57494b":
               {
                 name: "game_systems",
+                description: "Game mechanics",
                 methods: [
                   {
                     entrypoint: "mint",
@@ -777,35 +790,24 @@ export const configs: ControllerConfigs = {
                   {
                     entrypoint: "start_game",
                   },
-                ],
-              },
-            "0x0062cfee20a5be4b305f610a23291aa27f3fca7a5fd14bd8e2d0389556003e12":
-              {
-                name: "battle_systems",
-                methods: [
-                  {
-                    entrypoint: "battle_actions",
-                  },
-                ],
-              },
-            "0x00ae7393b60ad9fd5c26851341b9a4afe61c6ae34326dee79cf5d096e9f55a36":
-              {
-                name: "draft_systems",
-                methods: [
                   {
                     entrypoint: "pick_card",
                   },
-                ],
-              },
-            "0x07c9a684813410b39c776c49544d8ecb2d39f0b91bd83ffec31ebc938e053e25":
-              {
-                name: "map_systems",
-                methods: [
                   {
                     entrypoint: "generate_tree",
                   },
                   {
                     entrypoint: "select_node",
+                  },
+                ],
+              },
+            "0x06633dc0c8e3956fd8d87f68e5a4324cb20270b442a532f4d4179d85c389b324":
+              {
+                name: "battle_systems",
+                description: "Battle mechanics",
+                methods: [
+                  {
+                    entrypoint: "battle_actions",
                   },
                 ],
               },
