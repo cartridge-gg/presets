@@ -1,0 +1,128 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: "write"
+      id-token: "write"
+    outputs:
+      release_sha: ${{ steps.save-sha.outputs.SHORT_SHA }}
+    steps:
+      - uses: "actions/checkout@v4"
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          registry-url: "https://registry.npmjs.org"
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: "9.12.3"
+
+      - run: pnpm install
+      - run: pnpm build
+
+      # Process and optimize theme images
+      - name: Process theme images
+        run: pnpm image:optimize
+
+      - uses: "google-github-actions/auth@v2"
+        with:
+          project_id: c7e-prod
+          workload_identity_provider: "projects/276773611885/locations/global/workloadIdentityPools/github/providers/presets-repo"
+
+      - uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "built-configs"
+          destination: "c7e-prod-static/presets"
+          parent: false
+
+      # Configure Git and create or recreate release branch
+      - name: Configure Git for release branch
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Create or recreate release branch
+        run: |
+          # Create a fresh release branch from main
+          git checkout -B release-temp
+
+          # Keep only dist/ and package.json, remove everything else
+          git ls-files | grep -v "^dist/" | grep -v "^package.json" | xargs git rm -f
+
+          # Make sure all built files in dist/ are included
+          git add -f dist/
+          git add package.json
+
+          # Commit changes
+          git commit -m "chore: update build artifacts [skip ci]"
+
+          # Force push to release branch
+          git push origin release-temp:release -f
+
+      - name: Save commit SHA
+        id: save-sha
+        run: |
+          echo "SHORT_SHA=$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
+
+  update-controller:
+    needs: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: "actions/checkout@v4"
+        with:
+          repository: cartridge-gg/controller
+          token: ${{ secrets.CREATE_PR_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Switch to or create update branch
+        run: |
+          git fetch origin
+          git checkout -B update-presets || git checkout update-presets
+          git reset --hard origin/main
+
+      - uses: pnpm/action-setup@v2
+        with:
+          version: "9.12.3"
+
+      - name: Update package.json
+        run: |
+          jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ needs.release.outputs.release_sha }}"' package.json > tmp.json && mv tmp.json package.json
+
+      - name: Update lockfile
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Commit and push changes
+        run: |
+          git add package.json pnpm-lock.yaml
+          git commit -m "chore: update @cartridge/presets to ${{ needs.release.outputs.release_sha }}"
+          git push -f origin update-presets
+
+      - name: Create or update Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
+        run: |
+          if ! gh pr list --head update-presets --state open | grep -q .; then
+            gh pr create \
+              --title "chore: update @cartridge/presets" \
+              --body "Updates @cartridge/presets dependency to point to commit ${{ needs.release.outputs.release_sha }}" \
+              --repo cartridge-gg/controller \
+              --base main \
+              --head update-presets
+          else
+            gh pr edit update-presets \
+              --title "chore: update @cartridge/presets" \
+              --body "Updates @cartridge/presets dependency to point to commit ${{ needs.release.outputs.release_sha }}"
+          fi

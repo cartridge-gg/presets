@@ -1,0 +1,14 @@
+{
+  "origin": [
+    "www.blobarena.xyz",
+    "blobarena.xyz"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#D7B000"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Blob Arena AMMA"
+  }
+}

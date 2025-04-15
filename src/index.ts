@@ -27,13 +27,19 @@ export type CallPolicy = {
 };
 
 export type TypedDataPolicy = Omit<TypedData, "message">;
-
 export type Policies = Policy[] | SessionPolicies;
+
+export type ChainId = string;
 
 export type SessionPolicies = {
   /** The key must be the contract address */
   contracts?: ContractPolicies;
   messages?: SignMessagePolicy[];
+};
+
+export type Chains = {
+  /** Map of chain IDs to specific chain policies */
+  [chainId: ChainId]: { policies: SessionPolicies };
 };
 
 export type ContractPolicies = Record<string, ContractPolicy>;
@@ -63,7 +69,7 @@ export type SignMessagePolicy = TypedDataPolicy & {
 
 export type ControllerConfig = {
   origin: string | string[];
-  policies?: SessionPolicies;
+  chains?: Chains;
   theme?: ControllerTheme;
 };
 
@@ -71,10 +77,17 @@ export type ControllerConfigs = Record<string, ControllerConfig>;
 
 export type ColorMode = "light" | "dark";
 
+export type OptimizedImageSet = {
+  webp: Record<number, string>;
+  [format: string]: Record<number, string>;
+};
+
 export type ControllerTheme = {
   name: string;
   icon: string;
   cover: ThemeValue<string>;
+  optimizedIcon?: OptimizedImageSet;
+  optimizedCover?: ThemeValue<OptimizedImageSet>;
   colors?: ControllerColors;
 };
 
