@@ -4,7 +4,7 @@
         "SN_MAIN": {
             "policies": {
                 "contracts": {
-                    "0x62525c1337037a6a50a61f12045630a271758a350e57616e79a6ed14004ce74": {
+                    "0x05553fcb6da57decacce3306d8e0b3bf65b656dceda96c90ba55bde8980253ce": {
                         "name": "Achievement Systems",
                         "description": "Allows you to interact with achievement features.",
                         "methods": [
@@ -15,7 +15,7 @@
                             }
                         ]
                     },
-                    "0xa5a3284a1e3ce9887b50876acee14a1af9705659b3ad053deff80d84c5555a": {
+                    "0x059ffaee1d7068332ea8f084a9685b99a5c2a74197ef99e093a10fa25f887402": {
                         "name": "Dragon Systems",
                         "description": "Allows you to interact with dragon features.",
                         "methods": [
@@ -30,18 +30,13 @@
                                 "entrypoint": "deactivate_dragon"
                             },
                             {
-                                "name": "Claim Default Dragon",
-                                "description": "A method to claim the default Dragark.",
-                                "entrypoint": "claim_default_dragon"
-                            },
-                            {
                                 "name": "Upgrade Dragon",
                                 "description": "A method to upgrade the Dragark's level.",
                                 "entrypoint": "upgrade_dragon"
                             }
                         ]
                     },
-                    "0x456e9a70c1a8ce2e340592d1a885f2ac152349d785a6aef4d640d9a09f9a1bd": {
+                    "0x0760d029c7b49069ece425285afb592152da1fff59038e697a5554f1b94150f2": {
                         "name": "Island Systems",
                         "description": "Allows you to interact with island features.",
                         "methods": [
@@ -57,7 +52,7 @@
                             }
                         ]
                     },
-                    "0x2f77a88ac64fd1473ea067ea176ae3805224a2ba5173c63c77d0f214c01ac5d": {
+                    "0x000ccb9e596c7d3298b670d91b6c3ed305aeed3eb1335d702265f53f1d0ad68a": {
                         "name": "Journey Systems",
                         "description": "Allows you to interact with journey features.",
                         "methods": [
@@ -73,7 +68,7 @@
                             }
                         ]
                     },
-                    "0x1ca130b614f063a24dafad53db11cbb914fa7cff2eac23df1c32f5ff71a8ec2": {
+                    "0x0002d12498d7b7f5e4d57a9895f8684fa58f4edb06ba6edb879723d8acb16507": {
                         "name": "Map Systems",
                         "description": "Allows you to interact with map features.",
                         "methods": [
@@ -81,15 +76,10 @@
                                 "name": "Join Map",
                                 "description": "A method to join the map.",
                                 "entrypoint": "join_map"
-                            },
-                            {
-                                "name": "Rejoin Map",
-                                "description": "A method to rejoin the map.",
-                                "entrypoint": "re_join_map"
                             }
                         ]
                     },
-                    "0x272741bbe4abc02c8be4b094ca642e1df573e99e06f85f649bc35dd26ae4543": {
+                    "0x01ba78267fd97db89b8ac0316ce0a2d71aaef87ad4f300e5468dc20232a2ff20": {
                         "name": "Mission Systems",
                         "description": "Allows you to interact with mission features.",
                         "methods": [
@@ -100,7 +90,7 @@
                             }
                         ]
                     },
-                    "0x54ad7af1fc62a786c9023d9f3ef8e8abf8cf332649b784188c1b25d2cb384b2": {
+                    "0x063b168f01cbac52b5d2ad82696eeaddde33b38d24364523ad0a3ca400361489": {
                         "name": "Player Systems",
                         "description": "Allows you to interact with player features.",
                         "methods": [
@@ -130,23 +120,13 @@
                                 "entrypoint": "redeem_invite_code"
                             },
                             {
-                                "name": "Buy Resources Pack",
-                                "description": "A method to buy resources pack.",
-                                "entrypoint": "buy_resources_pack"
-                            },
-                            {
-                                "name": "Activate Element NFT",
-                                "description": "A method to activate the Element NFT into the game.",
-                                "entrypoint": "activate_element_nft"
-                            },
-                            {
                                 "name": "Claim Pool Share Reward",
                                 "description": "A method to claim your Pool Share reward.",
                                 "entrypoint": "claim_pool_share_reward"
                             }
                         ]
                     },
-                    "0x68717880bd76fda6790e895e937e2c638213e7b9aa07385231bbf17dfe8a78c": {
+                    "0x03284bb4684703a368db8fd538c39b30e51822dbab9ad398e66311e820318444": {
                         "name": "Scout Systems",
                         "description": "Allows you to interact with scout features.",
                         "methods": [
@@ -157,7 +137,7 @@
                             }
                         ]
                     },
-                    "0x14705481d28fab7bb37d6cb19d3392d39f838a1d5572b8c8f18e85e0c4b8918": {
+                    "0x04a8b7e4106719e75653595c1e55da9ac88fbf1ae29124fca325c0537f00e908": {
                         "name": "Shield Systems",
                         "description": "Allows you to interact with shield features.",
                         "methods": [
@@ -178,7 +158,7 @@
                             }
                         ]
                     },
-                    "0x23d6a41c06e2d7b60437ba4da3eca857cf9a0b94f3548396829365a0a299c63": {
+                    "0x060a67334aed80a5403bd2b727337f29ccdcbf51784cc7ddb73f10ceb92e61f1": {
                         "name": "Star Shop Systems",
                         "description": "Allows you to interact with star shop features.",
                         "methods": [
@@ -189,7 +169,7 @@
                             }
                         ]
                     },
-                    "0x511a78a1c4b33bedc4ff7d9b37eb7481bcdff77c5c2cb6f67390d43657749d0": {
+                    "0x0655a9a38cb8dd7087a206b7d885528f8994e03dd6449105ef0f068caa502d25": {
                         "name": "Treasure Hunt Systems",
                         "description": "Allows you to interact with treasure hunt features.",
                         "methods": [
