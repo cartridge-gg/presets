@@ -2615,6 +2615,45 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  wardens: {
+    origin: "app.wardens.xyz",
+    theme: {
+      colors: {
+        primary: "#f7ac18",
+      },
+      cover: "https://static.cartridge.gg/presets/wardens/cover.jpg",
+      icon: "https://static.cartridge.gg/presets/wardens/icon.png",
+      name: "Wardens",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
   zkastle: {
     origin: "zkastle.vercel.app",
     theme: {
@@ -2781,6 +2820,7 @@ export const availableConfigs = [
   "realm-of-ra",
   "savage-summit",
   "tale-weaver",
+  "wardens",
   "zkastle",
   "zktt",
   "zkube",
