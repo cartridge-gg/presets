@@ -2045,7 +2045,7 @@ export const configs: ControllerConfigs = {
     },
     theme: {
       colors: {
-        primary: "#F33022",
+        primary: "#C00F0C",
       },
       cover: "https://static.cartridge.gg/presets/metal-slug/cover.png",
       icon: "https://static.cartridge.gg/presets/metal-slug/icon.png",
