@@ -2483,6 +2483,335 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  ponziland: {
+    origin: ["https://play.ponzi.land/"],
+    theme: {
+      colors: {
+        primary: "#F38332",
+      },
+      cover: "https://static.cartridge.gg/presets/ponziland/cover.png",
+      icon: "https://static.cartridge.gg/presets/ponziland/icon.png",
+      name: "PonziLand",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      SN_MAIN: {
+        policies: {
+          contracts: {
+            "0x61ac47e85a6705902ed2468dabdddddba319558d2074dfd6ded85dcfde7881b":
+              {
+                name: "PonziLand Systems",
+                description: "Main game contract",
+                methods: [
+                  {
+                    name: "Bid",
+                    entrypoint: "bid",
+                    description: "Bid for auction land",
+                  },
+                  {
+                    name: "Buy",
+                    entrypoint: "buy",
+                    description: "Buy land from another player",
+                  },
+                  {
+                    name: "Claim",
+                    entrypoint: "claim",
+                    description: "Claim rewards for a single land",
+                  },
+                  {
+                    name: "Claim All",
+                    entrypoint: "claim_all",
+                    description: "Claim rewards for lands",
+                  },
+                  {
+                    name: "Increase Price",
+                    entrypoint: "increase_price",
+                    description: "Increase price of the land",
+                  },
+                  {
+                    name: "Increase Stake",
+                    entrypoint: "increase_stake",
+                    description: "Increase stake of the land",
+                  },
+                  {
+                    name: "Level Up",
+                    entrypoint: "level_up",
+                    description: "Level up the land",
+                  },
+                ],
+              },
+            "0x6536c8870c6dec8364b552f7e638c8b611ea90c352cc3299b5beed594b044af":
+              {
+                name: "PonziLand Auth System",
+                description: "Contract to allow authorized players to play",
+                methods: [
+                  {
+                    name: "Add Authorized",
+                    entrypoint: "add_authorized_with_signature",
+                    description: "Add authorized with signature",
+                  },
+                ],
+              },
+            "0x5735fa6be5dd248350866644c0a137e571f9d637bb4db6532ddd63a95854b58":
+              {
+                name: "eSTRK Token",
+                description: "eSTRK ERC20 methods",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eSTRK allowance",
+                  },
+                ],
+              },
+            "0x415c058a41cc80e7368562564c96fc4e3c03b23e32ba07a5c8cadc262b50c3c":
+              {
+                name: "ePAPER Token",
+                description: "ePAPER ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "ePAPER allowance",
+                  },
+                ],
+              },
+            "0x4b66d22d3001daad50fb853c0c1cb3b96d1745acb295bae4a6d54b29125ed09":
+              {
+                name: "eLORDS Token",
+                description: "eLORDS ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eLORDS allowance",
+                  },
+                ],
+              },
+            "0x1920ef3c5e765454dd3f6aeb5420ef524830e0b5f9a95ec2e1b9ee2073a16d1":
+              {
+                name: "eBROTHER Token",
+                description: "eBROTHER ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eBROTHER allowance",
+                  },
+                ],
+              },
+            "0x79aba4c89e9cc3495318d2479fe93601e1188ff5d9a8823e3dc736d74bb437f":
+              {
+                name: "ePAL Token",
+                description: "ePAL ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "ePAL allowance",
+                  },
+                ],
+              },
+            "0x38217779933c147320af3239e2dd098312e3074e0898001c79939c2e676fe8c":
+              {
+                name: "eETH Token",
+                description: "eETH ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eETH allowance",
+                  },
+                ],
+              },
+            "0x4c090a1a34a3ba423e63a498ce23de7c7a4f0f1a8128fa768a09738606cbb9e":
+              {
+                name: "eBTC Token",
+                description: "eBTC ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eBTC allowance",
+                  },
+                ],
+              },
+          },
+          messages: [
+            {
+              name: "Socialink - Register",
+              description:
+                "Registers your controller wallet to a new Socialink account",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                register: [
+                  {
+                    name: "username",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "register",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+            {
+              name: "Socialink - Link",
+              description: "Links your social account to a Socialink account",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                link: [
+                  {
+                    name: "token",
+                    type: "string",
+                  },
+                  {
+                    name: "provider",
+                    type: "string",
+                  },
+                  {
+                    name: "nonce",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "link",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+            {
+              name: "Socialink - Mint",
+              description:
+                "Confirms your selection of token for the tournament mint",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                mint: [
+                  {
+                    name: "token",
+                    type: "string",
+                  },
+                  {
+                    name: "nonce",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "mint",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+          ],
+        },
+      },
+    },
+  },
   "realm-of-ra": {
     origin: "mancala.realmofra.com",
     theme: {
@@ -2817,6 +3146,7 @@ export const availableConfigs = [
   "paved",
   "pistols",
   "pixelaw",
+  "ponziland",
   "realm-of-ra",
   "savage-summit",
   "tale-weaver",
