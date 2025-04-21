@@ -2003,6 +2003,88 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  "metal-slug": {
+    origin: "https://metalslug.starkarcade.com/",
+    chains: {
+      SN_MAIN: {
+        policies: {
+          contracts: {
+            "0x6aa878dfaa2710b66f26c02e52cbcc8adddd0c3e9b0d766fb045c8250490be0":
+              {
+                name: "Metal Slug Systems",
+                description: "Allows you to interact with metal slug features.",
+                methods: [
+                  {
+                    name: "Claim end match reward",
+                    description:
+                      "A method to claim reward after finishing a match.",
+                    entrypoint: "claim_end_match_reward",
+                  },
+                  {
+                    name: "Claim Points",
+                    description:
+                      "A method to claim points after finishing suvival match.",
+                    entrypoint: "claim_points",
+                  },
+                  {
+                    name: "Graft Treasure Chest",
+                    description:
+                      "A method to graft a treasure chest after collect enough materials.",
+                    entrypoint: "graft_treasure_chest",
+                  },
+                  {
+                    name: "Open Treasure Chest",
+                    description: "A method to open a treasure chest.",
+                    entrypoint: "open_treasure_chest",
+                  },
+                ],
+              },
+          },
+        },
+      },
+    },
+    theme: {
+      colors: {
+        primary: "#C00F0C",
+      },
+      cover: "https://static.cartridge.gg/presets/metal-slug/cover.png",
+      icon: "https://static.cartridge.gg/presets/metal-slug/icon.png",
+      name: "Dragark",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
   nums: {
     origin: ["nums.gg", "www.nums.gg"],
     chains: {
@@ -3142,6 +3224,7 @@ export const availableConfigs = [
   "force-prime",
   "jokers-of-neon",
   "loot-survivor",
+  "metal-slug",
   "nums",
   "paved",
   "pistols",
