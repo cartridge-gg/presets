@@ -12,10 +12,10 @@
     "name": "Blob Arena"
   },
   "chains": {
-    "SN_MAIN": {
+    "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x0170d4eb49bf626342a15cf77b0809baebee30cafbf7884b2d89bbb27e689f6d": {
+          "0x5556f6855242191a0307e0eb7e93886f395a137929e3547dcb413715d14fba0": {
             "name": "Lobby Contract",
             "description": "Game invites and responses",
             "methods": [
@@ -56,7 +56,7 @@
               }
             ]
           },
-          "0x02e4769ec3ac16456e6c6f806efc90f49d46df2a07b431a5a5d8b62e4fb21633": {
+          "0x3a2222fae4cd5353cb798784eefd5b42f2e0e3ea47945f845a1ec31d63d000c": {
             "name": "Game Contract",
             "description": "Manages core gameplay interactions",
             "methods": [
@@ -92,7 +92,7 @@
               }
             ]
           },
-          "0x220896431692627f8d0caf9ac45e71c3b3d88c7c009acff756ff2081030a2b1": {
+          "0x69f9cd86938bae98a413c2b4dddee1ab8005d72202466ef4fd35a625596e619": {
             "name": "Betsy Contract",
             "description": "Wager operations",
             "methods": [
@@ -102,24 +102,24 @@
                 "description": "Set the owner's fee"
               },
               {
-                "name": "Create Bet",
+                "name": "Create Wager",
                 "entrypoint": "create",
-                "description": "Create a bet"
+                "description": "Create a wager"
               },
               {
-                "name": "Accept Bet",
+                "name": "Accept Wager",
                 "entrypoint": "accept",
-                "description": "Accept a bet"
+                "description": "Accept a wager"
               },
               {
-                "name": "Reject Bet",
+                "name": "Reject Wager",
                 "entrypoint": "reject",
-                "description": "Reject a bet"
+                "description": "Reject a wager"
               },
               {
-                "name": "Revoke Bet",
+                "name": "Revoke Wager",
                 "entrypoint": "revoke",
-                "description": "Revoke a bet"
+                "description": "Revoke a wager"
               },
               {
                 "name": "Claim Win",
@@ -143,7 +143,7 @@
               }
             ]
           },
-          "0x56e5ae9af38c6eb85c226fbadaa31e37b5ee1a5401a9c371f4e7f154b76dce3": {
+          "0x6628552b4a81646fc4c79218a5d8f9bab0e4e5fee7348f20a42f8f319ed0be5": {
             "name": "Arcade Contract",
             "description": "Minting of arcade Bloberts",
             "methods": [
@@ -154,7 +154,7 @@
               }
             ]
           },
-          "0x05a929a543e55877c58973a677fbd3b145f5057b39b87c89d879c87715878d52": {
+          "0x3acc9a104515d2af248d21ca74aa9c504f4f4d3d764cb4a1483e711e0126430": {
             "name": "AMMA Contract",
             "description": "Minting of AMMA Bloberts",
             "methods": [
@@ -165,7 +165,7 @@
               }
             ]
           },
-          "0x14aefc8245c5f2c17204857372944aba413ec639547359b629682c542eca555": {
+          "0x26b7945aca46657f23dc8e328996ef0fc306ca54c8ee8788e1298a570539046": {
             "name": "PVE Contract",
             "description": "Arcade mode contract",
             "methods": [
