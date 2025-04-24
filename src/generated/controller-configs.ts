@@ -2807,7 +2807,7 @@ export const configs: ControllerConfigs = {
     },
   },
   ponziland: {
-    origin: ["https://play.ponzi.land/"],
+    origin: ["*.ponzi.land"],
     theme: {
       colors: {
         primary: "#F38332",
