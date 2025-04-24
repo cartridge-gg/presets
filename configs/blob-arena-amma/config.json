@@ -1,7 +1,6 @@
 {
   "origin": [
-    "www.blobarena.xyz",
-    "blobarena.xyz"
+    "*.blobarena.xyz"
   ],
   "theme": {
     "colors": {

@@ -3,7 +3,7 @@ import { ControllerConfigs } from "../";
 
 export const configs: ControllerConfigs = {
   "blob-arena": {
-    origin: ["www.blobarena.xyz", "blobarena.xyz"],
+    origin: ["*.blobarena.xyz"],
     theme: {
       colors: {
         primary: "#980f06",
@@ -288,7 +288,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "blob-arena-amma": {
-    origin: ["www.blobarena.xyz", "blobarena.xyz"],
+    origin: ["*.blobarena.xyz"],
     theme: {
       colors: {
         primary: "#D7B000",
