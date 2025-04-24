@@ -1,6 +1,6 @@
 {
   "origin": [
-    "https://play.ponzi.land/"
+    "*.ponzi.land"
   ],
   "theme": {
     "colors": {
