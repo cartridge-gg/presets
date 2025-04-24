@@ -46,10 +46,10 @@ export const configs: ControllerConfigs = {
       },
     },
     chains: {
-      SN_MAIN: {
+      SN_SEPOLIA: {
         policies: {
           contracts: {
-            "0x0170d4eb49bf626342a15cf77b0809baebee30cafbf7884b2d89bbb27e689f6d":
+            "0x5556f6855242191a0307e0eb7e93886f395a137929e3547dcb413715d14fba0":
               {
                 name: "Lobby Contract",
                 description: "Game invites and responses",
@@ -91,7 +91,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x02e4769ec3ac16456e6c6f806efc90f49d46df2a07b431a5a5d8b62e4fb21633":
+            "0x3a2222fae4cd5353cb798784eefd5b42f2e0e3ea47945f845a1ec31d63d000c":
               {
                 name: "Game Contract",
                 description: "Manages core gameplay interactions",
@@ -128,7 +128,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x220896431692627f8d0caf9ac45e71c3b3d88c7c009acff756ff2081030a2b1":
+            "0x69f9cd86938bae98a413c2b4dddee1ab8005d72202466ef4fd35a625596e619":
               {
                 name: "Betsy Contract",
                 description: "Wager operations",
@@ -139,24 +139,24 @@ export const configs: ControllerConfigs = {
                     description: "Set the owner's fee",
                   },
                   {
-                    name: "Create Bet",
+                    name: "Create Wager",
                     entrypoint: "create",
-                    description: "Create a bet",
+                    description: "Create a wager",
                   },
                   {
-                    name: "Accept Bet",
+                    name: "Accept Wager",
                     entrypoint: "accept",
-                    description: "Accept a bet",
+                    description: "Accept a wager",
                   },
                   {
-                    name: "Reject Bet",
+                    name: "Reject Wager",
                     entrypoint: "reject",
-                    description: "Reject a bet",
+                    description: "Reject a wager",
                   },
                   {
-                    name: "Revoke Bet",
+                    name: "Revoke Wager",
                     entrypoint: "revoke",
-                    description: "Revoke a bet",
+                    description: "Revoke a wager",
                   },
                   {
                     name: "Claim Win",
@@ -180,7 +180,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x56e5ae9af38c6eb85c226fbadaa31e37b5ee1a5401a9c371f4e7f154b76dce3":
+            "0x6628552b4a81646fc4c79218a5d8f9bab0e4e5fee7348f20a42f8f319ed0be5":
               {
                 name: "Arcade Contract",
                 description: "Minting of arcade Bloberts",
@@ -192,7 +192,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x05a929a543e55877c58973a677fbd3b145f5057b39b87c89d879c87715878d52":
+            "0x3acc9a104515d2af248d21ca74aa9c504f4f4d3d764cb4a1483e711e0126430":
               {
                 name: "AMMA Contract",
                 description: "Minting of AMMA Bloberts",
@@ -204,7 +204,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x14aefc8245c5f2c17204857372944aba413ec639547359b629682c542eca555":
+            "0x26b7945aca46657f23dc8e328996ef0fc306ca54c8ee8788e1298a570539046":
               {
                 name: "PVE Contract",
                 description: "Arcade mode contract",
@@ -327,6 +327,247 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.png",
           "128": "icon@128.png",
           "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      SN_SEPOLIA: {
+        policies: {
+          contracts: {
+            "0x5556f6855242191a0307e0eb7e93886f395a137929e3547dcb413715d14fba0":
+              {
+                name: "Lobby Contract",
+                description: "Game invites and responses",
+                methods: [
+                  {
+                    name: "Send Invite",
+                    entrypoint: "send_invite",
+                    description: "Send users an invite",
+                  },
+                  {
+                    name: "Rescind Invite",
+                    entrypoint: "rescind_invite",
+                    description: "Rescind a previously sent invite",
+                  },
+                  {
+                    name: "Respond Invite",
+                    entrypoint: "respond_invite",
+                    description: "Respond to a received invite",
+                  },
+                  {
+                    name: "Rescind Response",
+                    entrypoint: "rescind_response",
+                    description: "Rescind a previous response to an invite",
+                  },
+                  {
+                    name: "Reject Invite",
+                    entrypoint: "reject_invite",
+                    description: "Reject a received invite",
+                  },
+                  {
+                    name: "Reject Response",
+                    entrypoint: "reject_response",
+                    description: "Reject a response to an invite",
+                  },
+                  {
+                    name: "Accept Response",
+                    entrypoint: "accept_response",
+                    description: "Accept a response to an invite",
+                  },
+                ],
+              },
+            "0x3a2222fae4cd5353cb798784eefd5b42f2e0e3ea47945f845a1ec31d63d000c":
+              {
+                name: "Game Contract",
+                description: "Manages core gameplay interactions",
+                methods: [
+                  {
+                    name: "Start Game",
+                    entrypoint: "start",
+                    description: "Start the game",
+                  },
+                  {
+                    name: "Commit Attack",
+                    entrypoint: "commit",
+                    description: "Commit an attack in the game",
+                  },
+                  {
+                    name: "Reveal Attack",
+                    entrypoint: "reveal",
+                    description: "Reveal the committed attack in the game",
+                  },
+                  {
+                    name: "Run Round",
+                    entrypoint: "run",
+                    description: "Run the next round of the game",
+                  },
+                  {
+                    name: "Forfeit",
+                    entrypoint: "forfeit",
+                    description: "Forfeit the game",
+                  },
+                  {
+                    name: "Kick Player",
+                    entrypoint: "kick_player",
+                    description: "Kick an inactive player from the game",
+                  },
+                ],
+              },
+            "0x69f9cd86938bae98a413c2b4dddee1ab8005d72202466ef4fd35a625596e619":
+              {
+                name: "Betsy Contract",
+                description: "Wager operations",
+                methods: [
+                  {
+                    name: "Set Owner's Fee",
+                    entrypoint: "set_owners_fee",
+                    description: "Set the owner's fee",
+                  },
+                  {
+                    name: "Create Wager",
+                    entrypoint: "create",
+                    description: "Create a wager",
+                  },
+                  {
+                    name: "Accept Wager",
+                    entrypoint: "accept",
+                    description: "Accept a wager",
+                  },
+                  {
+                    name: "Reject Wager",
+                    entrypoint: "reject",
+                    description: "Reject a wager",
+                  },
+                  {
+                    name: "Revoke Wager",
+                    entrypoint: "revoke",
+                    description: "Revoke a wager",
+                  },
+                  {
+                    name: "Claim Win",
+                    entrypoint: "claim_win",
+                    description: "Claim the win",
+                  },
+                  {
+                    name: "Approve Release",
+                    entrypoint: "approve_release",
+                    description: "Approve fund release",
+                  },
+                  {
+                    name: "Revoke Release",
+                    entrypoint: "revoke_release",
+                    description: "Revoke fund release",
+                  },
+                  {
+                    name: "Release Funds",
+                    entrypoint: "release_funds",
+                    description: "Release funds",
+                  },
+                ],
+              },
+            "0x6628552b4a81646fc4c79218a5d8f9bab0e4e5fee7348f20a42f8f319ed0be5":
+              {
+                name: "Arcade Contract",
+                description: "Minting of arcade Bloberts",
+                methods: [
+                  {
+                    name: "Mint Arcade Blobert",
+                    entrypoint: "mint",
+                    description: "Mint arcade blobert",
+                  },
+                ],
+              },
+            "0x3acc9a104515d2af248d21ca74aa9c504f4f4d3d764cb4a1483e711e0126430":
+              {
+                name: "AMMA Contract",
+                description: "Minting of AMMA Bloberts",
+                methods: [
+                  {
+                    name: "Mint AMMA Blobert",
+                    entrypoint: "mint",
+                    description: "Mint AMMA blobert",
+                  },
+                ],
+              },
+            "0x26b7945aca46657f23dc8e328996ef0fc306ca54c8ee8788e1298a570539046":
+              {
+                name: "PVE Contract",
+                description: "Arcade mode contract",
+                methods: [
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                    description: "Start the game",
+                  },
+                  {
+                    name: "Attack",
+                    entrypoint: "attack",
+                    description: "Submit an attack",
+                  },
+                  {
+                    name: "Start Challenge",
+                    entrypoint: "start_challenge",
+                    description: "Start a challenge",
+                  },
+                  {
+                    name: "Next Challenge Round",
+                    entrypoint: "next_challenge_round",
+                    description: "Go forward",
+                  },
+                  {
+                    name: "Respawn Challenge",
+                    entrypoint: "respawn_challenge",
+                    description: "Restart a challenge",
+                  },
+                  {
+                    name: "End Challenge",
+                    entrypoint: "end_challenge",
+                    description: "End a challenge",
+                  },
+                  {
+                    name: "Claim Free Game",
+                    entrypoint: "claim_free_game",
+                    description: "Claim an arcade game",
+                  },
+                ],
+              },
+            "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7":
+              {
+                name: "ETH Token",
+                description: "ETH ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "ETH allowance",
+                  },
+                ],
+              },
+            "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f":
+              {
+                name: "LORDS Token",
+                description: "LORDS ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "LORDS allowance",
+                  },
+                ],
+              },
+            "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d":
+              {
+                name: "STRK Token",
+                description: "STRK ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "STRK allowance",
+                  },
+                ],
+              },
+          },
         },
       },
     },
