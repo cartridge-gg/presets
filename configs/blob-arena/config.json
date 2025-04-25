@@ -206,41 +206,34 @@
                 "description": "Claim an arcade game"
               }
             ]
-          },
-          "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
-            "name": "ETH Token",
-            "description": "ETH ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "ETH allowance"
-              }
-            ]
-          },
-          "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f": {
-            "name": "LORDS Token",
-            "description": "LORDS ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "LORDS allowance"
-              }
-            ]
-          },
-          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
-            "name": "STRK Token",
-            "description": "STRK ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "STRK allowance"
-              }
-            ]
           }
-        }
+        },
+        "messages": [
+          {
+            "name": "Grug's Lair Signature",
+            "description":"Verify your wallet ownership",
+            "types": {
+              "StarknetDomain": [
+                { "name": "name", "type": "shortstring" },
+                { "name": "version", "type": "shortstring" },
+                { "name": "chainId", "type": "shortstring" },
+                { "name": "revision", "type": "shortstring" }
+              ],
+              "Message": [
+                { "name": "message", "type": "string" },
+                { "name": "wallet", "type": "ContractAddress" },
+                { "name": "issuedAt", "type": "felt" }
+              ]
+            },
+            "primaryType": "Message",
+            "domain": {
+              "name": "Grug's Lair",
+              "version": "1",
+              "revision": "1",
+              "chainId": "SN_SEPOLIA"
+            }
+          }
+        ]
       }
     }
   }
