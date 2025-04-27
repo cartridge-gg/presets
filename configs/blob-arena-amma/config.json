@@ -16,7 +16,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x5556f6855242191a0307e0eb7e93886f395a137929e3547dcb413715d14fba0": {
+          "0x771a2807aa479dacd207c1f12018d0fa6e92ef1eb994169ff4f8904a8845e3f": {
             "name": "Lobby Contract",
             "description": "Game invites and responses",
             "methods": [
@@ -57,8 +57,8 @@
               }
             ]
           },
-          "0x3a2222fae4cd5353cb798784eefd5b42f2e0e3ea47945f845a1ec31d63d000c": {
-            "name": "Game Contract",
+          "0x6040ee8b2aee6cbcc482b5cb712d1c206f8ad070e98d7e07a70d4e4a6b5e261": {
+            "name": "PVP Contract",
             "description": "Manages core gameplay interactions",
             "methods": [
               {
@@ -144,7 +144,7 @@
               }
             ]
           },
-          "0x6628552b4a81646fc4c79218a5d8f9bab0e4e5fee7348f20a42f8f319ed0be5": {
+          "0x11088b79a397c2fb9d2570acbf711e6972e75e3a28b6bcf36267501d96c781b": {
             "name": "Arcade Contract",
             "description": "Minting of arcade Bloberts",
             "methods": [
@@ -155,7 +155,7 @@
               }
             ]
           },
-          "0x3acc9a104515d2af248d21ca74aa9c504f4f4d3d764cb4a1483e711e0126430": {
+          "0x645aec04e61f286691b91d6589d010890bb66ca0af91bf24d12c8bc4387c868": {
             "name": "AMMA Contract",
             "description": "Minting of AMMA Bloberts",
             "methods": [
@@ -166,8 +166,8 @@
               }
             ]
           },
-          "0x26b7945aca46657f23dc8e328996ef0fc306ca54c8ee8788e1298a570539046": {
-            "name": "PVE Contract",
+          "0x1ad613db1957a576c1a9bae913f1d22a41add2f1d64d822d9e097f219b34954": {
+            "name": "Arcade Contract",
             "description": "Arcade mode contract",
             "methods": [
               {
@@ -204,39 +204,6 @@
                 "name": "Claim Free Game",
                 "entrypoint": "claim_free_game",
                 "description": "Claim an arcade game"
-              }
-            ]
-          },
-          "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
-            "name": "ETH Token",
-            "description": "ETH ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "ETH allowance"
-              }
-            ]
-          },
-          "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f": {
-            "name": "LORDS Token",
-            "description": "LORDS ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "LORDS allowance"
-              }
-            ]
-          },
-          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
-            "name": "STRK Token",
-            "description": "STRK ERC20 approval",
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "STRK allowance"
               }
             ]
           }
