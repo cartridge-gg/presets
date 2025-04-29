@@ -1162,7 +1162,7 @@ export const configs: ControllerConfigs = {
     },
   },
   dragark: {
-    origin: "dragark.net",
+    origin: ["*.dragark.net", "dragark.net"],
     chains: {
       SN_MAIN: {
         policies: {
@@ -2299,7 +2299,7 @@ export const configs: ControllerConfigs = {
     },
   },
   nums: {
-    origin: ["nums.gg", "www.nums.gg"],
+    origin: ["*.nums.gg", "nums.gg"],
     chains: {
       SN_MAIN: {
         policies: {
