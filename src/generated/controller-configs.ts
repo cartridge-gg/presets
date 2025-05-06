@@ -2515,7 +2515,7 @@ export const configs: ControllerConfigs = {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x0154d9a74e8106255d8146b250683ba939f4db3e98b586997caf9514163ca963":
+            "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9":
               {
                 description: "Game loop contract",
                 methods: [
@@ -2528,21 +2528,16 @@ export const configs: ControllerConfigs = {
                     description: "Reveal moves of a Duelist in a Duel",
                   },
                   {
-                    entrypoint: "clear_call_to_action",
-                    description: "Clear the required action call for a duelist",
-                  },
-                  {
                     entrypoint: "collect_duel",
                     description: "Close expired duels",
                   },
                   {
-                    entrypoint: "collect_season",
-                    description:
-                      "Close the current season and start the next one",
+                    entrypoint: "clear_call_to_action",
+                    description: "Clear the required action call for a duelist",
                   },
                 ],
               },
-            "0x0320a19527bb1e661df4e41639c755353f6a401b24a8922a1d086a9667391428":
+            "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f":
               {
                 description: "Bank contract",
                 methods: [
@@ -2558,15 +2553,24 @@ export const configs: ControllerConfigs = {
                     entrypoint: "sponsor_tournament",
                     description: "Sponsor a tournament with $LORDS",
                   },
+                  {
+                    entrypoint: "collect_season",
+                    description:
+                      "Close the current season and start the next one",
+                  },
                 ],
               },
-            "0x032fecc3b90057da30d74fa450abcdd55621cd88000fe709384f8a6b1a910c9f":
+            "0x071333ac75b7d5ba89a2d0c2b67d5b955258a4d46eb42f3428da6137bbbfdfd9":
               {
                 description: "Packs ERC721 contract",
                 methods: [
                   {
                     entrypoint: "claim_starter_pack",
                     description: "Claim the starter pack, mint Duelists",
+                  },
+                  {
+                    entrypoint: "claim_gift",
+                    description: "Claim gift pack, if available",
                   },
                   {
                     entrypoint: "purchase",
@@ -2578,7 +2582,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x03e1da8b8d6208af7d90ae32d1c3a6f597223022bc0e72b5abc2ba07009c560f":
+            "0x02e9c711b1a7e2784570b1bda5082a92606044e836ba392d2b977d280fb74b3c":
               {
                 description: "Duel ERC721 contract",
                 methods: [
@@ -2592,7 +2596,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x03d042d2022519481f424b01f1a68268f773d0220275a102e809f49dee62c1c3":
+            "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f":
               {
                 description: "Duelist ERC721 contract",
                 methods: [
@@ -2642,6 +2646,46 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
+                Message: [
+                  {
+                    name: "duelId",
+                    type: "felt",
+                  },
+                  {
+                    name: "duelistId",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+              description: "Verify the identity of a player in a Duel",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
                 "pistols-PlayerOnline": [
                   {
                     name: "identity",
@@ -2661,7 +2705,7 @@ export const configs: ControllerConfigs = {
                 revision: "1",
               },
               name: "PlayerOnline",
-              description: "Notify the server that a player is online",
+              description: "Notify when a player is online",
             },
             {
               types: {
@@ -2711,7 +2755,7 @@ export const configs: ControllerConfigs = {
               },
               name: "PlayerBookmark",
               description:
-                "Notify the server that a player follows another player or token",
+                "Notify when a player follows another player or token",
             },
           ],
         },
@@ -2719,7 +2763,7 @@ export const configs: ControllerConfigs = {
       SN_SEPOLIA: {
         policies: {
           contracts: {
-            "0x008e63a48288f4672d955f97dc5d3e026712f927fc4262dde1b49070c3b98397":
+            "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9":
               {
                 description: "Game loop contract",
                 methods: [
@@ -2736,17 +2780,12 @@ export const configs: ControllerConfigs = {
                     description: "Close expired duels",
                   },
                   {
-                    entrypoint: "collect_season",
-                    description:
-                      "Close the current season and start the next one",
-                  },
-                  {
                     entrypoint: "clear_call_to_action",
                     description: "Clear the required action call for a duelist",
                   },
                 ],
               },
-            "0x05aadbdf456aa5c8be5438e8e7465c5e6b7bb48fc2e9339f30ced197315d8896":
+            "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f":
               {
                 description: "Bank contract",
                 methods: [
@@ -2762,15 +2801,24 @@ export const configs: ControllerConfigs = {
                     entrypoint: "sponsor_tournament",
                     description: "Sponsor a tournament with $LORDS",
                   },
+                  {
+                    entrypoint: "collect_season",
+                    description:
+                      "Close the current season and start the next one",
+                  },
                 ],
               },
-            "0x0578b4e302d95d233a1e5a45b648b7066a21896f288a31a98f77e8bd177b7b9b":
+            "0x071333ac75b7d5ba89a2d0c2b67d5b955258a4d46eb42f3428da6137bbbfdfd9":
               {
                 description: "Packs ERC721 contract",
                 methods: [
                   {
                     entrypoint: "claim_starter_pack",
                     description: "Claim the starter pack, mint Duelists",
+                  },
+                  {
+                    entrypoint: "claim_gift",
+                    description: "Claim gift pack, if available",
                   },
                   {
                     entrypoint: "purchase",
@@ -2782,7 +2830,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x0377acc27a0ca83d1894a1ae62636ba3998197505b20b918e3e74effe395c6a7":
+            "0x02e9c711b1a7e2784570b1bda5082a92606044e836ba392d2b977d280fb74b3c":
               {
                 description: "Duel ERC721 contract",
                 methods: [
@@ -2796,7 +2844,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x06012ef19b1a4c6d0b06f583c4d5fa13ba39e56297760073da636ab48e5ee6c8":
+            "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f":
               {
                 description: "Duelist ERC721 contract",
                 methods: [
@@ -2846,6 +2894,46 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
+                Message: [
+                  {
+                    name: "duelId",
+                    type: "felt",
+                  },
+                  {
+                    name: "duelistId",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_SEPOLIA",
+                revision: "1",
+              },
+              description: "Verify the identity of a player in a Duel",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
                 "pistols-PlayerOnline": [
                   {
                     name: "identity",
@@ -2865,7 +2953,7 @@ export const configs: ControllerConfigs = {
                 revision: "1",
               },
               name: "PlayerOnline",
-              description: "Notify the server that a player is online",
+              description: "Notify when a player is online",
             },
             {
               types: {
@@ -2915,7 +3003,7 @@ export const configs: ControllerConfigs = {
               },
               name: "PlayerBookmark",
               description:
-                "Notify the server that a player follows another player or token",
+                "Notify when a player follows another player or token",
             },
           ],
         },
