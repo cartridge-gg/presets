@@ -658,4 +658,24 @@ export const metadata: EkuboERC20Metadata[] = [
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/6deef27f-df40-4248-4e1b-ed1d79a3f000/logo",
   },
+  {
+    name: "Fools",
+    symbol: "FOOLS",
+    decimals: 18,
+    l2_token_address:
+      "0x068a7a07e08fc3e723a878223d00f669106780d5ea6665eb15d893476d47bf3b",
+    sort_order: 1,
+    total_supply: null,
+    logo_url: "https://assets.underware.gg/pistols/fools.svg",
+  },
+  {
+    name: "Fame",
+    symbol: "FAME",
+    decimals: 18,
+    l2_token_address:
+      "0x02549653a4ae1ff8d04a20b8820a49cbe97486c536ec0e4c8f68aa33d80067cf",
+    sort_order: 1,
+    total_supply: null,
+    logo_url: "https://assets.underware.gg/pistols/fame.svg",
+  },
 ];
