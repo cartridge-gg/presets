@@ -692,7 +692,7 @@ export const configs: ControllerConfigs = {
     },
   },
   coloniz: {
-    origin: ["coloniz.xyz"],
+    origin: ["*.coloniz.xyz"],
     chains: {
       SN_MAIN: {
         policies: {
