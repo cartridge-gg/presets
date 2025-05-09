@@ -22,9 +22,9 @@
           "methods": [
             {
               "name": "set_approval_for_all",
-              "entrypoint": "set_approval_for_all",
-            },
-          ],
+              "entrypoint": "set_approval_for_all"
+            }
+          ]
         },
         "0x2620f65aa2fd72d705306ada1ee7410023a3df03da9291f1ccb744fabfebc0": {
           "name": "Battle contract",
