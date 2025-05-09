@@ -1,7 +1,7 @@
 {
   "origin": [
-    "nums.gg",
-    "www.nums.gg"
+    "*.nums.gg",
+    "nums.gg"
   ],
   "chains": {
     "SN_MAIN": {

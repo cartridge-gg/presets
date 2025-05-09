@@ -3,7 +3,7 @@ import { ControllerConfigs } from "../";
 
 export const configs: ControllerConfigs = {
   "blob-arena": {
-    origin: ["www.blobarena.xyz", "blobarena.xyz"],
+    origin: ["*.blobarena.xyz", "blobarena.xyz", "development.blobarena.xyz"],
     theme: {
       colors: {
         primary: "#980f06",
@@ -46,10 +46,10 @@ export const configs: ControllerConfigs = {
       },
     },
     chains: {
-      SN_MAIN: {
+      SN_SEPOLIA: {
         policies: {
           contracts: {
-            "0x0170d4eb49bf626342a15cf77b0809baebee30cafbf7884b2d89bbb27e689f6d":
+            "0x771a2807aa479dacd207c1f12018d0fa6e92ef1eb994169ff4f8904a8845e3f":
               {
                 name: "Lobby Contract",
                 description: "Game invites and responses",
@@ -91,9 +91,9 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x02e4769ec3ac16456e6c6f806efc90f49d46df2a07b431a5a5d8b62e4fb21633":
+            "0x6040ee8b2aee6cbcc482b5cb712d1c206f8ad070e98d7e07a70d4e4a6b5e261":
               {
-                name: "Game Contract",
+                name: "PVP Contract",
                 description: "Manages core gameplay interactions",
                 methods: [
                   {
@@ -128,7 +128,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x220896431692627f8d0caf9ac45e71c3b3d88c7c009acff756ff2081030a2b1":
+            "0x69f9cd86938bae98a413c2b4dddee1ab8005d72202466ef4fd35a625596e619":
               {
                 name: "Betsy Contract",
                 description: "Wager operations",
@@ -139,24 +139,24 @@ export const configs: ControllerConfigs = {
                     description: "Set the owner's fee",
                   },
                   {
-                    name: "Create Bet",
+                    name: "Create Wager",
                     entrypoint: "create",
-                    description: "Create a bet",
+                    description: "Create a wager",
                   },
                   {
-                    name: "Accept Bet",
+                    name: "Accept Wager",
                     entrypoint: "accept",
-                    description: "Accept a bet",
+                    description: "Accept a wager",
                   },
                   {
-                    name: "Reject Bet",
+                    name: "Reject Wager",
                     entrypoint: "reject",
-                    description: "Reject a bet",
+                    description: "Reject a wager",
                   },
                   {
-                    name: "Revoke Bet",
+                    name: "Revoke Wager",
                     entrypoint: "revoke",
-                    description: "Revoke a bet",
+                    description: "Revoke a wager",
                   },
                   {
                     name: "Claim Win",
@@ -180,7 +180,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x56e5ae9af38c6eb85c226fbadaa31e37b5ee1a5401a9c371f4e7f154b76dce3":
+            "0x11088b79a397c2fb9d2570acbf711e6972e75e3a28b6bcf36267501d96c781b":
               {
                 name: "Arcade Contract",
                 description: "Minting of arcade Bloberts",
@@ -192,7 +192,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x05a929a543e55877c58973a677fbd3b145f5057b39b87c89d879c87715878d52":
+            "0x645aec04e61f286691b91d6589d010890bb66ca0af91bf24d12c8bc4387c868":
               {
                 name: "AMMA Contract",
                 description: "Minting of AMMA Bloberts",
@@ -204,9 +204,9 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x14aefc8245c5f2c17204857372944aba413ec639547359b629682c542eca555":
+            "0x1ad613db1957a576c1a9bae913f1d22a41add2f1d64d822d9e097f219b34954":
               {
-                name: "PVE Contract",
+                name: "Arcade Contract",
                 description: "Arcade mode contract",
                 methods: [
                   {
@@ -246,49 +246,13 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7":
-              {
-                name: "ETH Token",
-                description: "ETH ERC20 approval",
-                methods: [
-                  {
-                    name: "Approve",
-                    entrypoint: "approve",
-                    description: "ETH allowance",
-                  },
-                ],
-              },
-            "0x072599086bffce6593a2e08169c21d23564f08be1e1d0b8e05a9768f20469a3f":
-              {
-                name: "LORDS Token",
-                description: "LORDS ERC20 approval",
-                methods: [
-                  {
-                    name: "Approve",
-                    entrypoint: "approve",
-                    description: "LORDS allowance",
-                  },
-                ],
-              },
-            "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d":
-              {
-                name: "STRK Token",
-                description: "STRK ERC20 approval",
-                methods: [
-                  {
-                    name: "Approve",
-                    entrypoint: "approve",
-                    description: "STRK allowance",
-                  },
-                ],
-              },
           },
         },
       },
     },
   },
   "blob-arena-amma": {
-    origin: ["www.blobarena.xyz", "blobarena.xyz"],
+    origin: ["*.blobarena.xyz", "blobarena.xyz", "development.blobarena.xyz"],
     theme: {
       colors: {
         primary: "#D7B000",
@@ -327,6 +291,211 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.png",
           "128": "icon@128.png",
           "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      SN_SEPOLIA: {
+        policies: {
+          contracts: {
+            "0x771a2807aa479dacd207c1f12018d0fa6e92ef1eb994169ff4f8904a8845e3f":
+              {
+                name: "Lobby Contract",
+                description: "Game invites and responses",
+                methods: [
+                  {
+                    name: "Send Invite",
+                    entrypoint: "send_invite",
+                    description: "Send users an invite",
+                  },
+                  {
+                    name: "Rescind Invite",
+                    entrypoint: "rescind_invite",
+                    description: "Rescind a previously sent invite",
+                  },
+                  {
+                    name: "Respond Invite",
+                    entrypoint: "respond_invite",
+                    description: "Respond to a received invite",
+                  },
+                  {
+                    name: "Rescind Response",
+                    entrypoint: "rescind_response",
+                    description: "Rescind a previous response to an invite",
+                  },
+                  {
+                    name: "Reject Invite",
+                    entrypoint: "reject_invite",
+                    description: "Reject a received invite",
+                  },
+                  {
+                    name: "Reject Response",
+                    entrypoint: "reject_response",
+                    description: "Reject a response to an invite",
+                  },
+                  {
+                    name: "Accept Response",
+                    entrypoint: "accept_response",
+                    description: "Accept a response to an invite",
+                  },
+                ],
+              },
+            "0x6040ee8b2aee6cbcc482b5cb712d1c206f8ad070e98d7e07a70d4e4a6b5e261":
+              {
+                name: "PVP Contract",
+                description: "Manages core gameplay interactions",
+                methods: [
+                  {
+                    name: "Start Game",
+                    entrypoint: "start",
+                    description: "Start the game",
+                  },
+                  {
+                    name: "Commit Attack",
+                    entrypoint: "commit",
+                    description: "Commit an attack in the game",
+                  },
+                  {
+                    name: "Reveal Attack",
+                    entrypoint: "reveal",
+                    description: "Reveal the committed attack in the game",
+                  },
+                  {
+                    name: "Run Round",
+                    entrypoint: "run",
+                    description: "Run the next round of the game",
+                  },
+                  {
+                    name: "Forfeit",
+                    entrypoint: "forfeit",
+                    description: "Forfeit the game",
+                  },
+                  {
+                    name: "Kick Player",
+                    entrypoint: "kick_player",
+                    description: "Kick an inactive player from the game",
+                  },
+                ],
+              },
+            "0x69f9cd86938bae98a413c2b4dddee1ab8005d72202466ef4fd35a625596e619":
+              {
+                name: "Betsy Contract",
+                description: "Wager operations",
+                methods: [
+                  {
+                    name: "Set Owner's Fee",
+                    entrypoint: "set_owners_fee",
+                    description: "Set the owner's fee",
+                  },
+                  {
+                    name: "Create Wager",
+                    entrypoint: "create",
+                    description: "Create a wager",
+                  },
+                  {
+                    name: "Accept Wager",
+                    entrypoint: "accept",
+                    description: "Accept a wager",
+                  },
+                  {
+                    name: "Reject Wager",
+                    entrypoint: "reject",
+                    description: "Reject a wager",
+                  },
+                  {
+                    name: "Revoke Wager",
+                    entrypoint: "revoke",
+                    description: "Revoke a wager",
+                  },
+                  {
+                    name: "Claim Win",
+                    entrypoint: "claim_win",
+                    description: "Claim the win",
+                  },
+                  {
+                    name: "Approve Release",
+                    entrypoint: "approve_release",
+                    description: "Approve fund release",
+                  },
+                  {
+                    name: "Revoke Release",
+                    entrypoint: "revoke_release",
+                    description: "Revoke fund release",
+                  },
+                  {
+                    name: "Release Funds",
+                    entrypoint: "release_funds",
+                    description: "Release funds",
+                  },
+                ],
+              },
+            "0x11088b79a397c2fb9d2570acbf711e6972e75e3a28b6bcf36267501d96c781b":
+              {
+                name: "Arcade Contract",
+                description: "Minting of arcade Bloberts",
+                methods: [
+                  {
+                    name: "Mint Arcade Blobert",
+                    entrypoint: "mint",
+                    description: "Mint arcade blobert",
+                  },
+                ],
+              },
+            "0x645aec04e61f286691b91d6589d010890bb66ca0af91bf24d12c8bc4387c868":
+              {
+                name: "AMMA Contract",
+                description: "Minting of AMMA Bloberts",
+                methods: [
+                  {
+                    name: "Mint AMMA Blobert",
+                    entrypoint: "mint",
+                    description: "Mint AMMA blobert",
+                  },
+                ],
+              },
+            "0x1ad613db1957a576c1a9bae913f1d22a41add2f1d64d822d9e097f219b34954":
+              {
+                name: "Arcade Contract",
+                description: "Arcade mode contract",
+                methods: [
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                    description: "Start the game",
+                  },
+                  {
+                    name: "Attack",
+                    entrypoint: "attack",
+                    description: "Submit an attack",
+                  },
+                  {
+                    name: "Start Challenge",
+                    entrypoint: "start_challenge",
+                    description: "Start a challenge",
+                  },
+                  {
+                    name: "Next Challenge Round",
+                    entrypoint: "next_challenge_round",
+                    description: "Go forward",
+                  },
+                  {
+                    name: "Respawn Challenge",
+                    entrypoint: "respawn_challenge",
+                    description: "Restart a challenge",
+                  },
+                  {
+                    name: "End Challenge",
+                    entrypoint: "end_challenge",
+                    description: "End a challenge",
+                  },
+                  {
+                    name: "Claim Free Game",
+                    entrypoint: "claim_free_game",
+                    description: "Claim an arcade game",
+                  },
+                ],
+              },
+          },
         },
       },
     },
@@ -416,7 +585,7 @@ export const configs: ControllerConfigs = {
       cover:
         "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/cover.png",
       icon: "https://static.cartridge.gg/presets/bytebeasts-tamagotchi/icon.png",
-      name: "ByteBeasts-Tamagotchi",
+      name: "Tamagotchi",
       optimizedCover: {
         webp: {
           "768": "cover@768.webp",
@@ -523,7 +692,7 @@ export const configs: ControllerConfigs = {
     },
   },
   coloniz: {
-    origin: ["coloniz.xyz"],
+    origin: ["*.coloniz.xyz"],
     chains: {
       SN_MAIN: {
         policies: {
@@ -993,12 +1162,12 @@ export const configs: ControllerConfigs = {
     },
   },
   dragark: {
-    origin: "dragark.net",
+    origin: ["*.dragark.net", "dragark.net"],
     chains: {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x62525c1337037a6a50a61f12045630a271758a350e57616e79a6ed14004ce74":
+            "0x05553fcb6da57decacce3306d8e0b3bf65b656dceda96c90ba55bde8980253ce":
               {
                 name: "Achievement Systems",
                 description:
@@ -1011,7 +1180,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0xa5a3284a1e3ce9887b50876acee14a1af9705659b3ad053deff80d84c5555a":
+            "0x059ffaee1d7068332ea8f084a9685b99a5c2a74197ef99e093a10fa25f887402":
               {
                 name: "Dragon Systems",
                 description: "Allows you to interact with dragon features.",
@@ -1029,18 +1198,13 @@ export const configs: ControllerConfigs = {
                     entrypoint: "deactivate_dragon",
                   },
                   {
-                    name: "Claim Default Dragon",
-                    description: "A method to claim the default Dragark.",
-                    entrypoint: "claim_default_dragon",
-                  },
-                  {
                     name: "Upgrade Dragon",
                     description: "A method to upgrade the Dragark's level.",
                     entrypoint: "upgrade_dragon",
                   },
                 ],
               },
-            "0x456e9a70c1a8ce2e340592d1a885f2ac152349d785a6aef4d640d9a09f9a1bd":
+            "0x0760d029c7b49069ece425285afb592152da1fff59038e697a5554f1b94150f2":
               {
                 name: "Island Systems",
                 description: "Allows you to interact with island features.",
@@ -1058,7 +1222,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x2f77a88ac64fd1473ea067ea176ae3805224a2ba5173c63c77d0f214c01ac5d":
+            "0x000ccb9e596c7d3298b670d91b6c3ed305aeed3eb1335d702265f53f1d0ad68a":
               {
                 name: "Journey Systems",
                 description: "Allows you to interact with journey features.",
@@ -1076,7 +1240,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x1ca130b614f063a24dafad53db11cbb914fa7cff2eac23df1c32f5ff71a8ec2":
+            "0x0002d12498d7b7f5e4d57a9895f8684fa58f4edb06ba6edb879723d8acb16507":
               {
                 name: "Map Systems",
                 description: "Allows you to interact with map features.",
@@ -1086,14 +1250,9 @@ export const configs: ControllerConfigs = {
                     description: "A method to join the map.",
                     entrypoint: "join_map",
                   },
-                  {
-                    name: "Rejoin Map",
-                    description: "A method to rejoin the map.",
-                    entrypoint: "re_join_map",
-                  },
                 ],
               },
-            "0x272741bbe4abc02c8be4b094ca642e1df573e99e06f85f649bc35dd26ae4543":
+            "0x01ba78267fd97db89b8ac0316ce0a2d71aaef87ad4f300e5468dc20232a2ff20":
               {
                 name: "Mission Systems",
                 description: "Allows you to interact with mission features.",
@@ -1105,7 +1264,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x54ad7af1fc62a786c9023d9f3ef8e8abf8cf332649b784188c1b25d2cb384b2":
+            "0x063b168f01cbac52b5d2ad82696eeaddde33b38d24364523ad0a3ca400361489":
               {
                 name: "Player Systems",
                 description: "Allows you to interact with player features.",
@@ -1137,24 +1296,13 @@ export const configs: ControllerConfigs = {
                     entrypoint: "redeem_invite_code",
                   },
                   {
-                    name: "Buy Resources Pack",
-                    description: "A method to buy resources pack.",
-                    entrypoint: "buy_resources_pack",
-                  },
-                  {
-                    name: "Activate Element NFT",
-                    description:
-                      "A method to activate the Element NFT into the game.",
-                    entrypoint: "activate_element_nft",
-                  },
-                  {
                     name: "Claim Pool Share Reward",
                     description: "A method to claim your Pool Share reward.",
                     entrypoint: "claim_pool_share_reward",
                   },
                 ],
               },
-            "0x68717880bd76fda6790e895e937e2c638213e7b9aa07385231bbf17dfe8a78c":
+            "0x03284bb4684703a368db8fd538c39b30e51822dbab9ad398e66311e820318444":
               {
                 name: "Scout Systems",
                 description: "Allows you to interact with scout features.",
@@ -1166,7 +1314,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x14705481d28fab7bb37d6cb19d3392d39f838a1d5572b8c8f18e85e0c4b8918":
+            "0x04a8b7e4106719e75653595c1e55da9ac88fbf1ae29124fca325c0537f00e908":
               {
                 name: "Shield Systems",
                 description: "Allows you to interact with shield features.",
@@ -1190,7 +1338,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x23d6a41c06e2d7b60437ba4da3eca857cf9a0b94f3548396829365a0a299c63":
+            "0x060a67334aed80a5403bd2b727337f29ccdcbf51784cc7ddb73f10ceb92e61f1":
               {
                 name: "Star Shop Systems",
                 description: "Allows you to interact with star shop features.",
@@ -1202,7 +1350,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x511a78a1c4b33bedc4ff7d9b37eb7481bcdff77c5c2cb6f67390d43657749d0":
+            "0x0655a9a38cb8dd7087a206b7d885528f8994e03dd6449105ef0f068caa502d25":
               {
                 name: "Treasure Hunt Systems",
                 description:
@@ -2024,8 +2172,134 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  metacube: {
+    origin: ["*.metacube.games", "metacube.games"],
+    theme: {
+      colors: {
+        primary: "#11ffbb",
+      },
+      cover: "https://static.cartridge.gg/presets/metacube/cover.png",
+      icon: "https://static.cartridge.gg/presets/metacube/icon.png",
+      name: "Metacube",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
+  "metal-slug": {
+    origin: "https://metalslug.starkarcade.com/",
+    chains: {
+      SN_MAIN: {
+        policies: {
+          contracts: {
+            "0x6aa878dfaa2710b66f26c02e52cbcc8adddd0c3e9b0d766fb045c8250490be0":
+              {
+                name: "Metal Slug Systems",
+                description: "Allows you to interact with metal slug features.",
+                methods: [
+                  {
+                    name: "Claim end match reward",
+                    description:
+                      "A method to claim reward after finishing a match.",
+                    entrypoint: "claim_end_match_reward",
+                  },
+                  {
+                    name: "Claim Points",
+                    description:
+                      "A method to claim points after finishing suvival match.",
+                    entrypoint: "claim_points",
+                  },
+                  {
+                    name: "Graft Treasure Chest",
+                    description:
+                      "A method to graft a treasure chest after collect enough materials.",
+                    entrypoint: "graft_treasure_chest",
+                  },
+                  {
+                    name: "Open Treasure Chest",
+                    description: "A method to open a treasure chest.",
+                    entrypoint: "open_treasure_chest",
+                  },
+                ],
+              },
+          },
+        },
+      },
+    },
+    theme: {
+      colors: {
+        primary: "#C00F0C",
+      },
+      cover: "https://static.cartridge.gg/presets/metal-slug/cover.png",
+      icon: "https://static.cartridge.gg/presets/metal-slug/icon.png",
+      name: "Dragark",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
   nums: {
-    origin: ["nums.gg", "www.nums.gg"],
+    origin: ["*.nums.gg", "nums.gg"],
     chains: {
       SN_MAIN: {
         policies: {
@@ -2195,15 +2469,7 @@ export const configs: ControllerConfigs = {
     },
   },
   pistols: {
-    origin: [
-      "pistols.underware.gg",
-      "pistols.stage.underware.gg",
-      "play.pistols.gg",
-      "stage.pistols.gg",
-      "alpha.pistols.gg",
-      "beta.pistols.gg",
-      "prerelease.pistols.gg",
-    ],
+    origin: ["*.pistols.gg", "*.underware.gg"],
     theme: {
       colors: {
         primary: "#EF9758",
@@ -2249,7 +2515,7 @@ export const configs: ControllerConfigs = {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x0619c7bd5d5d635e010ef3bf9a59ecc49fa055f19bb2202e530554cfda655b59":
+            "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9":
               {
                 description: "Game loop contract",
                 methods: [
@@ -2262,12 +2528,30 @@ export const configs: ControllerConfigs = {
                     description: "Reveal moves of a Duelist in a Duel",
                   },
                   {
-                    entrypoint: "clear_required_action",
-                    description: "Clear the required action call for a duelist",
-                  },
-                  {
                     entrypoint: "collect_duel",
                     description: "Close expired duels",
+                  },
+                  {
+                    entrypoint: "clear_call_to_action",
+                    description: "Clear the required action call for a duelist",
+                  },
+                ],
+              },
+            "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f":
+              {
+                description: "Bank contract",
+                methods: [
+                  {
+                    entrypoint: "sponsor_duelists",
+                    description: "Sponsor duelist starter packs with $LORDS",
+                  },
+                  {
+                    entrypoint: "sponsor_season",
+                    description: "Sponsor the current season with $LORDS",
+                  },
+                  {
+                    entrypoint: "sponsor_tournament",
+                    description: "Sponsor a tournament with $LORDS",
                   },
                   {
                     entrypoint: "collect_season",
@@ -2276,13 +2560,17 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x07b04bc75c3d4ba5b37d2dfc91501424dd23f517a820aee89adeeef4ececb391":
+            "0x071333ac75b7d5ba89a2d0c2b67d5b955258a4d46eb42f3428da6137bbbfdfd9":
               {
                 description: "Packs ERC721 contract",
                 methods: [
                   {
                     entrypoint: "claim_starter_pack",
                     description: "Claim the starter pack, mint Duelists",
+                  },
+                  {
+                    entrypoint: "claim_gift",
+                    description: "Claim gift pack, if available",
                   },
                   {
                     entrypoint: "purchase",
@@ -2294,7 +2582,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x00899524b10391115869ab095fe4385e17dd3dfd27b3a01bcc579ed939552e4c":
+            "0x02e9c711b1a7e2784570b1bda5082a92606044e836ba392d2b977d280fb74b3c":
               {
                 description: "Duel ERC721 contract",
                 methods: [
@@ -2308,7 +2596,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x0611b5c48d17de65d8015d48d491e0d120361a85099e28f3630600b3a91a98b0":
+            "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f":
               {
                 description: "Duelist ERC721 contract",
                 methods: [
@@ -2326,25 +2614,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x05c3c66f68bf24a4f61263d18622f97769ef62497f07a0ce9b07c7f02d6aa435":
-              {
-                description: "Bank contract",
-                methods: [
-                  {
-                    entrypoint: "sponsor_duelists",
-                    description: "Sponsor duelist starter packs with $LORDS",
-                  },
-                  {
-                    entrypoint: "sponsor_season",
-                    description: "Sponsor the current season with $LORDS",
-                  },
-                  {
-                    entrypoint: "sponsor_tournament",
-                    description: "Sponsor a tournament with $LORDS",
-                  },
-                ],
-              },
-            "0x05355768013cba6f96d985d189c0a69362d1a79a962e0d595ba7ea114ead720c":
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
               {
                 description: "Cartridge VRF Provider",
                 methods: [
@@ -2356,6 +2626,46 @@ export const configs: ControllerConfigs = {
               },
           },
           messages: [
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                Message: [
+                  {
+                    name: "duelId",
+                    type: "felt",
+                  },
+                  {
+                    name: "duelistId",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+              description: "Verify the identity of a player in a Duel",
+            },
             {
               types: {
                 StarknetDomain: [
@@ -2395,7 +2705,7 @@ export const configs: ControllerConfigs = {
                 revision: "1",
               },
               name: "PlayerOnline",
-              description: "Notify the server that a player is online",
+              description: "Notify when a player is online",
             },
             {
               types: {
@@ -2445,7 +2755,255 @@ export const configs: ControllerConfigs = {
               },
               name: "PlayerBookmark",
               description:
-                "Notify the server that a player follows another player or token",
+                "Notify when a player follows another player or token",
+            },
+          ],
+        },
+      },
+      SN_SEPOLIA: {
+        policies: {
+          contracts: {
+            "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9":
+              {
+                description: "Game loop contract",
+                methods: [
+                  {
+                    entrypoint: "commit_moves",
+                    description: "Commit moves of a Duelist in a Duel",
+                  },
+                  {
+                    entrypoint: "reveal_moves",
+                    description: "Reveal moves of a Duelist in a Duel",
+                  },
+                  {
+                    entrypoint: "collect_duel",
+                    description: "Close expired duels",
+                  },
+                  {
+                    entrypoint: "clear_call_to_action",
+                    description: "Clear the required action call for a duelist",
+                  },
+                ],
+              },
+            "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f":
+              {
+                description: "Bank contract",
+                methods: [
+                  {
+                    entrypoint: "sponsor_duelists",
+                    description: "Sponsor duelist starter packs with $LORDS",
+                  },
+                  {
+                    entrypoint: "sponsor_season",
+                    description: "Sponsor the current season with $LORDS",
+                  },
+                  {
+                    entrypoint: "sponsor_tournament",
+                    description: "Sponsor a tournament with $LORDS",
+                  },
+                  {
+                    entrypoint: "collect_season",
+                    description:
+                      "Close the current season and start the next one",
+                  },
+                ],
+              },
+            "0x071333ac75b7d5ba89a2d0c2b67d5b955258a4d46eb42f3428da6137bbbfdfd9":
+              {
+                description: "Packs ERC721 contract",
+                methods: [
+                  {
+                    entrypoint: "claim_starter_pack",
+                    description: "Claim the starter pack, mint Duelists",
+                  },
+                  {
+                    entrypoint: "claim_gift",
+                    description: "Claim gift pack, if available",
+                  },
+                  {
+                    entrypoint: "purchase",
+                    description: "Purchase a closed pack",
+                  },
+                  {
+                    entrypoint: "open",
+                    description: "Open a pack, mint its contents",
+                  },
+                ],
+              },
+            "0x02e9c711b1a7e2784570b1bda5082a92606044e836ba392d2b977d280fb74b3c":
+              {
+                description: "Duel ERC721 contract",
+                methods: [
+                  {
+                    entrypoint: "create_duel",
+                    description: "Create a Duel, mint its token",
+                  },
+                  {
+                    entrypoint: "reply_duel",
+                    description: "Reply to a Duel (accept or reject)",
+                  },
+                ],
+              },
+            "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f":
+              {
+                description: "Duelist ERC721 contract",
+                methods: [
+                  {
+                    entrypoint: "poke",
+                    description: "Reactivates an inactive Duelist",
+                  },
+                  {
+                    entrypoint: "sacrifice",
+                    description: "Sacrifices a Duelist",
+                  },
+                  {
+                    entrypoint: "memorialize",
+                    description: "Memorializes a Duelist",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                description: "Cartridge VRF Provider",
+                methods: [
+                  {
+                    entrypoint: "request_random",
+                    description: "Request a random number",
+                  },
+                ],
+              },
+          },
+          messages: [
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                Message: [
+                  {
+                    name: "duelId",
+                    type: "felt",
+                  },
+                  {
+                    name: "duelistId",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_SEPOLIA",
+                revision: "1",
+              },
+              description: "Verify the identity of a player in a Duel",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                "pistols-PlayerOnline": [
+                  {
+                    name: "identity",
+                    type: "ContractAddress",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "pistols-PlayerOnline",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_SEPOLIA",
+                revision: "1",
+              },
+              name: "PlayerOnline",
+              description: "Notify when a player is online",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                "pistols-PlayerBookmark": [
+                  {
+                    name: "identity",
+                    type: "ContractAddress",
+                  },
+                  {
+                    name: "target_address",
+                    type: "ContractAddress",
+                  },
+                  {
+                    name: "target_id",
+                    type: "u128",
+                  },
+                  {
+                    name: "enabled",
+                    type: "bool",
+                  },
+                ],
+              },
+              primaryType: "pistols-PlayerBookmark",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_SEPOLIA",
+                revision: "1",
+              },
+              name: "PlayerBookmark",
+              description:
+                "Notify when a player follows another player or token",
             },
           ],
         },
@@ -2500,6 +3058,342 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.svg",
           "128": "icon@128.svg",
           "256": "icon@256.svg",
+        },
+      },
+    },
+  },
+  ponziland: {
+    origin: ["*.ponzi.land"],
+    theme: {
+      colors: {
+        primary: "#F38332",
+      },
+      cover: "https://static.cartridge.gg/presets/ponziland/cover.png",
+      icon: "https://static.cartridge.gg/presets/ponziland/icon.svg",
+      name: "PonziLand",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+        svg: {
+          "16": "icon@16.svg",
+          "32": "icon@32.svg",
+          "64": "icon@64.svg",
+          "128": "icon@128.svg",
+          "256": "icon@256.svg",
+        },
+      },
+    },
+    chains: {
+      SN_MAIN: {
+        policies: {
+          contracts: {
+            "0x77eeeef469121d1761bb25efbfce7650f5c7fbf00d63cb1b778b774783b2c6":
+              {
+                name: "PonziLand Systems",
+                description: "Main game contract",
+                methods: [
+                  {
+                    name: "Bid",
+                    entrypoint: "bid",
+                    description: "Bid for auction land",
+                  },
+                  {
+                    name: "Buy",
+                    entrypoint: "buy",
+                    description: "Buy land from another player",
+                  },
+                  {
+                    name: "Claim",
+                    entrypoint: "claim",
+                    description: "Claim rewards for a single land",
+                  },
+                  {
+                    name: "Claim All",
+                    entrypoint: "claim_all",
+                    description: "Claim rewards for lands",
+                  },
+                  {
+                    name: "Increase Price",
+                    entrypoint: "increase_price",
+                    description: "Increase price of the land",
+                  },
+                  {
+                    name: "Increase Stake",
+                    entrypoint: "increase_stake",
+                    description: "Increase stake of the land",
+                  },
+                  {
+                    name: "Level Up",
+                    entrypoint: "level_up",
+                    description: "Level up the land",
+                  },
+                ],
+              },
+            "0x524624cb89898776386140c36093d1bc4dd1654d125f0f677c9cd2b122463ff":
+              {
+                name: "PonziLand Auth System",
+                description: "Contract to allow authorized players to play",
+                methods: [
+                  {
+                    name: "Add Authorized",
+                    entrypoint: "add_authorized_with_signature",
+                    description: "Add authorized with signature",
+                  },
+                ],
+              },
+            "0x5735fa6be5dd248350866644c0a137e571f9d637bb4db6532ddd63a95854b58":
+              {
+                name: "eSTRK Token",
+                description: "eSTRK ERC20 methods",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eSTRK allowance",
+                  },
+                ],
+              },
+            "0x415c058a41cc80e7368562564c96fc4e3c03b23e32ba07a5c8cadc262b50c3c":
+              {
+                name: "ePAPER Token",
+                description: "ePAPER ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "ePAPER allowance",
+                  },
+                ],
+              },
+            "0x4b66d22d3001daad50fb853c0c1cb3b96d1745acb295bae4a6d54b29125ed09":
+              {
+                name: "eLORDS Token",
+                description: "eLORDS ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eLORDS allowance",
+                  },
+                ],
+              },
+            "0x1920ef3c5e765454dd3f6aeb5420ef524830e0b5f9a95ec2e1b9ee2073a16d1":
+              {
+                name: "eBROTHER Token",
+                description: "eBROTHER ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eBROTHER allowance",
+                  },
+                ],
+              },
+            "0x79aba4c89e9cc3495318d2479fe93601e1188ff5d9a8823e3dc736d74bb437f":
+              {
+                name: "ePAL Token",
+                description: "ePAL ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "ePAL allowance",
+                  },
+                ],
+              },
+            "0x38217779933c147320af3239e2dd098312e3074e0898001c79939c2e676fe8c":
+              {
+                name: "eETH Token",
+                description: "eETH ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eETH allowance",
+                  },
+                ],
+              },
+            "0x4c090a1a34a3ba423e63a498ce23de7c7a4f0f1a8128fa768a09738606cbb9e":
+              {
+                name: "eBTC Token",
+                description: "eBTC ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "eBTC allowance",
+                  },
+                ],
+              },
+          },
+          messages: [
+            {
+              name: "Socialink - Register",
+              description:
+                "Registers your controller wallet to a new Socialink account",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                register: [
+                  {
+                    name: "username",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "register",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+            {
+              name: "Socialink - Link",
+              description: "Links your social account to a Socialink account",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                link: [
+                  {
+                    name: "token",
+                    type: "string",
+                  },
+                  {
+                    name: "provider",
+                    type: "string",
+                  },
+                  {
+                    name: "nonce",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "link",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+            {
+              name: "Socialink - Mint",
+              description:
+                "Confirms your selection of token for the tournament mint",
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                mint: [
+                  {
+                    name: "token",
+                    type: "string",
+                  },
+                  {
+                    name: "nonce",
+                    type: "felt",
+                  },
+                  {
+                    name: "timestamp",
+                    type: "felt",
+                  },
+                ],
+              },
+              primaryType: "mint",
+              domain: {
+                name: "socialink",
+                version: "1",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+            },
+          ],
         },
       },
     },
@@ -2616,6 +3510,45 @@ export const configs: ControllerConfigs = {
           "768": "cover@768.png",
           "1024": "cover@1024.png",
           "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
+  wardens: {
+    origin: "app.wardens.xyz",
+    theme: {
+      colors: {
+        primary: "#f7ac18",
+      },
+      cover: "https://static.cartridge.gg/presets/wardens/cover.jpg",
+      icon: "https://static.cartridge.gg/presets/wardens/icon.png",
+      name: "Wardens",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
         },
       },
       optimizedIcon: {
@@ -2795,13 +3728,17 @@ export const availableConfigs = [
   "force-prime",
   "jokers-of-neon",
   "loot-survivor",
+  "metacube",
+  "metal-slug",
   "nums",
   "paved",
   "pistols",
   "pixelaw",
+  "ponziland",
   "realm-of-ra",
   "savage-summit",
   "tale-weaver",
+  "wardens",
   "zkastle",
   "zktt",
   "zkube",
