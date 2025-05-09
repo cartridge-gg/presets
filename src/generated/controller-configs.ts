@@ -948,7 +948,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x0444834e7b71749832f0db8c64f17ed1c3af8462c1682c10dcd6068b1c57494b":
+            "0x01e1c477f2ef896fd638b50caa31e3aa8f504d5c6cb3c09c99cd0b72523f07f7":
               {
                 name: "game_systems",
                 description: "Game mechanics",
@@ -970,7 +970,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x06633dc0c8e3956fd8d87f68e5a4324cb20270b442a532f4d4179d85c389b324":
+            "0x03befa9c969bf82bbfa0a96374da9f7aab172101298c0ff2611ec8c2fd02692":
               {
                 name: "battle_systems",
                 description: "Battle mechanics",
@@ -1432,6 +1432,15 @@ export const configs: ControllerConfigs = {
                     name: "Battle Pillage",
                     description: "Pillage a structure",
                     entrypoint: "battle_pillage",
+                  },
+                ],
+              },
+            "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560":
+              {
+                methods: [
+                  {
+                    name: "set_approval_for_all",
+                    entrypoint: "set_approval_for_all",
                   },
                 ],
               },
