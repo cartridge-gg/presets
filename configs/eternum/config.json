@@ -18,7 +18,7 @@
             }
           ]
         },
-        ["0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560"]: {
+        "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560": {
           "methods": [
             {
               "name": "set_approval_for_all",
