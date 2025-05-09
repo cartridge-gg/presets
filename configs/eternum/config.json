@@ -18,6 +18,14 @@
             }
           ]
         },
+        ["0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560"]: {
+          "methods": [
+            {
+              "name": "set_approval_for_all",
+              "entrypoint": "set_approval_for_all",
+            },
+          ],
+        },
         "0x2620f65aa2fd72d705306ada1ee7410023a3df03da9291f1ccb744fabfebc0": {
           "name": "Battle contract",
           "description": "Required to engage in battles",
