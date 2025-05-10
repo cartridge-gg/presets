@@ -1,0 +1,12 @@
+{
+    "origin": "place-holder",
+    "theme": {
+      "colors": {
+        "primary": "#E66666"
+      },
+      "cover": "cover.png",
+      "icon": "icon.png",
+      "name": "Chaos Surfer"
+    }
+  }
+  
