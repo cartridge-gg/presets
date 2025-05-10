@@ -699,7 +699,7 @@ export const configs: ControllerConfigs = {
       },
       cover: "https://static.cartridge.gg/presets/chaos-surfer/cover.png",
       icon: "https://static.cartridge.gg/presets/chaos-surfer/icon.png",
-      name: "Chaos Surfer",
+      name: "Chaos Surfers",
       optimizedCover: {
         webp: {
           "768": "cover@768.webp",
@@ -738,7 +738,7 @@ export const configs: ControllerConfigs = {
       WP_POPULARIUMDEMO_GAME: {
         policies: {
           contracts: {
-            "0x06abe70e7cf36f5c40fbf0ea0bfd18809a47a44e2b6656423260bc9e2302d967":
+            "0x02bc1da15a889c1ed9281bfce4fba5130a07e753e6dad3972215da657423baab":
               {
                 methods: [
                   {
@@ -753,7 +753,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x022ad900fbd0d1ba0b0f7f3307139dfcf41798dad201e1db6768e85f068c8a1e":
+            "0x07cd4db7a78abbf92a4b846803388b51d8f1f85b27de36c9f1625e0d5d074b8e":
               {
                 methods: [
                   {
