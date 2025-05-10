@@ -1933,6 +1933,23 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
+            "0x5441c5b2d141d9e6b299ad88e5e3f0d5b0653830c8dbf565594deb8c497ddc5":
+              {
+                name: "Quests",
+                description: "Start and claim quests",
+                methods: [
+                  {
+                    name: "Start Quest",
+                    description: "Start a quest",
+                    entrypoint: "start_quest",
+                  },
+                  {
+                    name: "Claim Quest Reward",
+                    description: "Claim a quest reward",
+                    entrypoint: "claim_reward",
+                  },
+                ],
+              },
           },
           messages: [
             {
