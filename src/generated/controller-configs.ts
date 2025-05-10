@@ -692,7 +692,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "chaos-surfer": {
-    origin: "place-holder",
+    origin: ["*.cartridge.gg"],
     theme: {
       colors: {
         primary: "#E66666",
@@ -731,6 +731,44 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.png",
           "128": "icon@128.png",
           "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      WP_POPULARIUMDEMO_GAME: {
+        policies: {
+          contracts: {
+            "0x06abe70e7cf36f5c40fbf0ea0bfd18809a47a44e2b6656423260bc9e2302d967":
+              {
+                methods: [
+                  {
+                    name: "claim_card_pack",
+                    entrypoint: "claim_card_pack",
+                    description: "Claim a card pack",
+                  },
+                  {
+                    name: "draft_agent",
+                    entrypoint: "draft_agent",
+                    description: "Add an agent to the trial",
+                  },
+                ],
+              },
+            "0x022ad900fbd0d1ba0b0f7f3307139dfcf41798dad201e1db6768e85f068c8a1e":
+              {
+                methods: [
+                  {
+                    name: "issue_card",
+                    entrypoint: "issue_card",
+                    description: "Issue a card",
+                  },
+                  {
+                    name: "transfer_from",
+                    entrypoint: "transfer_from",
+                    description: "Transfer a card",
+                  },
+                ],
+              },
+          },
         },
       },
     },
