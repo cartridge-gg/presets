@@ -18,6 +18,22 @@
             }
           ]
         },
+        "0x4eda0975e3b6eaf78bac5626c5bf06ee51297365134dc5f70d0074ece0f63dd": {
+          "methods": [
+            {
+              "name": "create",
+              "entrypoint": "create",
+            },
+          ]
+        },
+        "0x7ad410c472c1d61ce318dd617a479c977c85275afbf7991a1e1461ffe626a3d": {
+          "methods": [
+            {
+              "name": "set_approval_for_all",
+              "entrypoint": "set_approval_for_all"
+            }
+          ]
+        },
         "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560": {
           "methods": [
             {
