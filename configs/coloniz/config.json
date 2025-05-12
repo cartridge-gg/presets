@@ -1,6 +1,7 @@
 {
     "origin": [
-      "*.coloniz.xyz"
+      "*.coloniz.xyz",
+      "coloniz.xyz"
     ],
     "chains": {
       "SN_MAIN": {
