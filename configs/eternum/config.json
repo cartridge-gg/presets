@@ -22,8 +22,8 @@
           "methods": [
             {
               "name": "create",
-              "entrypoint": "create",
-            },
+              "entrypoint": "create"
+            }
           ]
         },
         "0x7ad410c472c1d61ce318dd617a479c977c85275afbf7991a1e1461ffe626a3d": {
