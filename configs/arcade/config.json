@@ -2,7 +2,11 @@
   "origin": "*cartridge.gg",
   "theme": {
     "name": "Arcade",
-    "icon": "icon.svg"
+    "icon": "icon.svg",
+    "cover": {
+      "light": "cover-light.png",
+      "dark": "cover-dark.png"
+    }
   },
   "chains": {
     "SN_MAIN": {
