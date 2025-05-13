@@ -2346,50 +2346,6 @@ export const configs: ControllerConfigs = {
       },
     },
   },
-  "evolute-duel": {
-    origin: ["devmageduel.evolute.network", "mageduel.evolute.network"],
-    theme: {
-      colors: {
-        primary: "#BD835B",
-      },
-      cover: "https://static.cartridge.gg/presets/evolute-duel/cover.png",
-      icon: "https://static.cartridge.gg/presets/evolute-duel/icon.png",
-      name: "Evolute: Mage Duel",
-      optimizedCover: {
-        webp: {
-          "768": "cover@768.webp",
-          "1024": "cover@1024.webp",
-          "1440": "cover@1440.webp",
-        },
-        jpg: {
-          "768": "cover@768.jpg",
-          "1024": "cover@1024.jpg",
-          "1440": "cover@1440.jpg",
-        },
-        png: {
-          "768": "cover@768.png",
-          "1024": "cover@1024.png",
-          "1440": "cover@1440.png",
-        },
-      },
-      optimizedIcon: {
-        webp: {
-          "16": "icon@16.webp",
-          "32": "icon@32.webp",
-          "64": "icon@64.webp",
-          "128": "icon@128.webp",
-          "256": "icon@256.webp",
-        },
-        png: {
-          "16": "icon@16.png",
-          "32": "icon@32.png",
-          "64": "icon@64.png",
-          "128": "icon@128.png",
-          "256": "icon@256.png",
-        },
-      },
-    },
-  },
   flippyflop: {
     origin: "flippyflop.gg",
     theme: {
@@ -2579,6 +2535,50 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/loot-survivor/cover.png",
       icon: "https://static.cartridge.gg/presets/loot-survivor/icon.png",
       name: "Loot Survivor",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
+  "mage-duel": {
+    origin: ["devmageduel.evolute.network", "mageduel.evolute.network"],
+    theme: {
+      colors: {
+        primary: "#BD835B",
+      },
+      cover: "https://static.cartridge.gg/presets/mage-duel/cover.png",
+      icon: "https://static.cartridge.gg/presets/mage-duel/icon.png",
+      name: "Evolute: Mage Duel",
       optimizedCover: {
         webp: {
           "768": "cover@768.webp",
@@ -4168,11 +4168,11 @@ export const availableConfigs = [
   "dope-wars",
   "dragark",
   "eternum",
-  "evolute-duel",
   "flippyflop",
   "force-prime",
   "jokers-of-neon",
   "loot-survivor",
+  "mage-duel",
   "metacube",
   "metal-slug",
   "nums",
