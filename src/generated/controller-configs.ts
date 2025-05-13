@@ -3,7 +3,7 @@ import { ControllerConfigs } from "../";
 
 export const configs: ControllerConfigs = {
   arcade: {
-    origin: "*cartridge.gg",
+    origin: "*.cartridge.gg",
     theme: {
       name: "Arcade",
       icon: "https://static.cartridge.gg/presets/arcade/icon.svg",
