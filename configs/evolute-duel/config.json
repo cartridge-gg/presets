@@ -1,0 +1,14 @@
+{
+    "origin": [
+        "devmageduel.evolute.network",
+        "mageduel.evolute.network"
+    ],
+    "theme": {
+        "colors": {
+            "primary": "#BD835B"
+        },
+        "cover": "cover.png",
+        "icon": "icon.png",
+        "name": "Evolute: Mage Duel"
+    }
+}
