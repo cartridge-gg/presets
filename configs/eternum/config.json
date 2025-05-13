@@ -26,6 +26,58 @@
             }
           ]
         },
+        "0x3bd8ab5ff0f6b9cac2580b65d04b1249d62a8eec450bd259379182ae22f7d74": {
+          "methods": [
+            {
+              "name": "initialize",
+              "entrypoint": "initialize",
+            },
+            {
+              "name": "contribute_to_construction",
+              "entrypoint": "contribute_to_construction",
+            },
+            {
+              "name": "set_co_owners",
+              "entrypoint": "set_co_owners",
+            },
+            {
+              "name": "end_game",
+              "entrypoint": "end_game",
+            },
+            {
+              "name": "set_access",
+              "entrypoint": "set_access",
+            },
+            {
+              "name": "dojo_name",
+              "entrypoint": "dojo_name",
+            },
+            {
+              "name": "world_dispatcher",
+              "entrypoint": "world_dispatcher",
+            },
+          ],
+        },
+        "0x69c3c02987c4259663d80aee1d6c32f4c8298e51a61fa1dcd52c1062bfc1932": {
+          "methods": [
+            {
+              "name": "register_to_leaderboard",
+               "entrypoint": "register_to_leaderboard",
+            },
+            {
+              "name": "claim_leaderboard_rewards",
+               "entrypoint": "claim_leaderboard_rewards",
+            },
+            {
+              "name": "dojo_name",
+               "entrypoint": "dojo_name",
+            },
+            {
+              "name": "world_dispatcher",
+               "entrypoint": "world_dispatcher",
+            },
+          ],
+        },
         "0x7ad410c472c1d61ce318dd617a479c977c85275afbf7991a1e1461ffe626a3d": {
           "methods": [
             {
