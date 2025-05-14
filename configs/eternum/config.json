@@ -244,6 +244,11 @@
               {
                 "name": "troop_burn",
                 "entrypoint": "troop_burn"
+              },
+              {
+                "name": "Structure regularize weight",
+                "description": "Regularizes the weight of a structure",
+                "entrypoint": "structure_regularize_weight"
               }
             ]
           },

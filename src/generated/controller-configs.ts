@@ -2032,6 +2032,11 @@ export const configs: ControllerConfigs = {
                     name: "troop_burn",
                     entrypoint: "troop_burn",
                   },
+                  {
+                    name: "Structure regularize weight",
+                    description: "Regularizes the weight of a structure",
+                    entrypoint: "structure_regularize_weight",
+                  },
                 ],
               },
             "0x69c3c02987c4259663d80aee1d6c32f4c8298e51a61fa1dcd52c1062bfc1932":
