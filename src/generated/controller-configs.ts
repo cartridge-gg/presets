@@ -1812,7 +1812,7 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     name: "Join Guild",
-                    description: "Joins a guild",
+                    description: "Join an existing guild",
                     entrypoint: "join_guild",
                   },
                   {
@@ -1822,30 +1822,33 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     name: "Whitelist Player",
-                    description: "Whitelists a player",
+                    description: "Add a player to the guild's whitelist",
                     entrypoint: "whitelist_player",
                   },
                   {
                     name: "Transfer Guild Ownership",
-                    description: "Transfers the ownership of a guild",
+                    description:
+                      "Transfer ownership of the guild to another player",
                     entrypoint: "transfer_guild_ownership",
                   },
                   {
                     name: "Remove Guild Member",
-                    description: "Removes a member from a guild",
+                    description: "Remove a member from the guild",
                     entrypoint: "remove_guild_member",
                   },
                   {
                     name: "Remove Player from Whitelist",
-                    description: "Removes a player from the whitelist",
+                    description: "Remove a player from the guild's whitelist",
                     entrypoint: "remove_player_from_whitelist",
                   },
                   {
                     name: "Update Whitelist",
+                    description: "Update the guild's whitelist",
                     entrypoint: "update_whitelist",
                   },
                   {
                     name: "Remove Member",
+                    description: "Remove a member from the guild",
                     entrypoint: "remove_member",
                   },
                 ],
