@@ -189,6 +189,11 @@
                 "name": "Burn Resource for Resource Production",
                 "description": "Burn resources for resource production",
                 "entrypoint": "burn_resource_for_resource_production"
+              },
+              {
+                "name": "Claim Wonder Production Bonus",
+                "description": "Claim the production bonus for a wonder",
+                "entrypoint": "claim_wonder_production_bonus"
               }
             ]
           },
