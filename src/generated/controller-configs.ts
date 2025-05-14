@@ -2,6 +2,278 @@
 import { ControllerConfigs } from "../";
 
 export const configs: ControllerConfigs = {
+  arcade: {
+    origin: "*.cartridge.gg",
+    theme: {
+      name: "Arcade",
+      icon: "https://static.cartridge.gg/presets/arcade/icon.svg",
+      cover: {
+        light: "https://static.cartridge.gg/presets/arcade/cover-light.png",
+        dark: "https://static.cartridge.gg/presets/arcade/cover-dark.png",
+      },
+      optimizedCover: {
+        light: {
+          webp: {
+            "768": "cover-light@768.webp",
+            "1024": "cover-light@1024.webp",
+            "1440": "cover-light@1440.webp",
+          },
+          jpg: {
+            "768": "cover-light@768.jpg",
+            "1024": "cover-light@1024.jpg",
+            "1440": "cover-light@1440.jpg",
+          },
+          png: {
+            "768": "cover-light@768.png",
+            "1024": "cover-light@1024.png",
+            "1440": "cover-light@1440.png",
+          },
+        },
+        dark: {
+          webp: {
+            "768": "cover-dark@768.webp",
+            "1024": "cover-dark@1024.webp",
+            "1440": "cover-dark@1440.webp",
+          },
+          jpg: {
+            "768": "cover-dark@768.jpg",
+            "1024": "cover-dark@1024.jpg",
+            "1440": "cover-dark@1440.jpg",
+          },
+          png: {
+            "768": "cover-dark@768.png",
+            "1024": "cover-dark@1024.png",
+            "1440": "cover-dark@1440.png",
+          },
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+        svg: {
+          "16": "icon@16.svg",
+          "32": "icon@32.svg",
+          "64": "icon@64.svg",
+          "128": "icon@128.svg",
+          "256": "icon@256.svg",
+        },
+      },
+    },
+    chains: {
+      SN_MAIN: {
+        policies: {
+          contracts: {
+            "0x270562dd0e4fd973c7606567f80be50a1e09cea45996e3c84131369b9b5c147":
+              {
+                name: "Social",
+                description: "Social contract to manage your social activities",
+                methods: [
+                  {
+                    name: "pin",
+                    entrypoint: "pin",
+                    description: "Pin an achievement.",
+                  },
+                  {
+                    name: "unpin",
+                    entrypoint: "unpin",
+                    description: "Unpin an achievement.",
+                  },
+                  {
+                    name: "follow",
+                    entrypoint: "follow",
+                    description: "Follow another player.",
+                  },
+                  {
+                    name: "unfollow",
+                    entrypoint: "unfollow",
+                    description: "Unfollow a player.",
+                  },
+                  {
+                    name: "create_guild",
+                    entrypoint: "create_guild",
+                    description: "Create a guild.",
+                  },
+                  {
+                    name: "open_guild",
+                    entrypoint: "open_guild",
+                    description: "Open a guild.",
+                  },
+                  {
+                    name: "close_guild",
+                    entrypoint: "close_guild",
+                    description: "Close a guild.",
+                  },
+                  {
+                    name: "crown_member",
+                    entrypoint: "crown_member",
+                    description: "Crown a member to lead the guild.",
+                  },
+                  {
+                    name: "promote_member",
+                    entrypoint: "promote_member",
+                    description: "Promote a member to officer.",
+                  },
+                  {
+                    name: "demote_member",
+                    entrypoint: "demote_member",
+                    description: "Demote an officer to member.",
+                  },
+                  {
+                    name: "hire_member",
+                    entrypoint: "hire_member",
+                    description: "Hire a member to the guild.",
+                  },
+                  {
+                    name: "fire_member",
+                    entrypoint: "fire_member",
+                    description: "Fire a member from the guild.",
+                  },
+                  {
+                    name: "create_alliance",
+                    entrypoint: "create_alliance",
+                    description: "Create an alliance.",
+                  },
+                  {
+                    name: "open_alliance",
+                    entrypoint: "open_alliance",
+                    description: "Open an alliance.",
+                  },
+                  {
+                    name: "close_alliance",
+                    entrypoint: "close_alliance",
+                    description: "Close an alliance.",
+                  },
+                  {
+                    name: "crown_guild",
+                    entrypoint: "crown_guild",
+                    description: "Crown a guild to lead the alliance.",
+                  },
+                  {
+                    name: "hire_guild",
+                    entrypoint: "hire_guild",
+                    description: "Hire a guild in the alliance.",
+                  },
+                  {
+                    name: "fire_guild",
+                    entrypoint: "fire_guild",
+                    description: "Fire a guild from the alliance.",
+                  },
+                  {
+                    name: "request_alliance",
+                    entrypoint: "request_alliance",
+                    description: "Request to join an alliance.",
+                  },
+                  {
+                    name: "cancel_alliance",
+                    entrypoint: "cancel_alliance",
+                    description: "Cancel a request to join an alliance.",
+                  },
+                  {
+                    name: "leave_alliance",
+                    entrypoint: "leave_alliance",
+                    description: "Leave an alliance.",
+                  },
+                ],
+              },
+            "0x1df0247ca7ab848ce0a66cd81ad910305e6be89a1cab9190417655f7dcd0bb7":
+              {
+                name: "Registry",
+                description: "Registry contract for games and editions",
+                methods: [
+                  {
+                    name: "register_game",
+                    entrypoint: "register_game",
+                    description: "Register a game.",
+                  },
+                  {
+                    name: "update_game",
+                    entrypoint: "update_game",
+                    description: "Update a game.",
+                  },
+                  {
+                    name: "publish_game",
+                    entrypoint: "publish_game",
+                    description: "Publish a game.",
+                  },
+                  {
+                    name: "hide_game",
+                    entrypoint: "hide_game",
+                    description: "Hide a game.",
+                  },
+                  {
+                    name: "whitelist_game",
+                    entrypoint: "whitelist_game",
+                    description: "Whitelist a game.",
+                  },
+                  {
+                    name: "blacklist_game",
+                    entrypoint: "blacklist_game",
+                    description: "Blacklist a game.",
+                  },
+                  {
+                    name: "remove_game",
+                    entrypoint: "remove_game",
+                    description: "Remove a game.",
+                  },
+                  {
+                    name: "register_edition",
+                    entrypoint: "register_edition",
+                    description: "Register an edition.",
+                  },
+                  {
+                    name: "update_edition",
+                    entrypoint: "update_edition",
+                    description: "Update edition.",
+                  },
+                  {
+                    name: "prioritize_edition",
+                    entrypoint: "prioritize_edition",
+                    description: "Set edition priority.",
+                  },
+                  {
+                    name: "publish_edition",
+                    entrypoint: "publish_edition",
+                    description: "Publish edition.",
+                  },
+                  {
+                    name: "hide_edition",
+                    entrypoint: "hide_edition",
+                    description: "Hide edition.",
+                  },
+                  {
+                    name: "whitelist_edition",
+                    entrypoint: "whitelist_edition",
+                    description: "Whitelist edition.",
+                  },
+                  {
+                    name: "blacklist_edition",
+                    entrypoint: "blacklist_edition",
+                    description: "Blacklist edition.",
+                  },
+                  {
+                    name: "remove_edition",
+                    entrypoint: "remove_edition",
+                    description: "Remove edition.",
+                  },
+                ],
+              },
+          },
+        },
+      },
+    },
+  },
   "blob-arena": {
     origin: ["*.blobarena.xyz", "blobarena.xyz", "development.blobarena.xyz"],
     theme: {
@@ -691,8 +963,90 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  "chaos-surfer": {
+    origin: ["*.cartridge.gg"],
+    theme: {
+      colors: {
+        primary: "#E66666",
+      },
+      cover: "https://static.cartridge.gg/presets/chaos-surfer/cover.png",
+      icon: "https://static.cartridge.gg/presets/chaos-surfer/icon.png",
+      name: "Chaos Surfers",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      WP_POPULARIUMDEMO_GAME: {
+        policies: {
+          contracts: {
+            "0x02bc1da15a889c1ed9281bfce4fba5130a07e753e6dad3972215da657423baab":
+              {
+                methods: [
+                  {
+                    name: "claim_card_pack",
+                    entrypoint: "claim_card_pack",
+                    description: "Claim a card pack",
+                  },
+                  {
+                    name: "draft_agent",
+                    entrypoint: "draft_agent",
+                    description: "Add an agent to the trial",
+                  },
+                ],
+              },
+            "0x07cd4db7a78abbf92a4b846803388b51d8f1f85b27de36c9f1625e0d5d074b8e":
+              {
+                methods: [
+                  {
+                    name: "issue_card",
+                    entrypoint: "issue_card",
+                    description: "Issue a card",
+                  },
+                  {
+                    name: "transfer_from",
+                    entrypoint: "transfer_from",
+                    description: "Transfer a card",
+                  },
+                ],
+              },
+          },
+        },
+      },
+    },
+  },
   coloniz: {
-    origin: ["*.coloniz.xyz"],
+    origin: ["*.coloniz.xyz", "coloniz.xyz"],
     chains: {
       SN_MAIN: {
         policies: {
@@ -948,7 +1302,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x0444834e7b71749832f0db8c64f17ed1c3af8462c1682c10dcd6068b1c57494b":
+            "0x01e1c477f2ef896fd638b50caa31e3aa8f504d5c6cb3c09c99cd0b72523f07f7":
               {
                 name: "game_systems",
                 description: "Game mechanics",
@@ -970,7 +1324,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x06633dc0c8e3956fd8d87f68e5a4324cb20270b442a532f4d4179d85c389b324":
+            "0x003befa9c969bf82bbfa0a96374da9f7aab172101298c0ff2611ec8c2fd02692":
               {
                 name: "battle_systems",
                 description: "Battle mechanics",
@@ -2291,6 +2645,50 @@ export const configs: ControllerConfigs = {
       cover: "https://static.cartridge.gg/presets/loot-survivor/cover.png",
       icon: "https://static.cartridge.gg/presets/loot-survivor/icon.png",
       name: "Loot Survivor",
+      optimizedCover: {
+        webp: {
+          "768": "cover@768.webp",
+          "1024": "cover@1024.webp",
+          "1440": "cover@1440.webp",
+        },
+        jpg: {
+          "768": "cover@768.jpg",
+          "1024": "cover@1024.jpg",
+          "1440": "cover@1440.jpg",
+        },
+        png: {
+          "768": "cover@768.png",
+          "1024": "cover@1024.png",
+          "1440": "cover@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "icon@16.webp",
+          "32": "icon@32.webp",
+          "64": "icon@64.webp",
+          "128": "icon@128.webp",
+          "256": "icon@256.webp",
+        },
+        png: {
+          "16": "icon@16.png",
+          "32": "icon@32.png",
+          "64": "icon@64.png",
+          "128": "icon@128.png",
+          "256": "icon@256.png",
+        },
+      },
+    },
+  },
+  "mage-duel": {
+    origin: ["devmageduel.evolute.network", "mageduel.evolute.network"],
+    theme: {
+      colors: {
+        primary: "#BD835B",
+      },
+      cover: "https://static.cartridge.gg/presets/mage-duel/cover.png",
+      icon: "https://static.cartridge.gg/presets/mage-duel/icon.png",
+      name: "Evolute: Mage Duel",
       optimizedCover: {
         webp: {
           "768": "cover@768.webp",
@@ -3866,11 +4264,13 @@ export const configs: ControllerConfigs = {
 
 // List of all available configs that can be loaded from CDN
 export const availableConfigs = [
+  "arcade",
   "blob-arena",
   "blob-arena-amma",
   "budokan",
   "bytebeasts-tamagotchi",
   "cartridge",
+  "chaos-surfer",
   "coloniz",
   "credit",
   "dark-shuffle",
@@ -3882,6 +4282,7 @@ export const availableConfigs = [
   "force-prime",
   "jokers-of-neon",
   "loot-survivor",
+  "mage-duel",
   "metacube",
   "metal-slug",
   "nums",
