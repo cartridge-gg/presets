@@ -1422,110 +1422,148 @@ export const configs: ControllerConfigs = {
       SN_MAIN: {
         policies: {
           contracts: {
-            "0x4ed3a7c5f53c6e96186eaf1b670bd2e2a3699c08e070aedf4e5fc6ac246ddc1":
+            "0x787a18ab98c12ed0336f79037a92ed18807d8716529722196ecb8c91238806b":
               {
-                name: "Pillage",
-                description:
-                  "Allows you to raid a structure and pillage resources",
+                name: "Bank systems",
+                description: "Manages bank functions",
                 methods: [
                   {
-                    name: "Battle Pillage",
-                    description: "Pillage a structure",
-                    entrypoint: "battle_pillage",
+                    name: "Create Banks",
+                    description: "Create a new bank",
+                    entrypoint: "create_banks",
                   },
                 ],
               },
-            "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560":
+            "0x7ad410c472c1d61ce318dd617a479c977c85275afbf7991a1e1461ffe626a3d":
               {
+                name: "Village pass contract",
+                description: "ERC721 Village pass contract",
                 methods: [
                   {
-                    name: "set_approval_for_all",
+                    name: "Set Approval For All",
+                    description: "Sets approval",
                     entrypoint: "set_approval_for_all",
                   },
                 ],
               },
-            "0x2620f65aa2fd72d705306ada1ee7410023a3df03da9291f1ccb744fabfebc0":
+            "0x66accc33b02ce70973c6557fbbddeef785f5d9619a3bce534d93be8d8436838":
               {
-                name: "Battle contract",
-                description: "Required to engage in battles",
+                name: "Configuration systems",
+                description: "Manages configuration functions",
                 methods: [
                   {
-                    name: "Battle Start",
-                    description: "Start a battle",
-                    entrypoint: "battle_start",
+                    name: "set_agent_config",
+                    entrypoint: "set_agent_config",
                   },
                   {
-                    name: "Battle Force Start",
-                    description: "Force start a battle",
-                    entrypoint: "battle_force_start",
+                    name: "set_world_config",
+                    entrypoint: "set_world_config",
                   },
                   {
-                    name: "Battle Join",
-                    description: "Join a battle",
-                    entrypoint: "battle_join",
+                    name: "set_mercenaries_name_config",
+                    entrypoint: "set_mercenaries_name_config",
                   },
                   {
-                    name: "Battle Leave",
-                    description: "Leave a battle",
-                    entrypoint: "battle_leave",
+                    name: "set_season_config",
+                    entrypoint: "set_season_config",
                   },
                   {
-                    name: "Battle Claim",
-                    description: "Claim a structure after a battle",
-                    entrypoint: "battle_claim",
+                    name: "set_vrf_config",
+                    entrypoint: "set_vrf_config",
                   },
                   {
-                    name: "Battle Resolve",
-                    description: "Reopens the bank after battle",
-                    entrypoint: "battle_resolve",
+                    name: "set_starting_resources_config",
+                    entrypoint: "set_starting_resources_config",
+                  },
+                  {
+                    name: "set_map_config",
+                    entrypoint: "set_map_config",
+                  },
+                  {
+                    name: "set_capacity_config",
+                    entrypoint: "set_capacity_config",
+                  },
+                  {
+                    name: "set_resource_weight_config",
+                    entrypoint: "set_resource_weight_config",
+                  },
+                  {
+                    name: "set_tick_config",
+                    entrypoint: "set_tick_config",
+                  },
+                  {
+                    name: "set_resource_factory_config",
+                    entrypoint: "set_resource_factory_config",
+                  },
+                  {
+                    name: "set_donkey_speed_config",
+                    entrypoint: "set_donkey_speed_config",
+                  },
+                  {
+                    name: "set_battle_config",
+                    entrypoint: "set_battle_config",
+                  },
+                  {
+                    name: "set_hyperstructure_config",
+                    entrypoint: "set_hyperstructure_config",
+                  },
+                  {
+                    name: "set_bank_config",
+                    entrypoint: "set_bank_config",
+                  },
+                  {
+                    name: "set_troop_config",
+                    entrypoint: "set_troop_config",
+                  },
+                  {
+                    name: "set_building_config",
+                    entrypoint: "set_building_config",
+                  },
+                  {
+                    name: "set_building_category_config",
+                    entrypoint: "set_building_category_config",
+                  },
+                  {
+                    name: "set_resource_bridge_config",
+                    entrypoint: "set_resource_bridge_config",
+                  },
+                  {
+                    name: "set_resource_bridge_fee_split_config",
+                    entrypoint: "set_resource_bridge_fee_split_config",
+                  },
+                  {
+                    name: "set_resource_bridge_whitelist_config",
+                    entrypoint: "set_resource_bridge_whitelist_config",
+                  },
+                  {
+                    name: "set_structure_max_level_config",
+                    entrypoint: "set_structure_max_level_config",
+                  },
+                  {
+                    name: "set_structure_level_config",
+                    entrypoint: "set_structure_level_config",
+                  },
+                  {
+                    name: "set_settlement_config",
+                    entrypoint: "set_settlement_config",
+                  },
+                  {
+                    name: "set_trade_config",
+                    entrypoint: "set_trade_config",
                   },
                 ],
               },
-            "0x6bf57710571fd159e71b1ed155bb0759027e416c88a06556f321c94c214e768":
+            "0xe20b1716b2b2065aa77456e6f65229c95908db22304e1ad9f772e11357c071":
               {
-                name: "Leave battle contract",
-                description: "Allows armies to leave a battle",
+                name: "dev resource systems",
                 methods: [
                   {
-                    name: "Leave Battle",
-                    description: "Leave a battle",
-                    entrypoint: "leave_battle",
-                  },
-                  {
-                    name: "Leave Battle If Ended",
-                    description: "Leave a battle if its ended",
-                    entrypoint: "leave_battle_if_ended",
+                    name: "mint",
+                    entrypoint: "mint",
                   },
                 ],
               },
-            "0x4b6a35c0c541467674ebb9640113a6d79c6f5a468796e9299b8e484a770032a":
-              {
-                name: "Building contract",
-                description: "Allows to manage buildings",
-                methods: [
-                  {
-                    name: "Create",
-                    description: "Create a building",
-                    entrypoint: "create",
-                  },
-                  {
-                    name: "Pause Production",
-                    description: "Pause the production of a building",
-                    entrypoint: "pause_production",
-                  },
-                  {
-                    name: "Resume Production",
-                    description: "Resume production of a building",
-                    entrypoint: "resume_production",
-                  },
-                  {
-                    name: "Destroy a building",
-                    description: "Destroy a building",
-                    entrypoint: "destroy",
-                  },
-                ],
-              },
-            "0x57d514154bb4dc319539d4e338312a41c248fb6a5122f82b2f2e11ddd3e67e4":
+            "0x690b17cee4b7f2b67459b5a17b51ecdb6961134df6ed4257d5ee9ae3da9e20f":
               {
                 name: "Guild contract",
                 description: "Allows guild utilities",
@@ -1537,57 +1575,64 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     name: "Join Guild",
-                    description: "Join an existing guild",
+                    description: "Joins a guild",
                     entrypoint: "join_guild",
                   },
                   {
+                    name: "Leave Guild",
+                    description: "Leaves a guild",
+                    entrypoint: "leave_guild",
+                  },
+                  {
                     name: "Whitelist Player",
-                    description: "Add a player to the guild's whitelist",
+                    description: "Whitelists a player",
                     entrypoint: "whitelist_player",
                   },
                   {
                     name: "Transfer Guild Ownership",
-                    description:
-                      "Transfer ownership of the guild to another player",
+                    description: "Transfers the ownership of a guild",
                     entrypoint: "transfer_guild_ownership",
                   },
                   {
                     name: "Remove Guild Member",
-                    description: "Remove a member from the guild",
+                    description: "Removes a member from a guild",
                     entrypoint: "remove_guild_member",
                   },
                   {
-                    name: "Remove Player From Whitelist",
-                    description: "Remove a player from the guild's whitelist",
+                    name: "Remove Player from Whitelist",
+                    description: "Removes a player from the whitelist",
                     entrypoint: "remove_player_from_whitelist",
+                  },
+                  {
+                    name: "Update Whitelist",
+                    entrypoint: "update_whitelist",
+                  },
+                  {
+                    name: "Remove Member",
+                    entrypoint: "remove_member",
                   },
                 ],
               },
-            "0x2fcc3c1691387321c2f4d6310eda7a14365bd274c1a37ed3948d2e93a56f821":
+            "0x3bd8ab5ff0f6b9cac2580b65d04b1249d62a8eec450bd259379182ae22f7d74":
               {
                 name: "Hyperstructure contract",
                 description:
                   "Handles the creation and management of hyperstructures",
                 methods: [
                   {
-                    name: "Get Points",
-                    description: "Gets your total number of points",
-                    entrypoint: "get_points",
+                    name: "Initialize hyperstructure",
+                    description: "Initializes a new hyperstructure",
+                    entrypoint: "initialize",
                   },
                   {
-                    name: "Create",
-                    description: "Create a new hyperstructure",
-                    entrypoint: "create",
-                  },
-                  {
-                    name: "Contribute To Construction",
+                    name: "Contribute to Construction",
                     description:
                       "Contribute resources to hyperstructure construction",
                     entrypoint: "contribute_to_construction",
                   },
                   {
-                    name: "Set Co Owners",
-                    description: "Set additional owners for the hyperstructure",
+                    name: "Set Co-Owners",
+                    description: "Set the co-owners of the hyperstructure",
                     entrypoint: "set_co_owners",
                   },
                   {
@@ -1604,7 +1649,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0xa052c5ca082356bcc8457f0f805eaf18f97d0fdddde3f90f5b238923859ed4":
+            "0x49c9f205f61e9b908e7eb656ec8b346d48084e65d2c3da77daa3ea943e6de46":
               {
                 name: "AMM liquidity contract",
                 description: "Manages liquidity for the Automated Market Maker",
@@ -1621,39 +1666,80 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4a212c52c4035bc9bd170125216604f406dcd75b41be11d3b4d89047366d84d":
-              {
-                name: "Exploration contract",
-                description:
-                  "Allows you to move to unexplored hexes on the map",
-                methods: [
-                  {
-                    name: "Explore",
-                    description: "Explore an uncharted hex on the game map",
-                    entrypoint: "explore",
-                  },
-                ],
-              },
-            "0x7e3bae0e253a0131063b63ee4d7b27b50329c617ae88b82d529a70f1a11c63":
+            "0x601421e73dfd18852d7eb35d8a133a82d9ec3d116fae048a1991fa8dc12c45c":
               {
                 name: "Naming contract",
-                description: "Manages entity naming in the game",
+                description: "Manages names",
                 methods: [
                   {
-                    name: "Set Entity Name",
-                    description: "Assign a custom name to a game entity",
-                    entrypoint: "set_entity_name",
-                  },
-                  {
                     name: "Set Address Name",
-                    description: "Assign a custom name to a user's address",
+                    description: "Set the name of the address",
                     entrypoint: "set_address_name",
                   },
                 ],
               },
-            "0x1b480f620ea35431ab43dba634795b14f547ef3e77370db6f0a31f2fdc21d86":
+            "0x7a541dcbffaa4a2d503f40e0f839f4558d7022e7c2cfed483e6304846f8612f":
               {
-                name: "Realms contract",
+                name: "Ownership contract",
+                description: "Manages ownership of structures and agents",
+                methods: [
+                  {
+                    name: "Transfer Structure Ownership",
+                    description: "Transfer the ownership of a structure",
+                    entrypoint: "transfer_structure_ownership",
+                  },
+                  {
+                    name: "Transfer Agent Ownership",
+                    description: "Transfer the ownership of an agent",
+                    entrypoint: "transfer_agent_ownership",
+                  },
+                ],
+              },
+            "0x382def3c478f0beb5cf4c63ddd084169466aa56f27d805be6e0d4098cb2e2d1":
+              {
+                name: "Production contract",
+                description: "Enables management of production of buildings",
+                methods: [
+                  {
+                    name: "Create Building",
+                    description: "Create a new building",
+                    entrypoint: "create_building",
+                  },
+                  {
+                    name: "Destroy Building",
+                    description: "Destroy a building",
+                    entrypoint: "destroy_building",
+                  },
+                  {
+                    name: "Pause Building Production",
+                    description: "Pause the production of a building",
+                    entrypoint: "pause_building_production",
+                  },
+                  {
+                    name: "Resume Building Production",
+                    description: "Resume the production of a building",
+                    entrypoint: "resume_building_production",
+                  },
+                  {
+                    name: "Burn Resource for Labor Production",
+                    description: "Burn resources for labor production",
+                    entrypoint: "burn_resource_for_labor_production",
+                  },
+                  {
+                    name: "Burn Labor for Resource Production",
+                    description: "Burn labor for resource production",
+                    entrypoint: "burn_labor_for_resource_production",
+                  },
+                  {
+                    name: "Burn Resource for Resource Production",
+                    description: "Burn resources for resource production",
+                    entrypoint: "burn_resource_for_resource_production",
+                  },
+                ],
+              },
+            "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560":
+              {
+                name: "Realm contract",
                 description: "Manages realm-related actions",
                 methods: [
                   {
@@ -1661,48 +1747,9 @@ export const configs: ControllerConfigs = {
                     description: "Create a new realm",
                     entrypoint: "create",
                   },
-                  {
-                    name: "Upgrade Level",
-                    description: "Upgrade the level of a realm",
-                    entrypoint: "upgrade_level",
-                  },
-                  {
-                    name: "Quest Claim",
-                    description: "Claim rewards from completed quests",
-                    entrypoint: "quest_claim",
-                  },
                 ],
               },
-            "0x691a60b709ca5c1c5ff86824831f84deb26f0f5d07d70c0f807eab48110d2f6":
-              {
-                name: "Resource bridge contract",
-                description: "Manages bridge transfers between L2 and Eternum",
-                methods: [
-                  {
-                    name: "Deposit Initial",
-                    description:
-                      "Initial deposit of resources for bridge transfer",
-                    entrypoint: "deposit_initial",
-                  },
-                  {
-                    name: "Deposit",
-                    description:
-                      "Deposit additional resources for bridge transfer",
-                    entrypoint: "deposit",
-                  },
-                  {
-                    name: "Start Withdraw",
-                    description: "Initiate a withdrawal process",
-                    entrypoint: "start_withdraw",
-                  },
-                  {
-                    name: "Finish Withdraw",
-                    description: "Finalize a withdrawal process",
-                    entrypoint: "finish_withdraw",
-                  },
-                ],
-              },
-            "0x42c0303a2119a9e20daa60e83c48221cdf1bb2a4c009bab031d1cd3555a127e":
+            "0x4525466d50e8c007d1fe2b0c916b8a8e3b5f05e2f562eb08033e1dba0ba721b":
               {
                 name: "Resource contract",
                 description: "In-game resource management",
@@ -1719,12 +1766,64 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     name: "Pickup",
-                    description: "Collect available resources after approval",
+                    description: "Collect available resources after transfer",
                     entrypoint: "pickup",
+                  },
+                  {
+                    name: "Arrivals Offload",
+                    description: "Offload resources from an arrival",
+                    entrypoint: "arrivals_offload",
+                  },
+                  {
+                    name: "Transfer resources",
+                    description: "Transfer resources from troop to structure",
+                    entrypoint: "troop_structure_adjacent_transfer",
+                  },
+                  {
+                    name: "Transfer resources",
+                    description: "Transfer resources from structure to troop",
+                    entrypoint: "structure_troop_adjacent_transfer",
+                  },
+                  {
+                    name: "structure_burn",
+                    entrypoint: "structure_burn",
+                  },
+                  {
+                    name: "troop_burn",
+                    entrypoint: "troop_burn",
                   },
                 ],
               },
-            "0x4f92a1d00d3aec8cece60fc2d0fc236fe1d95c54ff0ceb2f393fbc7e0863d8e":
+            "0x69c3c02987c4259663d80aee1d6c32f4c8298e51a61fa1dcd52c1062bfc1932":
+              {
+                name: "Season contract",
+                description: "Manages season-related actions",
+                methods: [
+                  {
+                    name: "Register to Leaderboard",
+                    description: "Register to the leaderboard",
+                    entrypoint: "register_to_leaderboard",
+                  },
+                  {
+                    name: "Claim Leaderboard Rewards",
+                    description: "Claim rewards from the leaderboard",
+                    entrypoint: "claim_leaderboard_rewards",
+                  },
+                ],
+              },
+            "0x783cf5277eeaa10eb065dbd36a4bfc06719820c182e2e152831f898485d251c":
+              {
+                name: "Structure contract",
+                description: "Manages structure-related actions",
+                methods: [
+                  {
+                    name: "Level Up",
+                    description: "Level up a structure",
+                    entrypoint: "level_up",
+                  },
+                ],
+              },
+            "0x489701e7d386b42de3b20a598c96090b9cbfbbc54397f44819789da19b99532":
               {
                 name: "AMM swap contract",
                 description:
@@ -1742,7 +1841,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x7e2b1334398fafbe640f34bacae99b649d633417960ee397b6a8fb117fec819":
+            "0x7b6286417020ff6b82c3bb719115271ffd9b04dd5940382690a4e122ae6f7b9":
               {
                 name: "Market contract",
                 description: "Manages trading orders in the in-game market",
@@ -1758,59 +1857,120 @@ export const configs: ControllerConfigs = {
                     entrypoint: "accept_order",
                   },
                   {
-                    name: "Accept Partial Order",
-                    description: "Accept a partial trading order",
-                    entrypoint: "accept_partial_order",
-                  },
-                  {
                     name: "Cancel Order",
                     description: "Cancel a trading order",
                     entrypoint: "cancel_order",
                   },
                 ],
               },
-            "0x4069c2be57f08fef9f31afc85a5b4c03c208ebdb278b9d853606caa7a9cbee6":
+            "0x1ea013a75ea125643e745e71dd800e4b08dfc26263c9f4731f05e01f067ff9e":
               {
-                name: "Map travel contract",
-                description: "Manages player movement across the game map",
+                name: "Troop battle contract",
+                description: "Manages troop battles",
                 methods: [
                   {
-                    name: "Travel Hex",
-                    description: "Move to a specific hex on the map",
-                    entrypoint: "travel_hex",
+                    name: "Attack Explorer vs Explorer",
+                    description: "Combat: explorer vs explorer",
+                    entrypoint: "attack_explorer_vs_explorer",
+                  },
+                  {
+                    name: "Attack Explorer vs Guard",
+                    description: "Combat: explorer vs guard",
+                    entrypoint: "attack_explorer_vs_guard",
+                  },
+                  {
+                    name: "Attack Guard vs Explorer",
+                    description: "Combat: guard vs explorer",
+                    entrypoint: "attack_guard_vs_explorer",
                   },
                 ],
               },
-            "0x26be0ed574aa9ee6f73b53b12f0a199ddbf4ac697470316cdb3d9d1f5680cab":
+            "0x765e7a70d3dd78829d643dea6d3524b16115f3c1510ca04f3133c0092d9adb8":
               {
-                name: "Army contract",
-                description: "Manages army-related actions",
+                name: "Troop management contract",
+                description: "Manages troop management",
                 methods: [
                   {
-                    name: "Army Create",
-                    description: "Create a new army",
-                    entrypoint: "army_create",
+                    name: "Add Guard",
+                    description: "Add a guard to the troop",
+                    entrypoint: "guard_add",
                   },
                   {
-                    name: "Army Delete",
-                    description: "Delete an existing army",
-                    entrypoint: "army_delete",
+                    name: "Delete Guard",
+                    description: "Delete a guard from the troop",
+                    entrypoint: "guard_delete",
                   },
                   {
-                    name: "Army Buy Troops",
-                    description: "Buy troops for an army",
-                    entrypoint: "army_buy_troops",
+                    name: "Create Explorer",
+                    description: "Create a new explorer",
+                    entrypoint: "explorer_create",
                   },
                   {
-                    name: "Army Merge Troops",
-                    description: "Merge troops from multiple armies",
-                    entrypoint: "army_merge_troops",
+                    name: "Add Explorer",
+                    description: "Add an explorer to the troop",
+                    entrypoint: "explorer_add",
+                  },
+                  {
+                    name: "Delete Explorer",
+                    description: "Delete an explorer from the troop",
+                    entrypoint: "explorer_delete",
+                  },
+                  {
+                    name: "Explorer Explorer Swap",
+                    description: "Swap an explorer for another explorer",
+                    entrypoint: "explorer_explorer_swap",
+                  },
+                  {
+                    name: "Explorer Guard Swap",
+                    description: "Swap an explorer for a guard",
+                    entrypoint: "explorer_guard_swap",
+                  },
+                  {
+                    name: "Guard Explorer Swap",
+                    description: "Swap a guard for an explorer",
+                    entrypoint: "guard_explorer_swap",
+                  },
+                ],
+              },
+            "0x2c2c42a9c63f9f5eb1cd22fe4d55b228dec3bfc91ec8f37a37d3aea27d0ab27":
+              {
+                name: "Troop movement contract",
+                description: "Manages troop movement",
+                methods: [
+                  {
+                    name: "Explorer Move",
+                    description: "Move an explorer",
+                    entrypoint: "explorer_move",
+                  },
+                ],
+              },
+            "0xb695bc2b53c60be0db549b8c4faf42a8df3f440d321dc38eb7d1bca58c71ed":
+              {
+                name: "Raid systems",
+                description: "Raid systems",
+                methods: [
+                  {
+                    name: "Raid Explorer vs Guard",
+                    description: "Raid an explorer vs guard",
+                    entrypoint: "raid_explorer_vs_guard",
+                  },
+                ],
+              },
+            "0x4eda0975e3b6eaf78bac5626c5bf06ee51297365134dc5f70d0074ece0f63dd":
+              {
+                name: "Village systems",
+                description: "Village systems",
+                methods: [
+                  {
+                    name: "Create",
+                    description: "Create a new village",
+                    entrypoint: "create",
                   },
                 ],
               },
             "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
               {
-                name: "VRF Provider",
+                name: "Cartridge VRF Provider",
                 description:
                   "Verifiable Random Function contract, allows randomness in the game",
                 methods: [
@@ -1822,38 +1982,23 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x057675b9c0bd62b096a2e15502a37b290fa766ead21c33eda42993e48a714b80":
+            "0x60e8836acbebb535dfcd237ff01f20be503aae407b67bb6e3b5869afae97156":
               {
-                name: "Season pass ERC20 contract",
-                description: "Manages the season passes",
+                name: "Season passes",
+                description: "ERC721 Season passes contract",
                 methods: [
                   {
-                    name: "Approve for all",
+                    name: "Set Approval For All",
                     description: "Approves transfer of season pass",
                     entrypoint: "set_approval_for_all",
-                  },
-                ],
-              },
-            "0x4b5e65a9617c7ba3c7ea64324ff4338a400adb1a3cfe903b3f8b647cbb59fb7":
-              {
-                name: "Season Systems",
-                description: "Register and claim",
-                methods: [
-                  {
-                    name: "Register",
-                    description: "Registers to leaderboard",
-                    entrypoint: "register_to_leaderboard",
-                  },
-                  {
-                    name: "Claim",
-                    description: "Claim",
-                    entrypoint: "claim_leaderboard_rewards",
                   },
                 ],
               },
           },
           messages: [
             {
+              name: "Eternum Message Signing",
+              description: "Allows signing messages for Eternum",
               types: {
                 StarknetDomain: [
                   {
@@ -1873,7 +2018,7 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
-                "s0_eternum-Message": [
+                "s1_eternum-Message": [
                   {
                     name: "identity",
                     type: "ContractAddress",
@@ -1896,7 +2041,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-              primaryType: "s0_eternum-Message",
+              primaryType: "s1_eternum-Message",
               domain: {
                 name: "Eternum",
                 version: "1",
