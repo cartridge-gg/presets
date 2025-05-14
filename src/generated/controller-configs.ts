@@ -1975,6 +1975,11 @@ export const configs: ControllerConfigs = {
                     description: "Burn resources for resource production",
                     entrypoint: "burn_resource_for_resource_production",
                   },
+                  {
+                    name: "Claim Wonder Production Bonus",
+                    description: "Claim the production bonus for a wonder",
+                    entrypoint: "claim_wonder_production_bonus",
+                  },
                 ],
               },
             "0x31973536315f0915760065cdbe90accf397a7163e77fcf57a570ae9e0210560":
