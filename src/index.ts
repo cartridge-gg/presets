@@ -2,6 +2,8 @@ import type { TypedData } from "@starknet-io/types-js";
 import { configs } from "./generated/controller-configs";
 import { metadata } from "./generated/erc20-metadata";
 
+export * from "./config-loader";
+
 export const controllerConfigs = configs;
 export const erc20Metadata = metadata;
 export const defaultTheme = configs["cartridge"].theme!;

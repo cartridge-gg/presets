@@ -354,7 +354,7 @@ function writeConfigsIndex(configsList: string[]) {
     const indexFilePath = path.join(jsonOutputPath, "index.json");
     const indexData = {
       configs: configsList,
-      baseUrl: "https://static.cartridge.gg/presets/configs",
+      baseUrl: "https://static.cartridge.gg/presets",
     };
 
     fs.writeFileSync(indexFilePath, JSON.stringify(indexData, null, 2));
