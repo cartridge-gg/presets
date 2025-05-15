@@ -964,7 +964,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "chaos-surfer": {
-    origin: ["*.cartridge.gg"],
+    origin: ["*.cartridge.gg", "*.popularium.com"],
     theme: {
       colors: {
         primary: "#E66666",

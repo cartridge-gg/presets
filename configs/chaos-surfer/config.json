@@ -1,6 +1,7 @@
 {
   "origin": [
-    "*.cartridge.gg"
+    "*.cartridge.gg",
+    "*.popularium.com"
   ],
   "theme": {
     "colors": {
