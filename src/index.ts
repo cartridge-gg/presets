@@ -60,11 +60,22 @@ export type Method = {
    * @default false
    */
   isRequired?: boolean | false;
+  /**
+   * Whether the method can be paymastered (fees paid by a third party).
+   * @default false
+   */
+  isPaymastered?: boolean | false;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
   name?: string;
   description?: string;
+  /**
+   * Whether the message policy is togglable by the user.
+   * If true, user can't toggle the policy.
+   * @default false
+   */
+  isRequired?: boolean | false;
 };
 
 export type ControllerConfig = {
