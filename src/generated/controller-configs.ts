@@ -3642,6 +3642,205 @@ export const configs: ControllerConfigs = {
   },
   "mage-duel": {
     origin: ["devmageduel.evolute.network", "mageduel.evolute.network"],
+    chains: {
+      WP_EVOLUTE_DUEL: {
+        policies: {
+          contracts: {
+            "0x00313745d6c27cc77e9943b4ae18bc48cfd97b67d26dd376f52670da1fbcdcef":
+              {
+                name: "Game Contract",
+                description: "Core game mechanics",
+                methods: [
+                  {
+                    name: "Create Game",
+                    description: "Creates a new game session",
+                    entrypoint: "create_game",
+                  },
+                  {
+                    name: "Cancel Game",
+                    description: "Cancels an ongoing or pending game session",
+                    entrypoint: "cancel_game",
+                  },
+                  {
+                    name: "Join Game",
+                    description:
+                      "Allows a player to join an existing game hosted by another player",
+                    entrypoint: "join_game",
+                  },
+                  {
+                    name: "Make Move",
+                    description: "Makes a move by placing a tile on the board",
+                    entrypoint: "make_move",
+                  },
+                  {
+                    name: "Skip Move",
+                    description: "Skips the current player's move",
+                    entrypoint: "skip_move",
+                  },
+                  {
+                    name: "Create Snapshot",
+                    description: "Creates a snapshot of the current game state",
+                    entrypoint: "create_snapshot",
+                  },
+                  {
+                    name: "Create Game From Snapshot",
+                    description: "Restores a game session from a snapshot",
+                    entrypoint: "create_game_from_snapshot",
+                  },
+                  {
+                    name: "Finish Game",
+                    description: "Finishes the game and determines the winner",
+                    entrypoint: "finish_game",
+                  },
+                ],
+              },
+            "0x07d946710da9ccc6fa1a1f6362c77fa329fa8e74557eb81dcf6b27161ab5c298":
+              {
+                name: "Player Profile Contract",
+                description: "Handles player account data and actions",
+                methods: [
+                  {
+                    name: "Balance",
+                    description: "Retrieves the player's balance",
+                    entrypoint: "balance",
+                  },
+                  {
+                    name: "Set Balance",
+                    description: "Lets admin set the player's balance",
+                    entrypoint: "set_balance",
+                  },
+                  {
+                    name: "Username",
+                    description: "Retrieves the player's username",
+                    entrypoint: "username",
+                  },
+                  {
+                    name: "Active Skin",
+                    description: "Retrieves the player's active skin",
+                    entrypoint: "active_skin",
+                  },
+                  {
+                    name: "Change Username",
+                    description: "Changes the player's username",
+                    entrypoint: "change_username",
+                  },
+                  {
+                    name: "Change Skin",
+                    description: "Changes the player's active skin",
+                    entrypoint: "change_skin",
+                  },
+                  {
+                    name: "Become Bot",
+                    description: "Player becomes a bot",
+                    entrypoint: "become_bot",
+                  },
+                ],
+              },
+          },
+        },
+      },
+      WP_LIYARD_EVOLUTE_DUEL: {
+        policies: {
+          contracts: {
+            "0x00313745d6c27cc77e9943b4ae18bc48cfd97b67d26dd376f52670da1fbcdcef":
+              {
+                name: "Game Contract",
+                description: "Core game mechanics",
+                methods: [
+                  {
+                    name: "Create Game",
+                    description: "Creates a new game session",
+                    entrypoint: "create_game",
+                  },
+                  {
+                    name: "Cancel Game",
+                    description: "Cancels an ongoing or pending game session",
+                    entrypoint: "cancel_game",
+                  },
+                  {
+                    name: "Join Game",
+                    description:
+                      "Allows a player to join an existing game hosted by another player",
+                    entrypoint: "join_game",
+                  },
+                  {
+                    name: "Make Move",
+                    description: "Makes a move by placing a tile on the board",
+                    entrypoint: "make_move",
+                  },
+                  {
+                    name: "Skip Move",
+                    description: "Skips the current player's move",
+                    entrypoint: "skip_move",
+                  },
+                  {
+                    name: "Create Snapshot",
+                    description: "Creates a snapshot of the current game state",
+                    entrypoint: "create_snapshot",
+                  },
+                  {
+                    name: "Create Game From Snapshot",
+                    description: "Restores a game session from a snapshot",
+                    entrypoint: "create_game_from_snapshot",
+                  },
+                  {
+                    name: "Finish Game",
+                    description: "Finishes the game and determines the winner",
+                    entrypoint: "finish_game",
+                  },
+                ],
+              },
+            "0x07d946710da9ccc6fa1a1f6362c77fa329fa8e74557eb81dcf6b27161ab5c298":
+              {
+                name: "Player Profile Contract",
+                description: "Handles player account data and actions",
+                methods: [
+                  {
+                    name: "Balance",
+                    description: "Retrieves the player's balance",
+                    entrypoint: "balance",
+                  },
+                  {
+                    name: "Set Balance",
+                    description: "Lets admin set the player's balance",
+                    entrypoint: "set_balance",
+                  },
+                  {
+                    name: "Username",
+                    description: "Retrieves the player's username",
+                    entrypoint: "username",
+                  },
+                  {
+                    name: "Active Skin",
+                    description: "Retrieves the player's active skin",
+                    entrypoint: "active_skin",
+                  },
+                  {
+                    name: "Change Username",
+                    description: "Changes the player's username",
+                    entrypoint: "change_username",
+                  },
+                  {
+                    name: "Change Skin",
+                    description: "Changes the player's active skin",
+                    entrypoint: "change_skin",
+                  },
+                  {
+                    name: "Become Bot",
+                    description: "Player becomes a bot",
+                    entrypoint: "become_bot",
+                  },
+                  {
+                    name: "Become Controller",
+                    description: "Player becomes a controller",
+                    entrypoint: "become_controller",
+                  },
+                ],
+              },
+          },
+        },
+      },
+    },
     theme: {
       colors: {
         primary: "#BD835B",
