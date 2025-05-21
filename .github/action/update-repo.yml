@@ -1,0 +1,56 @@
+name: "Update external repo"
+description: "Update external repo commit hash"
+inputs:
+  repository:
+    description: "Repository to update"
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: "actions/checkout@v4"
+      with:
+        repository: ${{ inputs.repository }}
+        token: ${{ secrets.CREATE_PR_TOKEN }}
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+    - name: Switch to or create update branch
+      run: |
+        git fetch origin
+        git checkout -B update-presets || git checkout update-presets
+        git reset --hard origin/main
+
+    - uses: pnpm/action-setup@v2
+
+    - name: Update package.json
+      run: |
+        jq '.dependencies["@cartridge/presets"] = "github:cartridge-gg/presets#${{ needs.release.outputs.release_sha }}"' package.json > tmp.json && mv tmp.json package.json
+
+    - name: Update lockfile
+      run: pnpm install --no-frozen-lockfile
+
+    - name: Commit and push changes
+      run: |
+        git add package.json pnpm-lock.yaml
+        git commit -m "chore: update @cartridge/presets to ${{ needs.release.outputs.release_sha }}"
+        git push -f origin update-presets
+
+    - name: Create or update Pull Request
+      env:
+        GITHUB_TOKEN: ${{ secrets.CREATE_PR_TOKEN }}
+      run: |
+        if ! gh pr list --head update-presets --state open | grep -q .; then
+          gh pr create \
+            --title "chore: update @cartridge/presets" \
+            --body "Updates @cartridge/presets dependency to point to commit ${{ needs.release.outputs.release_sha }}" \
+            --repo ${{ inputs.repository }} \
+            --base main \
+            --head update-presets
+        else
+          gh pr edit update-presets \
+            --title "chore: update @cartridge/presets" \
+            --body "Updates @cartridge/presets dependency to point to commit ${{ needs.release.outputs.release_sha }}"
+        fi
