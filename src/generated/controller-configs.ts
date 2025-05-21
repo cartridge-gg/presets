@@ -2458,7 +2458,7 @@ export const configs: ControllerConfigs = {
     },
   },
   "jokers-of-neon": {
-    origin: "jokersofneon.com",
+    origin: "*.jokersofneon.com",
     theme: {
       colors: {
         primary: "#A144B2",
@@ -2497,6 +2497,1053 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.png",
           "128": "icon@128.png",
           "256": "icon@256.png",
+        },
+      },
+    },
+    chains: {
+      WP_JOKERSOFNEON: {
+        policies: {
+          contracts: {
+            "0x67de106ea4b7698e07debbb2f304621caa4f48991bf8bf5194321d1c21dea13":
+              {
+                methods: [
+                  {
+                    name: "Advance Node",
+                    entrypoint: "advance_node",
+                  },
+                  {
+                    name: "Create Map Level",
+                    entrypoint: "create_map_level",
+                  },
+                ],
+              },
+            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+              {
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                  },
+                  {
+                    name: "Balance Of",
+                    entrypoint: "balance_of",
+                  },
+                  {
+                    name: "Emit Metadata Update",
+                    entrypoint: "emit_metadata_update",
+                  },
+                  {
+                    name: "Game Count",
+                    entrypoint: "game_count",
+                  },
+                  {
+                    name: "Game Metadata",
+                    entrypoint: "game_metadata",
+                  },
+                  {
+                    name: "Is Approved For All",
+                    entrypoint: "is_approved_for_all",
+                  },
+                  {
+                    name: "Mint",
+                    entrypoint: "mint",
+                  },
+                  {
+                    name: "Name",
+                    entrypoint: "name",
+                  },
+                  {
+                    name: "Owner Of",
+                    entrypoint: "owner_of",
+                  },
+                  {
+                    name: "Safe Transfer From",
+                    entrypoint: "safe_transfer_from",
+                  },
+                  {
+                    name: "Score",
+                    entrypoint: "score",
+                  },
+                  {
+                    name: "Score Attribute",
+                    entrypoint: "score_attribute",
+                  },
+                  {
+                    name: "Score Model",
+                    entrypoint: "score_model",
+                  },
+                  {
+                    name: "Set Approval For All",
+                    entrypoint: "set_approval_for_all",
+                  },
+                  {
+                    name: "Setting Exists",
+                    entrypoint: "setting_exists",
+                  },
+                  {
+                    name: "Settings Model",
+                    entrypoint: "settings_model",
+                  },
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                  },
+                  {
+                    name: "Supports Interface",
+                    entrypoint: "supports_interface",
+                  },
+                  {
+                    name: "Symbol",
+                    entrypoint: "symbol",
+                  },
+                  {
+                    name: "Token Uri",
+                    entrypoint: "token_uri",
+                  },
+                  {
+                    name: "Token Metadata",
+                    entrypoint: "token_metadata",
+                  },
+                  {
+                    name: "Transfer From",
+                    entrypoint: "transfer_from",
+                  },
+                ],
+              },
+            "0x2d25231e8efe9d183d0137cd9713fcf30d7780cf60682283feab7e2a9b322a2":
+              {
+                methods: [
+                  {
+                    name: "Burn Card",
+                    entrypoint: "burn_card",
+                  },
+                  {
+                    name: "Buy Card",
+                    entrypoint: "buy_card",
+                  },
+                  {
+                    name: "Buy Loot Box",
+                    entrypoint: "buy_loot_box",
+                  },
+                  {
+                    name: "Buy Poker Hand",
+                    entrypoint: "buy_poker_hand",
+                  },
+                  {
+                    name: "Buy Power Up",
+                    entrypoint: "buy_power_up",
+                  },
+                  {
+                    name: "Buy Special Card",
+                    entrypoint: "buy_special_card",
+                  },
+                  {
+                    name: "Buy Special Slot",
+                    entrypoint: "buy_special_slot",
+                  },
+                  {
+                    name: "Reroll",
+                    entrypoint: "reroll",
+                  },
+                  {
+                    name: "Select Cards From Loot Box",
+                    entrypoint: "select_cards_from_loot_box",
+                  },
+                  {
+                    name: "Sell Special Card",
+                    entrypoint: "sell_special_card",
+                  },
+                  {
+                    name: "Skip Shop",
+                    entrypoint: "skip_shop",
+                  },
+                ],
+              },
+            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+              {
+                methods: [
+                  {
+                    name: "Calculate",
+                    entrypoint: "calculate",
+                  },
+                  {
+                    name: "Reset",
+                    entrypoint: "reset",
+                  },
+                ],
+              },
+            "0x7a308ada8024f69d0971e2323879fdfcc8355ccb81f4862efaf11161b390160":
+              {
+                methods: [
+                  {
+                    name: "Change Modifier Card",
+                    entrypoint: "change_modifier_card",
+                  },
+                  {
+                    name: "Discard",
+                    entrypoint: "discard",
+                  },
+                  {
+                    name: "Play",
+                    entrypoint: "play",
+                  },
+                ],
+              },
+            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+              {
+                methods: [
+                  {
+                    name: "Register Managers",
+                    entrypoint: "register_managers",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                methods: [
+                  {
+                    name: "Request Random",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+          },
+        },
+      },
+      WP_JOKERSOFNEONDEV: {
+        policies: {
+          contracts: {
+            "0x67de106ea4b7698e07debbb2f304621caa4f48991bf8bf5194321d1c21dea13":
+              {
+                methods: [
+                  {
+                    name: "Advance Node",
+                    entrypoint: "advance_node",
+                  },
+                  {
+                    name: "Create Map Level",
+                    entrypoint: "create_map_level",
+                  },
+                ],
+              },
+            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+              {
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                  },
+                  {
+                    name: "Balance Of",
+                    entrypoint: "balance_of",
+                  },
+                  {
+                    name: "Emit Metadata Update",
+                    entrypoint: "emit_metadata_update",
+                  },
+                  {
+                    name: "Game Count",
+                    entrypoint: "game_count",
+                  },
+                  {
+                    name: "Game Metadata",
+                    entrypoint: "game_metadata",
+                  },
+                  {
+                    name: "Is Approved For All",
+                    entrypoint: "is_approved_for_all",
+                  },
+                  {
+                    name: "Mint",
+                    entrypoint: "mint",
+                  },
+                  {
+                    name: "Name",
+                    entrypoint: "name",
+                  },
+                  {
+                    name: "Owner Of",
+                    entrypoint: "owner_of",
+                  },
+                  {
+                    name: "Safe Transfer From",
+                    entrypoint: "safe_transfer_from",
+                  },
+                  {
+                    name: "Score",
+                    entrypoint: "score",
+                  },
+                  {
+                    name: "Score Attribute",
+                    entrypoint: "score_attribute",
+                  },
+                  {
+                    name: "Score Model",
+                    entrypoint: "score_model",
+                  },
+                  {
+                    name: "Set Approval For All",
+                    entrypoint: "set_approval_for_all",
+                  },
+                  {
+                    name: "Setting Exists",
+                    entrypoint: "setting_exists",
+                  },
+                  {
+                    name: "Settings Model",
+                    entrypoint: "settings_model",
+                  },
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                  },
+                  {
+                    name: "Supports Interface",
+                    entrypoint: "supports_interface",
+                  },
+                  {
+                    name: "Symbol",
+                    entrypoint: "symbol",
+                  },
+                  {
+                    name: "Token Uri",
+                    entrypoint: "token_uri",
+                  },
+                  {
+                    name: "Token Metadata",
+                    entrypoint: "token_metadata",
+                  },
+                  {
+                    name: "Transfer From",
+                    entrypoint: "transfer_from",
+                  },
+                ],
+              },
+            "0x2d25231e8efe9d183d0137cd9713fcf30d7780cf60682283feab7e2a9b322a2":
+              {
+                methods: [
+                  {
+                    name: "Burn Card",
+                    entrypoint: "burn_card",
+                  },
+                  {
+                    name: "Buy Card",
+                    entrypoint: "buy_card",
+                  },
+                  {
+                    name: "Buy Loot Box",
+                    entrypoint: "buy_loot_box",
+                  },
+                  {
+                    name: "Buy Poker Hand",
+                    entrypoint: "buy_poker_hand",
+                  },
+                  {
+                    name: "Buy Power Up",
+                    entrypoint: "buy_power_up",
+                  },
+                  {
+                    name: "Buy Special Card",
+                    entrypoint: "buy_special_card",
+                  },
+                  {
+                    name: "Buy Special Slot",
+                    entrypoint: "buy_special_slot",
+                  },
+                  {
+                    name: "Reroll",
+                    entrypoint: "reroll",
+                  },
+                  {
+                    name: "Select Cards From Loot Box",
+                    entrypoint: "select_cards_from_loot_box",
+                  },
+                  {
+                    name: "Sell Special Card",
+                    entrypoint: "sell_special_card",
+                  },
+                  {
+                    name: "Skip Shop",
+                    entrypoint: "skip_shop",
+                  },
+                ],
+              },
+            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+              {
+                methods: [
+                  {
+                    name: "Calculate",
+                    entrypoint: "calculate",
+                  },
+                  {
+                    name: "Reset",
+                    entrypoint: "reset",
+                  },
+                ],
+              },
+            "0x7a308ada8024f69d0971e2323879fdfcc8355ccb81f4862efaf11161b390160":
+              {
+                methods: [
+                  {
+                    name: "Change Modifier Card",
+                    entrypoint: "change_modifier_card",
+                  },
+                  {
+                    name: "Discard",
+                    entrypoint: "discard",
+                  },
+                  {
+                    name: "Play",
+                    entrypoint: "play",
+                  },
+                ],
+              },
+            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+              {
+                methods: [
+                  {
+                    name: "Register Managers",
+                    entrypoint: "register_managers",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                methods: [
+                  {
+                    name: "Request Random",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+          },
+        },
+      },
+      WP_JOKERSOFNEONALPHA: {
+        policies: {
+          contracts: {
+            "0x67de106ea4b7698e07debbb2f304621caa4f48991bf8bf5194321d1c21dea13":
+              {
+                methods: [
+                  {
+                    name: "Advance Node",
+                    entrypoint: "advance_node",
+                  },
+                  {
+                    name: "Create Map Level",
+                    entrypoint: "create_map_level",
+                  },
+                ],
+              },
+            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+              {
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                  },
+                  {
+                    name: "Balance Of",
+                    entrypoint: "balance_of",
+                  },
+                  {
+                    name: "Emit Metadata Update",
+                    entrypoint: "emit_metadata_update",
+                  },
+                  {
+                    name: "Game Count",
+                    entrypoint: "game_count",
+                  },
+                  {
+                    name: "Game Metadata",
+                    entrypoint: "game_metadata",
+                  },
+                  {
+                    name: "Is Approved For All",
+                    entrypoint: "is_approved_for_all",
+                  },
+                  {
+                    name: "Mint",
+                    entrypoint: "mint",
+                  },
+                  {
+                    name: "Name",
+                    entrypoint: "name",
+                  },
+                  {
+                    name: "Owner Of",
+                    entrypoint: "owner_of",
+                  },
+                  {
+                    name: "Safe Transfer From",
+                    entrypoint: "safe_transfer_from",
+                  },
+                  {
+                    name: "Score",
+                    entrypoint: "score",
+                  },
+                  {
+                    name: "Score Attribute",
+                    entrypoint: "score_attribute",
+                  },
+                  {
+                    name: "Score Model",
+                    entrypoint: "score_model",
+                  },
+                  {
+                    name: "Set Approval For All",
+                    entrypoint: "set_approval_for_all",
+                  },
+                  {
+                    name: "Setting Exists",
+                    entrypoint: "setting_exists",
+                  },
+                  {
+                    name: "Settings Model",
+                    entrypoint: "settings_model",
+                  },
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                  },
+                  {
+                    name: "Supports Interface",
+                    entrypoint: "supports_interface",
+                  },
+                  {
+                    name: "Symbol",
+                    entrypoint: "symbol",
+                  },
+                  {
+                    name: "Token Uri",
+                    entrypoint: "token_uri",
+                  },
+                  {
+                    name: "Token Metadata",
+                    entrypoint: "token_metadata",
+                  },
+                  {
+                    name: "Transfer From",
+                    entrypoint: "transfer_from",
+                  },
+                ],
+              },
+            "0x2d25231e8efe9d183d0137cd9713fcf30d7780cf60682283feab7e2a9b322a2":
+              {
+                methods: [
+                  {
+                    name: "Burn Card",
+                    entrypoint: "burn_card",
+                  },
+                  {
+                    name: "Buy Card",
+                    entrypoint: "buy_card",
+                  },
+                  {
+                    name: "Buy Loot Box",
+                    entrypoint: "buy_loot_box",
+                  },
+                  {
+                    name: "Buy Poker Hand",
+                    entrypoint: "buy_poker_hand",
+                  },
+                  {
+                    name: "Buy Power Up",
+                    entrypoint: "buy_power_up",
+                  },
+                  {
+                    name: "Buy Special Card",
+                    entrypoint: "buy_special_card",
+                  },
+                  {
+                    name: "Buy Special Slot",
+                    entrypoint: "buy_special_slot",
+                  },
+                  {
+                    name: "Reroll",
+                    entrypoint: "reroll",
+                  },
+                  {
+                    name: "Select Cards From Loot Box",
+                    entrypoint: "select_cards_from_loot_box",
+                  },
+                  {
+                    name: "Sell Special Card",
+                    entrypoint: "sell_special_card",
+                  },
+                  {
+                    name: "Skip Shop",
+                    entrypoint: "skip_shop",
+                  },
+                ],
+              },
+            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+              {
+                methods: [
+                  {
+                    name: "Calculate",
+                    entrypoint: "calculate",
+                  },
+                  {
+                    name: "Reset",
+                    entrypoint: "reset",
+                  },
+                ],
+              },
+            "0x7a308ada8024f69d0971e2323879fdfcc8355ccb81f4862efaf11161b390160":
+              {
+                methods: [
+                  {
+                    name: "Change Modifier Card",
+                    entrypoint: "change_modifier_card",
+                  },
+                  {
+                    name: "Discard",
+                    entrypoint: "discard",
+                  },
+                  {
+                    name: "Play",
+                    entrypoint: "play",
+                  },
+                ],
+              },
+            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+              {
+                methods: [
+                  {
+                    name: "Register Managers",
+                    entrypoint: "register_managers",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                methods: [
+                  {
+                    name: "Request Random",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+          },
+        },
+      },
+      WP_JOKERSOFNEONPREPROD: {
+        policies: {
+          contracts: {
+            "0x67de106ea4b7698e07debbb2f304621caa4f48991bf8bf5194321d1c21dea13":
+              {
+                methods: [
+                  {
+                    name: "Advance Node",
+                    entrypoint: "advance_node",
+                  },
+                  {
+                    name: "Create Map Level",
+                    entrypoint: "create_map_level",
+                  },
+                ],
+              },
+            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+              {
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                  },
+                  {
+                    name: "Balance Of",
+                    entrypoint: "balance_of",
+                  },
+                  {
+                    name: "Emit Metadata Update",
+                    entrypoint: "emit_metadata_update",
+                  },
+                  {
+                    name: "Game Count",
+                    entrypoint: "game_count",
+                  },
+                  {
+                    name: "Game Metadata",
+                    entrypoint: "game_metadata",
+                  },
+                  {
+                    name: "Is Approved For All",
+                    entrypoint: "is_approved_for_all",
+                  },
+                  {
+                    name: "Mint",
+                    entrypoint: "mint",
+                  },
+                  {
+                    name: "Name",
+                    entrypoint: "name",
+                  },
+                  {
+                    name: "Owner Of",
+                    entrypoint: "owner_of",
+                  },
+                  {
+                    name: "Safe Transfer From",
+                    entrypoint: "safe_transfer_from",
+                  },
+                  {
+                    name: "Score",
+                    entrypoint: "score",
+                  },
+                  {
+                    name: "Score Attribute",
+                    entrypoint: "score_attribute",
+                  },
+                  {
+                    name: "Score Model",
+                    entrypoint: "score_model",
+                  },
+                  {
+                    name: "Set Approval For All",
+                    entrypoint: "set_approval_for_all",
+                  },
+                  {
+                    name: "Setting Exists",
+                    entrypoint: "setting_exists",
+                  },
+                  {
+                    name: "Settings Model",
+                    entrypoint: "settings_model",
+                  },
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                  },
+                  {
+                    name: "Supports Interface",
+                    entrypoint: "supports_interface",
+                  },
+                  {
+                    name: "Symbol",
+                    entrypoint: "symbol",
+                  },
+                  {
+                    name: "Token Uri",
+                    entrypoint: "token_uri",
+                  },
+                  {
+                    name: "Token Metadata",
+                    entrypoint: "token_metadata",
+                  },
+                  {
+                    name: "Transfer From",
+                    entrypoint: "transfer_from",
+                  },
+                ],
+              },
+            "0x2d25231e8efe9d183d0137cd9713fcf30d7780cf60682283feab7e2a9b322a2":
+              {
+                methods: [
+                  {
+                    name: "Burn Card",
+                    entrypoint: "burn_card",
+                  },
+                  {
+                    name: "Buy Card",
+                    entrypoint: "buy_card",
+                  },
+                  {
+                    name: "Buy Loot Box",
+                    entrypoint: "buy_loot_box",
+                  },
+                  {
+                    name: "Buy Poker Hand",
+                    entrypoint: "buy_poker_hand",
+                  },
+                  {
+                    name: "Buy Power Up",
+                    entrypoint: "buy_power_up",
+                  },
+                  {
+                    name: "Buy Special Card",
+                    entrypoint: "buy_special_card",
+                  },
+                  {
+                    name: "Buy Special Slot",
+                    entrypoint: "buy_special_slot",
+                  },
+                  {
+                    name: "Reroll",
+                    entrypoint: "reroll",
+                  },
+                  {
+                    name: "Select Cards From Loot Box",
+                    entrypoint: "select_cards_from_loot_box",
+                  },
+                  {
+                    name: "Sell Special Card",
+                    entrypoint: "sell_special_card",
+                  },
+                  {
+                    name: "Skip Shop",
+                    entrypoint: "skip_shop",
+                  },
+                ],
+              },
+            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+              {
+                methods: [
+                  {
+                    name: "Calculate",
+                    entrypoint: "calculate",
+                  },
+                  {
+                    name: "Reset",
+                    entrypoint: "reset",
+                  },
+                ],
+              },
+            "0x7a308ada8024f69d0971e2323879fdfcc8355ccb81f4862efaf11161b390160":
+              {
+                methods: [
+                  {
+                    name: "Change Modifier Card",
+                    entrypoint: "change_modifier_card",
+                  },
+                  {
+                    name: "Discard",
+                    entrypoint: "discard",
+                  },
+                  {
+                    name: "Play",
+                    entrypoint: "play",
+                  },
+                ],
+              },
+            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+              {
+                methods: [
+                  {
+                    name: "Register Managers",
+                    entrypoint: "register_managers",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                methods: [
+                  {
+                    name: "Request Random",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+          },
+        },
+      },
+      SN_SEPOLIA: {
+        policies: {
+          contracts: {
+            "0x67de106ea4b7698e07debbb2f304621caa4f48991bf8bf5194321d1c21dea13":
+              {
+                methods: [
+                  {
+                    name: "Advance Node",
+                    entrypoint: "advance_node",
+                  },
+                  {
+                    name: "Create Map Level",
+                    entrypoint: "create_map_level",
+                  },
+                ],
+              },
+            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+              {
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                  },
+                  {
+                    name: "Balance Of",
+                    entrypoint: "balance_of",
+                  },
+                  {
+                    name: "Emit Metadata Update",
+                    entrypoint: "emit_metadata_update",
+                  },
+                  {
+                    name: "Game Count",
+                    entrypoint: "game_count",
+                  },
+                  {
+                    name: "Game Metadata",
+                    entrypoint: "game_metadata",
+                  },
+                  {
+                    name: "Is Approved For All",
+                    entrypoint: "is_approved_for_all",
+                  },
+                  {
+                    name: "Mint",
+                    entrypoint: "mint",
+                  },
+                  {
+                    name: "Name",
+                    entrypoint: "name",
+                  },
+                  {
+                    name: "Owner Of",
+                    entrypoint: "owner_of",
+                  },
+                  {
+                    name: "Safe Transfer From",
+                    entrypoint: "safe_transfer_from",
+                  },
+                  {
+                    name: "Score",
+                    entrypoint: "score",
+                  },
+                  {
+                    name: "Score Attribute",
+                    entrypoint: "score_attribute",
+                  },
+                  {
+                    name: "Score Model",
+                    entrypoint: "score_model",
+                  },
+                  {
+                    name: "Set Approval For All",
+                    entrypoint: "set_approval_for_all",
+                  },
+                  {
+                    name: "Setting Exists",
+                    entrypoint: "setting_exists",
+                  },
+                  {
+                    name: "Settings Model",
+                    entrypoint: "settings_model",
+                  },
+                  {
+                    name: "Start Game",
+                    entrypoint: "start_game",
+                  },
+                  {
+                    name: "Supports Interface",
+                    entrypoint: "supports_interface",
+                  },
+                  {
+                    name: "Symbol",
+                    entrypoint: "symbol",
+                  },
+                  {
+                    name: "Token Uri",
+                    entrypoint: "token_uri",
+                  },
+                  {
+                    name: "Token Metadata",
+                    entrypoint: "token_metadata",
+                  },
+                  {
+                    name: "Transfer From",
+                    entrypoint: "transfer_from",
+                  },
+                ],
+              },
+            "0x2d25231e8efe9d183d0137cd9713fcf30d7780cf60682283feab7e2a9b322a2":
+              {
+                methods: [
+                  {
+                    name: "Burn Card",
+                    entrypoint: "burn_card",
+                  },
+                  {
+                    name: "Buy Card",
+                    entrypoint: "buy_card",
+                  },
+                  {
+                    name: "Buy Loot Box",
+                    entrypoint: "buy_loot_box",
+                  },
+                  {
+                    name: "Buy Poker Hand",
+                    entrypoint: "buy_poker_hand",
+                  },
+                  {
+                    name: "Buy Power Up",
+                    entrypoint: "buy_power_up",
+                  },
+                  {
+                    name: "Buy Special Card",
+                    entrypoint: "buy_special_card",
+                  },
+                  {
+                    name: "Buy Special Slot",
+                    entrypoint: "buy_special_slot",
+                  },
+                  {
+                    name: "Reroll",
+                    entrypoint: "reroll",
+                  },
+                  {
+                    name: "Select Cards From Loot Box",
+                    entrypoint: "select_cards_from_loot_box",
+                  },
+                  {
+                    name: "Sell Special Card",
+                    entrypoint: "sell_special_card",
+                  },
+                  {
+                    name: "Skip Shop",
+                    entrypoint: "skip_shop",
+                  },
+                ],
+              },
+            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+              {
+                methods: [
+                  {
+                    name: "Calculate",
+                    entrypoint: "calculate",
+                  },
+                  {
+                    name: "Reset",
+                    entrypoint: "reset",
+                  },
+                ],
+              },
+            "0x7a308ada8024f69d0971e2323879fdfcc8355ccb81f4862efaf11161b390160":
+              {
+                methods: [
+                  {
+                    name: "Change Modifier Card",
+                    entrypoint: "change_modifier_card",
+                  },
+                  {
+                    name: "Discard",
+                    entrypoint: "discard",
+                  },
+                  {
+                    name: "Play",
+                    entrypoint: "play",
+                  },
+                ],
+              },
+            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+              {
+                methods: [
+                  {
+                    name: "Register Managers",
+                    entrypoint: "register_managers",
+                  },
+                ],
+              },
+            "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f":
+              {
+                methods: [
+                  {
+                    name: "Request Random",
+                    entrypoint: "request_random",
+                  },
+                ],
+              },
+          },
         },
       },
     },
