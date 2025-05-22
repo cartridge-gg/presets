@@ -1868,24 +1868,29 @@ export const configs: ControllerConfigs = {
                     name: "Contribute to Construction",
                     description:
                       "Contribute resources to hyperstructure construction",
-                    entrypoint: "contribute_to_construction",
+                    entrypoint: "contribute",
                   },
                   {
-                    name: "Set Co-Owners",
-                    description: "Set the co-owners of the hyperstructure",
-                    entrypoint: "set_co_owners",
-                  },
-                  {
-                    name: "End Game",
+                    name: "Update Construction Access",
                     description:
-                      "Terminates the current game season once you've reached enough points",
-                    entrypoint: "end_game",
+                      "Update access permissions for hyperstructure construction",
+                    entrypoint: "update_construction_access",
                   },
                   {
-                    name: "Set Access",
+                    name: "Allocate Shares",
+                    description: "Allocate shares of the hyperstructure",
+                    entrypoint: "allocate_shares",
+                  },
+                  {
+                    name: "Claim Construction Points",
                     description:
-                      "Configure access permissions for contributions to the hyperstructure",
-                    entrypoint: "set_access",
+                      "Claim construction points from the hyperstructure",
+                    entrypoint: "claim_construction_points",
+                  },
+                  {
+                    name: "Claim Share Points",
+                    description: "Claim share points from the hyperstructure",
+                    entrypoint: "claim_share_points",
                   },
                 ],
               },
@@ -2030,6 +2035,11 @@ export const configs: ControllerConfigs = {
                     entrypoint: "structure_troop_adjacent_transfer",
                   },
                   {
+                    name: "Transfer resources",
+                    description: "Transfer resources between guards",
+                    entrypoint: "troop_troop_adjacent_transfer",
+                  },
+                  {
                     name: "structure_burn",
                     entrypoint: "structure_burn",
                   },
@@ -2050,14 +2060,9 @@ export const configs: ControllerConfigs = {
                 description: "Manages season-related actions",
                 methods: [
                   {
-                    name: "Register to Leaderboard",
-                    description: "Register to the leaderboard",
-                    entrypoint: "register_to_leaderboard",
-                  },
-                  {
-                    name: "Claim Leaderboard Rewards",
-                    description: "Claim rewards from the leaderboard",
-                    entrypoint: "claim_leaderboard_rewards",
+                    name: "Season Close",
+                    description: "Close the current season",
+                    entrypoint: "season_close",
                   },
                 ],
               },
