@@ -2718,7 +2718,7 @@ export const configs: ControllerConfigs = {
       WP_JOKERSOFNEONDEV: {
         policies: {
           contracts: {
-            "0x50c5394cc552e059ba6aa2d31f4301c47965d1ddbda663928632814e3f1c1df":
+            "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1":
               {
                 methods: [
                   {
@@ -2731,7 +2731,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+            "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681":
               {
                 methods: [
                   {
@@ -2824,7 +2824,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x1a378a8bbf8f3132bebabc140f8f98c1be7a7af75cdd768a6e3338c486cd963":
+            "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22":
               {
                 methods: [
                   {
@@ -2873,7 +2873,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+            "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4":
               {
                 methods: [
                   {
@@ -2886,7 +2886,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4da4277e3ab20cf1f3198a598445dab112942165c516295929b87a8b9343d00":
+            "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47":
               {
                 methods: [
                   {
@@ -2903,7 +2903,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+            "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b":
               {
                 methods: [
                   {
@@ -2927,7 +2927,7 @@ export const configs: ControllerConfigs = {
       WP_JOKERSOFNEONALPHA: {
         policies: {
           contracts: {
-            "0x50c5394cc552e059ba6aa2d31f4301c47965d1ddbda663928632814e3f1c1df":
+            "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1":
               {
                 methods: [
                   {
@@ -2940,7 +2940,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+            "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681":
               {
                 methods: [
                   {
@@ -3033,7 +3033,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x1a378a8bbf8f3132bebabc140f8f98c1be7a7af75cdd768a6e3338c486cd963":
+            "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22":
               {
                 methods: [
                   {
@@ -3082,7 +3082,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+            "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4":
               {
                 methods: [
                   {
@@ -3095,7 +3095,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4da4277e3ab20cf1f3198a598445dab112942165c516295929b87a8b9343d00":
+            "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47":
               {
                 methods: [
                   {
@@ -3112,7 +3112,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+            "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b":
               {
                 methods: [
                   {
@@ -3136,7 +3136,7 @@ export const configs: ControllerConfigs = {
       WP_JOKERSOFNEONPREPROD: {
         policies: {
           contracts: {
-            "0x50c5394cc552e059ba6aa2d31f4301c47965d1ddbda663928632814e3f1c1df":
+            "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1":
               {
                 methods: [
                   {
@@ -3149,7 +3149,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+            "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681":
               {
                 methods: [
                   {
@@ -3242,7 +3242,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x1a378a8bbf8f3132bebabc140f8f98c1be7a7af75cdd768a6e3338c486cd963":
+            "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22":
               {
                 methods: [
                   {
@@ -3291,7 +3291,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+            "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4":
               {
                 methods: [
                   {
@@ -3304,7 +3304,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4da4277e3ab20cf1f3198a598445dab112942165c516295929b87a8b9343d00":
+            "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47":
               {
                 methods: [
                   {
@@ -3321,7 +3321,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+            "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b":
               {
                 methods: [
                   {
@@ -3345,7 +3345,7 @@ export const configs: ControllerConfigs = {
       SN_SEPOLIA: {
         policies: {
           contracts: {
-            "0x50c5394cc552e059ba6aa2d31f4301c47965d1ddbda663928632814e3f1c1df":
+            "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1":
               {
                 methods: [
                   {
@@ -3358,7 +3358,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0":
+            "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681":
               {
                 methods: [
                   {
@@ -3451,7 +3451,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x1a378a8bbf8f3132bebabc140f8f98c1be7a7af75cdd768a6e3338c486cd963":
+            "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22":
               {
                 methods: [
                   {
@@ -3500,7 +3500,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9":
+            "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4":
               {
                 methods: [
                   {
@@ -3513,7 +3513,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4da4277e3ab20cf1f3198a598445dab112942165c516295929b87a8b9343d00":
+            "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47":
               {
                 methods: [
                   {
@@ -3530,7 +3530,7 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
-            "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4":
+            "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b":
               {
                 methods: [
                   {
