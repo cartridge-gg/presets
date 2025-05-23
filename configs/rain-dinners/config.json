@@ -1,0 +1,11 @@
+{
+    "origin": "https://www.raindinners.com",
+    "theme": {
+        "colors": {
+            "primary": "#B8860B"
+        },
+        "cover": "cover.png",
+        "icon": "icon.png",
+        "name": "Rain Dinners"
+    }
+}
