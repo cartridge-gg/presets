@@ -1,0 +1,14 @@
+{
+  "origin": [
+    "https://golem-runner.up.railway.app/",
+    "golemrunner.live"
+  ],
+  "theme": {
+    "colors": {
+        "primary": "#ECECDA"
+    },
+    "cover": "banner.png",
+    "icon": "logo.png",
+    "name": "Golem Runner"
+  }
+}

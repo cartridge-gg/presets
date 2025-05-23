@@ -2462,6 +2462,50 @@ export const configs: ControllerConfigs = {
       },
     },
   },
+  "golem-runner": {
+    origin: ["https://golem-runner.up.railway.app/", "golemrunner.live"],
+    theme: {
+      colors: {
+        primary: "#ECECDA",
+      },
+      cover: "https://static.cartridge.gg/presets/golem-runner/banner.png",
+      icon: "https://static.cartridge.gg/presets/golem-runner/logo.png",
+      name: "Golem Runner",
+      optimizedCover: {
+        webp: {
+          "768": "banner@768.webp",
+          "1024": "banner@1024.webp",
+          "1440": "banner@1440.webp",
+        },
+        jpg: {
+          "768": "banner@768.jpg",
+          "1024": "banner@1024.jpg",
+          "1440": "banner@1440.jpg",
+        },
+        png: {
+          "768": "banner@768.png",
+          "1024": "banner@1024.png",
+          "1440": "banner@1440.png",
+        },
+      },
+      optimizedIcon: {
+        webp: {
+          "16": "logo@16.webp",
+          "32": "logo@32.webp",
+          "64": "logo@64.webp",
+          "128": "logo@128.webp",
+          "256": "logo@256.webp",
+        },
+        png: {
+          "16": "logo@16.png",
+          "32": "logo@32.png",
+          "64": "logo@64.png",
+          "128": "logo@128.png",
+          "256": "logo@256.png",
+        },
+      },
+    },
+  },
   "jokers-of-neon": {
     origin: "*.jokersofneon.com",
     theme: {
@@ -5537,6 +5581,7 @@ export const availableConfigs = [
   "eternum",
   "flippyflop",
   "force-prime",
+  "golem-runner",
   "jokers-of-neon",
   "loot-survivor",
   "mage-duel",
