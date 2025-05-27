@@ -1,5 +1,60 @@
 {
     "origin": "https://www.raindinners.com",
+    "policies": {
+        "contracts": {
+        "0x051Fea4450Da9D6aeE758BDEbA88B2f665bCbf549D2C61421AA724E9AC0Ced8F": {
+            "name": "VRF Provider",
+            "description": "Provides verifiable random functions",
+            "methods": [
+            {
+                "name": "Request Random",
+                "description": "Request a random number",
+                "entrypoint": "request_random",
+                "isPaymastered": true
+            }
+            ]
+        },
+        "0x0723cc2bed45cf41b74bf6a5093e4625c4f9dee8188d2ce26b36c37b71be5fb2": {
+            "name": "Coinflip",
+            "description": "Coinflip game",
+            "methods": [
+                {
+                  "name": "Bet & Flip coin",
+                  "entrypoint": "play_game",
+                  "description": "Bet and flip the coin",
+                  "isRequired": true,
+                  "isPaymastered": true
+                }
+            ]
+        },
+        "0x0105517306d43f8554ec7129871817eb75eb4f2b3a3ebbd7f69ad75e48239c77": {
+            "name": "Roulette",
+            "description": "Roulette game",
+            "methods": [
+                {
+                  "name": "Bet & Spin Roulette",
+                  "entrypoint": "play_game",
+                  "description": "Bet and spin the roulette wheel",
+                  "isRequired": true,
+                  "isPaymastered": true
+                }
+            ]
+        },
+        "0x039d43b6dff67af0c9ff8e1ab0ca5ce0b2bfc4e381054fec1eb37d767ef246bc": {
+            "name": "Crash",
+            "description": "Crash game",
+            "methods": [
+                {
+                  "name": "Bet & Crash",
+                  "entrypoint": "play_game",
+                  "description": "Bet on the crash",
+                  "isRequired": true,
+                  "isPaymastered": true
+                }
+            ]
+        }
+    }
+  },
     "theme": {
         "colors": {
             "primary": "#B8860B"
