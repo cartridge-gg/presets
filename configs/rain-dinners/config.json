@@ -14,6 +14,18 @@
             }
             ]
         },
+        "0x049D36570D4e46f48e99674bd3fcc84644DdD6b96F7C741B1562B82f9e004dC7": {
+            "name": "ETH Approve",
+            "description": "Approve",
+            "methods": [
+                {
+                    "name": "Approve",
+                    "description": "Approve ETH usage",
+                    "entrypoint": "approve",
+                    "isPaymastered": true
+                }
+            ]
+        },
         "0x0723cc2bed45cf41b74bf6a5093e4625c4f9dee8188d2ce26b36c37b71be5fb2": {
             "name": "Coinflip",
             "description": "Coinflip game",
