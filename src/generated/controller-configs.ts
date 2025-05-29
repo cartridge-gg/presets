@@ -4249,7 +4249,15 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "clear_call_to_action",
-                    description: "Clear the required action call for a duelist",
+                    description: "Clear call to action for a duelist",
+                  },
+                  {
+                    entrypoint: "emit_player_bookmark",
+                    description: "Bookmarks an address or token",
+                  },
+                  {
+                    entrypoint: "emit_player_social_link",
+                    description: "Link to social platform",
                   },
                 ],
               },
@@ -4422,56 +4430,6 @@ export const configs: ControllerConfigs = {
               },
               name: "PlayerOnline",
               description: "Notify when a player is online",
-            },
-            {
-              types: {
-                StarknetDomain: [
-                  {
-                    name: "name",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "version",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "chainId",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "revision",
-                    type: "shortstring",
-                  },
-                ],
-                "pistols-PlayerBookmark": [
-                  {
-                    name: "identity",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_address",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_id",
-                    type: "u128",
-                  },
-                  {
-                    name: "enabled",
-                    type: "bool",
-                  },
-                ],
-              },
-              primaryType: "pistols-PlayerBookmark",
-              domain: {
-                name: "Underware_gg",
-                version: "1.0.0",
-                chainId: "SN_MAIN",
-                revision: "1",
-              },
-              name: "PlayerBookmark",
-              description:
-                "Notify when a player follows another player or token",
             },
           ],
         },
@@ -4497,7 +4455,15 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "clear_call_to_action",
-                    description: "Clear the required action call for a duelist",
+                    description: "Clear call to action for a duelist",
+                  },
+                  {
+                    entrypoint: "emit_player_bookmark",
+                    description: "Bookmarks an address or token",
+                  },
+                  {
+                    entrypoint: "emit_player_social_link",
+                    description: "Link to social platform",
                   },
                 ],
               },
@@ -4670,56 +4636,6 @@ export const configs: ControllerConfigs = {
               },
               name: "PlayerOnline",
               description: "Notify when a player is online",
-            },
-            {
-              types: {
-                StarknetDomain: [
-                  {
-                    name: "name",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "version",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "chainId",
-                    type: "shortstring",
-                  },
-                  {
-                    name: "revision",
-                    type: "shortstring",
-                  },
-                ],
-                "pistols-PlayerBookmark": [
-                  {
-                    name: "identity",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_address",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_id",
-                    type: "u128",
-                  },
-                  {
-                    name: "enabled",
-                    type: "bool",
-                  },
-                ],
-              },
-              primaryType: "pistols-PlayerBookmark",
-              domain: {
-                name: "Underware_gg",
-                version: "1.0.0",
-                chainId: "SN_SEPOLIA",
-                revision: "1",
-              },
-              name: "PlayerBookmark",
-              description:
-                "Notify when a player follows another player or token",
             },
           ],
         },
