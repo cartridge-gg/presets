@@ -4257,7 +4257,11 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "emit_player_social_link",
-                    description: "Link to social platform",
+                    description: "Link player to social platform",
+                  },
+                  {
+                    entrypoint: "clear_player_social_link",
+                    description: "Unlink player from social platform",
                   },
                 ],
               },
@@ -4410,6 +4414,42 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
+                Message: [
+                  {
+                    name: "purpose",
+                    type: "string",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_MAIN",
+                revision: "1",
+              },
+              description: "General purpose authorization message",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
                 "pistols-PlayerOnline": [
                   {
                     name: "identity",
@@ -4463,7 +4503,11 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "emit_player_social_link",
-                    description: "Link to social platform",
+                    description: "Link player to social platform",
+                  },
+                  {
+                    entrypoint: "clear_player_social_link",
+                    description: "Unlink player from social platform",
                   },
                 ],
               },
@@ -4595,6 +4639,42 @@ export const configs: ControllerConfigs = {
                 revision: "1",
               },
               description: "Verify the identity of a player in a Duel",
+            },
+            {
+              types: {
+                StarknetDomain: [
+                  {
+                    name: "name",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "version",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "chainId",
+                    type: "shortstring",
+                  },
+                  {
+                    name: "revision",
+                    type: "shortstring",
+                  },
+                ],
+                Message: [
+                  {
+                    name: "purpose",
+                    type: "string",
+                  },
+                ],
+              },
+              primaryType: "Message",
+              domain: {
+                name: "Underware_gg",
+                version: "1.0.0",
+                chainId: "SN_SEPOLIA",
+                revision: "1",
+              },
+              description: "General purpose authorization message",
             },
             {
               types: {
