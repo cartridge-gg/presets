@@ -4785,7 +4785,7 @@ export const configs: ControllerConfigs = {
         primary: "#F38332",
       },
       cover: "https://static.cartridge.gg/presets/ponziland/cover.png",
-      icon: "https://static.cartridge.gg/presets/ponziland/icon.png",
+      icon: "https://static.cartridge.gg/presets/ponziland/icon.svg",
       name: "PonziLand",
       optimizedCover: {
         webp: {
@@ -4818,6 +4818,13 @@ export const configs: ControllerConfigs = {
           "64": "icon@64.png",
           "128": "icon@128.png",
           "256": "icon@256.png",
+        },
+        svg: {
+          "16": "icon@16.svg",
+          "32": "icon@32.svg",
+          "64": "icon@64.svg",
+          "128": "icon@128.svg",
+          "256": "icon@256.svg",
         },
       },
     },
