@@ -4249,7 +4249,19 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "clear_call_to_action",
-                    description: "Clear the required action call for a duelist",
+                    description: "Clear call to action for a duelist",
+                  },
+                  {
+                    entrypoint: "emit_player_bookmark",
+                    description: "Bookmarks an address or token",
+                  },
+                  {
+                    entrypoint: "emit_player_social_link",
+                    description: "Link player to social platform",
+                  },
+                  {
+                    entrypoint: "clear_player_social_link",
+                    description: "Unlink player from social platform",
                   },
                 ],
               },
@@ -4402,26 +4414,21 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
-                "pistols-PlayerOnline": [
+                Message: [
                   {
-                    name: "identity",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "timestamp",
-                    type: "felt",
+                    name: "purpose",
+                    type: "string",
                   },
                 ],
               },
-              primaryType: "pistols-PlayerOnline",
+              primaryType: "Message",
               domain: {
                 name: "Underware_gg",
                 version: "1.0.0",
                 chainId: "SN_MAIN",
                 revision: "1",
               },
-              name: "PlayerOnline",
-              description: "Notify when a player is online",
+              description: "General purpose authorization message",
             },
             {
               types: {
@@ -4443,35 +4450,26 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
-                "pistols-PlayerBookmark": [
+                "pistols-PlayerOnline": [
                   {
                     name: "identity",
                     type: "ContractAddress",
                   },
                   {
-                    name: "target_address",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_id",
-                    type: "u128",
-                  },
-                  {
-                    name: "enabled",
-                    type: "bool",
+                    name: "timestamp",
+                    type: "felt",
                   },
                 ],
               },
-              primaryType: "pistols-PlayerBookmark",
+              primaryType: "pistols-PlayerOnline",
               domain: {
                 name: "Underware_gg",
                 version: "1.0.0",
                 chainId: "SN_MAIN",
                 revision: "1",
               },
-              name: "PlayerBookmark",
-              description:
-                "Notify when a player follows another player or token",
+              name: "PlayerOnline",
+              description: "Notify when a player is online",
             },
           ],
         },
@@ -4497,7 +4495,19 @@ export const configs: ControllerConfigs = {
                   },
                   {
                     entrypoint: "clear_call_to_action",
-                    description: "Clear the required action call for a duelist",
+                    description: "Clear call to action for a duelist",
+                  },
+                  {
+                    entrypoint: "emit_player_bookmark",
+                    description: "Bookmarks an address or token",
+                  },
+                  {
+                    entrypoint: "emit_player_social_link",
+                    description: "Link player to social platform",
+                  },
+                  {
+                    entrypoint: "clear_player_social_link",
+                    description: "Unlink player from social platform",
                   },
                 ],
               },
@@ -4650,26 +4660,21 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
-                "pistols-PlayerOnline": [
+                Message: [
                   {
-                    name: "identity",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "timestamp",
-                    type: "felt",
+                    name: "purpose",
+                    type: "string",
                   },
                 ],
               },
-              primaryType: "pistols-PlayerOnline",
+              primaryType: "Message",
               domain: {
                 name: "Underware_gg",
                 version: "1.0.0",
                 chainId: "SN_SEPOLIA",
                 revision: "1",
               },
-              name: "PlayerOnline",
-              description: "Notify when a player is online",
+              description: "General purpose authorization message",
             },
             {
               types: {
@@ -4691,35 +4696,26 @@ export const configs: ControllerConfigs = {
                     type: "shortstring",
                   },
                 ],
-                "pistols-PlayerBookmark": [
+                "pistols-PlayerOnline": [
                   {
                     name: "identity",
                     type: "ContractAddress",
                   },
                   {
-                    name: "target_address",
-                    type: "ContractAddress",
-                  },
-                  {
-                    name: "target_id",
-                    type: "u128",
-                  },
-                  {
-                    name: "enabled",
-                    type: "bool",
+                    name: "timestamp",
+                    type: "felt",
                   },
                 ],
               },
-              primaryType: "pistols-PlayerBookmark",
+              primaryType: "pistols-PlayerOnline",
               domain: {
                 name: "Underware_gg",
                 version: "1.0.0",
                 chainId: "SN_SEPOLIA",
                 revision: "1",
               },
-              name: "PlayerBookmark",
-              description:
-                "Notify when a player follows another player or token",
+              name: "PlayerOnline",
+              description: "Notify when a player is online",
             },
           ],
         },
