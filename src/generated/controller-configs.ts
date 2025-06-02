@@ -4927,6 +4927,18 @@ export const configs: ControllerConfigs = {
                   },
                 ],
               },
+            "0xdcdc180a8b4b9cef2d039462ad30de95c5609178a1c2bc55779309c07d45db":
+              {
+                name: "nftLORDS Token",
+                description: "nftLORDS ERC20 approval",
+                methods: [
+                  {
+                    name: "Approve",
+                    entrypoint: "approve",
+                    description: "nftLORDS allowance",
+                  },
+                ],
+              },
           },
           messages: [
             {
