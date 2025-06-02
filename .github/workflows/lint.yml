@@ -1,0 +1,78 @@
+name: Lint
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "configs/**"
+      - "scripts/validate-configs.ts"
+      - ".github/workflows/validate-configs.yml"
+  pull_request:
+    paths:
+      - "configs/**"
+      - "scripts/validate-configs.ts"
+      - ".github/workflows/validate-configs.yml"
+
+jobs:
+  validate-configs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for diff
+
+      - name: Get changed files
+        id: changed-files
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+            configs/**/config.json
+          separator: ","
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9.12.3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "pnpm"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run config validation
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: pnpm tsx scripts/validate-configs.ts -- ${{ steps.changed-files.outputs.all_changed_files }}
+        env:
+          CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
+
+      - name: Skip validation
+        if: steps.changed-files.outputs.any_changed == 'false'
+        run: echo "No config files changed, skipping validation"
+
+      - name: Comment PR
+        if: failure() && github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const output = `
+            ❌ **Config Validation Failed**
+
+            Please check the workflow logs for details about:
+            - Missing asset files (icon/cover images)
+            - Usage of \`approve\` entrypoints
+
+            View the [workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for detailed error messages.
+            `;
+
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: output
+            });
