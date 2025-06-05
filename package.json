@@ -7,8 +7,9 @@
   "type": "module",
   "scripts": {
     "build:configs": "tsx scripts/generate-configs.ts",
-    "build": "pnpm build:configs && tsup --dts-resolve",
-    "build:js": "pnpm build:configs && tsup --no-dts",
+    "build:aasa": "tsx scripts/generate-aasa.ts",
+    "build": "pnpm build:configs && pnpm build:aasa && tsup --dts-resolve",
+    "build:js": "pnpm build:configs && pnpm build:aasa && tsup --no-dts",
     "fetch:erc20": "tsx scripts/fetch-erc20.ts && prettier --write src/generated/erc20-metadata.ts",
     "image:optimize": "tsx scripts/optimize-images.ts",
     "format": "prettier --write \"src/**/*.ts\"",

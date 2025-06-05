@@ -33,16 +33,31 @@ jobs:
       - name: Process theme images
         run: pnpm image:optimize
 
+      # Generate Apple App Site Association
+      - name: Generate Apple App Site Association
+        run: pnpm build:aasa
+
       - uses: "google-github-actions/auth@v2"
         with:
           project_id: c7e-prod
           workload_identity_provider: "projects/276773611885/locations/global/workloadIdentityPools/github/providers/presets-repo"
 
+      # Upload presets configs
       - uses: "google-github-actions/upload-cloud-storage@v2"
         with:
           path: "built-configs"
           destination: "c7e-prod-static/presets"
           parent: false
+
+      # Deploy AASA file to .well-known directory
+      - name: Deploy AASA to .well-known
+        uses: "google-github-actions/upload-cloud-storage@v2"
+        with:
+          path: "built-configs/apple-app-site-association"
+          destination: "c7e-prod-static/x/.well-known/apple-app-site-association"
+          parent: false
+          headers: |-
+            content-type: application/json
 
       # Configure Git and create or recreate release branch
       - name: Configure Git for release branch

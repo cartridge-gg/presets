@@ -84,8 +84,15 @@ export type SignMessagePolicy = TypedDataPolicy & {
   isRequired?: boolean | false;
 };
 
+export type AppleAppSiteAssociation = {
+  webcredentials: {
+    apps: string[];
+  };
+};
+
 export type ControllerConfig = {
   origin: string | string[];
+  "apple-app-site-association"?: AppleAppSiteAssociation;
   chains?: Chains;
   theme?: ControllerTheme;
 };
