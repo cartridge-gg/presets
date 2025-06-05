@@ -54,7 +54,7 @@ jobs:
         uses: "google-github-actions/upload-cloud-storage@v2"
         with:
           path: "built-configs/apple-app-site-association"
-          destination: "c7e-prod-static/x/.well-known/apple-app-site-association"
+          destination: "c7e-prod-static/x/.well-known"
           parent: false
           headers: |-
             content-type: application/json
