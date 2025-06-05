@@ -51,6 +51,32 @@ jobs:
         env:
           CHANGED_FILES: ${{ steps.changed-files.outputs.all_changed_files }}
 
+      - name: Generate and validate AASA
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          echo "Generating Apple App Site Association..."
+          pnpm build:aasa
+
+          if [ -f "built-configs/apple-app-site-association" ]; then
+            SIZE=$(stat -c%s "built-configs/apple-app-site-association")
+            SIZE_KB=$((SIZE / 1024))
+            echo "AASA file size: ${SIZE_KB} KB (${SIZE} bytes)"
+            # Use byte comparison to avoid truncation issues with KB calculation
+            # 128 KB = 131,072 bytes
+            if [ $SIZE -gt 131072 ]; then
+              echo "❌ AASA file exceeds 128 KB limit (${SIZE} bytes = $((SIZE * 1000 / 1024 / 1000)).$(((SIZE * 1000 / 1024) % 1000)) KB)"
+              exit 1
+            else
+              echo "✅ AASA file size is within 128 KB limit"
+            fi
+            
+            # Display content for review
+            echo "Generated AASA content:"
+            cat built-configs/apple-app-site-association
+          else
+            echo "ℹ️ No AASA file generated (no app IDs found)"
+          fi
+
       - name: Skip validation
         if: steps.changed-files.outputs.any_changed == 'false'
         run: echo "No config files changed, skipping validation"
@@ -66,6 +92,8 @@ jobs:
             Please check the workflow logs for details about:
             - Missing asset files (icon/cover images)
             - Usage of \`approve\` entrypoints
+            - Invalid app ID formats for Apple App Site Association
+            - AASA file size exceeding 128 KB limit
 
             View the [workflow run](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}) for detailed error messages.
             `;
