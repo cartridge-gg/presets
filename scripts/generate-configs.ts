@@ -3,10 +3,6 @@ import path from "path";
 import sharp from "sharp";
 
 const whitelabelPath = path.join(process.cwd(), "configs");
-const outputPath = path.join(
-  process.cwd(),
-  "src/generated/controller-configs.ts"
-);
 const jsonOutputPath = path.join(process.cwd(), "built-configs");
 
 // Available image sizes for optimization
@@ -365,7 +361,6 @@ function writeConfigsIndex(configsList: string[]) {
 }
 
 async function generateConfigs() {
-  const configs: Record<string, any> = {};
   const configsList: string[] = [];
 
   try {
@@ -385,7 +380,6 @@ async function generateConfigs() {
     for (const dir of directories) {
       const configData = loadConfigFromJson(dir);
       if (configData) {
-        configs[dir] = configData.config; // For TS output
         configsList.push(dir);
 
         // Write individual config files and copy/optimize assets
@@ -396,24 +390,7 @@ async function generateConfigs() {
     // Write an index of all available configs
     writeConfigsIndex(configsList);
 
-    // Ensure the TypeScript output directory exists
-    const outputDir = path.dirname(outputPath);
-    if (!fs.existsSync(outputDir)) {
-      fs.mkdirSync(outputDir, { recursive: true });
-    }
-
-    // Generate the TypeScript file
-    const fileContent = `// This file is auto-generated. DO NOT EDIT IT MANUALLY.
-import { ControllerConfigs } from "../";
-
-export const configs: ControllerConfigs = ${JSON.stringify(configs, null, 2)};
-
-// List of all available configs that can be loaded from CDN
-export const availableConfigs = ${JSON.stringify(configsList, null, 2)};
-`;
-
-    fs.writeFileSync(outputPath, fileContent);
-    console.log("Successfully generated configs at:", outputPath);
+    console.log("Successfully generated JSON configs and optimized assets");
   } catch (error) {
     console.error("Failed to generate configs:", error);
     process.exit(1);

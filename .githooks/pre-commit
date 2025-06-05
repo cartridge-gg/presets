@@ -1,2 +1,2 @@
 #!/bin/sh
-exec pnpm build 
+exec pnpm format:check
