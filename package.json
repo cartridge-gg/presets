@@ -6,6 +6,7 @@
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
+    "build:configs": "tsx scripts/generate-configs.ts",
     "build": "pnpm build:configs && tsup --dts-resolve",
     "build:js": "pnpm build:configs && tsup --no-dts",
     "fetch:erc20": "tsx scripts/fetch-erc20.ts && prettier --write src/generated/erc20-metadata.ts",
