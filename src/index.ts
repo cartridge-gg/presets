@@ -57,6 +57,11 @@ export type Method = {
   description?: string;
   entrypoint: string;
   /**
+   * Whether the methods default state is enabled in session approval.
+   * @default false
+   */
+  isEnabled?: boolean | true;
+  /**
    * Whether the method is togglable by the user.
    * If true, user can't toggle the method.
    * @default false
