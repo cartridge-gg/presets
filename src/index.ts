@@ -109,7 +109,7 @@ export type OptimizedImageSet = {
 export type ControllerTheme = {
   name: string;
   icon: string;
-  cover: ThemeValue<string>;
+  cover?: ThemeValue<string>;
   optimizedIcon?: OptimizedImageSet;
   optimizedCover?: ThemeValue<OptimizedImageSet>;
   colors?: ControllerColors;
