@@ -2,10 +2,6 @@
   "origin": "*",
   "theme": {
     "name": "Cartridge",
-    "icon": "icon.svg",
-    "cover": {
-      "light": "cover-light.png",
-      "dark": "cover-dark.png"
-    }
+    "icon": "icon.svg"
   }
 }
