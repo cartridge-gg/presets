@@ -7,7 +7,7 @@
     "WP_EVOLUTE_DUEL": {
       "policies": {
         "contracts": {
-          "0x00313745d6c27cc77e9943b4ae18bc48cfd97b67d26dd376f52670da1fbcdcef": {
+          "0x04202a9fbb17db7d04a92f3182cef8dd339a7aff995a9fd5fa04afd087cb69d6": {
             "name": "Game Contract",
             "description": "Core game mechanics",
             "methods": [
@@ -50,10 +50,26 @@
                 "name": "Finish Game",
                 "description": "Finishes the game and determines the winner",
                 "entrypoint": "finish_game"
+              },
+              {
+                "name": "Commit tiles",
+                "description": "Commits initial tile hashes from the deck",
+                "entrypoint": "commit_tiles"
+              },
+              {
+                "name": "Reveal Tile",
+                "description": "Reveal tile for everyone",
+                "entrypoint": "reveal_tile"
+              },
+              {
+                "name": "Request Next Tile",
+                "description": "Request next tile",
+                "entrypoint": "request_next_tile"
               }
+              
             ]
           },
-          "0x07d946710da9ccc6fa1a1f6362c77fa329fa8e74557eb81dcf6b27161ab5c298": {
+          "0x04a1dc47e42dd54e5fbf54d7fe016900ebcfde4df06910457f7b6e15112707f3": {
             "name": "Player Profile Contract",
             "description": "Handles player account data and actions",
             "methods": [
@@ -63,9 +79,9 @@
                 "entrypoint": "balance"
               },
               {
-                "name": "Set Balance",
-                "description": "Lets admin set the player's balance",
-                "entrypoint": "set_balance"
+                "name": "Set Player",
+                "description": "Lets admin set the player's data",
+                "entrypoint": "set_player"
               },
               {
                 "name": "Username",
@@ -97,10 +113,10 @@
         }
       }
     },
-    "WP_LIYARD_EVOLUTE_DUEL": {
+    "WP_DEV_EVOLUTE_DUEL": {
       "policies": {
         "contracts": {
-          "0x00313745d6c27cc77e9943b4ae18bc48cfd97b67d26dd376f52670da1fbcdcef": {
+          "0x04202a9fbb17db7d04a92f3182cef8dd339a7aff995a9fd5fa04afd087cb69d6": {
             "name": "Game Contract",
             "description": "Core game mechanics",
             "methods": [
@@ -143,10 +159,25 @@
                 "name": "Finish Game",
                 "description": "Finishes the game and determines the winner",
                 "entrypoint": "finish_game"
+              },
+              {
+                "name": "Commit tiles",
+                "description": "Commits initial tile hashes from the deck",
+                "entrypoint": "commit_tiles"
+              },
+              {
+                "name": "Reveal Tile",
+                "description": "Reveal tile for everyone",
+                "entrypoint": "reveal_tile"
+              },
+              {
+                "name": "Request Next Tile",
+                "description": "Request next tile",
+                "entrypoint": "request_next_tile"
               }
             ]
           },
-          "0x07d946710da9ccc6fa1a1f6362c77fa329fa8e74557eb81dcf6b27161ab5c298": {
+          "0x04a1dc47e42dd54e5fbf54d7fe016900ebcfde4df06910457f7b6e15112707f3": {
             "name": "Player Profile Contract",
             "description": "Handles player account data and actions",
             "methods": [
@@ -156,9 +187,9 @@
                 "entrypoint": "balance"
               },
               {
-                "name": "Set Balance",
-                "description": "Lets admin set the player's balance",
-                "entrypoint": "set_balance"
+                "name": "Set Player",
+                "description": "Lets admin set the player's data",
+                "entrypoint": "set_player"
               },
               {
                 "name": "Username",
@@ -194,6 +225,11 @@
           }
         }
       }
+    }
+  },
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["JG34FQUKN9.com.evolute.mageduel"]
     }
   },
   "theme": {
