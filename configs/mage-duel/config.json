@@ -196,6 +196,11 @@
       }
     }
   },
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["JG34FQUKN9.com.evolute.mageduel"]
+    }
+  },
   "theme": {
     "colors": {
       "primary": "#BD835B"
