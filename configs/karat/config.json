@@ -1,0 +1,13 @@
+{
+  "origin": [
+    "*.collect-code.com"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#c2e0fd"
+    },
+    "cover": "cover.jpg",
+    "icon": "icon.png",
+    "name": "Karat-Kode"
+  }
+}
