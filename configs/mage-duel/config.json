@@ -79,9 +79,9 @@
                 "entrypoint": "balance"
               },
               {
-                "name": "Set Balance",
-                "description": "Lets admin set the player's balance",
-                "entrypoint": "set_balance"
+                "name": "Set Player",
+                "description": "Lets admin set the player's data",
+                "entrypoint": "set_player"
               },
               {
                 "name": "Username",
@@ -187,9 +187,9 @@
                 "entrypoint": "balance"
               },
               {
-                "name": "Set Balance",
-                "description": "Lets admin set the player's balance",
-                "entrypoint": "set_balance"
+                "name": "Set Player",
+                "description": "Lets admin set the player's data",
+                "entrypoint": "set_player"
               },
               {
                 "name": "Username",
