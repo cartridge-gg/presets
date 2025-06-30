@@ -59,6 +59,21 @@ jobs:
           headers: |-
             content-type: application/json
 
+      # Invalidate CDN cache for updated assets
+      # TODO: Only invalidate the presets that have changed
+      - name: Invalidate CDN Cache for Presets
+        uses: stefanodotit/github-actions-invalidate-gcp-cdn@v1
+        with:
+          load_balancer_name: "c7e-static"
+          path: "/presets/*"
+
+      # Invalidate CDN cache for AASA files
+      - name: Invalidate CDN Cache for AASA
+        uses: stefanodotit/github-actions-invalidate-gcp-cdn@v1
+        with:
+          load_balancer_name: "c7e-static"
+          path: "/x/.well-known/*"
+
       # Configure Git and create or recreate release branch
       - name: Configure Git for release branch
         run: |
