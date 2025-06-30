@@ -1,6 +1,7 @@
 import type { TypedData } from "@starknet-io/types-js";
 import { metadata } from "./generated/erc20-metadata";
 import config from "../configs/cartridge/config.json";
+config.theme.icon = "https://static.cartridge.gg/presets/cartridge/icon.svg";
 
 export * from "./config-loader";
 
