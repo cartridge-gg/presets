@@ -9,6 +9,204 @@
     "name": "Jokers of Neon"
   },
   "chains": {
+    "WP_JOKERS_LEGACY_GG": {
+      "policies": {
+        "contracts": {
+          "0x930930166b28316b539bbff02c8607572923369ac5199a1841b77edbfee1c": {
+            "methods": [
+              {
+                "name": "Advance Node",
+                "entrypoint": "advance_node"
+              },
+              {
+                "name": "Create Map Level",
+                "entrypoint": "create_map_level"
+              }
+            ]
+          },
+          "0xc9c7c22da1523cc927ecb866b0193a4d47d074023ff62cdd5a96cea4a70368": {
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve"
+              },
+              {
+                "name": "Balance Of",
+                "entrypoint": "balance_of"
+              },
+              {
+                "name": "Emit Metadata Update",
+                "entrypoint": "emit_metadata_update"
+              },
+              {
+                "name": "Game Count",
+                "entrypoint": "game_count"
+              },
+              {
+                "name": "Game Metadata",
+                "entrypoint": "game_metadata"
+              },
+              {
+                "name": "Is Approved For All",
+                "entrypoint": "is_approved_for_all"
+              },
+              {
+                "name": "Mint",
+                "entrypoint": "mint"
+              },
+              {
+                "name": "Name",
+                "entrypoint": "name"
+              },
+              {
+                "name": "Owner Of",
+                "entrypoint": "owner_of"
+              },
+              {
+                "name": "Safe Transfer From",
+                "entrypoint": "safe_transfer_from"
+              },
+              {
+                "name": "Score",
+                "entrypoint": "score"
+              },
+              {
+                "name": "Score Attribute",
+                "entrypoint": "score_attribute"
+              },
+              {
+                "name": "Score Model",
+                "entrypoint": "score_model"
+              },
+              {
+                "name": "Set Approval For All",
+                "entrypoint": "set_approval_for_all"
+              },
+              {
+                "name": "Setting Exists",
+                "entrypoint": "setting_exists"
+              },
+              {
+                "name": "Settings Model",
+                "entrypoint": "settings_model"
+              },
+              {
+                "name": "Start Game",
+                "entrypoint": "start_game"
+              },
+              {
+                "name": "Supports Interface",
+                "entrypoint": "supports_interface"
+              },
+              {
+                "name": "Surrender",
+                "entrypoint": "surrender"
+              },
+              {
+                "name": "Symbol",
+                "entrypoint": "symbol"
+              },
+              {
+                "name": "Token Uri",
+                "entrypoint": "token_uri"
+              },
+              {
+                "name": "Token Metadata",
+                "entrypoint": "token_metadata"
+              },
+              {
+                "name": "Transfer From",
+                "entrypoint": "transfer_from"
+              },
+              {
+                "name": "Transfer Game",
+                "entrypoint": "transfer_game"
+              }
+            ]
+          },
+          "0x6dfddf186ada3d0435aa94c651bcd55602f44d9f8b37f3daeb9160b1cedbbb2": {
+            "methods": [
+              {
+                "name": "Burn Card",
+                "entrypoint": "burn_card"
+              },
+              {
+                "name": "Buy Card",
+                "entrypoint": "buy_card"
+              },
+              {
+                "name": "Buy Loot Box",
+                "entrypoint": "buy_loot_box"
+              },
+              {
+                "name": "Buy Poker Hand",
+                "entrypoint": "buy_poker_hand"
+              },
+              {
+                "name": "Buy Power Up",
+                "entrypoint": "buy_power_up"
+              },
+              {
+                "name": "Buy Special Card",
+                "entrypoint": "buy_special_card"
+              },
+              {
+                "name": "Buy Special Slot",
+                "entrypoint": "buy_special_slot"
+              },
+              {
+                "name": "Reroll",
+                "entrypoint": "reroll"
+              },
+              {
+                "name": "Select Cards From Loot Box",
+                "entrypoint": "select_cards_from_loot_box"
+              },
+              {
+                "name": "Sell Special Card",
+                "entrypoint": "sell_special_card"
+              },
+              {
+                "name": "Skip Shop",
+                "entrypoint": "skip_shop"
+              }
+            ]
+          },
+          "0x780f54e339bc06156f727774bee3a98fb3476c7601a8cf65a5b6569520680ae": {
+            "methods": [
+              {
+                "name": "Change Modifier Card",
+                "entrypoint": "change_modifier_card"
+              },
+              {
+                "name": "Discard",
+                "entrypoint": "discard"
+              },
+              {
+                "name": "Play",
+                "entrypoint": "play"
+              }
+            ]
+          },
+          "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b": {
+            "methods": [
+              {
+                "name": "Register Managers",
+                "entrypoint": "register_managers"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random"
+              }
+            ]
+          }
+        }
+      }
+    },
     "WP_JOKERSOFNEON": {
       "policies": {
         "contracts": {
