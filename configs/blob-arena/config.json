@@ -1,9 +1,5 @@
 {
   "origin": [
-    "*.blobarena.xyz",
-    "blobarena.xyz", 
-    "staging.blobarena.xyz",
-    "development.blobarena.xyz"
   ],
   "theme": {
     "colors": {
