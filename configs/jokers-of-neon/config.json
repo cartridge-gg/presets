@@ -8,6 +8,11 @@
     "icon": "icon.png",
     "name": "Jokers of Neon"
   },
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["YD6K99SL94.com.jokersofneon.play"]
+    }
+  },
   "chains": {
     "WP_JOKERSOFNEON": {
       "policies": {
