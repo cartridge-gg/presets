@@ -52,13 +52,18 @@ export type ContractPolicy = {
   methods: Method[];
 };
 
+export type PolicyPredicate = {
+  address: string;
+  entrypoint: string;
+};
+
 export type Method = {
   name?: string;
   description?: string;
   entrypoint: string;
   /**
    * Whether the methods default state is enabled in session approval.
-   * @default false
+   * @default true
    */
   isEnabled?: boolean | true;
   /**
@@ -69,9 +74,9 @@ export type Method = {
   isRequired?: boolean | false;
   /**
    * Whether the method can be paymastered (fees paid by a third party).
-   * @default false
+   * @default true
    */
-  isPaymastered?: boolean | false;
+  isPaymastered?: boolean | PolicyPredicate;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
