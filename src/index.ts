@@ -68,9 +68,9 @@ export type Method = {
   isRequired?: boolean | false;
   /**
    * Whether the method can be paymastered (fees paid by a third party).
-   * @default false
+   * @default true
    */
-  isPaymastered?: boolean | false;
+  isPaymastered?: boolean | true;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {

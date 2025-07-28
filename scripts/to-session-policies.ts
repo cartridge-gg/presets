@@ -48,6 +48,7 @@ async function main() {
           const item = {
             name: humanizeString(entrypoint),
             entrypoint: entrypoint,
+            isPaymastered: true,
           };
 
           if (target in prev["SN_MAIN"].contracts) {

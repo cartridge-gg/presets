@@ -16,6 +16,24 @@ function loadConfigFromJson(gamePath: string): any {
     const config = JSON.parse(configContent);
     const originalAssets: Record<string, string> = {};
 
+    // Add default isPaymastered: true to all policy methods
+    if (config.chains) {
+      for (const chainId in config.chains) {
+        const chain = config.chains[chainId];
+        if (chain.policies && chain.policies.contracts) {
+          for (const contractAddress in chain.policies.contracts) {
+            const contract = chain.policies.contracts[contractAddress];
+            if (contract.methods && Array.isArray(contract.methods)) {
+              contract.methods = contract.methods.map((method: any) => ({
+                ...method,
+                isPaymastered: method.isPaymastered !== undefined ? method.isPaymastered : true,
+              }));
+            }
+          }
+        }
+      }
+    }
+
     // Add CDN URLs for theme assets
     if (config.theme) {
       if (config.theme.cover) {
