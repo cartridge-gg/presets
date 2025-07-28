@@ -20,14 +20,18 @@ function loadConfigFromJson(gamePath: string): any {
     if (config.chains) {
       for (const chainId in config.chains) {
         const chain = config.chains[chainId];
-        if (chain.policies && chain.policies.contracts) {
+    
+        if (chain.policies?.contracts) {
           for (const contractAddress in chain.policies.contracts) {
             const contract = chain.policies.contracts[contractAddress];
-            if (contract.methods && Array.isArray(contract.methods)) {
-              contract.methods = contract.methods.map((method: any) => ({
-                ...method,
-                isPaymastered: method.isPaymastered !== undefined ? method.isPaymastered : true,
-              }));
+    
+            if (Array.isArray(contract.methods)) {
+              contract.methods = contract.methods.map(
+                (method: { entrypoint: string; isPaymastered?: boolean; [key: string]: any }) => ({
+                  ...method,
+                  isPaymastered: method.isPaymastered !== undefined ? method.isPaymastered : true,
+                })
+              );
             }
           }
         }
