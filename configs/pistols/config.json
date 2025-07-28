@@ -16,7 +16,7 @@
       "policies": {
         "contracts": {
           "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9": {
-            "description": "Game loop contract",
+            "description": "Game entry point",
             "methods": [
               {
                 "entrypoint": "commit_moves",
@@ -31,8 +31,8 @@
                 "description": "Close expired duels"
               },
               {
-                "entrypoint": "clear_call_to_action",
-                "description": "Clear call to action for a duelist"
+                "entrypoint": "clear_call_to_challenge",
+                "description": "Clear call to action for a player"
               },
               {
                 "entrypoint": "emit_player_bookmark",
@@ -45,6 +45,27 @@
               {
                 "entrypoint": "clear_player_social_link",
                 "description": "Unlink player from social platform"
+              },
+              {
+                "entrypoint": "emit_player_setting",
+                "description": "Store player settings"
+              }
+            ]
+          },
+          "0x03c77186b8e509085ec66e1a5d1dbcf9dc1f212852b4c1f461a48901d290fc9b": {
+            "description": "Tutorial game contract",
+            "methods": [
+              {
+                "entrypoint": "create_tutorial",
+                "description": "Initializes a tutorial level"
+              },
+              {
+                "entrypoint": "commit_moves",
+                "description": "Commit your moves in a tutorial level"
+              },
+              {
+                "entrypoint": "reveal_moves",
+                "description": "Reveal your moves in a tutorial level"
               }
             ]
           },
@@ -85,6 +106,10 @@
                 "description": "Purchase a closed pack"
               },
               {
+                "entrypoint": "airdrop",
+                "description": "Airdrops a pack (admin)"
+              },
+              {
                 "entrypoint": "open",
                 "description": "Open a pack, mint its contents"
               }
@@ -117,6 +142,19 @@
               {
                 "entrypoint": "memorialize",
                 "description": "Memorializes a Duelist"
+              }
+            ]
+          },
+          "0x014aa76e6c6f11e3f657ee2c213a62006c78ff2c6f8ed40b92c42fd554c246f2": {
+            "description": "Signet Ring ERC721 contract",
+            "methods": [
+              {
+                "entrypoint": "claim_season_ring",
+                "description": "Claim Signet Ring from a Duel season"
+              },
+              {
+                "entrypoint": "airdrop_ring",
+                "description": "Airdrop Signet Rings (admin)"
               }
             ]
           },
@@ -255,7 +293,7 @@
       "policies": {
         "contracts": {
           "0x02c6a7c98a9dea8322b51018eef7be99ebedd209cebdaacb9f4c5bbf661c1cc9": {
-            "description": "Game loop contract",
+            "description": "Game entry point",
             "methods": [
               {
                 "entrypoint": "commit_moves",
@@ -270,8 +308,8 @@
                 "description": "Close expired duels"
               },
               {
-                "entrypoint": "clear_call_to_action",
-                "description": "Clear call to action for a duelist"
+                "entrypoint": "clear_call_to_challenge",
+                "description": "Clear call to action for a player"
               },
               {
                 "entrypoint": "emit_player_bookmark",
@@ -284,6 +322,27 @@
               {
                 "entrypoint": "clear_player_social_link",
                 "description": "Unlink player from social platform"
+              },
+              {
+                "entrypoint": "emit_player_setting",
+                "description": "Store player settings"
+              }
+            ]
+          },
+          "0x03c77186b8e509085ec66e1a5d1dbcf9dc1f212852b4c1f461a48901d290fc9b": {
+            "description": "Tutorial game contract",
+            "methods": [
+              {
+                "entrypoint": "create_tutorial",
+                "description": "Initializes a tutorial level"
+              },
+              {
+                "entrypoint": "commit_moves",
+                "description": "Commit your moves in a tutorial level"
+              },
+              {
+                "entrypoint": "reveal_moves",
+                "description": "Reveal your moves in a tutorial level"
               }
             ]
           },
@@ -324,6 +383,10 @@
                 "description": "Purchase a closed pack"
               },
               {
+                "entrypoint": "airdrop",
+                "description": "Airdrops a pack (admin)"
+              },
+              {
                 "entrypoint": "open",
                 "description": "Open a pack, mint its contents"
               }
@@ -356,6 +419,19 @@
               {
                 "entrypoint": "memorialize",
                 "description": "Memorializes a Duelist"
+              }
+            ]
+          },
+          "0x014aa76e6c6f11e3f657ee2c213a62006c78ff2c6f8ed40b92c42fd554c246f2": {
+            "description": "Signet Ring ERC721 contract",
+            "methods": [
+              {
+                "entrypoint": "claim_season_ring",
+                "description": "Claim Signet Ring from a Duel season"
+              },
+              {
+                "entrypoint": "airdrop_ring",
+                "description": "Airdrop Signet Rings (admin)"
               }
             ]
           },

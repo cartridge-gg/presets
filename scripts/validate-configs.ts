@@ -2,7 +2,10 @@
 
 import fs from "fs";
 import path from "path";
-import type { ControllerConfig, AppleAppSiteAssociation } from "../src/index.js";
+import type {
+  ControllerConfig,
+  AppleAppSiteAssociation,
+} from "../src/index.js";
 
 interface ValidationError {
   file: string;
@@ -164,6 +167,53 @@ function checkApproveEntrypoints(
   }
 }
 
+function validateOrigins(
+  configPath: string,
+  config: Config,
+  rawContent: string
+): void {
+  if (!config.origin) return;
+
+  // Define protocol patterns to detect
+  const protocolPattern = /^(https?|ftp|ws|wss):\/\//i;
+
+  // Helper function to validate a single origin string
+  const validateSingleOrigin = (
+    origin: string,
+    occurrence: number = 1
+  ): void => {
+    // Skip wildcard origins (used for development)
+    if (origin === "*") return;
+
+    if (protocolPattern.test(origin)) {
+      // Extract the domain from the full URL
+      const domainMatch = origin.match(/^https?:\/\/([^\/]+)/i);
+      const suggestedOrigin = domainMatch
+        ? domainMatch[1]
+        : origin.replace(protocolPattern, "");
+
+      const line = findLineNumber(rawContent, `"${origin}"`, occurrence);
+      errors.push({
+        file: configPath,
+        line,
+        message: `Origin should not contain protocol. Found: "${origin}", should be: "${suggestedOrigin}"`,
+        type: "error",
+      });
+    }
+  };
+
+  // Handle both string and array formats
+  if (typeof config.origin === "string") {
+    validateSingleOrigin(config.origin);
+  } else if (Array.isArray(config.origin)) {
+    config.origin.forEach((origin, index) => {
+      if (typeof origin === "string") {
+        validateSingleOrigin(origin, index + 1);
+      }
+    });
+  }
+}
+
 function validateAppleAppSiteAssociation(
   configPath: string,
   config: Config,
@@ -241,6 +291,7 @@ function validateConfigFile(configPath: string): void {
     const config: Config = JSON.parse(rawContent);
 
     validateAssets(configPath, config, rawContent);
+    validateOrigins(configPath, config, rawContent);
     checkApproveEntrypoints(configPath, config, rawContent);
     validateAppleAppSiteAssociation(configPath, config, rawContent);
   } catch (error) {

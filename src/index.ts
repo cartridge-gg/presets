@@ -1,6 +1,7 @@
 import type { TypedData } from "@starknet-io/types-js";
 import { metadata } from "./generated/erc20-metadata";
 import config from "../configs/cartridge/config.json";
+config.theme.icon = "https://static.cartridge.gg/presets/cartridge/icon.svg";
 
 export * from "./config-loader";
 
@@ -51,13 +52,18 @@ export type ContractPolicy = {
   methods: Method[];
 };
 
+export type PolicyPredicate = {
+  address: string;
+  entrypoint: string;
+};
+
 export type Method = {
   name?: string;
   description?: string;
   entrypoint: string;
   /**
    * Whether the methods default state is enabled in session approval.
-   * @default false
+   * @default true
    */
   isEnabled?: boolean | true;
   /**
@@ -70,7 +76,7 @@ export type Method = {
    * Whether the method can be paymastered (fees paid by a third party).
    * @default true
    */
-  isPaymastered?: boolean | true;
+  isPaymastered?: boolean | PolicyPredicate;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
