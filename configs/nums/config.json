@@ -13,7 +13,11 @@
               {
                 "name": "Create Game",
                 "entrypoint": "create_game",
-                "description": "Creates a new game"
+                "description": "Creates a new game",
+                "isPaymastered": {
+                  "address": "0x07ccfbc43c109efd466638defa52702382ace922051d35a0554b5ccd02a8f155",
+                  "entrypoint": "example_paymaster_predicate"
+                }
               },
               {
                 "name": "Set Slot",
