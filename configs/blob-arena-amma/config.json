@@ -13,6 +13,11 @@
     "icon": "icon.png",
     "name": "Blob Arena AMMA"
   },
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["C6X7J5Y2J8.com.alessandrob.blobarena"]
+    }
+  },
   "chains": {
     "SN_MAIN": {
       "policies": {
