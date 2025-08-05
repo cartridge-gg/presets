@@ -1,5 +1,5 @@
 {
-  "origin": ["eternum.realms.world", "empire.realms.world"],
+  "origin": ["*.realms.world"],
   "chains": {
     "SN_MAIN": {
       "policies": {
