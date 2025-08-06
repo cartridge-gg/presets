@@ -56,6 +56,15 @@ function generateAppleAppSiteAssociation(): AppleAppSiteAssociation {
 
   const allAppIds: string[] = [];
 
+  // Always include Cartridge marketplace app IDs
+  const requiredAppIds = [
+    "FAKETEAMID.com.cartridge.marketplace",
+    "F9U4Y5YSTN.com.cartridge.marketplace"
+  ];
+
+  allAppIds.push(...requiredAppIds);
+  console.log(`Always including Cartridge marketplace app IDs: ${requiredAppIds.join(", ")}`);
+
   console.log(`Processing ${configFiles.length} config files...`);
 
   for (const configFile of configFiles) {
@@ -70,7 +79,7 @@ function generateAppleAppSiteAssociation(): AppleAppSiteAssociation {
   // Remove duplicates and sort
   const uniqueAppIds = [...new Set(allAppIds)].sort();
 
-  console.log(`\nFound ${uniqueAppIds.length} unique app IDs`);
+  console.log(`\nFound ${uniqueAppIds.length} unique app IDs (including required Cartridge marketplace app IDs)`);
 
   return {
     webcredentials: {
