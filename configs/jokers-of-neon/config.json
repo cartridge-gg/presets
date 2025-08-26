@@ -1,5 +1,5 @@
 {
-  "origin": "*.jokersofneon.com",
+  "origin": ["*.jokersofneon.com", "capacitor://localhost", "http://localhost"],
   "theme": {
     "colors": {
       "primary": "#A144B2"
