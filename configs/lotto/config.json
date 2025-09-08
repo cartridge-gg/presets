@@ -11,7 +11,7 @@
               {
                 "name": "double_spin",
                 "entrypoint": "double_spin",
-                "description": "Double or Nothing spin",
+                "description": "Double or Halve spin",
                 "is_paymastered": true
               }
             ]
@@ -23,7 +23,7 @@
               {
                 "name": "double_spin",
                 "entrypoint": "double_spin",
-                "description": "Double or Nothing spin",
+                "description": "Double or Halve spin",
                 "is_paymastered": true
               }
             ]
