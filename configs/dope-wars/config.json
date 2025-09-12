@@ -74,6 +74,19 @@
             ]
           }
         }
+      },
+      "merkledrops": {
+        "dope": {
+          "name": "Dope",
+          "network": "ETH",
+          "description": "Dope owners can claim their rewards",
+          "contract": "0x1dCD8763c01961C2BbB5ed58C6E51F55b1378589",
+          "entrypoint": "0x1dCD8763c01961C2BbB5ed58C6E51F55b1378589",
+          "args": [
+            "TOKEN_ID",
+            "MERKLE_PROOF"
+          ]
+        }
       }
     }
   },
