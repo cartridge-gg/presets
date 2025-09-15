@@ -1,5 +1,9 @@
 {
-  "origin": ["lootsurvivor.io", "claims.lootsurvivor.io"],
+  "origin": [
+    "lootsurvivor.io",
+    "claims.lootsurvivor.io",
+    "tournaments.lootsurvivor.io"
+  ],
   "chains": {
     "SN_MAIN": {
       "policies": {
