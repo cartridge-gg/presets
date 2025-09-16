@@ -678,4 +678,14 @@ export const metadata: EkuboERC20Metadata[] = [
     total_supply: null,
     logo_url: "https://assets.underware.gg/pistols/fame.svg",
   },
+  {
+    name: "Survivor",
+    symbol: "SURVIVOR",
+    decimals: 18,
+    l2_token_address:
+      "0x42dd777885ad2c116be96d4d634abc90a26a790ffb5871e037dd5ae7d2ec86b",
+    sort_order: 1,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/survivor_token.png",
+  },
 ];
