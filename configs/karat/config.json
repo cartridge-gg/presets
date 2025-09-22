@@ -1,5 +1,6 @@
 {
   "origin": [
+    "collect-code.com",
     "*.collect-code.com"
   ],
   "theme": {
