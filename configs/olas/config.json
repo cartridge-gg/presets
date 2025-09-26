@@ -1,0 +1,71 @@
+{
+    "origin": [
+        "*.olas.info",
+        "competitions-staging.olas.info",
+        "competitions.olas.info"
+    ],
+    "chains": {
+        "SN_MAIN": {
+            "policies": {
+                "contracts": {
+                    "0x079e8b3a275b1cbb392cfafc95ab4dc07e915ff7782fc34359fb463678ebcf94": {
+                        "name": "Olas Competitions Registry",
+                        "description": "Allows users to interact with the Olas competitions registry contract.",
+                        "methods": [
+                            {
+                                "name": "Register User",
+                                "description": "A method to register a new world id verified user.",
+                                "entrypoint": "register_user",
+                                "is_paymastered": true
+                            }
+                        ]
+                    },
+                    "0x032cf6562db58c2e8995d61d098bde2df73487327d68966d9f55f350be78032a": {
+                        "name": "Olas Competition",
+                        "description": "Allows users to interact with the Olas competition contract.",
+                        "methods": [
+                            {
+                                "name": "Cast Vote",
+                                "description": "A method that allows users to cast a vote for a market in a competition.",
+                                "entrypoint": "cast_vote",
+                                "is_paymastered": true
+                            },
+                            {
+                                "name": "Claim Market Refund",
+                                "description": "A method that allows users to claim their VP (Voting Power) refund for a terminated market in a competition.",
+                                "entrypoint": "claim_market_refund",
+                                "is_paymastered": true
+                            }
+                        ]
+                    },
+                    "0x060cf2cc62fb1b4096ff552016b73bc60c85b0121f447be7935f0f748a1e9f5a": {
+                        "name": "Olas Reward Token",
+                        "description": "Allows users to interact with the Olas reward token contract.",
+                        "methods": [
+                            {
+                                "name": "Claim Airdrop",
+                                "description": "A method that allows users to claim their airdrop allocation.",
+                                "entrypoint": "claim_airdrop",
+                                "is_paymastered": true
+                            },
+                            {
+                                "name": "Burn For VP",
+                                "description": "A method that allows users to burn their olas reward token in exchange for additional VP (Voting Power).",
+                                "entrypoint": "burn_for_vp",
+                                "is_paymastered": true
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "theme": {
+        "colors": {
+            "primary": "#495fa9"
+        },
+        "cover": "cover.png",
+        "icon": "icon.png",
+        "name": "Olas"
+    }
+}
