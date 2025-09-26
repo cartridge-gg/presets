@@ -1,10 +1,14 @@
 {
-  "origin": ["lootsurvivor.io", "claims.lootsurvivor.io"],
+  "origin": [
+    "lootsurvivor.io",
+    "claims.lootsurvivor.io",
+    "tournaments.lootsurvivor.io"
+  ],
   "chains": {
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x79fdfdf5db57b6e1afc91553b21160b9ff126d59ed014299ba5b85fb1ddaa17": {
+          "0x5e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
             "name": "Death Mountain Token",
             "description": "Token contract for Death Mountain utilising Denshokan",
             "methods": [
@@ -15,7 +19,7 @@
               }
             ]
           },
-          "0x3740caf0855655a5462402dea49dda236753a3b019fbc15b7228192dc3f361": {
+          "0x6f7c4350d6d5ee926b3ac4fa0c9c351055456e75c92227468d84232fc493a9c": {
             "name": "Loot Survivor Game",
             "description": "Main game contract for Loot Survivor gameplay",
             "methods": [
@@ -61,7 +65,7 @@
               }
             ]
           },
-          "0x04a346df886993b0ab17f1d5ae2dd203313484bbead83fdc404c55b237c42d43": {
+          "0xa67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
             "name": "Beast Mode Dungeon",
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
             "methods": [
