@@ -1,4 +1,5 @@
 {
+  "origin": "*.oruggintrail.com",
   "theme": {
     "colors": {
       "primary": "#00bc7d"
