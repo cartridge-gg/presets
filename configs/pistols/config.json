@@ -1,6 +1,8 @@
 {
   "origin": [
+    "pistols.gg",
     "*.pistols.gg",
+    "underware.gg",
     "*.underware.gg"
   ],
   "theme": {
@@ -172,6 +174,15 @@
               {
                 "entrypoint": "airdrop_ring",
                 "description": "Airdrop Signet Rings (admin)"
+              }
+            ]
+          },
+          "0x068a7a07e08fc3e723a878223d00f669106780d5ea6665eb15d893476d47bf3b": {
+            "description": "$FOOLS ERC20 contract (Players rewards)",
+            "methods": [
+              {
+                "entrypoint": "approve",
+                "description": "Approve use of FOOLS (in-game currency)"
               }
             ]
           },
@@ -470,6 +481,15 @@
               {
                 "entrypoint": "airdrop_ring",
                 "description": "Airdrop Signet Rings (admin)"
+              }
+            ]
+          },
+          "0x068a7a07e08fc3e723a878223d00f669106780d5ea6665eb15d893476d47bf3b": {
+            "description": "$FOOLS ERC20 contract (Players rewards)",
+            "methods": [
+              {
+                "entrypoint": "approve",
+                "description": "Approve use of FOOLS (in-game currency)"
               }
             ]
           },
