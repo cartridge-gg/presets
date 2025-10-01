@@ -8,7 +8,7 @@
         "SN_MAIN": {
             "policies": {
                 "contracts": {
-                    "0x079e8b3a275b1cbb392cfafc95ab4dc07e915ff7782fc34359fb463678ebcf94": {
+                    "0x0029f9d1603e4a91cc646473c40e103acf8d1bdb13f9461f10735616acb8617f": {
                         "name": "Olas Competitions Registry",
                         "description": "Allows users to interact with the Olas competitions registry contract.",
                         "methods": [
@@ -20,7 +20,7 @@
                             }
                         ]
                     },
-                    "0x032cf6562db58c2e8995d61d098bde2df73487327d68966d9f55f350be78032a": {
+                    "0x07337123974693342d97a1d27670796793cfec44b7953e9a35629efee4e35811": {
                         "name": "Olas Competition",
                         "description": "Allows users to interact with the Olas competition contract.",
                         "methods": [
