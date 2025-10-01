@@ -686,6 +686,16 @@ export const metadata: EkuboERC20Metadata[] = [
       "0x42dd777885ad2c116be96d4d634abc90a26a790ffb5871e037dd5ae7d2ec86b",
     sort_order: 1,
     total_supply: null,
-    logo_url: "https://lootsurvivor.io/images/survivor_token.png",
+    logo_url: "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/399cb277-f675-4efe-97fb-fac94a236a00/logo",
+  },
+  {
+    name: "Dungeon Ticket",
+    symbol: "TICKET",
+    decimals: 18,
+    l2_token_address:
+      "0x035f581b050a39958b7188ab5c75daaa1f9d3571a0c032203038c898663f31f8",
+    sort_order: 1,
+    total_supply: null,
+    logo_url: "	https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/f96b51e2-e978-42e2-c67a-e84159015000/logo",
   },
 ];
