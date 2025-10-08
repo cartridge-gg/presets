@@ -57,10 +57,9 @@ export type PolicyPredicate = {
   entrypoint: string;
 };
 
-export type Method = {
+export type BaseMethodProperties = {
   name?: string;
   description?: string;
-  entrypoint: string;
   /**
    * Whether the methods default state is enabled in session approval.
    * @default true
@@ -79,11 +78,20 @@ export type Method = {
   isPaymastered?: boolean | PolicyPredicate;
 };
 
-export type Approval = Method & {
+export type Method = BaseMethodProperties & {
+  entrypoint: Exclude<string, "approve">;
+};
+
+export type Approval = BaseMethodProperties & {
   entrypoint: "approve";
   /**
-   * Approval amount for methods that involve approvals (e.g., token approvals).
-   * Can be a numeric string to handle large numbers.
+   * Approval amount for approve methods.
+   *
+   * Supported formats:
+   * - "*": Wildcard for NFT approvals (approve any token ID)
+   * - Hex string: e.g., "0xffffffffffffffffffffffffffffffff" for max uint128
+   * - Decimal number: e.g., 1000000000000000000
+   * - Decimal string: e.g., "1000000000000000000"
    */
   amount: string | number;
 };
