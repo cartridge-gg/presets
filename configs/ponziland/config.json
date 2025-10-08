@@ -73,7 +73,8 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "nftSTRK allowance"
+                "description": "nftSTRK allowance",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           },
@@ -84,7 +85,8 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "eWNT allowance"
+                "description": "eWNT allowance",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           },
@@ -95,7 +97,8 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "eQQ allowance"
+                "description": "eQQ allowance",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           },
@@ -106,7 +109,8 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "eSG allowance"
+                "description": "eSG allowance",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           },
@@ -117,7 +121,8 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "nftLORDS allowance"
+                "description": "nftLORDS allowance",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           }

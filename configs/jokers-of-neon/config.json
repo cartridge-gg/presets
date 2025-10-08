@@ -33,7 +33,8 @@
             "methods": [
               {
                 "name": "Approve",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Balance Of",
@@ -235,7 +236,8 @@
             "methods": [
               {
                 "name": "Approve",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Balance Of",
@@ -437,7 +439,8 @@
             "methods": [
               {
                 "name": "Approve",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Balance Of",
@@ -639,7 +642,8 @@
             "methods": [
               {
                 "name": "Approve",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Balance Of",
@@ -841,7 +845,8 @@
             "methods": [
               {
                 "name": "Approve",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Balance Of",

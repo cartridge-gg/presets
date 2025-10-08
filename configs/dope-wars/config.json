@@ -22,7 +22,8 @@
               {
                 "name": "Approve",
                 "description": "Approve paper usage",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               }
             ]
           },

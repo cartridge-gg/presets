@@ -220,7 +220,8 @@
               {
                 "name": "Approve",
                 "description": "Approve resource transfer",
-                "entrypoint": "approve"
+                "entrypoint": "approve",
+                "amount": "0xffffffffffffffffffffffffffffffff"
               },
               {
                 "name": "Send",
