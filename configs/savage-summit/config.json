@@ -26,6 +26,39 @@
                 "entrypoint": "claim_starter_kit"
               }
             ]
+          },
+          "0x07c7fe4ef54a91f030b668d7de1a5eacaba2bc6f970fdab436d3a29228de830b": {
+            "name": "Attack Potion",
+            "description": "ERC 20 token for Attack Potion",
+            "methods": [
+              {
+                "name": "Approve",
+                "description": "Approve Attack Potion",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x068292fdfa280f371fabd1d6e49c346f11b341e1d3fe80d4ac320648ab03539c": {
+            "name": "Revive Potion",
+            "description": "ERC 20 token for Revive Potion",
+            "methods": [
+              {
+                "name": "Approve",
+                "description": "Approve Revive Potion",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x0793f1104a3b0d2316abc92039421f7160a7f4caad0ed405b6f8732271717328": {
+            "name": "Extra Life Potion",
+            "description": "ERC 20 token for Extra Life Potion",
+            "methods": [
+              {
+                "name": "Approve",
+                "description": "Approve Extra Life Potion",
+                "entrypoint": "approve"
+              }
+            ]
           }
         }
       }
