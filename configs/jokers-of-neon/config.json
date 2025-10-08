@@ -34,7 +34,7 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "*"
               },
               {
                 "name": "Balance Of",
@@ -237,7 +237,7 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "*"
               },
               {
                 "name": "Balance Of",
@@ -440,7 +440,7 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "*"
               },
               {
                 "name": "Balance Of",
@@ -643,7 +643,7 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "*"
               },
               {
                 "name": "Balance Of",
@@ -846,7 +846,7 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "*"
               },
               {
                 "name": "Balance Of",
