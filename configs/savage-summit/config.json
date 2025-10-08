@@ -1,11 +1,42 @@
 {
-  "origin": "savagesummit.io",
+  "origin": [
+    "summit.game"
+  ],
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x2c919d7fae980313ee5a14026d9a67d6ca6cabd5a8ba861e20ef572171b7157": {
+            "name": "Summit Game",
+            "description": "Main game contract for Summit gameplay",
+            "methods": [
+              {
+                "name": "Attack",
+                "description": "Attack the Summit",
+                "entrypoint": "attack"
+              },
+              {
+                "name": "Feed",
+                "description": "Feed beast dead adventurers",
+                "entrypoint": "feed"
+              },
+              {
+                "name": "Claim Starter Kit",
+                "description": "Claim beast starter kit",
+                "entrypoint": "claim_starter_kit"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
   "theme": {
     "colors": {
       "primary": "#fbf7da"
     },
     "cover": "cover.png",
     "icon": "icon.png",
-    "name": "Savage Summit"
+    "name": "Summit"
   }
 }
