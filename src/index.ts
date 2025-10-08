@@ -49,7 +49,7 @@ export type ContractPolicies = Record<string, ContractPolicy>;
 export type ContractPolicy = {
   name?: string;
   description?: string;
-  methods: Method[];
+  methods: (Method | Approval)[];
 };
 
 export type PolicyPredicate = {
@@ -77,6 +77,15 @@ export type Method = {
    * @default true
    */
   isPaymastered?: boolean | PolicyPredicate;
+};
+
+export type Approval = Method & {
+  entrypoint: "approve";
+  /**
+   * Approval amount for methods that involve approvals (e.g., token approvals).
+   * Can be a numeric string to handle large numbers.
+   */
+  amount: string | number;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {

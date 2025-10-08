@@ -143,9 +143,10 @@ function checkApproveEntrypoints(
     for (const [contractAddress, contract] of Object.entries(
       chain.policies.contracts
     )) {
-      if (!contract.methods) continue;
+      const typedContract = contract as ConfigContract;
+      if (!typedContract.methods) continue;
 
-      for (const method of contract.methods) {
+      for (const method of typedContract.methods) {
         if (method.entrypoint === "approve") {
           approveOccurrence++;
           const searchString = `"approve"`;
@@ -155,12 +156,15 @@ function checkApproveEntrypoints(
             approveOccurrence
           );
 
-          errors.push({
-            file: configPath,
-            line,
-            message: `Usage of 'approve' entrypoint detected in chain ${chainId}, contract ${contractAddress}`,
-            type: "warning",
-          });
+          // Check if the method has an 'amount' field
+          if (!("amount" in method) || method.amount === undefined) {
+            errors.push({
+              file: configPath,
+              line,
+              message: `Approve entrypoint in chain ${chainId}, contract ${contractAddress} must have an 'amount' field specified`,
+              type: "error",
+            });
+          }
         }
       }
     }
