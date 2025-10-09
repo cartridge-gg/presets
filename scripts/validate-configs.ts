@@ -158,7 +158,7 @@ function checkApproveEntrypoints(
           );
 
           // Check if spender field is set
-          if (!("spender" in method) || method.amount === undefined) {
+          if (!("spender" in method) || method.spender === undefined) {
             errors.push({
               file: configPath,
               line,
