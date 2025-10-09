@@ -94,6 +94,11 @@ export type Approval = BaseMethodProperties & {
    * - Decimal string: e.g., "1000000000000000000"
    */
   amount: string | number;
+
+  /**
+   * The spender address for approve methods.
+   */
+  spender: string;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
