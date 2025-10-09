@@ -43,7 +43,7 @@ const errors: ValidationError[] = [];
 function findLineNumber(
   content: string,
   searchString: string,
-  occurrence: number = 1
+  occurrence: number = 1,
 ): number {
   const lines = content.split("\n");
   let found = 0;
@@ -63,7 +63,7 @@ function findLineNumber(
 function validateAssets(
   configPath: string,
   config: Config,
-  rawContent: string
+  rawContent: string,
 ): void {
   const configDir = path.dirname(configPath);
 
@@ -131,7 +131,7 @@ function validateAssets(
 function checkApproveEntrypoints(
   configPath: string,
   config: Config,
-  rawContent: string
+  rawContent: string,
 ): void {
   if (!config.chains) return;
 
@@ -141,7 +141,7 @@ function checkApproveEntrypoints(
     if (!chain.policies?.contracts) continue;
 
     for (const [contractAddress, contract] of Object.entries(
-      chain.policies.contracts
+      chain.policies.contracts,
     )) {
       const typedContract = contract as ConfigContract;
       if (!typedContract.methods) continue;
@@ -153,7 +153,7 @@ function checkApproveEntrypoints(
           const line = findLineNumber(
             rawContent,
             searchString,
-            approveOccurrence
+            approveOccurrence,
           );
 
           // Check if the method has an 'amount' field
@@ -162,6 +162,16 @@ function checkApproveEntrypoints(
               file: configPath,
               line,
               message: `Approve entrypoint in chain ${chainId}, contract ${contractAddress} must have an 'amount' field specified`,
+              type: "error",
+            });
+          }
+
+          // Check if the method has an 'spender' field
+          if (!("spender" in method) || method.spender === undefined) {
+            errors.push({
+              file: configPath,
+              line,
+              message: `Approve entrypoint in chain ${chainId}, contract ${contractAddress} must have an 'spender' field specified`,
               type: "error",
             });
           }
@@ -174,7 +184,7 @@ function checkApproveEntrypoints(
 function validateOrigins(
   configPath: string,
   config: Config,
-  rawContent: string
+  rawContent: string,
 ): void {
   if (!config.origin) return;
 
@@ -184,7 +194,7 @@ function validateOrigins(
   // Helper function to validate a single origin string
   const validateSingleOrigin = (
     origin: string,
-    occurrence: number = 1
+    occurrence: number = 1,
   ): void => {
     // Skip wildcard origins (used for development)
     if (origin === "*") return;
@@ -221,7 +231,7 @@ function validateOrigins(
 function validateAppleAppSiteAssociation(
   configPath: string,
   config: Config,
-  rawContent: string
+  rawContent: string,
 ): void {
   if (!config["apple-app-site-association"]) return;
 
@@ -347,7 +357,7 @@ function getFilesToValidate(): string[] {
   // Check for files from environment variable
   if (process.env.CHANGED_FILES) {
     return process.env.CHANGED_FILES.split(",").filter((file) =>
-      file.endsWith("config.json")
+      file.endsWith("config.json"),
     );
   }
 
@@ -372,10 +382,10 @@ function main(): void {
   console.log(
     `Validating ${configFiles.length} config file${
       configFiles.length > 1 ? "s" : ""
-    }:`
+    }:`,
   );
   configFiles.forEach((file) =>
-    console.log(`  - ${path.relative(process.cwd(), file)}`)
+    console.log(`  - ${path.relative(process.cwd(), file)}`),
   );
 
   for (const configFile of configFiles) {
@@ -392,7 +402,7 @@ function main(): void {
     console.log("✅ All validated config files are valid");
   } else {
     console.log(
-      `\nFound ${errors.length} issue${errors.length > 1 ? "s" : ""}:`
+      `\nFound ${errors.length} issue${errors.length > 1 ? "s" : ""}:`,
     );
 
     // Output GitHub annotations for workflow
@@ -406,7 +416,7 @@ function main(): void {
         console.log(
           `${error.type.toUpperCase()}: ${error.file}:${error.line} - ${
             error.message
-          }`
+          }`,
         );
       }
     }
