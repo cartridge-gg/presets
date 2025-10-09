@@ -1,13 +1,14 @@
 {
     "origin": [
         "*.olas.info",
-        "competitions-staging.olas.info"
+        "competitions-staging.olas.info",
+        "competitions.olas.info"
     ],
     "chains": {
-        "SN_SEPOLIA": {
+        "SN_MAIN": {
             "policies": {
                 "contracts": {
-                    "0x01e7f0c659c0F1064C3E3369B748C9FBE8f2d630F29f65e9B9D34DbC3391F156": {
+                    "0x0029f9d1603e4a91cc646473c40e103acf8d1bdb13f9461f10735616acb8617f": {
                         "name": "Olas Competitions Registry",
                         "description": "Allows users to interact with the Olas competitions registry contract.",
                         "methods": [
@@ -19,7 +20,7 @@
                             }
                         ]
                     },
-                    "0x0538e68ade142cabffdda92fdf0c9c56fbe8c99261a47cf5f2e4ff2d7b0e655d": {
+                    "0x07337123974693342d97a1d27670796793cfec44b7953e9a35629efee4e35811": {
                         "name": "Olas Competition",
                         "description": "Allows users to interact with the Olas competition contract.",
                         "methods": [
@@ -37,7 +38,7 @@
                             }
                         ]
                     },
-                    "0x02aa5817e5baf9859ff1ca952586ff41f29759ee95654bf3eda8bb912a78054d": {
+                    "0x060cf2cc62fb1b4096ff552016b73bc60c85b0121f447be7935f0f748a1e9f5a": {
                         "name": "Olas Reward Token",
                         "description": "Allows users to interact with the Olas reward token contract.",
                         "methods": [

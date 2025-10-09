@@ -49,7 +49,7 @@ export type ContractPolicies = Record<string, ContractPolicy>;
 export type ContractPolicy = {
   name?: string;
   description?: string;
-  methods: Method[];
+  methods: (Method | Approval)[];
 };
 
 export type PolicyPredicate = {
@@ -57,10 +57,9 @@ export type PolicyPredicate = {
   entrypoint: string;
 };
 
-export type Method = {
+export type BaseMethodProperties = {
   name?: string;
   description?: string;
-  entrypoint: string;
   /**
    * The spender address for approval methods (e.g., ERC20 approve, ERC721 setApprovalForAll).
    * Specifies which address is being approved to spend/transfer tokens on behalf of the owner.
@@ -82,6 +81,24 @@ export type Method = {
    * @default true
    */
   isPaymastered?: boolean | PolicyPredicate;
+};
+
+export type Method = BaseMethodProperties & {
+  entrypoint: Exclude<string, "approve">;
+};
+
+export type Approval = BaseMethodProperties & {
+  entrypoint: "approve";
+  /**
+   * Approval amount for approve methods.
+   *
+   * Supported formats:
+   * - "*": Wildcard for NFT approvals (approve any token ID)
+   * - Hex string: e.g., "0xffffffffffffffffffffffffffffffff" for max uint128
+   * - Decimal number: e.g., 1000000000000000000
+   * - Decimal string: e.g., "1000000000000000000"
+   */
+  amount: string | number;
 };
 
 export type SignMessagePolicy = TypedDataPolicy & {
