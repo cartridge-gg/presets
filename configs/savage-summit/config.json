@@ -6,7 +6,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x2c919d7fae980313ee5a14026d9a67d6ca6cabd5a8ba861e20ef572171b7157": {
+          "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae": {
             "name": "Summit Game",
             "description": "Main game contract for Summit gameplay",
             "methods": [
