@@ -33,6 +33,7 @@
             "methods": [
               {
                 "name": "Approve",
+                "amount": "255000000000000000000",
                 "description": "Approve Attack Potion",
                 "entrypoint": "approve"
               }
@@ -44,6 +45,7 @@
             "methods": [
               {
                 "name": "Approve",
+                "amount": "255000000000000000000",
                 "description": "Approve Revive Potion",
                 "entrypoint": "approve"
               }
@@ -55,6 +57,7 @@
             "methods": [
               {
                 "name": "Approve",
+                "amount": "255000000000000000000",
                 "description": "Approve Extra Life Potion",
                 "entrypoint": "approve"
               }
