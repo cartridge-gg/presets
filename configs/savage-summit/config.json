@@ -33,7 +33,7 @@
             "methods": [
               {
                 "name": "Approve",
-                "amount": "255000000000000000000",
+                "amount": "50000000000000000000000",
                 "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
                 "description": "Approve Attack Potion",
                 "entrypoint": "approve"
@@ -46,7 +46,7 @@
             "methods": [
               {
                 "name": "Approve",
-                "amount": "255000000000000000000",
+                "amount": "50000000000000000000000",
                 "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
                 "description": "Approve Revive Potion",
                 "entrypoint": "approve"
@@ -59,7 +59,7 @@
             "methods": [
               {
                 "name": "Approve",
-                "amount": "255000000000000000000",
+                "amount": "50000000000000000000000",
                 "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
                 "description": "Approve Extra Life Potion",
                 "entrypoint": "approve"
