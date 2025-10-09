@@ -24,6 +24,7 @@ interface ConfigTheme {
 interface ConfigMethod {
   entrypoint: string;
   description?: string;
+  spender?: string;
   [key: string]: any;
 }
 
@@ -154,6 +155,16 @@ function checkApproveEntrypoints(
             searchString,
             approveOccurrence
           );
+
+          // Check if spender field is set
+          if (!method.spender) {
+            errors.push({
+              file: configPath,
+              line,
+              message: `Missing 'spender' field for 'approve' entrypoint in chain ${chainId}, contract ${contractAddress}. Approval methods must specify a spender address.`,
+              type: "error",
+            });
+          }
 
           errors.push({
             file: configPath,

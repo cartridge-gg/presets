@@ -62,6 +62,11 @@ export type Method = {
   description?: string;
   entrypoint: string;
   /**
+   * The spender address for approval methods (e.g., ERC20 approve, ERC721 setApprovalForAll).
+   * Specifies which address is being approved to spend/transfer tokens on behalf of the owner.
+   */
+  spender?: string;
+  /**
    * Whether the methods default state is enabled in session approval.
    * @default true
    */
