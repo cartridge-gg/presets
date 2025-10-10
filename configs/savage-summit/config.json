@@ -1,7 +1,5 @@
 {
-  "origin": [
-    "summit.game"
-  ],
+  "origin": ["summit.game", "www.summit.game"],
   "chains": {
     "SN_MAIN": {
       "policies": {
