@@ -91,6 +91,17 @@
               }
             ]
           },
+          "0x046da8955829adf2bda310099a0063451923f02e648cf25a1203aac6335cf0e4": {
+            "name": "Beasts",
+            "description": "beast NFT contract",
+            "methods": [
+              {
+                "name": "Refresh Dungeon Stats",
+                "description": "Updates beast dungeon stats",
+                "entrypoint": "refresh_dungeon_stats"
+              }
+            ]
+          },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
             "name": "Cartridge VRF Provider",
             "description": "Verifiable Random Function contract, allows randomness in the game",
