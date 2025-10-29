@@ -1,10 +1,13 @@
 {
-  "origin": ["summit.game", "www.summit.game"],
+  "origin": [
+    "summit.game",
+    "www.summit.game"
+  ],
   "chains": {
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae": {
+          "0x27954612a4a745f9dd608c6ee8b2c7a523a51befcb9b36f2de662feecefe7cb": {
             "name": "Summit Game",
             "description": "Main game contract for Summit gameplay",
             "methods": [
@@ -12,6 +15,11 @@
                 "name": "Attack",
                 "description": "Attack the Summit",
                 "entrypoint": "attack"
+              },
+              {
+                "name": "Attack Unsafe",
+                "description": "Attack the Summit without safety checks",
+                "entrypoint": "attack_unsafe"
               },
               {
                 "name": "Feed",
@@ -22,45 +30,66 @@
                 "name": "Claim Starter Kit",
                 "description": "Claim beast starter kit",
                 "entrypoint": "claim_starter_kit"
+              },
+              {
+                "name": "Add Extra Life",
+                "description": "Add extra life to beast",
+                "entrypoint": "add_extra_life"
+              },
+              {
+                "name": "Select Upgrades",
+                "description": "Select upgrades for beast",
+                "entrypoint": "select_upgrades"
               }
             ]
           },
-          "0x07c7fe4ef54a91f030b668d7de1a5eacaba2bc6f970fdab436d3a29228de830b": {
+          "0x07c2bdaa20e55fcdb0fcda05dd00117c36a154d18f7541b670cae3cd7aabfbc2": {
             "name": "Attack Potion",
             "description": "ERC 20 token for Attack Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
+                "spender": "0x27954612a4a745f9dd608c6ee8b2c7a523a51befcb9b36f2de662feecefe7cb",
                 "description": "Approve Attack Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x068292fdfa280f371fabd1d6e49c346f11b341e1d3fe80d4ac320648ab03539c": {
+          "0x004f2484e0aca871fb9b7c34da7f55b2f80cc0cd69b613eabab1ce42262bc634": {
             "name": "Revive Potion",
             "description": "ERC 20 token for Revive Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
+                "spender": "0x27954612a4a745f9dd608c6ee8b2c7a523a51befcb9b36f2de662feecefe7cb",
                 "description": "Approve Revive Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x0793f1104a3b0d2316abc92039421f7160a7f4caad0ed405b6f8732271717328": {
+          "0x04526165196ad45741442f0cb4713990b8c7bedf85ec26caf0fbbb1799174aa8": {
             "name": "Extra Life Potion",
             "description": "ERC 20 token for Extra Life Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0xf394d0076fc06a68da5431a0db5376cd38dc862702556a668f82b3c04236ae",
+                "spender": "0x27954612a4a745f9dd608c6ee8b2c7a523a51befcb9b36f2de662feecefe7cb",
                 "description": "Approve Extra Life Potion",
                 "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "Cartridge VRF Provider",
+            "description": "Verifiable Random Function contract, allows randomness in the game",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Allows requesting random numbers from the VRF provider",
+                "entrypoint": "request_random"
               }
             ]
           }
