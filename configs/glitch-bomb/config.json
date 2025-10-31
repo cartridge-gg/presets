@@ -1,0 +1,14 @@
+{
+  "origin": [
+    "*.glitchbomb.gg",
+    "glitchbomb.gg"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#55DD63"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Glitch Bomb"
+  }
+}
