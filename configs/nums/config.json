@@ -63,11 +63,6 @@
             "description": "Mock token contract for payments",
             "methods": [
               {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "Approve a payment"
-              },
-              {
                 "name": "Mint",
                 "entrypoint": "mint",
                 "description": "Mint tokens"
