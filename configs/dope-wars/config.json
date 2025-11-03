@@ -23,7 +23,8 @@
                 "name": "Approve",
                 "description": "Approve paper usage",
                 "entrypoint": "approve",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "10000000000000000000000",
+                "spender": "0x00cdc99c98deb5c91e9d2f1e3cf362cda3ad5c742a1987d21f8ac6b36de11877"
               }
             ]
           },
