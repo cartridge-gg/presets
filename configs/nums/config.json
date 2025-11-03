@@ -1,9 +1,77 @@
 {
   "origin": [
     "*.nums.gg",
-    "nums.gg"
+    "nums.gg",
+    "nums-blond.vercel.app"
   ],
   "chains": {
+    "SN_SEPOLIA": {
+      "policies": {
+        "contracts": {
+          "0x277902ea7ce3bbdc25304f3cf1caaed7b6f22d722a8b16827ce11fd5fcb8ac6": {
+            "name": "Game Actions",
+            "methods": [
+              {
+                "name": "Claim Airdrop",
+                "entrypoint": "on_claim",
+                "description": "Claims an airdrop"
+              },
+              {
+                "name": "Buy Game",
+                "entrypoint": "buy",
+                "description": "Buys a game"
+              },
+              {
+                "name": "Start Game",
+                "entrypoint": "start",
+                "description": "Starts a game"
+              },
+              {
+                "name": "Set Slot",
+                "entrypoint": "set",
+                "description": "Starts a game"
+              },
+              {
+                "name": "Apply Powerup",
+                "entrypoint": "apply",
+                "description": "Applies a powerup to the game"
+              },
+              {
+                "name": "Sponsor Tournament",
+                "entrypoint": "sponsor",
+                "description": "Sponsors a tournament"
+              },
+              {
+                "name": "Claim Reward",
+                "entrypoint": "claim",
+                "description": "Claims a reward for the game"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "VRF Provider",
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random",
+                "description": "Requests a random number from the VRF contract"
+              }
+            ]
+          },
+          "0xe69b167a18be231ef14ca474e29cf6356333038162077b551a17d25d166af": {
+            "name": "mNUMS",
+            "description": "Mock token contract for payments",
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve",
+                "description": "Approve a payment"
+              }
+            ]
+          }
+        }
+      }
+    },
     "SN_MAIN": {
       "policies": {
         "contracts": {
