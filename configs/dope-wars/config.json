@@ -27,7 +27,7 @@
               }
             ]
           },
-          "0x044a23BbfE03FFe90D3C23Fb6e5A8AD0341036C039363DfA6F3513278Aa51fCA": {
+          "0x00cdc99c98deb5c91e9d2f1e3cf362cda3ad5c742a1987d21f8ac6b36de11877": {
             "name": "Game Contract",
             "description": "Core game mechanics",
             "methods": [
@@ -42,18 +42,24 @@
                 "entrypoint": "travel"
               },
               {
-                "name": "Decide",
-                "description": "Make a game decision",
-                "entrypoint": "decide"
-              },
-              {
                 "name": "End Game",
                 "description": "End the current game",
                 "entrypoint": "end_game"
               }
             ]
           },
-          "0x0412445e644070C69fEa16b964cC81Cd6dEBF6A4DBf683E2E9686a45ad088de8": {
+          "0x00a34c2b00f78ac4fec4400368961e75b9f003d847c445b3c3ff49ee9b0bfee7": {
+            "name": "Game Contract",
+            "description": "Core game mechanics",
+            "methods": [
+              {
+                "name": "Decide",
+                "description": "Make a game decision",
+                "entrypoint": "decide"
+              }
+            ]
+          },
+          "0x03cd4af3356c2c48eb4a900d0ade808e307c3b9eb8176e6a90d27b3469ff8b08": {
             "name": "Laundromat Contract",
             "description": "Manages game scoring and laundering",
             "methods": [
@@ -71,6 +77,70 @@
                 "name": "Launder",
                 "description": "Launder resources",
                 "entrypoint": "launder"
+              }
+            ]
+          },
+            "0x03ce0fd868ca6ecbb8ee204591f0565eb364dd01098e86e46656b095c1cdb126": {
+            "name": "Dope Loot Claim Contract",
+            "description": "Dope Loot Claim Contract",
+            "methods": [
+              {
+                "name": "Release",
+                "description": "Release Loot after playing a game",
+                "entrypoint": "release"
+              },
+              {
+                "name": "Open",
+                "description": "Open Loot for Hustler & Gear",
+                "entrypoint": "open"
+              }
+            ]
+          },
+          "0x0107aefe535adad25d91f77744bb37eca24d997e8216517736f06bbaea22d214": {
+            "name": "Dope Gear Contract",
+            "description": "Dope Gear Contract",
+            "methods": [
+              {
+                "name": "Set approval for all",
+                "description": "Set approval for all",
+                "entrypoint": "set_approval_for_all"
+              }
+            ]
+          },
+          "0x0351f9dfb30e7ef8f283c61360145295d22621ac197b7a0d1f9094b52d71c605": {
+            "name": "Dope Hustlers Contract",
+            "description": "Dope Hustlers Contract",
+            "methods": [
+              {
+                "name":  "Update your Hustler",
+                "description": "Update your Hustler",
+                "entrypoint": "update_hustler"
+              },
+              {
+                "name":  "Update your Hustler Body",
+                "description": "Update your Hustler Body",
+                "entrypoint": "update_hustler_body"
+              },
+              {
+                "name":  "Equip your Hustler",
+                "description": "Equip your Hustler with Gear",
+                "entrypoint": "equip"
+              },
+              {
+                "name":  "Unequip your Hustler",
+                "description": "Unequip your Hustler",
+                "entrypoint": "unequip"
+              }
+            ]
+          },
+             "0x07652ca415b80a906ae739574104d217e953963917bffeb1ce7d5704b6ed057d": {
+            "name": "Dope Loot Contract",
+            "description": "Dope Loot Contract",
+            "methods": [
+              {
+                "name": "Delegate voting power",
+                "description": "Delegate voting power",
+                "entrypoint": "delegate"
               }
             ]
           }
