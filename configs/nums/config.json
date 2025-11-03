@@ -66,6 +66,11 @@
                 "name": "Approve",
                 "entrypoint": "approve",
                 "description": "Approve a payment"
+              },
+              {
+                "name": "Mint",
+                "entrypoint": "mint",
+                "description": "Mint tokens"
               }
             ]
           }
