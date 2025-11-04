@@ -1,11 +1,11 @@
 {
-  "origin": ["https://play.ponzi.land/"],
+ "origin": ["play.ponzi.land"],
   "theme": {
     "colors": {
       "primary": "#F38332"
     },
     "cover": "cover.png",
-    "icon": "icon.png",
+    "icon": "icon.svg",
     "name": "PonziLand"
   },
   "chains": {
