@@ -61,7 +61,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "1000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -72,7 +74,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "500000000000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -83,7 +87,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "180000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -94,7 +100,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "10000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -105,7 +113,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "40000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -116,7 +126,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "40000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -127,7 +139,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "40000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -138,7 +152,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "11000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -149,7 +165,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "82000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -160,7 +178,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "1000000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -171,7 +191,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "14000000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -182,7 +204,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "300000000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -193,7 +217,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "1000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -204,7 +230,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "1500000000000000000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -215,7 +243,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount": "50000000",
+                "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           },
@@ -226,7 +256,9 @@
               {
                 "name": "Approve",
                 "entrypoint": "approve",
-                "description": "Approve spender to spend tokens"
+                "description": "Approve spender to spend tokens",
+                "amount":"500000000000000000000",
+                "spender":"0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           }
