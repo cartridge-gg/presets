@@ -1,5 +1,5 @@
 {
-  "origin": ["play.ponzi.land", "portal.ponzi.land"],
+ "origin": ["play.ponzi.land"],
   "theme": {
     "colors": {
       "primary": "#F38332"
@@ -17,16 +17,6 @@
             "description": "Main game contract",
             "methods": [
               {
-                "name": "Bid",
-                "entrypoint": "bid",
-                "description": "Bid for auction land"
-              },
-              {
-                "name": "Buy",
-                "entrypoint": "buy",
-                "description": "Buy land from another player"
-              },
-              {
                 "name": "Claim",
                 "entrypoint": "claim",
                 "description": "Claim rewards for a single land"
@@ -40,11 +30,6 @@
                 "name": "Increase Price",
                 "entrypoint": "increase_price",
                 "description": "Increase price of the land"
-              },
-              {
-                "name": "Increase Stake",
-                "entrypoint": "increase_stake",
-                "description": "Increase stake of the land"
               },
               {
                 "name": "Level Up",
@@ -261,6 +246,19 @@
                 "description": "Approve spender to spend tokens",
                 "amount": "50000000",
                 "spender": "0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
+              }
+            ]
+          },
+          "0x042dd777885ad2c116be96d4d634abc90a26a790ffb5871e037dd5ae7d2ec86b": {
+            "name": "SURVIVOR Token",
+            "description": "SURVIVOR token contract",
+            "methods": [
+              {
+                "name": "Approve",
+                "entrypoint": "approve",
+                "description": "Approve spender to spend tokens",
+                "amount":"500000000000000000000",
+                "spender":"0x7e2dd623390edcbadde1def93aa6c8a1866c664273d9a4e5f8129a060d25916"
               }
             ]
           }
