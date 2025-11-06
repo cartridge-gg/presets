@@ -17,9 +17,9 @@
                 "description": "Claims an airdrop"
               },
               {
-                "name": "Buy Game",
-                "entrypoint": "buy",
-                "description": "Buys a game"
+                "name": "Purchase Starterpack",
+                "entrypoint": "on_issue",
+                "description": "Purchases a starterpack"
               },
               {
                 "name": "Start Game",
