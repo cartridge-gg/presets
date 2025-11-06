@@ -17,7 +17,7 @@
                 "description": "Claims an airdrop"
               },
               {
-                "name": "Purhcase Starterpack",
+                "name": "Purchase Starterpack",
                 "entrypoint": "on_issue",
                 "description": "Purchases a starterpack"
               },
