@@ -1,8 +1,6 @@
 {
   "origin": [
-    "pistols.gg",
     "*.pistols.gg",
-    "underware.gg",
     "*.underware.gg"
   ],
   "theme": {
@@ -122,15 +120,23 @@
               },
               {
                 "entrypoint": "purchase",
-                "description": "Purchase a closed pack"
+                "description": "Purchase packs"
               },
               {
-                "entrypoint": "airdrop",
-                "description": "Airdrops a pack (admin)"
+                "entrypoint": "purchase_random",
+                "description": "Purchase a random currently available 5x Duelist pack"
               },
               {
                 "entrypoint": "open",
                 "description": "Open a pack, mint its contents"
+              },
+              {
+                "entrypoint": "mint_to",
+                "description": "Promotional airdrops (admin)"
+              },
+              {
+                "entrypoint": "airdrop",
+                "description": "Airdrops a pack (admin)"
               }
             ]
           },
@@ -150,10 +156,6 @@
           "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f": {
             "description": "Duelist ERC721 contract",
             "methods": [
-              {
-                "entrypoint": "poke",
-                "description": "Reactivates an inactive Duelist"
-              },
               {
                 "entrypoint": "sacrifice",
                 "description": "Sacrifices a Duelist"
@@ -182,8 +184,8 @@
             "methods": [
               {
                 "entrypoint": "approve",
-                "description": "Approve use of FOOLS (in-game currency)",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "0xAD78EBC5AC6200000",
+                "description": "Approve use of FOOLS (in-game currency)"
               }
             ]
           },
@@ -430,15 +432,23 @@
               },
               {
                 "entrypoint": "purchase",
-                "description": "Purchase a closed pack"
+                "description": "Purchase packs"
               },
               {
-                "entrypoint": "airdrop",
-                "description": "Airdrops a pack (admin)"
+                "entrypoint": "purchase_random",
+                "description": "Purchase a random currently available 5x Duelist pack"
               },
               {
                 "entrypoint": "open",
                 "description": "Open a pack, mint its contents"
+              },
+              {
+                "entrypoint": "mint_to",
+                "description": "Promotional airdrops (admin)"
+              },
+              {
+                "entrypoint": "airdrop",
+                "description": "Airdrops a pack (admin)"
               }
             ]
           },
@@ -458,10 +468,6 @@
           "0x07aaa9866750a0db82a54ba8674c38620fa2f967d2fbb31133def48e0527c87f": {
             "description": "Duelist ERC721 contract",
             "methods": [
-              {
-                "entrypoint": "poke",
-                "description": "Reactivates an inactive Duelist"
-              },
               {
                 "entrypoint": "sacrifice",
                 "description": "Sacrifices a Duelist"
@@ -490,8 +496,8 @@
             "methods": [
               {
                 "entrypoint": "approve",
-                "description": "Approve use of FOOLS (in-game currency)",
-                "amount": "0xffffffffffffffffffffffffffffffff"
+                "amount": "0xAD78EBC5AC6200000",
+                "description": "Approve use of FOOLS (in-game currency)"
               }
             ]
           },
