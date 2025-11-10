@@ -26,32 +26,39 @@
               }
             ]
           },
-          "0x01e1c477f2ef896fd638b50caa31e3aa8f504d5c6cb3c09c99cd0b72523f07f7": {
-            "name": "game_systems",
-            "description": "Game mechanics",
+          "0x3451230bc1bbec7bb1f337f22c9f6699d238429638ac357dba53af193674c70": {
+            "name": "Dark Shuffle",
+            "description": "Main game contract for Dark Shuffle gameplay",
             "methods": [
               {
-                "entrypoint": "mint"
-              },
-              {
+                "name": "Start Game",
+                "description": "Start a new game",
                 "entrypoint": "start_game"
               },
               {
+                "name": "Pick Card",
+                "description": "Pick a card from the deck",
                 "entrypoint": "pick_card"
               },
               {
+                "name": "Generate Tree",
+                "description": "Generate a new tree",
                 "entrypoint": "generate_tree"
               },
               {
+                "name": "Select Node",
+                "description": "Select a node on the tree",
                 "entrypoint": "select_node"
               }
             ]
           },
-          "0x003befa9c969bf82bbfa0a96374da9f7aab172101298c0ff2611ec8c2fd02692": {
-            "name": "battle_systems",
-            "description": "Battle mechanics",
+          "0x6e338bd8408dcd9d9ba3a116b5dd1737bcf566bdce2d823039368efcd66ca70": {
+            "name": "Dark Shuffle Battle Systems",
+            "description": "Main battle contract for Dark Shuffle gameplay",
             "methods": [
               {
+                "name": "Battle Actions",
+                "description": "Perform actions in a battle",
                 "entrypoint": "battle_actions"
               }
             ]
