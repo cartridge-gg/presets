@@ -8,7 +8,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x717fc138e73164b1eedbf2d5feabb2aaca08f07e1c4918d9f444f13300c4dd8": {
+          "0x2bc5d7b4325f37a7510b7cccf86cc3b4e8480ad3e95f376e53d803a019049c0": {
             "name": "Game Actions",
             "methods": [
               {
@@ -67,7 +67,7 @@
                 "entrypoint": "approve",
                 "description": "Approve a payment",
                 "amount": "2000000000000000000000",
-                "spender": "0x717fc138e73164b1eedbf2d5feabb2aaca08f07e1c4918d9f444f13300c4dd8"
+                "spender": "0x2bc5d7b4325f37a7510b7cccf86cc3b4e8480ad3e95f376e53d803a019049c0"
               },
               {
                 "name": "Mint",
