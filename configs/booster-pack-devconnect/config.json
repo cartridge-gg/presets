@@ -6,37 +6,12 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x50cacd1f9d72f5204cdb434cddb69eba5506b69e31560df12a8c0e92166f746": {
+          "0x564d49b265b7077f54ba440a5a9a54cf29849760687bde0668099349447864e": {
             "methods": [
               {
-                "name": "Claim LORDS",
-                "description": "Claim LORDS tokens from the booster pack",
-                "entrypoint": "claim_lords_from_forwarder"
-              },
-              {
-                "name": "Claim NUMS",
-                "description": "Claim NUMS tokens from the booster pack",
-                "entrypoint": "claim_nums_from_forwarder"
-              },
-              {
-                "name": "Claim Survivor",
-                "description": "Claim Loot Survivor tokens from the booster pack",
-                "entrypoint": "claim_survivor_from_forwarder"
-              },
-              {
-                "name": "Claim Paper",
-                "description": "Claim Paper tokens from the booster pack",
-                "entrypoint": "claim_paper_from_forwarder"
-              },
-              {
-                "name": "Claim Mystery",
-                "description": "Claim mystery reward (tournament entries) from the booster pack",
-                "entrypoint": "claim_mystery_from_forwarder"
-              },
-              {
-                "name": "Claim Credits",
-                "description": "Claim credits from the booster pack",
-                "entrypoint": "claim_credits_from_forwarder"
+                "name": "Claim Booster Pack",
+                "description": "Claim rewards from the booster pack",
+                "entrypoint": "verify_and_forward"
               }
             ]
           }
