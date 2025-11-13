@@ -46,7 +46,7 @@
   },
   "theme": {
     "name": "Booster Pack Devconnect",
-    "icon": "icon.svg",
+    "icon": "icon.png",
     "cover": "cover.png",
     "colors": {
       "primary": "#FBCB4A"
