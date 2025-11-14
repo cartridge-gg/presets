@@ -63,13 +63,6 @@
             "description": "Mock token contract for payments",
             "methods": [
               {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "description": "Approve a payment",
-                "amount": "2000000000000000000000",
-                "spender": "0x2bc5d7b4325f37a7510b7cccf86cc3b4e8480ad3e95f376e53d803a019049c0"
-              },
-              {
                 "name": "Mint",
                 "entrypoint": "mint",
                 "description": "Mint tokens"
@@ -82,46 +75,47 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x07ccfbc43c109efd466638defa52702382ace922051d35a0554b5ccd02a8f155": {
+          "0xcf4049fba4289d93ae577b7bb03d35047a537e20b3a06d95d36870db2ad50b": {
             "name": "Game Actions",
             "methods": [
               {
-                "name": "Create Game",
-                "entrypoint": "create_game",
-                "description": "Creates a new game",
-                "isPaymastered": {
-                  "address": "0x07ccfbc43c109efd466638defa52702382ace922051d35a0554b5ccd02a8f155",
-                  "entrypoint": "example_paymaster_predicate"
-                }
+                "name": "Claim Airdrop",
+                "entrypoint": "on_claim",
+                "description": "Claims an airdrop"
+              },
+              {
+                "name": "Purchase Starterpack",
+                "entrypoint": "on_issue",
+                "description": "Purchases a starterpack"
+              },
+              {
+                "name": "Start Game",
+                "entrypoint": "start",
+                "description": "Starts a game"
               },
               {
                 "name": "Set Slot",
-                "entrypoint": "set_slot",
-                "description": "Sets one slot for the game"
-              }
-            ]
-          },
-          "0x00ea44dd8e971d3af9f99568577bf14b0a80a7f7763fa6281840ab68a8a53ba9": {
-            "name": "Claim Actions",
-            "methods": [
+                "entrypoint": "set",
+                "description": "Starts a game"
+              },
               {
-                "name": "Claim Appchain Reward",
-                "entrypoint": "claim_reward",
-                "description": "Claims token rewards on Appchain"
-              }
-            ]
-          },
-          "0x03ee42961dc151d740df95c44b929abe85cf66e8444e0279252dd99b055c64b0": {
-            "name": "Rewards Claim",
-            "methods": [
+                "name": "Apply Powerup",
+                "entrypoint": "apply",
+                "description": "Applies a powerup to the game"
+              },
               {
-                "name": "Consume Reward on Starknet",
-                "entrypoint": "consume_claim_reward",
-                "description": "Consumes a claim reward message on Starknet"
+                "name": "Sponsor Tournament",
+                "entrypoint": "sponsor",
+                "description": "Sponsors a tournament"
+              },
+              {
+                "name": "Claim Reward",
+                "entrypoint": "claim",
+                "description": "Claims a reward for the game"
               }
             ]
           },
-          "0x7ed472bdde3b19a5cf2334ad0f368426272f477938270b1b04259f159bdc0e2": {
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
             "name": "VRF Provider",
             "methods": [
               {
@@ -131,19 +125,14 @@
               }
             ]
           },
-          "0x4d776373427434a22f7d60d0f7fe0e336fd830edf4294acec33d9f2e1275327": {
-            "name": "Social",
-            "description": "Social contract to manage your social activities",
+          "0x3e6f513ad6a9acf40beb59545334caf9d961c8bad7b4b7d6bf4dc5eec28bc1c": {
+            "name": "mNUMS",
+            "description": "Mock token contract for payments",
             "methods": [
               {
-                "name": "pin",
-                "entrypoint": "pin",
-                "description": "Pin an achievement."
-              },
-              {
-                "name": "unpin",
-                "entrypoint": "unpin",
-                "description": "Unpin an achievement."
+                "name": "Mint",
+                "entrypoint": "mint",
+                "description": "Mint tokens"
               }
             ]
           }
