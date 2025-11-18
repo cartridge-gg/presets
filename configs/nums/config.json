@@ -125,14 +125,24 @@
               }
             ]
           },
-          "0x3e6f513ad6a9acf40beb59545334caf9d961c8bad7b4b7d6bf4dc5eec28bc1c": {
-            "name": "mNUMS",
-            "description": "Mock token contract for payments",
+          "0x04505a9f06f2bd639b6601f37a4dc0908bb70e8e0e0c34b1220827d64f4fc066": {
+            "name": "Ekubo",
+            "description": "Ekubo token contract",
             "methods": [
               {
-                "name": "Mint",
-                "entrypoint": "mint",
-                "description": "Mint tokens"
+                "name": "Swap",
+                "entrypoint": "swap",
+                "description": "Swap tokens"
+              },
+              {
+                "name": "Clear Minimum",
+                "entrypoint": "clear_minimum",
+                "description": "Clear minimum swap"
+              },
+              {
+                "name": "Clear",
+                "entrypoint": "clear",
+                "description": "Clear swap"
               }
             ]
           }
