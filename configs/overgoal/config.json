@@ -1,0 +1,11 @@
+{
+  "origin": "https://play.overgoal.gg",
+  "theme": {
+    "colors": {
+      "primary": "#03e4e8"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Overgoal"
+  }
+}
