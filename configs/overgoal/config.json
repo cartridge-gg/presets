@@ -1,5 +1,5 @@
 {
-  "origin": "https://play.overgoal.gg",
+  "origin": "*.overgoal.gg",
   "theme": {
     "colors": {
       "primary": "#03e4e8"
