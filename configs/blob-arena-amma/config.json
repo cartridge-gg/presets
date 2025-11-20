@@ -7,11 +7,11 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#D7B000"
+      "primary": "#FFF7D3"
     },
     "cover": "cover.png",
     "icon": "icon.png",
-    "name": "Blob Arena AMMA"
+    "name": "Blob Arena"
   },
   "apple-app-site-association": {
     "webcredentials": {
