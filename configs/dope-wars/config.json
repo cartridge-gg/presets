@@ -1,5 +1,10 @@
 {
   "origin": "dopewars.game",
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["F9U4Y5YSTN.com.cartridge.dopewars"]
+    }
+  },
   "chains": {
     "SN_MAIN": {
       "policies": {
