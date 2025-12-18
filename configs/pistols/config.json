@@ -225,7 +225,9 @@
             "methods": [
               {
                 "entrypoint": "approve",
-                "description": "Approve use of FOOLS (in-game currency)"
+                "description": "Approve use of FOOLS (in-game currency)",
+                "amount": "0xAD78EBC5AC6200000",
+                "spender": "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f"
               }
             ]
           },
@@ -577,8 +579,9 @@
             "methods": [
               {
                 "entrypoint": "approve",
-                "description": "Approve use of FOOLS (in-game currency)"
-              }
+                "description": "Approve use of FOOLS (in-game currency)",
+                "amount": "0xAD78EBC5AC6200000",
+                "spender": "0x0426c16fe76f12586718c07e47c8e4312e9fee5e7dc849a75f3c587ad9e70b4f"              }
             ]
           },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
