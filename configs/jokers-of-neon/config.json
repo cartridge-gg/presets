@@ -1,5 +1,10 @@
 {
-  "origin": ["*.jokersofneon.com", "jokersofneon.com", "capacitor://localhost", "localhost"],
+  "origin": [
+    "*.jokersofneon.com",
+    "jokersofneon.com",
+    "capacitor://localhost",
+    "localhost"
+  ],
   "theme": {
     "colors": {
       "primary": "#A144B2"
@@ -1015,6 +1020,300 @@
               {
                 "name": "Register Managers",
                 "entrypoint": "register_managers"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "WP_JOKERS_CORE_SEASON1": {
+      "policies": {
+        "contracts": {
+          "0x39a27a3c2c26233e1d1172ba29be72327bbab22b998f17d3c8620ef03d60715": {
+            "methods": [
+              {
+                "name": "Change Modifier Card",
+                "entrypoint": "change_modifier_card"
+              },
+              {
+                "name": "Discard",
+                "entrypoint": "discard"
+              }
+            ]
+          },
+          "0x7b412b7e7ee5a8443a38de7749bab255609bb5fa0240b9fa2c45e0c3e408af5": {
+            "methods": [
+              {
+                "name": "Calculate",
+                "entrypoint": "calculate"
+              }
+            ]
+          },
+          "0xf40384097961474751c29169519608ea1b47d6002ee896f55f882d7c27983f": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x59af09fba17a99c7d11012649396dee302b0692b3c959a7688657b85cbd36a9": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x67d2a7dddff6ac92e04da57cb8321cb9f68973e25d5b6f37abd7432b29d7d6": {
+            "methods": [
+              {
+                "name": "Generate Daily Missions",
+                "entrypoint": "generate_daily_missions"
+              }
+            ]
+          },
+          "0x55050714118241a7a7d3307fdd7d8860a3c7b816952753196928a9fa82d6da2": {
+            "methods": [
+              {
+                "name": "New Game",
+                "entrypoint": "new_game"
+              },
+              {
+                "name": "Surrender",
+                "entrypoint": "surrender"
+              },
+              {
+                "name": "Transfer Game",
+                "entrypoint": "transfer_game"
+              }
+            ]
+          },
+          "0x56cdb5923acfbb849c066d2ebbdd77bbc3985ff68030577a0c9a796e4ca08b8": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x61e9a987d56b6b499280c6d9d7aa68f0c95eab5f82d11849ab4c3b1746d53bd": {
+            "methods": [
+              {
+                "name": "Claim",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "Grant Role",
+                "entrypoint": "grant_role"
+              },
+              {
+                "name": "Has Role",
+                "entrypoint": "has_role"
+              },
+              {
+                "name": "Has Lives To Claim",
+                "entrypoint": "has_lives_to_claim"
+              },
+              {
+                "name": "Init Lives Config",
+                "entrypoint": "init_lives_config"
+              },
+              {
+                "name": "Remove",
+                "entrypoint": "remove"
+              },
+              {
+                "name": "Renounce Role",
+                "entrypoint": "renounce_role"
+              },
+              {
+                "name": "Revoke Role",
+                "entrypoint": "revoke_role"
+              },
+              {
+                "name": "Supports Interface",
+                "entrypoint": "supports_interface"
+              },
+              {
+                "name": "Upgrade Account",
+                "entrypoint": "upgrade_account"
+              }
+            ]
+          },
+          "0x51d6de56febce56465439680f3b76693ba2c24db2aae76fc9f15cdbd7c9bc0d": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x150c3caf4fed3440632a037e2b65bbdee64cd021a138ee873fe88606b3442aa": {
+            "methods": [
+              {
+                "name": "Advance Node",
+                "entrypoint": "advance_node"
+              },
+              {
+                "name": "Create Map Level",
+                "entrypoint": "create_map_level"
+              }
+            ]
+          },
+          "0x1c138c54de205f36f30cea971611e98ac295c7985ba59641817f9031d65fd37": {
+            "methods": [
+              {
+                "name": "Register Managers",
+                "entrypoint": "register_managers"
+              }
+            ]
+          },
+          "0x3677d21d11119af9061d8e8491a2afa886890a49aa3168ecfae7ffc5af88d18": {
+            "methods": [
+              {
+                "name": "Add Pack",
+                "entrypoint": "add_pack"
+              },
+              {
+                "name": "Claim Free Pack",
+                "entrypoint": "claim_free_pack"
+              },
+              {
+                "name": "Grant Role",
+                "entrypoint": "grant_role"
+              },
+              {
+                "name": "Has Role",
+                "entrypoint": "has_role"
+              },
+              {
+                "name": "Init Season Content",
+                "entrypoint": "init_season_content"
+              },
+              {
+                "name": "Open",
+                "entrypoint": "open"
+              },
+              {
+                "name": "Renounce Role",
+                "entrypoint": "renounce_role"
+              },
+              {
+                "name": "Revoke Role",
+                "entrypoint": "revoke_role"
+              },
+              {
+                "name": "Set Free Pack Config",
+                "entrypoint": "set_free_pack_config"
+              },
+              {
+                "name": "Supports Interface",
+                "entrypoint": "supports_interface"
+              }
+            ]
+          },
+          "0x24f7da6cbca9cc7aa28df27fde3c699a2dd091b5f6d417481d4d0af880dc96a": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x16826ab68e88f42fd773028a1e988cfd3632bca3c21a6da9fe2aa5309125d63": {
+            "methods": [
+              {
+                "name": "Play",
+                "entrypoint": "play"
+              }
+            ]
+          },
+          "0x1a8d1b02164f1433eda60c6e212f5440cdf0e948b6c814e8c915ac0487dd588": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x452c6d9ba69423c95c73cd04049ab29134de60f20de3971023e4fa11e69b034": {
+            "methods": [
+              {
+                "name": "Burn Card",
+                "entrypoint": "burn_card"
+              },
+              {
+                "name": "Buy Card",
+                "entrypoint": "buy_card"
+              },
+              {
+                "name": "Buy Loot Box",
+                "entrypoint": "buy_loot_box"
+              },
+              {
+                "name": "Buy Poker Hand",
+                "entrypoint": "buy_poker_hand"
+              },
+              {
+                "name": "Buy Power Up",
+                "entrypoint": "buy_power_up"
+              },
+              {
+                "name": "Buy Special Card",
+                "entrypoint": "buy_special_card"
+              },
+              {
+                "name": "Buy Special Slot",
+                "entrypoint": "buy_special_slot"
+              },
+              {
+                "name": "Reroll",
+                "entrypoint": "reroll"
+              },
+              {
+                "name": "Select Cards From Loot Box",
+                "entrypoint": "select_cards_from_loot_box"
+              },
+              {
+                "name": "Sell Power Up",
+                "entrypoint": "sell_power_up"
+              },
+              {
+                "name": "Sell Special Card",
+                "entrypoint": "sell_special_card"
+              },
+              {
+                "name": "Skip Shop",
+                "entrypoint": "skip_shop"
+              }
+            ]
+          },
+          "0x2f2d4a83a8721bbfeada2a048d09a7d7a12fea248a90a92540f8b55ae83971e": {
+            "methods": [
+              {
+                "name": "Process",
+                "entrypoint": "process"
+              }
+            ]
+          },
+          "0x661f3841df22cdac91c31102770b46845570430d2c89f4afbef531998e0f3da": {
+            "methods": [
+              {
+                "name": "Add",
+                "entrypoint": "add"
+              },
+              {
+                "name": "Remove",
+                "entrypoint": "remove"
               }
             ]
           },
