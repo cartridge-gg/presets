@@ -18,7 +18,7 @@
               },
               {
                 "name": "Select Power Up",
-                "entrypoint": "apply",
+                "entrypoint": "select",
                 "description": "Selects a powerup"
               },
               {
