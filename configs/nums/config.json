@@ -8,43 +8,33 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x2bc5d7b4325f37a7510b7cccf86cc3b4e8480ad3e95f376e53d803a019049c0": {
+          "0x6eb180628fd7ff69716545aa429e2d39f3471451d26f62cad5c8b72a48b9250": {
             "name": "Game Actions",
             "methods": [
               {
-                "name": "Claim Airdrop",
-                "entrypoint": "on_claim",
-                "description": "Claims an airdrop"
-              },
-              {
-                "name": "Purchase Starterpack",
-                "entrypoint": "on_issue",
-                "description": "Purchases a starterpack"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start",
-                "description": "Starts a game"
-              },
-              {
                 "name": "Set Slot",
                 "entrypoint": "set",
-                "description": "Starts a game"
+                "description": "Sets a slot"
               },
               {
-                "name": "Apply Powerup",
+                "name": "Select Power Up",
                 "entrypoint": "apply",
-                "description": "Applies a powerup to the game"
+                "description": "Selects a powerup"
               },
               {
-                "name": "Sponsor Tournament",
-                "entrypoint": "sponsor",
-                "description": "Sponsors a tournament"
-              },
+                "name": "Apply Power Up",
+                "entrypoint": "apply",
+                "description": "Applies a power up to the game"
+              }
+            ]
+          },
+          "0x5d65c20b16bb7386c1cf90cb8402a57aedfcc039219da3bbfe6bc21c2574daa": {
+            "name": "Game Manager",
+            "methods": [
               {
-                "name": "Claim Reward",
-                "entrypoint": "claim",
-                "description": "Claims a reward for the game"
+                "name": "Claim Quest Reward",
+                "entrypoint": "quest_claim",
+                "description": "Claims a quest reward"
               }
             ]
           },
@@ -55,6 +45,27 @@
                 "name": "Request Random",
                 "entrypoint": "request_random",
                 "description": "Requests a random number from the VRF contract"
+              }
+            ]
+          },
+          "0x050d4da9f66589eadaa1d5e31cf73b08ac1a67c8b4dcd88e6fd4fe501c628af2": {
+            "name": "Ekubo",
+            "description": "Ekubo token contract",
+            "methods": [
+              {
+                "name": "Swap",
+                "entrypoint": "swap",
+                "description": "Swap tokens"
+              },
+              {
+                "name": "Clear Minimum",
+                "entrypoint": "clear_minimum",
+                "description": "Clear minimum swap"
+              },
+              {
+                "name": "Clear",
+                "entrypoint": "clear",
+                "description": "Clear swap"
               }
             ]
           },
