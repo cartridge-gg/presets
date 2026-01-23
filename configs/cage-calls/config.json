@@ -1,0 +1,105 @@
+{
+  "origin": ["cage-calls-smartcontracts.vercel.app", "localhost"],
+  "chains": {
+    "SN_SEPOLIA": {
+      "policies": {
+        "contracts": {
+          "0x6d7c8553eea3db11bd25defd479f14b5f01b398c87e2a0619acbdcca8836af0": {
+            "name": "Fight Factory",
+            "description": "Create and manage prediction market fights",
+            "methods": [
+              { "name": "Create Fight", "description": "Create a new fight prediction market", "entrypoint": "create_fight" },
+              { "name": "Buy Fight", "description": "Place a bet on a fight outcome", "entrypoint": "buy_fight" },
+              { "name": "Close Fight", "description": "Close betting on a fight", "entrypoint": "close_fight" },
+              { "name": "Settle Fight", "description": "Settle a fight after resolution", "entrypoint": "settle_fight" },
+              { "name": "Redeem", "description": "Redeem winnings from a fight", "entrypoint": "redeem" },
+              { "name": "Grant Admin", "description": "Grant admin role to an address", "entrypoint": "grant_admin" },
+              { "name": "Revoke Admin", "description": "Revoke admin role from an address", "entrypoint": "revoke_admin" },
+              { "name": "Set Collateral Token", "description": "Set the collateral token for fights", "entrypoint": "set_collateral_token" }
+            ]
+          },
+          "0x22d93cf36212f30090149d6576b7ee165fb6fb7661c9d9245bf5b3712c9d785": {
+            "name": "CageCalls Oracle",
+            "description": "Oracle for resolving fight outcomes",
+            "methods": [
+              { "name": "Set Winner", "description": "Set the winner of a fight by value", "entrypoint": "set_winner" },
+              { "name": "Set Winner Index", "description": "Set winner by choice index", "entrypoint": "set_winner_index" },
+              { "name": "Grant Admin", "description": "Grant admin role", "entrypoint": "grant_admin" },
+              { "name": "Revoke Admin", "description": "Revoke admin role", "entrypoint": "revoke_admin" }
+            ]
+          },
+          "0x67d9bc1c1e2c71a6f1c393ed0066d02a4b811e56c850dfb415215f586922877": {
+            "name": "Gacha",
+            "description": "NFT gacha system for fight winners",
+            "methods": [
+              { "name": "Spin", "description": "Spin the gacha wheel for an NFT", "entrypoint": "spin" },
+              { "name": "Keep", "description": "Keep the current NFT and burn remaining tickets", "entrypoint": "keep" },
+              { "name": "Register Moment", "description": "Register a moment NFT to the gacha pool", "entrypoint": "register_moment" },
+              { "name": "Set Pool Open", "description": "Open or close the gacha pool", "entrypoint": "set_pool_open" },
+              { "name": "Set VRF Address", "description": "Set the VRF provider address", "entrypoint": "set_vrf_address" },
+              { "name": "Grant Admin", "description": "Grant admin role", "entrypoint": "grant_admin" },
+              { "name": "Revoke Admin", "description": "Revoke admin role", "entrypoint": "revoke_admin" }
+            ]
+          },
+          "0x553a8542da8a4595ec61c2bc4623cc4473e82d0936b7e4a53ff8bdc338490fe": {
+            "name": "Moment NFT",
+            "description": "NFT collection for fight moments",
+            "methods": [
+              { "name": "Mint Moment", "description": "Mint a new moment NFT", "entrypoint": "mint_moment" },
+              { "name": "Grant Role", "description": "Grant a role to an address", "entrypoint": "grant_role" },
+              { "name": "Revoke Role", "description": "Revoke a role from an address", "entrypoint": "revoke_role" },
+              { "name": "Grant Minter", "description": "Grant minter role to an address", "entrypoint": "grant_minter" },
+              { "name": "Revoke Minter", "description": "Revoke minter role from an address", "entrypoint": "revoke_minter" }
+            ]
+          },
+          "0x1069e752e4fa4726d71edff71d503254f0eb013c4e5518ffc7a88cd0842651f": {
+            "name": "CALLS Token",
+            "description": "CALLS token for betting on fights",
+            "methods": [
+              { "name": "Mint", "description": "Mint CALLS tokens", "entrypoint": "mint" },
+              { "name": "Approve", "description": "Approve token spending", "entrypoint": "approve", "amount": "*", "spender": "*" },
+              { "name": "Transfer", "description": "Transfer tokens to another address", "entrypoint": "transfer" }
+            ]
+          },
+          "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731": {
+            "name": "Markets",
+            "description": "Prediction markets core contract",
+            "methods": [
+              { "name": "Create Market", "description": "Create a new prediction market", "entrypoint": "create_market" },
+              { "name": "Buy", "description": "Buy outcome tokens", "entrypoint": "buy" },
+              { "name": "Resolve", "description": "Resolve a market", "entrypoint": "resolve" },
+              { "name": "Redeem", "description": "Redeem winning positions", "entrypoint": "redeem" },
+              { "name": "Register Token", "description": "Register a collateral token", "entrypoint": "register_token" },
+              { "name": "Register Oracle", "description": "Register an oracle provider", "entrypoint": "register_oracle" },
+              { "name": "Pause", "description": "Pause market operations", "entrypoint": "pause" },
+              { "name": "Unpause", "description": "Unpause market operations", "entrypoint": "unpause" }
+            ]
+          },
+          "0x12206a064c4e3d3e03094594a6a6ca2f43616076c71e74e4450a0bf39829619": {
+            "name": "Mint Tokens",
+            "description": "Reward tickets for fight winners",
+            "methods": [
+              { "name": "Set Approval For All", "description": "Approve operator for all tokens", "entrypoint": "set_approval_for_all" }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "Cartridge VRF Provider",
+            "description": "Verifiable Random Function for gacha randomization",
+            "methods": [
+              { "name": "Request Random", "description": "Request a random number for gacha spin", "entrypoint": "request_random" },
+              { "name": "Consume Random", "description": "Consume a random number for gacha spin", "entrypoint": "consume_random" }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "theme": {
+    "colors": {
+      "primary": "#FF6B00"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "CageCalls"
+  }
+}
