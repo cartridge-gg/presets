@@ -57,7 +57,7 @@
             "description": "CALLS token for betting on fights",
             "methods": [
               { "name": "Mint", "description": "Mint CALLS tokens", "entrypoint": "mint" },
-              { "name": "Approve", "description": "Approve token spending", "entrypoint": "approve", "amount": "*", "spender": "*" },
+              { "name": "Approve", "description": "Approve token spending", "entrypoint": "approve", "amount": "0xAD78EBC5AC6200000", "spender": "0x6d7c8553eea3db11bd25defd479f14b5f01b398c87e2a0619acbdcca8836af0" },
               { "name": "Transfer", "description": "Transfer tokens to another address", "entrypoint": "transfer" }
             ]
           },
@@ -96,7 +96,7 @@
   },
   "theme": {
     "colors": {
-      "primary": "#FF6B00"
+      "primary": "#FF0000"
     },
     "cover": "cover.png",
     "icon": "icon.png",
