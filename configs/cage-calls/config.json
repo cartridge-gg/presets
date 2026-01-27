@@ -61,9 +61,7 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              { "name": "Mint", "description": "Mint CALLS tokens", "entrypoint": "mint" },
-              { "name": "Approve", "description": "Approve token spending", "entrypoint": "approve", "amount": "0xAD78EBC5AC6200000", "spender": "0x6d7c8553eea3db11bd25defd479f14b5f01b398c87e2a0619acbdcca8836af0" },
-              { "name": "Transfer", "description": "Transfer tokens to another address", "entrypoint": "transfer" }
+              { "name": "Mint", "description": "Mint CALLS tokens", "entrypoint": "mint" }
             ]
           },
           "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731": {
@@ -101,10 +99,10 @@
   },
   "theme": {
     "colors": {
-      "primary": "#FF0000"
+      "primary": "#D31C16"
     },
     "cover": "cover.png",
     "icon": "icon.png",
-    "name": "CageCalls"
+    "name": "Cage Calls"
   }
 }
