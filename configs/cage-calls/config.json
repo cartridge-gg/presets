@@ -1,5 +1,10 @@
 {
-  "origin": ["cage-calls-smartcontracts.vercel.app", "localhost"],
+  "origin": ["cage-calls-smartcontracts.vercel.app", "localhost", "xyz.medievaltech.cagecallsdev"],
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": ["5NREXUW987.xyz.medievaltech.cagecallsdev"]
+    }
+  },
   "chains": {
     "SN_SEPOLIA": {
       "policies": {
