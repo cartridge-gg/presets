@@ -1,16 +1,16 @@
 {
     "origin": [
-        "*.olas.info",
-        "competitions-staging.olas.info",
-        "competitions.olas.info"
+        "*.olena.xyz",
+        "predict-staging.olena.xyz",
+        "predict.olena.xyz"
     ],
     "chains": {
         "SN_MAIN": {
             "policies": {
                 "contracts": {
-                    "0x0029f9d1603e4a91cc646473c40e103acf8d1bdb13f9461f10735616acb8617f": {
-                        "name": "Olas Competitions Registry",
-                        "description": "Allows users to interact with the Olas competitions registry contract.",
+                    "0x057e321850c75b45c5293ea260551047ff3093647724f776eaead00f09770cf2": {
+                        "name": "Olena Competitions Registry",
+                        "description": "Allows users to interact with the Olena competitions registry contract.",
                         "methods": [
                             {
                                 "name": "Register User",
@@ -20,9 +20,9 @@
                             }
                         ]
                     },
-                    "0x07337123974693342d97a1d27670796793cfec44b7953e9a35629efee4e35811": {
-                        "name": "Olas Competition",
-                        "description": "Allows users to interact with the Olas competition contract.",
+                    "0x032cf6562db58c2e8995d61d098bde2df73487327d68966d9f55f350be78032a": {
+                        "name": "Olena Competition",
+                        "description": "Allows users to interact with the Olena competition contract.",
                         "methods": [
                             {
                                 "name": "Cast Vote",
@@ -38,20 +38,14 @@
                             }
                         ]
                     },
-                    "0x060cf2cc62fb1b4096ff552016b73bc60c85b0121f447be7935f0f748a1e9f5a": {
-                        "name": "Olas Reward Token",
-                        "description": "Allows users to interact with the Olas reward token contract.",
+                    "0x038edc05c9aeb53af29770ac87164b5a884ddccdae6c1023480ce3f097bf8e86": {
+                        "name": "Olena Reward Token",
+                        "description": "Allows users to interact with the Olena reward token contract.",
                         "methods": [
                             {
                                 "name": "Claim Airdrop",
                                 "description": "A method that allows users to claim their airdrop allocation.",
                                 "entrypoint": "claim_airdrop",
-                                "is_paymastered": true
-                            },
-                            {
-                                "name": "Burn For VP",
-                                "description": "A method that allows users to burn their olas reward token in exchange for additional VP (Voting Power).",
-                                "entrypoint": "burn_for_vp",
                                 "is_paymastered": true
                             }
                         ]
@@ -66,6 +60,6 @@
         },
         "cover": "cover.png",
         "icon": "icon.png",
-        "name": "Olas"
+        "name": "Olena"
     }
 }
