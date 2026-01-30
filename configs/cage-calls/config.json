@@ -291,7 +291,7 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "amount": "*" },
+              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "amount": "*" }
             ]
           },
           "0x6326a1699b42c7e5f31b4474a3c1aa0ac9b0aa6d8c0bd67b710ee8d710f5799": {
