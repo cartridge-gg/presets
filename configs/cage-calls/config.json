@@ -83,7 +83,7 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x2756515ffff2c14b2ae0d6ad8f92ff5f93e8add65b5e3be5ffb2b0add2e430a" },
+              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x2756515ffff2c14b2ae0d6ad8f92ff5f93e8add65b5e3be5ffb2b0add2e430a", "amount": "*" },
               { "name": "Mint", "description": "Mint CALLS tokens (dev only)", "entrypoint": "mint" }
             ]
           },
@@ -187,7 +187,7 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731" },
+              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731", "amount": "*" },
               { "name": "Mint", "description": "Mint CALLS tokens (dev only)", "entrypoint": "mint" }
             ]
           },
@@ -291,7 +291,7 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731" }
+              { "name": "Approve", "description": "Approve spending of CALLS tokens", "entrypoint": "approve", "spender": "0x16c1ea46c0f7fe413441e5860837aa1fb35612ead91fb406fadb21642957731", "amount": "*" }
             ]
           },
           "0x6326a1699b42c7e5f31b4474a3c1aa0ac9b0aa6d8c0bd67b710ee8d710f5799": {
