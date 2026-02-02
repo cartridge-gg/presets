@@ -1,5 +1,5 @@
 {
-  "origin": ["cage-calls-smartcontracts.vercel.app", "localhost", "xyz.medievaltech.cagecallsdev"],
+  "origin": ["cage-calls-smartcontracts.vercel.app", "localhost", "xyz.medievaltech.cagecallsdev", "*.cartridge.gg"],
   "theme": {
     "colors": {
       "primary": "#D31C16"
