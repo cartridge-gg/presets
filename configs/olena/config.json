@@ -8,7 +8,7 @@
         "SN_MAIN": {
             "policies": {
                 "contracts": {
-                    "0x057e321850c75b45c5293ea260551047ff3093647724f776eaead00f09770cf2": {
+                    "0x06ceedec593d93a175aeedf43b6f4035bb9f3ae9be03cc65d583ba4b7d42f3f2": {
                         "name": "Olena Competitions Registry",
                         "description": "Allows users to interact with the Olena competitions registry contract.",
                         "methods": [
