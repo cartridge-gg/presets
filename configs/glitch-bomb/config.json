@@ -1,9 +1,5 @@
 {
-  "origin": [
-    "*.glitchbomb.gg",
-    "glitchbomb.gg",
-    "glitchbomb-ten.preview.cartridge.gg"
-  ],
+  "origin": "glitchbomb-ten.preview.cartridge.gg",
   "apple-app-site-association": {
     "webcredentials": {
       "apps": [
