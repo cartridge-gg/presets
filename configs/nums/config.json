@@ -8,7 +8,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x6eb180628fd7ff69716545aa429e2d39f3471451d26f62cad5c8b72a48b9250": {
+          "0x2501cf2133587322ef9dd03035b5da5c31eead557bf162ee246071363dfffd7": {
             "name": "Game Actions",
             "methods": [
               {
@@ -25,10 +25,15 @@
                 "name": "Apply Power Up",
                 "entrypoint": "apply",
                 "description": "Applies a power up to the game"
+              },
+              {
+                "name": "Claim rewards",
+                "entrypoint": "claim",
+                "description": "Claims rewards for the game"
               }
             ]
           },
-          "0x5d65c20b16bb7386c1cf90cb8402a57aedfcc039219da3bbfe6bc21c2574daa": {
+          "0x142e308ee4887717809570fc0550be265a318e1362c15f0694fed25048e457e": {
             "name": "Game Manager",
             "methods": [
               {
