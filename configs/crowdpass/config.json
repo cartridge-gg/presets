@@ -1,0 +1,99 @@
+{
+    "origin": [
+      "*.crowdpassevents.com",
+      "crowdpassevents.com"
+    ],
+    "chains": {
+      "SN_MAIN": {
+        "policies": {
+          "contracts": {
+            "0x064753baf220c6f1d6aca0411f99cab3ada66eaac0c02592a93ff1be882cd141": {
+              "name": "Crowdpass Sessions",
+              "methods": [
+                {
+                    "name": "Create Event",
+                    "entrypoint": "create_event",
+                    "description": "Create an event"
+                },
+                {
+                    "name": "Update Event",
+                    "entrypoint": "update_event",
+                    "description": "Update your exiting event"
+                },
+                {
+                    "name": "Cancel Event",
+                    "entrypoint": "cancel_event",
+                    "description": "Cancel your event"
+                },
+                {
+                    "name": "Add Orgnaizer",
+                    "entrypoint": "add_organizer",
+                    "description": "Add an organizer to assist in your event checkin process"
+                },
+                {
+                "name": "Remove Organizer",
+                "entrypoint": "remove_organizer",
+                "description": "Remove organizer from helping out in the checkin process"
+                },
+                {
+                    "name": "Refund Ticket",
+                    "entrypoint": "refund_ticket",
+                    "description": "Collect refund on your payment for cancelled event"
+                },
+                {
+                    "name": "Collect Event Payout",
+                    "entrypoint": "collect_event_payout",
+                    "description": "Organizer collect payout for already concluded events"
+                },
+                {
+                    "name": "Check In",
+                    "entrypoint": "check_in",
+                    "description": "Check in attendees on the day of the event"
+                },
+                {
+                    "name": "Purchase event ticket",
+                    "entrypoint": "purchase_ticket",
+                    "description": "Purchase ticket for event you want to attend"
+                }   
+              ]
+            }
+           
+          },
+          "messages": [
+            {
+                "name": "Sign in to Crowdpass",
+                "description": "Sign the message to login to Crowdpass",
+                "types": {
+                  "StarknetDomain": [
+                    { "name": "name", "type": "shortstring" },
+                    { "name": "version", "type": "shortstring" },
+                    { "name": "chainId", "type": "shortstring" },
+                    { "name": "revision", "type": "shortstring" }
+                  ],
+                  "Signin": [
+                    { "name": "content", "type": "string" },
+                    { "name": "nonce", "type": "string" },
+                    { "name": "timestamp", "type": "string" }
+                  ]
+                },
+                "primaryType": "Signin",
+                "domain": {
+                  "name": "Crowdpass",
+                  "version": "1",
+                  "revision": "1",
+                  "chainId": "SN_MAIN"
+                }
+              }
+          ]
+        }
+      }
+    },
+    "theme": {
+      "colors": {
+        "primary": "#FF6932"
+      },
+      "cover": "cover.jpg",
+      "icon": "icon.jpg",
+      "name": "Crowdpass"
+    }
+  }
