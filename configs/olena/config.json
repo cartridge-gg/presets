@@ -20,7 +20,7 @@
                             }
                         ]
                     },
-                    "0x032cf6562db58c2e8995d61d098bde2df73487327d68966d9f55f350be78032a": {
+                    "0x02cefa206485aa4c98b363fd7a2a86b276f7ae781903f86ea1f2db8b667911ad": {
                         "name": "Olena Competition",
                         "description": "Allows users to interact with the Olena competition contract.",
                         "methods": [
