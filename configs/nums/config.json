@@ -8,7 +8,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x2501cf2133587322ef9dd03035b5da5c31eead557bf162ee246071363dfffd7": {
+          "0x4bf65b482e1225a866fe99297ecabb49ff44d3d7441584490d0c1e4d5a1f423": {
             "name": "Game Actions",
             "methods": [
               {
@@ -33,7 +33,7 @@
               }
             ]
           },
-          "0x142e308ee4887717809570fc0550be265a318e1362c15f0694fed25048e457e": {
+          "0x264fcf9ca3117a45a09528520718c3af6e8fb1106ac33808f1866d933f4339f": {
             "name": "Game Manager",
             "methods": [
               {
