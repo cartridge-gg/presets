@@ -284,34 +284,9 @@
             "description": "Create and manage prediction market fights",
             "methods": [
               {
-                "name": "Grant Admin",
-                "description": "Grant admin role to an address",
-                "entrypoint": "grant_admin"
-              },
-              {
-                "name": "Revoke Admin",
-                "description": "Revoke admin role from an address",
-                "entrypoint": "revoke_admin"
-              },
-              {
-                "name": "Set Collateral Token",
-                "description": "Set the collateral token for fights",
-                "entrypoint": "set_collateral_token"
-              },
-              {
-                "name": "Create Fight",
-                "description": "Create a new fight prediction market",
-                "entrypoint": "create_fight"
-              },
-              {
                 "name": "Buy Fight",
                 "description": "Place a bet on a fight outcome",
                 "entrypoint": "buy_fight"
-              },
-              {
-                "name": "Close Fight",
-                "description": "Close betting on a fight",
-                "entrypoint": "close_fight"
               },
               {
                 "name": "Settle Fight",
@@ -322,84 +297,18 @@
                 "name": "Redeem",
                 "description": "Redeem winnings from a fight",
                 "entrypoint": "redeem"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
           "0x1030afd7766280ea3ffd3b955d412961e9e592f459ed4b479860c5d43400309": {
             "name": "CageCalls Oracle",
             "description": "Oracle for resolving fight outcomes",
-            "methods": [
-              {
-                "name": "Set Winner",
-                "description": "Set winner for a market",
-                "entrypoint": "set_winner"
-              },
-              {
-                "name": "Set Winner Index",
-                "description": "Set winner by choice index",
-                "entrypoint": "set_winner_index"
-              },
-              {
-                "name": "Grant Admin",
-                "description": "Grant admin role",
-                "entrypoint": "grant_admin"
-              },
-              {
-                "name": "Revoke Admin",
-                "description": "Revoke admin role",
-                "entrypoint": "revoke_admin"
-              },
-              {
-                "name": "Assert Valid Create Market",
-                "description": "Validate market creation",
-                "entrypoint": "assert_valid_create_market"
-              },
-              {
-                "name": "Resolve",
-                "description": "Resolve market outcome",
-                "entrypoint": "resolve"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
-              }
-            ]
+            "methods": []
           },
           "0x45d1cf6732729ad2ca9a9a148f76253994b56992a8f3f6f2ab13bf3354c6f60": {
             "name": "Gacha",
             "description": "NFT gacha system for fight winners",
             "methods": [
-              {
-                "name": "Set Pool Open",
-                "description": "Open or close the gacha pool",
-                "entrypoint": "set_pool_open"
-              },
-              {
-                "name": "Set VRF Address",
-                "description": "Set the VRF provider address",
-                "entrypoint": "set_vrf_address"
-              },
-              {
-                "name": "Grant Admin",
-                "description": "Grant admin role",
-                "entrypoint": "grant_admin"
-              },
-              {
-                "name": "Revoke Admin",
-                "description": "Revoke admin role",
-                "entrypoint": "revoke_admin"
-              },
-              {
-                "name": "Register Moment",
-                "description": "Register a moment NFT to the gacha pool",
-                "entrypoint": "register_moment"
-              },
               {
                 "name": "Spin",
                 "description": "Spin the gacha wheel for an NFT",
@@ -409,11 +318,6 @@
                 "name": "Keep",
                 "description": "Keep the current NFT",
                 "entrypoint": "keep"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
@@ -422,84 +326,14 @@
             "description": "Prediction markets core contract",
             "methods": [
               {
-                "name": "Register Token",
-                "description": "Register a collateral token",
-                "entrypoint": "register_token"
-              },
-              {
-                "name": "Register Oracle",
-                "description": "Register an oracle provider",
-                "entrypoint": "register_oracle"
-              },
-              {
-                "name": "Pause",
-                "description": "Pause market operations",
-                "entrypoint": "pause"
-              },
-              {
-                "name": "Unpause",
-                "description": "Unpause market operations",
-                "entrypoint": "unpause"
-              },
-              {
-                "name": "Grant Role",
-                "description": "Grant a role to an address",
-                "entrypoint": "grant_role"
-              },
-              {
-                "name": "Revoke Role",
-                "description": "Revoke a role from an address",
-                "entrypoint": "revoke_role"
-              },
-              {
-                "name": "Renounce Role",
-                "description": "Renounce own role",
-                "entrypoint": "renounce_role"
-              },
-              {
-                "name": "Create Market",
-                "description": "Create a new prediction market",
-                "entrypoint": "create_market"
-              },
-              {
                 "name": "Buy",
                 "description": "Buy outcome tokens",
                 "entrypoint": "buy"
               },
               {
-                "name": "Close Market",
-                "description": "Close a market",
-                "entrypoint": "close_market"
-              },
-              {
-                "name": "Resolve",
-                "description": "Resolve a market",
-                "entrypoint": "resolve"
-              },
-              {
-                "name": "Redeem",
-                "description": "Redeem winning positions",
-                "entrypoint": "redeem"
-              },
-              {
-                "name": "Claim Protocol Fee",
-                "description": "Claim protocol fees",
-                "entrypoint": "claim_protocol_fee"
-              },
-              {
-                "name": "Claim Address Fee",
-                "description": "Claim address fees",
-                "entrypoint": "claim_address_fee"
-              },
-              {
-                "name": "Claim Market Fee Share",
-                "description": "Claim market fee share",
-                "entrypoint": "claim_market_fee_share"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
+                "name": "Renounce Role",
+                "description": "Renounce own role",
+                "entrypoint": "renounce_role"
               }
             ]
           },
@@ -507,41 +341,6 @@
             "name": "Moment NFT",
             "description": "NFT collection for fight moments",
             "methods": [
-              {
-                "name": "Mint Moment",
-                "description": "Mint a new moment NFT",
-                "entrypoint": "mint_moment"
-              },
-              {
-                "name": "Grant Minter",
-                "description": "Grant minter role to an address",
-                "entrypoint": "grant_minter"
-              },
-              {
-                "name": "Revoke Minter",
-                "description": "Revoke minter role from an address",
-                "entrypoint": "revoke_minter"
-              },
-              {
-                "name": "Grant Curator",
-                "description": "Grant curator role",
-                "entrypoint": "grant_curator"
-              },
-              {
-                "name": "Revoke Curator",
-                "description": "Revoke curator role",
-                "entrypoint": "revoke_curator"
-              },
-              {
-                "name": "Update Moment Metadata",
-                "description": "Update moment metadata",
-                "entrypoint": "update_moment_metadata"
-              },
-              {
-                "name": "Update Token URI",
-                "description": "Update token URI",
-                "entrypoint": "update_token_uri"
-              },
               {
                 "name": "Safe Transfer From",
                 "description": "Safely transfer NFT",
@@ -578,24 +377,9 @@
                 "entrypoint": "setApprovalForAll"
               },
               {
-                "name": "Grant Role",
-                "description": "Grant a role to an address",
-                "entrypoint": "grant_role"
-              },
-              {
-                "name": "Revoke Role",
-                "description": "Revoke a role from an address",
-                "entrypoint": "revoke_role"
-              },
-              {
                 "name": "Renounce Role",
                 "description": "Renounce own role",
                 "entrypoint": "renounce_role"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
@@ -603,11 +387,6 @@
             "name": "CALLS Token",
             "description": "CALLS token for betting on fights",
             "methods": [
-              {
-                "name": "Mint",
-                "description": "Mint CALLS tokens (dev only)",
-                "entrypoint": "mint"
-              },
               {
                 "name": "Burn",
                 "description": "Burn CALLS tokens",
@@ -629,16 +408,6 @@
                 "entrypoint": "approve",
                 "spender": "0x5d16b42596b82d58db2db9bd22198ec72c4980d3e330af16cc45f3c3605844a",
                 "amount": "0xffffffffffffffffffffffffffffffff"
-              },
-              {
-                "name": "Register External Contract",
-                "description": "Register external contract",
-                "entrypoint": "register_external_contract"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
@@ -647,19 +416,9 @@
             "description": "Reward tickets for fight winners",
             "methods": [
               {
-                "name": "Register External Contract",
-                "description": "Register external contract",
-                "entrypoint": "register_external_contract"
-              },
-              {
                 "name": "Unsafe Transfer From",
                 "description": "Transfer tokens (unsafe)",
                 "entrypoint": "unsafe_transfer_from"
-              },
-              {
-                "name": "Mint",
-                "description": "Mint spin tickets",
-                "entrypoint": "mint"
               },
               {
                 "name": "Burn",
@@ -682,24 +441,9 @@
                 "entrypoint": "set_approval_for_all"
               },
               {
-                "name": "Grant Role",
-                "description": "Grant a role",
-                "entrypoint": "grant_role"
-              },
-              {
-                "name": "Revoke Role",
-                "description": "Revoke a role",
-                "entrypoint": "revoke_role"
-              },
-              {
                 "name": "Renounce Role",
                 "description": "Renounce own role",
                 "entrypoint": "renounce_role"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
@@ -707,11 +451,6 @@
             "name": "Conditional Tokens",
             "description": "ERC1155 conditional tokens for market positions",
             "methods": [
-              {
-                "name": "Register",
-                "description": "Register contract",
-                "entrypoint": "register"
-              },
               {
                 "name": "Safe Transfer From",
                 "description": "Safely transfer tokens",
@@ -753,11 +492,6 @@
                 "entrypoint": "prepare_condition"
               },
               {
-                "name": "Report Payouts",
-                "description": "Report payouts for resolution",
-                "entrypoint": "report_payouts"
-              },
-              {
                 "name": "Split Position",
                 "description": "Split position into outcomes",
                 "entrypoint": "split_position"
@@ -776,11 +510,6 @@
                 "name": "Get Outcome Slot Count",
                 "description": "Get outcome slot count for condition",
                 "entrypoint": "get_outcome_slot_count"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
@@ -792,11 +521,6 @@
                 "name": "Unsafe Transfer From",
                 "description": "Transfer tokens (unsafe)",
                 "entrypoint": "unsafe_transfer_from"
-              },
-              {
-                "name": "Mint",
-                "description": "Mint vault position tokens",
-                "entrypoint": "mint"
               },
               {
                 "name": "Burn",
@@ -819,24 +543,9 @@
                 "entrypoint": "set_approval_for_all"
               },
               {
-                "name": "Grant Role",
-                "description": "Grant a role",
-                "entrypoint": "grant_role"
-              },
-              {
-                "name": "Revoke Role",
-                "description": "Revoke a role",
-                "entrypoint": "revoke_role"
-              },
-              {
                 "name": "Renounce Role",
                 "description": "Renounce own role",
                 "entrypoint": "renounce_role"
-              },
-              {
-                "name": "Upgrade",
-                "description": "Upgrade contract implementation",
-                "entrypoint": "upgrade"
               }
             ]
           },
