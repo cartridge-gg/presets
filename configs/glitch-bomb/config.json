@@ -1,8 +1,12 @@
 {
-  "origin": [
-    "*.glitchbomb.gg",
-    "glitchbomb.gg"
-  ],
+  "origin": "glitchbomb-ten.preview.cartridge.gg",
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": [
+        "F9U4Y5YSTN.com.cartridge.glitchbomb"
+      ]
+    }
+  },
   "chains": {
     "SN_SEPOLIA": {
       "policies": {
