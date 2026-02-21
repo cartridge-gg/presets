@@ -1,0 +1,8 @@
+<svg width="32" height="32" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <rect width="40" height="40" rx="8" fill="#E8612A"/>
+  <g transform="skewX(-15) skewY(5) scale(0.9)" transform-origin="center">
+    <g stroke="white" fill="none" stroke-width="2.5">
+      <path d="M15 6 V34 M25 6 V34 M6 15 H34 M6 25 H34" />
+    </g>
+  </g>
+</svg>
