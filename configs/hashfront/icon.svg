@@ -1,4 +1,9 @@
 <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="rgba(255,255,255,0.3)"/>
+    </filter>
+  </defs>
   <!-- Blueprint dark background -->
   <rect width="128" height="128" fill="#001a33"/>
   <!-- Grid lines -->
@@ -18,8 +23,8 @@
     <line x1="96" y1="0" x2="96" y2="128"/>
     <line x1="112" y1="0" x2="112" y2="128"/>
   </g>
-  <!-- Hash symbol (skewed like the favicon) -->
-  <g transform="translate(64,64) skewX(-15) skewY(5) scale(2.5) translate(-20,-20)" stroke="white" fill="none" stroke-width="2.5" stroke-linecap="round">
+  <!-- Hash symbol with drop shadow -->
+  <g transform="translate(64,64) skewX(-15) skewY(5) scale(2.5) translate(-20,-20)" stroke="white" fill="none" stroke-width="2.5" stroke-linecap="round" filter="url(#shadow)">
     <path d="M15 6 V34 M25 6 V34 M6 15 H34 M6 25 H34"/>
   </g>
 </svg>
