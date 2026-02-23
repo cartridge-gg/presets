@@ -8,7 +8,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x4bf65b482e1225a866fe99297ecabb49ff44d3d7441584490d0c1e4d5a1f423": {
+          "0x4d23aab51de016ced48fbbe9256b2e7439424da0cf3485442923ee35f5cd84b": {
             "name": "Game Actions",
             "methods": [
               {
@@ -33,7 +33,7 @@
               }
             ]
           },
-          "0x264fcf9ca3117a45a09528520718c3af6e8fb1106ac33808f1866d933f4339f": {
+          "0x75be9599eaaebcd55b1cd8e668c2ddb5944cfd4d446ad2d53b57940334656c": {
             "name": "Game Manager",
             "methods": [
               {
@@ -74,9 +74,9 @@
               }
             ]
           },
-          "0x6d97c1eb0ad331837882af3a7a0cd49b4a8f24603f9ca42dfdcdf6ece0ac56d": {
-            "name": "mNUMS",
-            "description": "Mock token contract for payments",
+          "0x510199d62b59394712edc4738d57e5f2220a13afa31d8f9ca6eb84aecd32172": {
+            "name": "NUMS",
+            "description": "Token contract for payments",
             "methods": [
               {
                 "name": "Mint",
