@@ -14,1019 +14,312 @@
     }
   },
   "chains": {
-    "WP_JOKERSOFNEON": {
+    "WP_JOKERS_CORE_SEASON2": {
       "policies": {
-        "contracts": {
-          "0x50c5394cc552e059ba6aa2d31f4301c47965d1ddbda663928632814e3f1c1df": {
-            "methods": [
-              {
-                "name": "Advance Node",
-                "entrypoint": "advance_node"
-              },
-              {
-                "name": "Create Map Level",
-                "entrypoint": "create_map_level"
-              }
-            ]
-          },
-          "0x4ab6038bb4c87887b4822979db840bb14096974bce4bf280feadd2765b9c7a0": {
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "amount": "*"
-              },
-              {
-                "name": "Balance Of",
-                "entrypoint": "balance_of"
-              },
-              {
-                "name": "Emit Metadata Update",
-                "entrypoint": "emit_metadata_update"
-              },
-              {
-                "name": "Game Count",
-                "entrypoint": "game_count"
-              },
-              {
-                "name": "Game Metadata",
-                "entrypoint": "game_metadata"
-              },
-              {
-                "name": "Is Approved For All",
-                "entrypoint": "is_approved_for_all"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint"
-              },
-              {
-                "name": "Name",
-                "entrypoint": "name"
-              },
-              {
-                "name": "Owner Of",
-                "entrypoint": "owner_of"
-              },
-              {
-                "name": "Safe Transfer From",
-                "entrypoint": "safe_transfer_from"
-              },
-              {
-                "name": "Score",
-                "entrypoint": "score"
-              },
-              {
-                "name": "Score Attribute",
-                "entrypoint": "score_attribute"
-              },
-              {
-                "name": "Score Model",
-                "entrypoint": "score_model"
-              },
-              {
-                "name": "Set Approval For All",
-                "entrypoint": "set_approval_for_all"
-              },
-              {
-                "name": "Setting Exists",
-                "entrypoint": "setting_exists"
-              },
-              {
-                "name": "Settings Model",
-                "entrypoint": "settings_model"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start_game"
-              },
-              {
-                "name": "Supports Interface",
-                "entrypoint": "supports_interface"
-              },
-              {
-                "name": "Symbol",
-                "entrypoint": "symbol"
-              },
-              {
-                "name": "Token Uri",
-                "entrypoint": "token_uri"
-              },
-              {
-                "name": "Token Metadata",
-                "entrypoint": "token_metadata"
-              },
-              {
-                "name": "Transfer From",
-                "entrypoint": "transfer_from"
-              }
-            ]
-          },
-          "0x1a378a8bbf8f3132bebabc140f8f98c1be7a7af75cdd768a6e3338c486cd963": {
-            "methods": [
-              {
-                "name": "Burn Card",
-                "entrypoint": "burn_card"
-              },
-              {
-                "name": "Buy Card",
-                "entrypoint": "buy_card"
-              },
-              {
-                "name": "Buy Loot Box",
-                "entrypoint": "buy_loot_box"
-              },
-              {
-                "name": "Buy Poker Hand",
-                "entrypoint": "buy_poker_hand"
-              },
-              {
-                "name": "Buy Power Up",
-                "entrypoint": "buy_power_up"
-              },
-              {
-                "name": "Buy Special Card",
-                "entrypoint": "buy_special_card"
-              },
-              {
-                "name": "Buy Special Slot",
-                "entrypoint": "buy_special_slot"
-              },
-              {
-                "name": "Reroll",
-                "entrypoint": "reroll"
-              },
-              {
-                "name": "Select Cards From Loot Box",
-                "entrypoint": "select_cards_from_loot_box"
-              },
-              {
-                "name": "Sell Special Card",
-                "entrypoint": "sell_special_card"
-              },
-              {
-                "name": "Skip Shop",
-                "entrypoint": "skip_shop"
-              }
-            ]
-          },
-          "0x6458196f28677da55b13c7aa6d5a57f706636a3a9cebfaba411b896d8bc6df9": {
-            "methods": [
-              {
-                "name": "Calculate",
-                "entrypoint": "calculate"
-              },
-              {
-                "name": "Reset",
-                "entrypoint": "reset"
-              }
-            ]
-          },
-          "0x4da4277e3ab20cf1f3198a598445dab112942165c516295929b87a8b9343d00": {
-            "methods": [
-              {
-                "name": "Change Modifier Card",
-                "entrypoint": "change_modifier_card"
-              },
-              {
-                "name": "Discard",
-                "entrypoint": "discard"
-              },
-              {
-                "name": "Play",
-                "entrypoint": "play"
-              }
-            ]
-          },
-          "0x4664e43a5777277881df51f188c768751c050f01d5bf4ca5dc6404fc771d8c4": {
-            "methods": [
-              {
-                "name": "Register Managers",
-                "entrypoint": "register_managers"
-              }
-            ]
-          },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "methods": [
-              {
-                "name": "Request Random",
-                "entrypoint": "request_random"
-              }
-            ]
+              "methods": [
+                  {
+                      "name": "Request Random",
+                      "entrypoint": "request_random"
+                  }
+              ]
+          },
+          "0x194d53f0906cd3a780e2384adbcb3f9885847d2e09b1edc02019d7413d6d2e1": {
+              "methods": [
+                  {
+                      "name": "Advance Node",
+                      "entrypoint": "advance_node"
+                  },
+                  {
+                      "name": "Create Map Level",
+                      "entrypoint": "create_map_level"
+                  }
+              ]
+          },
+          "0x1c138c54de205f36f30cea971611e98ac295c7985ba59641817f9031d65fd37": {
+              "methods": [
+                  {
+                      "name": "Register Managers",
+                      "entrypoint": "register_managers"
+                  }
+              ]
+          },
+          "0x1fc08b02e037b3e3e624f7eb4bc562564b9deef5061304d00a6ba7a26ae8341": {
+              "methods": [
+                  {
+                      "name": "Change Modifier Card",
+                      "entrypoint": "change_modifier_card"
+                  },
+                  {
+                      "name": "Discard",
+                      "entrypoint": "discard"
+                  }
+              ]
+          },
+          "0x203d357fe193e88ca6841e240da481cbfdc435ca3d742c2df39c60e812a1bf6": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0x2d0d1cd89bad6313c824d27a3d5f62bfc5d2c2682a9f3ade8bc13bd85867442": {
+              "methods": [
+                  {
+                      "name": "Add Pack",
+                      "entrypoint": "add_pack"
+                  },
+                  {
+                      "name": "Claim Free Pack",
+                      "entrypoint": "claim_free_pack"
+                  },
+                  {
+                      "name": "Grant Role",
+                      "entrypoint": "grant_role"
+                  },
+                  {
+                      "name": "Has Role",
+                      "entrypoint": "has_role"
+                  },
+                  {
+                      "name": "Init Season Content",
+                      "entrypoint": "init_season_content"
+                  },
+                  {
+                      "name": "Open",
+                      "entrypoint": "open"
+                  },
+                  {
+                      "name": "Renounce Role",
+                      "entrypoint": "renounce_role"
+                  },
+                  {
+                      "name": "Revoke Role",
+                      "entrypoint": "revoke_role"
+                  },
+                  {
+                      "name": "Set Free Pack Config",
+                      "entrypoint": "set_free_pack_config"
+                  },
+                  {
+                      "name": "Supports Interface",
+                      "entrypoint": "supports_interface"
+                  }
+              ]
+          },
+          "0x2f3e6fbadbd1d5edebb6425599cf749abd89e2c6f0ab552fd0ab6cccbbcc9cb": {
+              "methods": [
+                  {
+                      "name": "New Game",
+                      "entrypoint": "new_game"
+                  },
+                  {
+                      "name": "Surrender",
+                      "entrypoint": "surrender"
+                  },
+                  {
+                      "name": "Transfer Game",
+                      "entrypoint": "transfer_game"
+                  }
+              ]
+          },
+          "0x38634437804b5d37cf1473ee44c9d2495a5044aa47e5da0bd50103e17878c45": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0x394fd2af9f1ce5376bd14e50d62d1cbc072508dc011d36fb82f19baec35325f": {
+              "methods": [
+                  {
+                      "name": "Purchase Season Pass",
+                      "entrypoint": "purchase_season_pass"
+                  }
+              ]
+          },
+          "0x39a0589df5ca3f68a1a736360f10b6c638480f279f0a0a92e6529d75ace9d63": {
+              "methods": [
+                  {
+                      "name": "Claim",
+                      "entrypoint": "claim"
+                  },
+                  {
+                      "name": "Grant Role",
+                      "entrypoint": "grant_role"
+                  },
+                  {
+                      "name": "Has Lives To Claim",
+                      "entrypoint": "has_lives_to_claim"
+                  },
+                  {
+                      "name": "Has Role",
+                      "entrypoint": "has_role"
+                  },
+                  {
+                      "name": "Init Lives Config",
+                      "entrypoint": "init_lives_config"
+                  },
+                  {
+                      "name": "Remove",
+                      "entrypoint": "remove"
+                  },
+                  {
+                      "name": "Renounce Role",
+                      "entrypoint": "renounce_role"
+                  },
+                  {
+                      "name": "Revoke Role",
+                      "entrypoint": "revoke_role"
+                  },
+                  {
+                      "name": "Supports Interface",
+                      "entrypoint": "supports_interface"
+                  },
+                  {
+                      "name": "Upgrade Account",
+                      "entrypoint": "upgrade_account"
+                  }
+              ]
+          },
+          "0x4660d40d3595f5643cc2f69bec9109b6dbeace4644b18a8fd14b7d5d88dbd82": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0x48a758d52699b9bcda6abd6aca1058236ca3cd60ce14096b2c2011ea4e19f57": {
+              "methods": [
+                  {
+                      "name": "Generate Daily Missions",
+                      "entrypoint": "generate_daily_missions"
+                  }
+              ]
+          },
+          "0x4d57625aa14e2fc8616e4515efc17333e2adf054058e9ec1d008cb2ef6891b3": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0x4f6b17cafb1b1c383ee8f3c3e0fdb0e638490acc9d48f23f3e1521fd1b1aef6": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0x56d8b67ee4a789730c0df83b59ce35c37d84453a6a54a20dd2b60e9cd441fea": {
+              "methods": [
+                  {
+                      "name": "Play",
+                      "entrypoint": "play"
+                  }
+              ]
+          },
+          "0x58386ac5e6f2d9755c2503af5d658e35d549377f7f35f7b2e27fb50e069391d": {
+              "methods": [
+                  {
+                      "name": "Burn Cards",
+                      "entrypoint": "burn_cards"
+                  },
+                  {
+                      "name": "Buy Card",
+                      "entrypoint": "buy_card"
+                  },
+                  {
+                      "name": "Buy Loot Box",
+                      "entrypoint": "buy_loot_box"
+                  },
+                  {
+                      "name": "Buy Poker Hand",
+                      "entrypoint": "buy_poker_hand"
+                  },
+                  {
+                      "name": "Buy Power Up",
+                      "entrypoint": "buy_power_up"
+                  },
+                  {
+                      "name": "Buy Special Card",
+                      "entrypoint": "buy_special_card"
+                  },
+                  {
+                      "name": "Buy Special Slot",
+                      "entrypoint": "buy_special_slot"
+                  },
+                  {
+                      "name": "Reroll",
+                      "entrypoint": "reroll"
+                  },
+                  {
+                      "name": "Select Cards From Loot Box",
+                      "entrypoint": "select_cards_from_loot_box"
+                  },
+                  {
+                      "name": "Sell Power Up",
+                      "entrypoint": "sell_power_up"
+                  },
+                  {
+                      "name": "Sell Special Card",
+                      "entrypoint": "sell_special_card"
+                  },
+                  {
+                      "name": "Skip Shop",
+                      "entrypoint": "skip_shop"
+                  }
+              ]
+          },
+          "0x605284ec1dee26cc5e2d1caeea4966c5a7d1081270d9caa30c88dd382381251": {
+              "methods": [
+                  {
+                      "name": "Calculate",
+                      "entrypoint": "calculate"
+                  }
+              ]
+          },
+          "0x661f3841df22cdac91c31102770b46845570430d2c89f4afbef531998e0f3da": {
+              "methods": [
+                  {
+                      "name": "Add",
+                      "entrypoint": "add"
+                  },
+                  {
+                      "name": "Remove",
+                      "entrypoint": "remove"
+                  }
+              ]
+          },
+          "0x68cbbfab961bce72c67e6e6591f236ada7af3b96f73c314ebfab98c6717942d": {
+              "methods": [
+                  {
+                      "name": "Simulate Play",
+                      "entrypoint": "simulate_play"
+                  }
+              ]
+          },
+          "0x6b1d0564fa0af5c7e5e1a3938faf25a862f1ab1a6ac22d3f9bd40a29333ab77": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
+          },
+          "0xbf318c0e8da333f9588e23aebc806ec2ee1a204898e6f564374bc6ac578fc4": {
+              "methods": [
+                  {
+                      "name": "Process",
+                      "entrypoint": "process"
+                  }
+              ]
           }
-        }
-      }
-    },
-    "WP_JOKERSOFNEONDEV": {
-      "policies": {
-        "contracts": {
-          "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1": {
-            "methods": [
-              {
-                "name": "Advance Node",
-                "entrypoint": "advance_node"
-              },
-              {
-                "name": "Create Map Level",
-                "entrypoint": "create_map_level"
-              }
-            ]
-          },
-          "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681": {
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "amount": "*"
-              },
-              {
-                "name": "Balance Of",
-                "entrypoint": "balance_of"
-              },
-              {
-                "name": "Emit Metadata Update",
-                "entrypoint": "emit_metadata_update"
-              },
-              {
-                "name": "Game Count",
-                "entrypoint": "game_count"
-              },
-              {
-                "name": "Game Metadata",
-                "entrypoint": "game_metadata"
-              },
-              {
-                "name": "Is Approved For All",
-                "entrypoint": "is_approved_for_all"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint"
-              },
-              {
-                "name": "Name",
-                "entrypoint": "name"
-              },
-              {
-                "name": "Owner Of",
-                "entrypoint": "owner_of"
-              },
-              {
-                "name": "Safe Transfer From",
-                "entrypoint": "safe_transfer_from"
-              },
-              {
-                "name": "Score",
-                "entrypoint": "score"
-              },
-              {
-                "name": "Score Attribute",
-                "entrypoint": "score_attribute"
-              },
-              {
-                "name": "Score Model",
-                "entrypoint": "score_model"
-              },
-              {
-                "name": "Set Approval For All",
-                "entrypoint": "set_approval_for_all"
-              },
-              {
-                "name": "Setting Exists",
-                "entrypoint": "setting_exists"
-              },
-              {
-                "name": "Settings Model",
-                "entrypoint": "settings_model"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start_game"
-              },
-              {
-                "name": "Supports Interface",
-                "entrypoint": "supports_interface"
-              },
-              {
-                "name": "Symbol",
-                "entrypoint": "symbol"
-              },
-              {
-                "name": "Token Uri",
-                "entrypoint": "token_uri"
-              },
-              {
-                "name": "Token Metadata",
-                "entrypoint": "token_metadata"
-              },
-              {
-                "name": "Transfer From",
-                "entrypoint": "transfer_from"
-              }
-            ]
-          },
-          "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22": {
-            "methods": [
-              {
-                "name": "Burn Card",
-                "entrypoint": "burn_card"
-              },
-              {
-                "name": "Buy Card",
-                "entrypoint": "buy_card"
-              },
-              {
-                "name": "Buy Loot Box",
-                "entrypoint": "buy_loot_box"
-              },
-              {
-                "name": "Buy Poker Hand",
-                "entrypoint": "buy_poker_hand"
-              },
-              {
-                "name": "Buy Power Up",
-                "entrypoint": "buy_power_up"
-              },
-              {
-                "name": "Buy Special Card",
-                "entrypoint": "buy_special_card"
-              },
-              {
-                "name": "Buy Special Slot",
-                "entrypoint": "buy_special_slot"
-              },
-              {
-                "name": "Reroll",
-                "entrypoint": "reroll"
-              },
-              {
-                "name": "Select Cards From Loot Box",
-                "entrypoint": "select_cards_from_loot_box"
-              },
-              {
-                "name": "Sell Special Card",
-                "entrypoint": "sell_special_card"
-              },
-              {
-                "name": "Skip Shop",
-                "entrypoint": "skip_shop"
-              }
-            ]
-          },
-          "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4": {
-            "methods": [
-              {
-                "name": "Calculate",
-                "entrypoint": "calculate"
-              },
-              {
-                "name": "Reset",
-                "entrypoint": "reset"
-              }
-            ]
-          },
-          "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47": {
-            "methods": [
-              {
-                "name": "Change Modifier Card",
-                "entrypoint": "change_modifier_card"
-              },
-              {
-                "name": "Discard",
-                "entrypoint": "discard"
-              },
-              {
-                "name": "Play",
-                "entrypoint": "play"
-              }
-            ]
-          },
-          "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b": {
-            "methods": [
-              {
-                "name": "Register Managers",
-                "entrypoint": "register_managers"
-              }
-            ]
-          },
-          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "methods": [
-              {
-                "name": "Request Random",
-                "entrypoint": "request_random"
-              }
-            ]
-          }
-        }
-      }
-    },
-    "WP_JOKERSOFNEONALPHA": {
-      "policies": {
-        "contracts": {
-          "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1": {
-            "methods": [
-              {
-                "name": "Advance Node",
-                "entrypoint": "advance_node"
-              },
-              {
-                "name": "Create Map Level",
-                "entrypoint": "create_map_level"
-              }
-            ]
-          },
-          "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681": {
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "amount": "*"
-              },
-              {
-                "name": "Balance Of",
-                "entrypoint": "balance_of"
-              },
-              {
-                "name": "Emit Metadata Update",
-                "entrypoint": "emit_metadata_update"
-              },
-              {
-                "name": "Game Count",
-                "entrypoint": "game_count"
-              },
-              {
-                "name": "Game Metadata",
-                "entrypoint": "game_metadata"
-              },
-              {
-                "name": "Is Approved For All",
-                "entrypoint": "is_approved_for_all"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint"
-              },
-              {
-                "name": "Name",
-                "entrypoint": "name"
-              },
-              {
-                "name": "Owner Of",
-                "entrypoint": "owner_of"
-              },
-              {
-                "name": "Safe Transfer From",
-                "entrypoint": "safe_transfer_from"
-              },
-              {
-                "name": "Score",
-                "entrypoint": "score"
-              },
-              {
-                "name": "Score Attribute",
-                "entrypoint": "score_attribute"
-              },
-              {
-                "name": "Score Model",
-                "entrypoint": "score_model"
-              },
-              {
-                "name": "Set Approval For All",
-                "entrypoint": "set_approval_for_all"
-              },
-              {
-                "name": "Setting Exists",
-                "entrypoint": "setting_exists"
-              },
-              {
-                "name": "Settings Model",
-                "entrypoint": "settings_model"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start_game"
-              },
-              {
-                "name": "Supports Interface",
-                "entrypoint": "supports_interface"
-              },
-              {
-                "name": "Symbol",
-                "entrypoint": "symbol"
-              },
-              {
-                "name": "Token Uri",
-                "entrypoint": "token_uri"
-              },
-              {
-                "name": "Token Metadata",
-                "entrypoint": "token_metadata"
-              },
-              {
-                "name": "Transfer From",
-                "entrypoint": "transfer_from"
-              }
-            ]
-          },
-          "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22": {
-            "methods": [
-              {
-                "name": "Burn Card",
-                "entrypoint": "burn_card"
-              },
-              {
-                "name": "Buy Card",
-                "entrypoint": "buy_card"
-              },
-              {
-                "name": "Buy Loot Box",
-                "entrypoint": "buy_loot_box"
-              },
-              {
-                "name": "Buy Poker Hand",
-                "entrypoint": "buy_poker_hand"
-              },
-              {
-                "name": "Buy Power Up",
-                "entrypoint": "buy_power_up"
-              },
-              {
-                "name": "Buy Special Card",
-                "entrypoint": "buy_special_card"
-              },
-              {
-                "name": "Buy Special Slot",
-                "entrypoint": "buy_special_slot"
-              },
-              {
-                "name": "Reroll",
-                "entrypoint": "reroll"
-              },
-              {
-                "name": "Select Cards From Loot Box",
-                "entrypoint": "select_cards_from_loot_box"
-              },
-              {
-                "name": "Sell Special Card",
-                "entrypoint": "sell_special_card"
-              },
-              {
-                "name": "Skip Shop",
-                "entrypoint": "skip_shop"
-              }
-            ]
-          },
-          "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4": {
-            "methods": [
-              {
-                "name": "Calculate",
-                "entrypoint": "calculate"
-              },
-              {
-                "name": "Reset",
-                "entrypoint": "reset"
-              }
-            ]
-          },
-          "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47": {
-            "methods": [
-              {
-                "name": "Change Modifier Card",
-                "entrypoint": "change_modifier_card"
-              },
-              {
-                "name": "Discard",
-                "entrypoint": "discard"
-              },
-              {
-                "name": "Play",
-                "entrypoint": "play"
-              }
-            ]
-          },
-          "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b": {
-            "methods": [
-              {
-                "name": "Register Managers",
-                "entrypoint": "register_managers"
-              }
-            ]
-          },
-          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "methods": [
-              {
-                "name": "Request Random",
-                "entrypoint": "request_random"
-              }
-            ]
-          }
-        }
-      }
-    },
-    "WP_JOKERSOFNEONPREPROD": {
-      "policies": {
-        "contracts": {
-          "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1": {
-            "methods": [
-              {
-                "name": "Advance Node",
-                "entrypoint": "advance_node"
-              },
-              {
-                "name": "Create Map Level",
-                "entrypoint": "create_map_level"
-              }
-            ]
-          },
-          "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681": {
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "amount": "*"
-              },
-              {
-                "name": "Balance Of",
-                "entrypoint": "balance_of"
-              },
-              {
-                "name": "Emit Metadata Update",
-                "entrypoint": "emit_metadata_update"
-              },
-              {
-                "name": "Game Count",
-                "entrypoint": "game_count"
-              },
-              {
-                "name": "Game Metadata",
-                "entrypoint": "game_metadata"
-              },
-              {
-                "name": "Is Approved For All",
-                "entrypoint": "is_approved_for_all"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint"
-              },
-              {
-                "name": "Name",
-                "entrypoint": "name"
-              },
-              {
-                "name": "Owner Of",
-                "entrypoint": "owner_of"
-              },
-              {
-                "name": "Safe Transfer From",
-                "entrypoint": "safe_transfer_from"
-              },
-              {
-                "name": "Score",
-                "entrypoint": "score"
-              },
-              {
-                "name": "Score Attribute",
-                "entrypoint": "score_attribute"
-              },
-              {
-                "name": "Score Model",
-                "entrypoint": "score_model"
-              },
-              {
-                "name": "Set Approval For All",
-                "entrypoint": "set_approval_for_all"
-              },
-              {
-                "name": "Setting Exists",
-                "entrypoint": "setting_exists"
-              },
-              {
-                "name": "Settings Model",
-                "entrypoint": "settings_model"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start_game"
-              },
-              {
-                "name": "Supports Interface",
-                "entrypoint": "supports_interface"
-              },
-              {
-                "name": "Symbol",
-                "entrypoint": "symbol"
-              },
-              {
-                "name": "Token Uri",
-                "entrypoint": "token_uri"
-              },
-              {
-                "name": "Token Metadata",
-                "entrypoint": "token_metadata"
-              },
-              {
-                "name": "Transfer From",
-                "entrypoint": "transfer_from"
-              }
-            ]
-          },
-          "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22": {
-            "methods": [
-              {
-                "name": "Burn Card",
-                "entrypoint": "burn_card"
-              },
-              {
-                "name": "Buy Card",
-                "entrypoint": "buy_card"
-              },
-              {
-                "name": "Buy Loot Box",
-                "entrypoint": "buy_loot_box"
-              },
-              {
-                "name": "Buy Poker Hand",
-                "entrypoint": "buy_poker_hand"
-              },
-              {
-                "name": "Buy Power Up",
-                "entrypoint": "buy_power_up"
-              },
-              {
-                "name": "Buy Special Card",
-                "entrypoint": "buy_special_card"
-              },
-              {
-                "name": "Buy Special Slot",
-                "entrypoint": "buy_special_slot"
-              },
-              {
-                "name": "Reroll",
-                "entrypoint": "reroll"
-              },
-              {
-                "name": "Select Cards From Loot Box",
-                "entrypoint": "select_cards_from_loot_box"
-              },
-              {
-                "name": "Sell Special Card",
-                "entrypoint": "sell_special_card"
-              },
-              {
-                "name": "Skip Shop",
-                "entrypoint": "skip_shop"
-              }
-            ]
-          },
-          "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4": {
-            "methods": [
-              {
-                "name": "Calculate",
-                "entrypoint": "calculate"
-              },
-              {
-                "name": "Reset",
-                "entrypoint": "reset"
-              }
-            ]
-          },
-          "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47": {
-            "methods": [
-              {
-                "name": "Change Modifier Card",
-                "entrypoint": "change_modifier_card"
-              },
-              {
-                "name": "Discard",
-                "entrypoint": "discard"
-              },
-              {
-                "name": "Play",
-                "entrypoint": "play"
-              }
-            ]
-          },
-          "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b": {
-            "methods": [
-              {
-                "name": "Register Managers",
-                "entrypoint": "register_managers"
-              }
-            ]
-          },
-          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "methods": [
-              {
-                "name": "Request Random",
-                "entrypoint": "request_random"
-              }
-            ]
-          }
-        }
-      }
-    },
-    "SN_SEPOLIA": {
-      "policies": {
-        "contracts": {
-          "0x1c2f43cef612962a3ebbe85ddf350b89cbf808b6e400e18580b0a7366c95cd1": {
-            "methods": [
-              {
-                "name": "Advance Node",
-                "entrypoint": "advance_node"
-              },
-              {
-                "name": "Create Map Level",
-                "entrypoint": "create_map_level"
-              }
-            ]
-          },
-          "0x1b76abeff716b081df3ff493e9dd5ebc789bedb5e057d1f823de3d05db74681": {
-            "methods": [
-              {
-                "name": "Approve",
-                "entrypoint": "approve",
-                "amount": "*"
-              },
-              {
-                "name": "Balance Of",
-                "entrypoint": "balance_of"
-              },
-              {
-                "name": "Emit Metadata Update",
-                "entrypoint": "emit_metadata_update"
-              },
-              {
-                "name": "Game Count",
-                "entrypoint": "game_count"
-              },
-              {
-                "name": "Game Metadata",
-                "entrypoint": "game_metadata"
-              },
-              {
-                "name": "Is Approved For All",
-                "entrypoint": "is_approved_for_all"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint"
-              },
-              {
-                "name": "Name",
-                "entrypoint": "name"
-              },
-              {
-                "name": "Owner Of",
-                "entrypoint": "owner_of"
-              },
-              {
-                "name": "Safe Transfer From",
-                "entrypoint": "safe_transfer_from"
-              },
-              {
-                "name": "Score",
-                "entrypoint": "score"
-              },
-              {
-                "name": "Score Attribute",
-                "entrypoint": "score_attribute"
-              },
-              {
-                "name": "Score Model",
-                "entrypoint": "score_model"
-              },
-              {
-                "name": "Set Approval For All",
-                "entrypoint": "set_approval_for_all"
-              },
-              {
-                "name": "Setting Exists",
-                "entrypoint": "setting_exists"
-              },
-              {
-                "name": "Settings Model",
-                "entrypoint": "settings_model"
-              },
-              {
-                "name": "Start Game",
-                "entrypoint": "start_game"
-              },
-              {
-                "name": "Supports Interface",
-                "entrypoint": "supports_interface"
-              },
-              {
-                "name": "Symbol",
-                "entrypoint": "symbol"
-              },
-              {
-                "name": "Token Uri",
-                "entrypoint": "token_uri"
-              },
-              {
-                "name": "Token Metadata",
-                "entrypoint": "token_metadata"
-              },
-              {
-                "name": "Transfer From",
-                "entrypoint": "transfer_from"
-              }
-            ]
-          },
-          "0x4be11037798b27fc8dd8c0312e98da79f62d3ee6d6461d27b3fe692fac26d22": {
-            "methods": [
-              {
-                "name": "Burn Card",
-                "entrypoint": "burn_card"
-              },
-              {
-                "name": "Buy Card",
-                "entrypoint": "buy_card"
-              },
-              {
-                "name": "Buy Loot Box",
-                "entrypoint": "buy_loot_box"
-              },
-              {
-                "name": "Buy Poker Hand",
-                "entrypoint": "buy_poker_hand"
-              },
-              {
-                "name": "Buy Power Up",
-                "entrypoint": "buy_power_up"
-              },
-              {
-                "name": "Buy Special Card",
-                "entrypoint": "buy_special_card"
-              },
-              {
-                "name": "Buy Special Slot",
-                "entrypoint": "buy_special_slot"
-              },
-              {
-                "name": "Reroll",
-                "entrypoint": "reroll"
-              },
-              {
-                "name": "Select Cards From Loot Box",
-                "entrypoint": "select_cards_from_loot_box"
-              },
-              {
-                "name": "Sell Special Card",
-                "entrypoint": "sell_special_card"
-              },
-              {
-                "name": "Skip Shop",
-                "entrypoint": "skip_shop"
-              }
-            ]
-          },
-          "0x59039c06c19f36179f311e19227647648cd55b788208c6707e6e25fadf9a1f4": {
-            "methods": [
-              {
-                "name": "Calculate",
-                "entrypoint": "calculate"
-              },
-              {
-                "name": "Reset",
-                "entrypoint": "reset"
-              }
-            ]
-          },
-          "0x7059f05dd4c499022a93e2eb794f3004991e186f8b4a097927b0ee4e63a6e47": {
-            "methods": [
-              {
-                "name": "Change Modifier Card",
-                "entrypoint": "change_modifier_card"
-              },
-              {
-                "name": "Discard",
-                "entrypoint": "discard"
-              },
-              {
-                "name": "Play",
-                "entrypoint": "play"
-              }
-            ]
-          },
-          "0x314f9f7b522da766916ccadfe37eaf158810e321419992054c66a72b580574b": {
-            "methods": [
-              {
-                "name": "Register Managers",
-                "entrypoint": "register_managers"
-              }
-            ]
-          },
-          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "methods": [
-              {
-                "name": "Request Random",
-                "entrypoint": "request_random"
-              }
-            ]
-          }
-        }
       }
     }
   }
