@@ -30,7 +30,7 @@ export const metadata: EkuboERC20Metadata[] = [
     decimals: 6,
     l2_token_address:
       "0x033068f6539f8e6e6b131e6b2b814e6c34a5224bc66947c47dab9dfee93b35fb",
-    sort_order: 5,
+    sort_order: 8,
     total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/e5aaa970-a998-47e8-bd43-4a3b56b87200/logo",
@@ -53,7 +53,7 @@ export const metadata: EkuboERC20Metadata[] = [
     decimals: 6,
     l2_token_address:
       "0x068f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8",
-    sort_order: 4,
+    sort_order: 6,
     total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/c8a721d1-07c3-46e4-ab4e-523977c30b00/logo",
@@ -87,7 +87,7 @@ export const metadata: EkuboERC20Metadata[] = [
     decimals: 18,
     l2_token_address:
       "0x05574eb6b8789a91466f902c380d978e472db68170ff82a5b650b95a58ddf4ad",
-    sort_order: 4,
+    sort_order: 5,
     total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/919e761b-56f7-4f53-32aa-5e066f7f6200/logo",
@@ -132,7 +132,7 @@ export const metadata: EkuboERC20Metadata[] = [
     l2_token_address:
       "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49",
     sort_order: 1,
-    total_supply: 50900000,
+    total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/a3bfe959-50c4-4f89-0aef-b19207d82a00/logo",
   },
@@ -219,13 +219,13 @@ export const metadata: EkuboERC20Metadata[] = [
     disabled: true,
   },
   {
-    name: "StarkNet Token",
+    name: "Starknet Token",
     symbol: "STRK",
     decimals: 18,
     l2_token_address:
       "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
     sort_order: 2,
-    total_supply: 10000000000,
+    total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/1b126320-367c-48ed-cf5a-ba7580e49600/logo",
   },
@@ -246,8 +246,8 @@ export const metadata: EkuboERC20Metadata[] = [
     decimals: 18,
     l2_token_address:
       "0x075afe6402ad5a5c20dd25e10ec3b3986acaa647b77e4ae24b0cbc9a54a27a87",
-    sort_order: 1,
-    total_supply: 10000000,
+    sort_order: 2,
+    total_supply: null,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/634d9c36-2f0b-4781-93e6-72d701b5af00/logo",
   },
@@ -290,12 +290,12 @@ export const metadata: EkuboERC20Metadata[] = [
     symbol: "CASH",
     decimals: 18,
     l2_token_address:
-      "0x498edfaf50ca5855666a700c25dd629d577eb9afccdf3b5977aec79aee55ada",
-    sort_order: 3,
+      "0x0498edfaf50ca5855666a700c25dd629d577eb9afccdf3b5977aec79aee55ada",
+    sort_order: 4,
     total_supply: null,
-    hidden: false,
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/6bd6d156-f509-4b51-5dfc-3ee566143600/logo",
+    hidden: false,
   },
   {
     name: "Nums",
@@ -694,10 +694,11 @@ export const metadata: EkuboERC20Metadata[] = [
     symbol: "SURVIVOR",
     decimals: 18,
     l2_token_address:
-      "0x42dd777885ad2c116be96d4d634abc90a26a790ffb5871e037dd5ae7d2ec86b",
-    sort_order: 1,
+      "0x042dd777885ad2c116be96d4d634abc90a26a790ffb5871e037dd5ae7d2ec86b",
+    sort_order: 2,
     total_supply: null,
-    logo_url: "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/399cb277-f675-4efe-97fb-fac94a236a00/logo",
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/399cb277-f675-4efe-97fb-fac94a236a00/logo",
   },
   {
     name: "Dungeon Ticket",
@@ -707,6 +708,342 @@ export const metadata: EkuboERC20Metadata[] = [
       "0x035f581b050a39958b7188ab5c75daaa1f9d3571a0c032203038c898663f31f8",
     sort_order: 1,
     total_supply: null,
-    logo_url: "	https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/f96b51e2-e978-42e2-c67a-e84159015000/logo",
+    logo_url:
+      "\thttps://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/f96b51e2-e978-42e2-c67a-e84159015000/logo",
+  },
+  {
+    name: "Standard Weighted Adalian Yield",
+    symbol: "SWAY",
+    decimals: 6,
+    l2_token_address:
+      "0x004878d1148318a31829523ee9c6a5ee563af6cd87f90a30809e5b0d27db8a9b",
+    sort_order: 1,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/dd43c15d-80bf-4298-7620-abc12d474f00/logo",
+  },
+  {
+    name: "Corpse",
+    symbol: "CORPSE",
+    decimals: 18,
+    l2_token_address:
+      "0x0103eafe79f8631932530cc687dfcdeb013c883a82619ebf81be393e2953a87a",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/corpse-token.png",
+  },
+  {
+    name: "Extra Life",
+    symbol: "XLIFE",
+    decimals: 18,
+    l2_token_address:
+      "0x016dea82a6588ca9fb7200125fa05631b1c1735a313e24afe9c90301e441a796",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/life-potion.png",
+  },
+  {
+    name: "Attack",
+    symbol: "ATTACK",
+    decimals: 18,
+    l2_token_address:
+      "0x016f9def00daef9f1874dd932b081096f50aec2fe61df31a81bc5707a7522443",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/attack-potion.png",
+  },
+  {
+    name: "Skull",
+    symbol: "SKULL",
+    decimals: 18,
+    l2_token_address:
+      "0x01c3c8284d7eed443b42f47e764032a56eaf50a9079d67993b633930e3689814",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/skull-token.png",
+  },
+  {
+    name: "LayerZero",
+    symbol: "ZRO",
+    decimals: 18,
+    l2_token_address:
+      "0x01e77aec81ef65db5fb788a5a04fd9d23f6f4c860eb2fb0e99ace5c45b021071",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/28206/standard/ftxG9_TJ_400x400.jpeg",
+  },
+  {
+    name: "Shiba Inu",
+    symbol: "SHIB",
+    decimals: 18,
+    l2_token_address:
+      "0x02119755fad7cbf637d80cae5d3e8e12487befe6653ddd04432a73f6f569f46b",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/11939/standard/shiba.png",
+  },
+  {
+    name: "Endur xSTRK",
+    symbol: "xSTRK",
+    decimals: 18,
+    l2_token_address:
+      "0x028d709c875c0ceac3dce7065bec5328186dc89fe254527084d1689910954b0a",
+    sort_order: 1,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/c1f44170-c1b0-4531-3d3b-5f0bacfe1300/logo",
+  },
+  {
+    name: "Revive",
+    symbol: "REVIVE",
+    decimals: 18,
+    l2_token_address:
+      "0x029023e0a455d19d6887bc13727356070089527b79e6feb562ffe1afd6711dbe",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/revive-potion.png",
+  },
+  {
+    name: "Yield BTC.B",
+    symbol: "YBTC.B",
+    decimals: 8,
+    l2_token_address:
+      "0x02cab84694e1be6af2ce65b1ae28a76009e8ec99ec4bc17047386abf20cbb688",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/21264f6b-bd3e-4bef-b54d-78d268dcce00/logo",
+  },
+  {
+    name: "Aave Token",
+    symbol: "AAVE",
+    decimals: 18,
+    l2_token_address:
+      "0x02f5eb9a4f77b6c7c83488418e77329d31eb43219745959948a0fce9580905d9",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/12645/standard/aave-token-round.png?1720472354",
+  },
+  {
+    name: "Uncap USD",
+    symbol: "USDU",
+    decimals: 18,
+    l2_token_address:
+      "0x02f94539f80158f9a48a7acf3747718dfbec9b6f639e2742c1fb44ae7ab5aa04",
+    sort_order: 4,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/1cf94983-68e7-42e3-61c4-081d61d57700/logo",
+  },
+  {
+    name: "Arbitrum",
+    symbol: "ARB",
+    decimals: 18,
+    l2_token_address:
+      "0x03070d5cbd310edc0b2cfe8b11d132e67718b16c7fbfd536ee74ec54a4307ba2",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/16547/standard/arb.jpg",
+  },
+  {
+    name: "Lombard Staked Bitcoin",
+    symbol: "LBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x036834a40984312f7f7de8d31e3f6305b325389eaeea5b1c0664b2fb936461a4",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/d57a3c6e-83fc-47c6-2a2b-df3a9c216100/logo",
+  },
+  {
+    name: "Jupiter",
+    symbol: "JUP",
+    decimals: 6,
+    l2_token_address:
+      "0x03a292bd498266ac4b05d93cc2df5cd7883c0684faabff182ab568d566a3c151",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/34188/standard/jup.png",
+  },
+  {
+    name: "DOG GO TO THE MOON",
+    symbol: "DOG",
+    decimals: 5,
+    l2_token_address:
+      "0x040e81cfeb176bfdbc5047bbc55eb471cfab20a6b221f38d8fda134e1bfffca4",
+    sort_order: 2,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/43bf2a37-d5a4-40e3-45a6-2488108b0c00/logo",
+  },
+  {
+    name: "Endur xtBTC",
+    symbol: "xtBTC",
+    decimals: 18,
+    l2_token_address:
+      "0x043a35c1425a0125ef8c171f1a75c6f31ef8648edcc8324b55ce1917db3f9b91",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/b9ad718c-d6bb-45d5-d1f9-a8ae911efb00/logo",
+  },
+  {
+    name: "Dungeon Ticket",
+    symbol: "DTICKET",
+    decimals: 18,
+    l2_token_address:
+      "0x0452810188c4cb3aebd63711a3b445755bc0d6c4f27b923fdd99b1a118858136",
+    sort_order: 1,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/f96b51e2-e978-42e2-c67a-e84159015000/logo",
+  },
+  {
+    name: "FBTC",
+    symbol: "FBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x046e4e83fe6a22f243f73d0f2e4cdbc4e9ebd868050e9f7e9cbd90f1436d8b44",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/3b069b84-9881-47c9-d51b-d43259f80200/logo",
+  },
+  {
+    name: "AUSD0",
+    symbol: "AUSD0",
+    decimals: 6,
+    l2_token_address:
+      "0x04887629c229b4ee8e82f3db4cddeb1b2c0f084d46f229672623bd1282df5931",
+    sort_order: 4,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/88b2405d-cff2-4cae-db42-2965fc3f9400/logo",
+  },
+  {
+    name: "Poison",
+    symbol: "POISON",
+    decimals: 18,
+    l2_token_address:
+      "0x049eaed2a1ba2f2eb6ac2661ffd2d79231cdd7d5293d9448df49c5986c9897ae",
+    sort_order: 2,
+    total_supply: null,
+    logo_url: "https://lootsurvivor.io/images/poison-potion.png",
+  },
+  {
+    name: "Midas Re7 Yield",
+    symbol: "mRe7YIELD",
+    decimals: 18,
+    l2_token_address:
+      "0x04be8945e61dc3e19ebadd1579a6bd53b262f51ba89e6f8b0c4bc9a7e3c633fc",
+    sort_order: 3,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/f11b3823-25da-4e95-811f-c0bc8fd4db00/logo",
+  },
+  {
+    name: "Threshold tBTC",
+    symbol: "tBTC",
+    decimals: 18,
+    l2_token_address:
+      "0x04daa17763b286d1e59b97c283c0b8c949994c361e426a28f743c67bdfe9a32f",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/9e04d713-fc0e-4e96-342b-0334f5133b00/logo",
+  },
+  {
+    name: "Midas Re7 BTC",
+    symbol: "mRe7BTC",
+    decimals: 18,
+    l2_token_address:
+      "0x04e4fb1a9ca7e84bae609b9dc0078ad7719e49187ae7e425bb47d131710eddac",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/3a62ecee-1e58-45d3-9862-3ce90dff1900/logo",
+  },
+  {
+    name: "Endur xsBTC",
+    symbol: "xsBTC",
+    decimals: 18,
+    l2_token_address:
+      "0x0580f3dc564a7b82f21d40d404b3842d490ae7205e6ac07b1b7af2b4a5183dc9",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/b978fbfd-4aa0-4a56-5402-47857c921e00/logo",
+  },
+  {
+    name: "Solv BTC",
+    symbol: "SolvBTC",
+    decimals: 18,
+    l2_token_address:
+      "0x0593e034dda23eea82d2ba9a30960ed42cf4a01502cc2351dc9b9881f9931a68",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/b510231d-c479-4f22-eda5-0457222e7e00/logo",
+  },
+  {
+    name: "Endur xWBTC",
+    symbol: "xWBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x06a567e68c805323525fe1649adb80b03cddf92c23d2629a6779f54192dffc13",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/6d2f83ef-6bd6-44af-dd34-9076eeae5e00/logo",
+  },
+  {
+    name: "Fartcoin",
+    symbol: "Fartcoin",
+    decimals: 6,
+    l2_token_address:
+      "0x06e0e0117b742747452601f9f14576eb9d71b326379a1794bb51d9adbce3dbd3",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/50891/standard/fart.jpg",
+  },
+  {
+    name: "Official Trump",
+    symbol: "TRUMP",
+    decimals: 6,
+    l2_token_address:
+      "0x07380caa64fdf27501afad0bd93c89d1e83a081a553af89bbeffb28dae8d8916",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://assets.coingecko.com/coins/images/53746/standard/trump.png",
+  },
+  {
+    name: "Bonk",
+    symbol: "BONK",
+    decimals: 5,
+    l2_token_address:
+      "0x074238dfa02063792077820584c925b679a013cbab38e5ca61af5627d1eda736",
+    sort_order: 1,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/05c7a597-ea71-4129-6bf0-ad2d18cb1200/logo",
+  },
+  {
+    name: "Endur xLBTC",
+    symbol: "xLBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x07dd3c80de9fcc5545f0cb83678826819c79619ed7992cc06ff81fc67cd2efe0",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/1d016787-181b-4373-4aa5-962adddc6c00/logo",
   },
 ];

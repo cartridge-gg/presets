@@ -1,0 +1,12 @@
+{
+  "origin": [],
+  "theme": {
+    "name": "Hashfront",
+    "icon": "icon.svg",
+    "cover": "cover.png",
+    "colors": {
+      "primary": "#003366"
+    }
+  },
+  "chains": {}
+}
