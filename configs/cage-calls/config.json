@@ -14,7 +14,9 @@
   },
   "apple-app-site-association": {
     "webcredentials": {
-      "apps": ["5NREXUW987.xyz.medievaltech.cagecallsdev"]
+      "apps": [
+        "5NREXUW987.xyz.medievaltech.cagecallsdev"
+      ]
     }
   },
   "chains": {
@@ -55,7 +57,11 @@
             "name": "Cartridge VRF Provider",
             "description": "Verifiable Random Function for gacha",
             "methods": [
-              { "name": "Request Random", "description": "Request a random number for gacha spin", "entrypoint": "request_random" }
+              {
+                "name": "Request Random",
+                "description": "Request a random number for gacha strike",
+                "entrypoint": "request_random"
+              }
             ]
           }
         }
@@ -64,7 +70,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x6d7c8553eea3db11bd25defd479f14b5f01b398c87e2a0619acbdcca8836af0": {
+          "0x4beec9af84d93aa84a6b5c71033ade6fa0de40a2359d8599170a6d544ccbf30": {
             "name": "Fight Factory",
             "description": "Prediction market fights",
             "methods": [
@@ -98,7 +104,11 @@
             "name": "Cartridge VRF Provider",
             "description": "Verifiable Random Function for gacha",
             "methods": [
-              { "name": "Request Random", "description": "Request a random number for gacha spin", "entrypoint": "request_random" }
+              {
+                "name": "Request Random",
+                "description": "Request a random number for gacha strike",
+                "entrypoint": "request_random"
+              }
             ]
           }
         }
