@@ -1,0 +1,22 @@
+{
+  "origin": "https://nums-git-mobile.preview.cartridge.gg",
+  "apple-app-site-association": {
+    "webcredentials": {
+      "apps": [
+        "F9U4Y5YSTN.com.cartridge.nums"
+      ]
+    }
+  },
+  "chains": {
+    "SN_SEPOLIA": {},
+    "SN_MAIN": {}
+  },
+  "theme": {
+    "colors": {
+      "primary": "#9E84E9"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Nums"
+  }
+}
