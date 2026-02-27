@@ -7,7 +7,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-            "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd": {
+          "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064": {
             "name": "Summit Game",
             "description": "Main game contract for Summit gameplay",
             "methods": [
@@ -27,14 +27,14 @@
                 "entrypoint": "feed"
               },
               {
-                "name": "Claim Beast Reward",
-                "description": "Claim beast rewards",
-                "entrypoint": "claim_beast_reward"
+                "name": "Claim Quest Reward",
+                "description": "Claim quest rewards",
+                "entrypoint": "claim_quest_rewards"
               },
               {
-                "name": "Claim Corpse Reward",
-                "description": "Claim corpse rewards",
-                "entrypoint": "claim_corpse_reward"
+                "name": "Claim Beast Reward",
+                "description": "Claim beast rewards",
+                "entrypoint": "claim_rewards"
               },
               {
                 "name": "Add Extra Life",
@@ -53,79 +53,89 @@
               }
             ]
           },
-          "0x075bbe6a4a4c744ad2da8da0cc7562623d4181418359d62909a02b4abf5be651": {
+          "0x016f9def00daef9f1874dd932b081096f50aec2fe61df31a81bc5707a7522443": {
             "name": "Attack Potion",
             "description": "ERC 20 token for Attack Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
                 "description": "Approve Attack Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x003561384b4c4502f87fd728332f8cf4e604a1215185d9d997be33769ba32fc3": {
+          "0x029023e0a455d19d6887bc13727356070089527b79e6feb562ffe1afd6711dbe": {
             "name": "Revive Potion",
             "description": "ERC 20 token for Revive Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
                 "description": "Approve Revive Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x07af033bf4a3f2cae7f871ca015c7021f97846217733d72665aaf6ad735d4359": {
+          "0x016dea82a6588ca9fb7200125fa05631b1c1735a313e24afe9c90301e441a796": {
             "name": "Extra Life Potion",
             "description": "ERC 20 token for Extra Life Potion",
             "methods": [
               {
                 "name": "Approve",
-                "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
+                "amount": "4000000000000000000000",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
                 "description": "Approve Extra Life Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x047314b2b569360da4623035d2d81479a90a677beae8518e221960b07afb960f": {
+          "0x049eaed2a1bA2F2Eb6Ac2661ffd2d79231CdD7d5293D9448Df49c5986C9897aE": {
             "name": "Poison Potion",
             "description": "ERC 20 token for Poison Potion",
             "methods": [
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
                 "description": "Approve Poison Potion",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x02beaf101300efd433877bf358005d29c32e048e314529ac1fdbe4ac024c17cd": {
-            "name": "Kill Token",
-            "description": "ERC 20 token for Kill Token",
+          "0x01c3c8284d7eed443b42f47e764032a56eaf50a9079d67993b633930e3689814": {
+            "name": "Skull Token",
+            "description": "ERC 20 token for Skull Token",
             "methods": [
+              {
+                "name": "Claim Skulls",
+                "description": "Claim skulls",
+                "entrypoint": "claim"
+              },
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
-                "description": "Approve Kill Token",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "description": "Approve Skull Token",
                 "entrypoint": "approve"
               }
             ]
           },
-          "0x0195685bd2bce86e4ebe4ea5ef44d9dc00c4e7c6e362d428abdb618b4739c25c": {
+          "0x0103eafe79f8631932530cc687dfcdeb013c883a82619ebf81be393e2953a87a": {
             "name": "Corpse Token",
             "description": "ERC 20 token for Corpse Token",
             "methods": [
               {
+                "name": "Claim Corpses",
+                "description": "Claim corpses",
+                "entrypoint": "claim"
+              },
+              {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x75d886f3c53ff8f9ef413d88d9e0c8ee56216fed8c32d64b767b9fa271aa0dd",
+                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
                 "description": "Approve Corpse Token",
                 "entrypoint": "approve"
               }
