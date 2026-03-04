@@ -3,7 +3,7 @@
     "cage-calls-smartcontracts.vercel.app",
     "localhost",
     "com.cagecallsmobile.amma",
-    "xyz.medievaltech.cagecallsdev",
+    "xyz.medievaltech.armoredmma-dev",
     "xyz.medievaltech.amma",
     "xyz.medievaltech.armoredmma"
   ],
@@ -18,7 +18,7 @@
   "apple-app-site-association": {
     "webcredentials": {
       "apps": [
-        "5NREXUW987.xyz.medievaltech.cagecallsdev",
+        "USTC8HHT9Q.xyz.medievaltech.armoredmma-dev",
         "USTC8HHT9Q.xyz.medievaltech.armoredmma"
       ]
     }
@@ -103,14 +103,14 @@
               }
             ]
           },
-          "0x67d9bc1c1e2c71a6f1c393ed0066d02a4b811e56c850dfb415215f586922877": {
+          "0x3ce374b612858e7cf674821f1f17b48b0000c1d45b659e1a2fb532adee499de": {
             "name": "Gacha",
             "description": "NFT gacha system for fight winners",
             "methods": [
               {
-                "name": "Spin",
-                "description": "Spin the gacha wheel for an NFT",
-                "entrypoint": "spin"
+                "name": "Strike",
+                "description": "Strike the gacha wheel for an NFT",
+                "entrypoint": "strike"
               },
               {
                 "name": "Keep",
@@ -119,19 +119,8 @@
               }
             ]
           },
-          "0x553a8542da8a4595ec61c2bc4623cc4473e82d0936b7e4a53ff8bdc338490fe": {
-            "name": "Moment NFT",
-            "description": "NFT collection for fight moments",
-            "methods": [
-              {
-                "name": "Mint Moment",
-                "description": "Mint a new moment NFT",
-                "entrypoint": "mint_moment"
-              }
-            ]
-          },
-          "0x6326a1699b42c7e5f31b4474a3c1aa0ac9b0aa6d8c0bd67b710ee8d710f5799": {
-            "name": "Spin Tickets",
+          "0x486a8a492759a4ab622ea19a3f1a6e5b2e784fb6c672346b033f8b7dfc8edd5": {
+            "name": "Strike Tickets",
             "description": "Reward tickets for fight winners",
             "methods": [
               {
