@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x4d23aab51de016ced48fbbe9256b2e7439424da0cf3485442923ee35f5cd84b": {
+          "0x2f7fe5729e301dcfac88ec2144f28b9c904f6842b13a51a2d95c08fbee55905": {
             "name": "Game Actions",
             "methods": [
               {
@@ -40,7 +40,7 @@
               }
             ]
           },
-          "0x75be9599eaaebcd55b1cd8e668c2ddb5944cfd4d446ad2d53b57940334656c": {
+          "0xce11a8d7d5edd1aad2edd03d53c82d4664aaaa79d0012486378672ca5946fe": {
             "name": "Game Manager",
             "methods": [
               {
@@ -81,7 +81,7 @@
               }
             ]
           },
-          "0x510199d62b59394712edc4738d57e5f2220a13afa31d8f9ca6eb84aecd32172": {
+          "0x54c9e4dc8d42950774b6a8f0e5186bd88719463807156e444417d981efb60ef": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -89,6 +89,49 @@
                 "name": "Mint",
                 "entrypoint": "mint",
                 "description": "Mint tokens"
+              }
+            ]
+          },
+          "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9": {
+            "name": "vNUMS",
+            "description": "Vault contract for staking",
+            "methods": [
+              {
+                "entrypoint": "approve",
+                "description": "Approve use of NUMS (assets)",
+                "amount": "0x84595161401484A000000",
+                "spender": "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9"
+              },
+              {
+                "entrypoint": "approve",
+                "description": "Approve use of vNUMS (shares)",
+                "amount": "0x84595161401484A000000",
+                "spender": "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9"
+              },
+              {
+                "name": "Claim",
+                "entrypoint": "claim",
+                "description": "Claim rewards"
+              },
+              {
+                "name": "Deposit",
+                "entrypoint": "deposit",
+                "description": "Deposit assets"
+              },
+              {
+                "name": "Mint",
+                "entrypoint": "mint",
+                "description": "Mint shares"
+              },
+              {
+                "name": "Withdraw",
+                "entrypoint": "withdraw",
+                "description": "Withdraw assets"
+              },
+              {
+                "name": "Redeem",
+                "entrypoint": "redeem",
+                "description": "Redeem shares"
               }
             ]
           }
