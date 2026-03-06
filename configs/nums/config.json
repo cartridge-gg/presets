@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x2f7fe5729e301dcfac88ec2144f28b9c904f6842b13a51a2d95c08fbee55905": {
+          "0x3e8aee573ce3e99a4679789902efffd01a53385512a6d8b4f2f0fb5b54aecf5": {
             "name": "Game Actions",
             "methods": [
               {
@@ -40,7 +40,7 @@
               }
             ]
           },
-          "0xce11a8d7d5edd1aad2edd03d53c82d4664aaaa79d0012486378672ca5946fe": {
+          "0x20a514e35988563becf59d54abb94601aee6da5b10818e89a918e7c4d2a3b85": {
             "name": "Game Manager",
             "methods": [
               {
@@ -81,32 +81,38 @@
               }
             ]
           },
-          "0x54c9e4dc8d42950774b6a8f0e5186bd88719463807156e444417d981efb60ef": {
-            "name": "NUMS",
-            "description": "Token contract for payments",
+          "0x29679bc70dbf88acc6108554379f01d09fd00811cb101c0c429254b1e5c8547": {
+            "name": "Faucet",
+            "description": "Faucet contract to get free USDC",
             "methods": [
               {
-                "name": "Mint",
-                "entrypoint": "mint",
-                "description": "Mint tokens"
+                "name": "Request",
+                "entrypoint": "request",
+                "description": "Request tokens from faucet"
               }
             ]
           },
-          "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9": {
-            "name": "vNUMS",
-            "description": "Vault contract for staking",
+          "0x6b4b4312a5b4adcdb38553af9908f86ab995a52d2d485c458a38de03135726b": {
+            "name": "NUMS",
+            "description": "Token contract for payments",
             "methods": [
               {
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9"
-              },
+                "spender": "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577"
+              }
+            ]
+          },
+          "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577": {
+            "name": "vNUMS",
+            "description": "Vault contract for staking",
+            "methods": [
               {
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x37a007f6db06f3a5e455ae9b389079b2770689ee26b25b08449876ecd9634e9"
+                "spender": "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577"
               },
               {
                 "name": "Claim",
