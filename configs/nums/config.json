@@ -83,7 +83,7 @@
           },
           "0x29679bc70dbf88acc6108554379f01d09fd00811cb101c0c429254b1e5c8547": {
             "name": "Faucet",
-            "description": "Token contract for payments",
+            "description": "Faucet contract to get free USDC",
             "methods": [
               {
                 "name": "Request",
