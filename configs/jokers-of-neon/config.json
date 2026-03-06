@@ -4,7 +4,7 @@
     "jokersofneon.com",
     "capacitor://localhost",
     "localhost",
-    "jokers://open"
+    "jokers"
   ],
   "theme": {
     "colors": {
