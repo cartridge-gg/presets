@@ -5,7 +5,8 @@
     "com.cagecallsmobile.amma",
     "xyz.medievaltech.armoredmma-dev",
     "xyz.medievaltech.amma",
-    "xyz.medievaltech.armoredmma"
+    "xyz.medievaltech.armoredmma",
+    "cagecalls"
   ],
   "theme": {
     "colors": {
