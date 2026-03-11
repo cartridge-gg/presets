@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x3e8aee573ce3e99a4679789902efffd01a53385512a6d8b4f2f0fb5b54aecf5": {
+          "0x2c2dd9e0b34d4d55c7e673b39f02801005f33aad393d8d2ba995cb7e00114d8": {
             "name": "Game Actions",
             "methods": [
               {
@@ -40,7 +40,7 @@
               }
             ]
           },
-          "0x20a514e35988563becf59d54abb94601aee6da5b10818e89a918e7c4d2a3b85": {
+          "0x1fba01ceb86b4e37fe8c0fb91948b85b0439ff32d536aa70bfff6f676a1b88f": {
             "name": "Game Manager",
             "methods": [
               {
@@ -81,18 +81,7 @@
               }
             ]
           },
-          "0x29679bc70dbf88acc6108554379f01d09fd00811cb101c0c429254b1e5c8547": {
-            "name": "Faucet",
-            "description": "Faucet contract to get free USDC",
-            "methods": [
-              {
-                "name": "Request",
-                "entrypoint": "request",
-                "description": "Request tokens from faucet"
-              }
-            ]
-          },
-          "0x6b4b4312a5b4adcdb38553af9908f86ab995a52d2d485c458a38de03135726b": {
+          "0x4f485dfe2cb8cf353caee1d93acc81cffb8ba4946b25d95a8636c371518d4f5": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -100,11 +89,11 @@
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577"
+                "spender": "0x2094aebd7235f213b0159f080a60b387402130071bda6e870f4af9e2f8674b6"
               }
             ]
           },
-          "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577": {
+          "0x2094aebd7235f213b0159f080a60b387402130071bda6e870f4af9e2f8674b6": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
@@ -112,7 +101,7 @@
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x608f08dbe71f53afb9ddad7995e912ba5e93fb5a81cb9cb277e7b0a54c08577"
+                "spender": "0x2094aebd7235f213b0159f080a60b387402130071bda6e870f4af9e2f8674b6"
               },
               {
                 "name": "Claim",
