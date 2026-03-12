@@ -23,47 +23,34 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x416b01c9c5ec58fbb8353618934dbce01c690f0c4cafd5a89375f45b0082d62": {
+          "0x146ef74a2c9e34b544916e2cf482bfa395c0e5ad152f715e74eb2491eeb5f5": {
             "name": "Fight Factory",
             "description": "Prediction market fights",
             "methods": [
-              {
-                "name": "Buy Fight",
-                "description": "Place a bet on a fight outcome",
-                "entrypoint": "buy_fight"
-              },
-              {
-                "name": "Redeem",
-                "description": "Redeem winnings from a fight",
-                "entrypoint": "redeem"
-              }
+              { "name": "Buy Fight", "description": "Place a bet on a fight outcome", "entrypoint": "buy_fight" },
+              { "name": "Redeem", "description": "Redeem winnings from a fight", "entrypoint": "redeem" }
             ]
           },
-          "0x1c4c21df2f4f02d48e8fb275d62c72b5cba27598e561ded0e2290a16cdbdce6": {
+          "0x45d1cf6732729ad2ca9a9a148f76253994b56992a8f3f6f2ab13bf3354c6f60": {
             "name": "Gacha",
             "description": "NFT gacha system for fight winners",
             "methods": [
-              {
-                "name": "Strike",
-                "description": "Strike the gacha wheel for an NFT",
-                "entrypoint": "strike"
-              },
-              {
-                "name": "Keep",
-                "description": "Keep the current NFT",
-                "entrypoint": "keep"
-              }
+              { "name": "Spin", "description": "Spin the gacha wheel for an NFT", "entrypoint": "spin" },
+              { "name": "Keep", "description": "Keep the current NFT", "entrypoint": "keep" }
             ]
           },
-          "0x354d813e57fe6e75a318b55e76253846bf100a718929f72124c3ec1cf795fd9": {
-            "name": "Strike Tickets",
+          "0x446e6a38278a8108619b9bba9c7d439ba743ea9f7f8f1668adabb8672ec32e3": {
+            "name": "Moment NFT",
+            "description": "NFT collection for fight moments",
+            "methods": [
+              { "name": "Mint Moment", "description": "Mint a new moment NFT", "entrypoint": "mint_moment" }
+            ]
+          },
+          "0x29cdfbd92a1c706a925b1cea57a86e578b46af8b9974ff3ea30bd3dcb4ae9a6": {
+            "name": "Spin Tickets",
             "description": "Reward tickets for fight winners",
             "methods": [
-              {
-                "name": "Set Approval For All",
-                "description": "Approve operator for all tokens",
-                "entrypoint": "set_approval_for_all"
-              }
+              { "name": "Set Approval For All", "description": "Approve operator for all tokens", "entrypoint": "set_approval_for_all" }
             ]
           },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
@@ -87,43 +74,30 @@
             "name": "Fight Factory",
             "description": "Prediction market fights",
             "methods": [
-              {
-                "name": "Buy Fight",
-                "description": "Place a bet on a fight outcome",
-                "entrypoint": "buy_fight"
-              },
-              {
-                "name": "Redeem",
-                "description": "Redeem winnings from a fight",
-                "entrypoint": "redeem"
-              }
+              { "name": "Buy Fight", "description": "Place a bet on a fight outcome", "entrypoint": "buy_fight" },
+              { "name": "Redeem", "description": "Redeem winnings from a fight", "entrypoint": "redeem" }
             ]
           },
-          "0x3ce374b612858e7cf674821f1f17b48b0000c1d45b659e1a2fb532adee499de": {
+          "0x67d9bc1c1e2c71a6f1c393ed0066d02a4b811e56c850dfb415215f586922877": {
             "name": "Gacha",
             "description": "NFT gacha system for fight winners",
             "methods": [
-              {
-                "name": "Strike",
-                "description": "Strike the gacha wheel for an NFT",
-                "entrypoint": "strike"
-              },
-              {
-                "name": "Keep",
-                "description": "Keep the current NFT",
-                "entrypoint": "keep"
-              }
+              { "name": "Spin", "description": "Spin the gacha wheel for an NFT", "entrypoint": "spin" },
+              { "name": "Keep", "description": "Keep the current NFT", "entrypoint": "keep" }
             ]
           },
-          "0x486a8a492759a4ab622ea19a3f1a6e5b2e784fb6c672346b033f8b7dfc8edd5": {
-            "name": "Strike Tickets",
+          "0x553a8542da8a4595ec61c2bc4623cc4473e82d0936b7e4a53ff8bdc338490fe": {
+            "name": "Moment NFT",
+            "description": "NFT collection for fight moments",
+            "methods": [
+              { "name": "Mint Moment", "description": "Mint a new moment NFT", "entrypoint": "mint_moment" }
+            ]
+          },
+          "0x6326a1699b42c7e5f31b4474a3c1aa0ac9b0aa6d8c0bd67b710ee8d710f5799": {
+            "name": "Spin Tickets",
             "description": "Reward tickets for fight winners",
             "methods": [
-              {
-                "name": "Set Approval For All",
-                "description": "Approve operator for all tokens",
-                "entrypoint": "set_approval_for_all"
-              }
+              { "name": "Set Approval For All", "description": "Approve operator for all tokens", "entrypoint": "set_approval_for_all" }
             ]
           },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {

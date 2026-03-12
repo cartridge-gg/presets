@@ -7,7 +7,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064": {
+          "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc": {
             "name": "Summit Game",
             "description": "Main game contract for Summit gameplay",
             "methods": [
@@ -60,7 +60,7 @@
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Attack Potion",
                 "entrypoint": "approve"
               }
@@ -73,7 +73,7 @@
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Revive Potion",
                 "entrypoint": "approve"
               }
@@ -86,7 +86,7 @@
               {
                 "name": "Approve",
                 "amount": "4000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Extra Life Potion",
                 "entrypoint": "approve"
               }
@@ -99,7 +99,7 @@
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Poison Potion",
                 "entrypoint": "approve"
               }
@@ -117,7 +117,7 @@
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Skull Token",
                 "entrypoint": "approve"
               }
@@ -135,7 +135,7 @@
               {
                 "name": "Approve",
                 "amount": "50000000000000000000000",
-                "spender": "0x0214d382e80781f8c1059a751563d6b46e717c652bb670bf230e8a64a68e6064",
+                "spender": "0x01aa95ea66e7e01acf7dc3fda8be0d8661230c4c36b0169e2bab8ab4d6700dfc",
                 "description": "Approve Corpse Token",
                 "entrypoint": "approve"
               }

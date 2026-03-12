@@ -299,6 +299,32 @@ function validateAppleAppSiteAssociation(
   }
 }
 
+function validatePolicyStructure(
+  configPath: string,
+  config: Config,
+  rawContent: string,
+): void {
+  if (!config.chains) return;
+
+  const allowedPolicyKeys = new Set(["contracts", "messages"]);
+
+  for (const [chainId, chain] of Object.entries(config.chains)) {
+    if (!chain.policies) continue;
+
+    for (const key of Object.keys(chain.policies)) {
+      if (allowedPolicyKeys.has(key)) continue;
+
+      const line = findLineNumber(rawContent, `"${key}"`);
+      errors.push({
+        file: configPath,
+        line,
+        message: `Invalid key "${key}" under policies in chain "${chainId}". Only "contracts" and "messages" are allowed. If this is a contract address, wrap it in a "contracts" object: policies.contracts.${key}`,
+        type: "error",
+      });
+    }
+  }
+}
+
 function validateConfigFile(configPath: string): void {
   try {
     const rawContent = fs.readFileSync(configPath, "utf-8");
@@ -306,6 +332,7 @@ function validateConfigFile(configPath: string): void {
 
     validateAssets(configPath, config, rawContent);
     validateOrigins(configPath, config, rawContent);
+    validatePolicyStructure(configPath, config, rawContent);
     checkApproveEntrypoints(configPath, config, rawContent);
     validateAppleAppSiteAssociation(configPath, config, rawContent);
   } catch (error) {
