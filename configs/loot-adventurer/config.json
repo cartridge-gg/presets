@@ -1,27 +1,14 @@
 {
   "origin": [
-    "lootsurvivor.io",
-    "claims.lootsurvivor.io",
-    "tournaments.lootsurvivor.io"
+    "lootadventurer.xyz"
   ],
   "chains": {
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x5e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
-            "name": "Death Mountain Token",
-            "description": "Token contract for Death Mountain utilising Denshokan",
-            "methods": [
-              {
-                "name": "Mint Game Token",
-                "description": "Mints a new Death Mountain game token",
-                "entrypoint": "mint_game"
-              }
-            ]
-          },
-          "0x6f7c4350d6d5ee926b3ac4fa0c9c351055456e75c92227468d84232fc493a9c": {
+          "0x06f7c4350d6d5ee926b3ac4fa0c9c351055456e75c92227468d84232fc493a9c": {
             "name": "Loot Survivor Game",
-            "description": "Main game contract for Loot Survivor gameplay",
+            "description": "Core game contract for Loot Survivor gameplay (Dojo game_systems)",
             "methods": [
               {
                 "name": "Start Game",
@@ -65,7 +52,18 @@
               }
             ]
           },
-          "0xa67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
+          "0x05e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
+            "name": "Game Token",
+            "description": "Game token contract (Dojo game_token_systems) utilising Denshokan",
+            "methods": [
+              {
+                "name": "Mint Game Token",
+                "description": "Mints a new game token",
+                "entrypoint": "mint_game"
+              }
+            ]
+          },
+          "0x00a67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
             "name": "Beast Mode Dungeon",
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
             "methods": [
@@ -91,9 +89,20 @@
               }
             ]
           },
+          "0x0452810188c4cb3aebd63711a3b445755bc0d6c4f27b923fdd99b1a118858136": {
+            "name": "Dungeon Ticket Token",
+            "description": "ERC-20 ticket token for Beast Mode entry",
+            "methods": [
+              {
+                "name": "Approve",
+                "description": "Approve ticket token spend for dungeon entry",
+                "entrypoint": "approve"
+              }
+            ]
+          },
           "0x046da8955829adf2bda310099a0063451923f02e648cf25a1203aac6335cf0e4": {
             "name": "Beasts",
-            "description": "beast NFT contract",
+            "description": "Beast NFT contract",
             "methods": [
               {
                 "name": "Refresh Dungeon Stats",
@@ -104,23 +113,71 @@
           },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
             "name": "Cartridge VRF Provider",
-            "description": "Verifiable Random Function contract, allows randomness in the game",
+            "description": "Verifiable Random Function contract for game randomness",
             "methods": [
               {
                 "name": "Request Random",
-                "description": "Allows requesting random numbers from the VRF provider",
+                "description": "Requests random numbers from the VRF provider",
                 "entrypoint": "request_random"
               }
             ]
           },
-          "0x3299ace782ec54afcbf81e31e92d6146649b6c484173e41f4de529f6d504fe8": {
-            "name": "Free Games Claim",
-            "description": "Contract for claiming free game tokens through eligibility verification",
+          "0x03caf941b916a83550d8f6325802e0cb686c9a0c8b30a23fb9df531ae24d12d0": {
+            "name": "Game Settings",
+            "description": "Custom game settings contract (Dojo settings_systems)",
             "methods": [
               {
-                "name": "Verify and Forward",
-                "description": "Verify eligibility and claim free games",
-                "entrypoint": "verify_and_forward"
+                "name": "Add Settings",
+                "description": "Create custom game settings",
+                "entrypoint": "add_settings"
+              }
+            ]
+          },
+          "0x0199741822c2dc722f6f605204f35e56dbc23bceed54818168c4c49e4fb8737e": {
+            "name": "Ekubo Router",
+            "description": "DEX router for token swaps (pay with any token)",
+            "methods": [
+              {
+                "name": "Multihop Swap",
+                "description": "Execute a multi-hop token swap",
+                "entrypoint": "multihop_swap"
+              },
+              {
+                "name": "Multi Multihop Swap",
+                "description": "Execute a multi-split token swap",
+                "entrypoint": "multi_multihop_swap"
+              },
+              {
+                "name": "Clear",
+                "description": "Clear remaining input token from router",
+                "entrypoint": "clear"
+              },
+              {
+                "name": "Clear Minimum",
+                "description": "Clear output token with minimum amount check",
+                "entrypoint": "clear_minimum"
+              }
+            ]
+          },
+          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
+            "name": "STRK Token",
+            "description": "Starknet native token (ERC-20)",
+            "methods": [
+              {
+                "name": "Transfer",
+                "description": "Transfer STRK to the swap router",
+                "entrypoint": "transfer"
+              }
+            ]
+          },
+          "0x033068f6539f8e6e6b131e6b2b814e6c34a5224bc66947c47dab9dfee93b35fb": {
+            "name": "USDC Token",
+            "description": "Native USDC stablecoin (ERC-20)",
+            "methods": [
+              {
+                "name": "Transfer",
+                "description": "Transfer USDC to the swap router",
+                "entrypoint": "transfer"
               }
             ]
           }
@@ -134,6 +191,6 @@
     },
     "cover": "cover.png",
     "icon": "icon.png",
-    "name": "Loot Survivor"
+    "name": "Loot Adventurer"
   }
 }
