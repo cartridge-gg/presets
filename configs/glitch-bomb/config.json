@@ -4,14 +4,9 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x7f5f0f8ea0d878f222761c8c7b7ac04d520da35db70f26bec81eb9000ac8165": {
+          "0x7e272112d9cb4c143184ddccb00471c407d9d167aa5f5a58b2a0a5d7314ae8e": {
             "name": "Game Actions",
             "methods": [
-              {
-                "name": "Start Game",
-                "entrypoint": "start",
-                "description": "Start a new game"
-              },
               {
                 "name": "Pull Orb",
                 "entrypoint": "pull",
@@ -59,7 +54,7 @@
               }
             ]
           },
-          "0x1d678a2364bb55a2939fec619c2f3be59c2d192d9e2bc840c5b2f3389a25a0a": {
+          "0x3ef7358dfe4f047e7e4f78d9cef0fd339bf54c7bf8711cebd3a96ef089bcc56": {
             "name": "Token",
             "description": "Token contract",
             "methods": [
