@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x1fe6be6f2a5cbbfc3a324a75e09f2be88412a01f7f3f583eff1b6bdf5e7875d": {
+          "0x3d9811671990fa067ab9342840d0b7e00a3bfeaa2e7f31ad26329161c086c4b": {
             "name": "Game Actions",
             "methods": [
               {
@@ -40,7 +40,7 @@
               }
             ]
           },
-          "0x5f2a1ececda995e6c02b12fc38a0b7979c98e4ce1d17fff321409902e4ab713": {
+          "0x74e02714d63e8f3da3a2ab56564414303127e71a9c13b5a60209100d3b37d87": {
             "name": "Game Manager",
             "methods": [
               {
@@ -81,7 +81,7 @@
               }
             ]
           },
-          "0x573f645db9f518a5aed5a5156b2b467b8703444a9913d2e53b51a9bf81ab1fa": {
+          "0x32abd3de87a3d5ec44cda9bddf005525f5d85177027fc778856b23792a0078b": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -89,11 +89,11 @@
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x773c23ecf54dece70548af51afc5d4b333d7757f14a23e11cb0130e2c1f73b2"
+                "spender": "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a"
               }
             ]
           },
-          "0x773c23ecf54dece70548af51afc5d4b333d7757f14a23e11cb0130e2c1f73b2": {
+          "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
@@ -101,7 +101,7 @@
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x773c23ecf54dece70548af51afc5d4b333d7757f14a23e11cb0130e2c1f73b2"
+                "spender": "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a"
               },
               {
                 "name": "Claim",
