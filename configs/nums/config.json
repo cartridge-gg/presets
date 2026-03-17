@@ -60,27 +60,6 @@
               }
             ]
           },
-          "0x050d4da9f66589eadaa1d5e31cf73b08ac1a67c8b4dcd88e6fd4fe501c628af2": {
-            "name": "Ekubo",
-            "description": "Ekubo token contract",
-            "methods": [
-              {
-                "name": "Swap",
-                "entrypoint": "swap",
-                "description": "Swap tokens"
-              },
-              {
-                "name": "Clear Minimum",
-                "entrypoint": "clear_minimum",
-                "description": "Clear minimum swap"
-              },
-              {
-                "name": "Clear",
-                "entrypoint": "clear",
-                "description": "Clear swap"
-              }
-            ]
-          },
           "0x32abd3de87a3d5ec44cda9bddf005525f5d85177027fc778856b23792a0078b": {
             "name": "NUMS",
             "description": "Token contract for payments",
