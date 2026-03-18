@@ -6,6 +6,17 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
+            "0x5e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
+            "name": "Death Mountain Token",
+            "description": "Token contract for Death Mountain utilising Denshokan",
+            "methods": [
+              {
+                "name": "Mint Game Token",
+                "description": "Mints a new Death Mountain game token",
+                "entrypoint": "mint_game"
+              }
+            ]
+          },
           "0x06f7c4350d6d5ee926b3ac4fa0c9c351055456e75c92227468d84232fc493a9c": {
             "name": "Loot Survivor Game",
             "description": "Core game contract for Loot Survivor gameplay (Dojo game_systems)",
@@ -52,18 +63,7 @@
               }
             ]
           },
-          "0x05e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
-            "name": "Game Token",
-            "description": "Game token contract (Dojo game_token_systems) utilising Denshokan",
-            "methods": [
-              {
-                "name": "Mint Game Token",
-                "description": "Mints a new game token",
-                "entrypoint": "mint_game"
-              }
-            ]
-          },
-          "0x00a67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
+          "0xa67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
             "name": "Beast Mode Dungeon",
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
             "methods": [
@@ -97,7 +97,7 @@
                 "name": "Approve",
                 "description": "Approve ticket token spend for dungeon entry",
                 "entrypoint": "approve",
-                "amount": "100",
+                "amount": "100000000000000000000",
                 "spender": "0x00a67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42"
               }
             ]
@@ -124,62 +124,27 @@
               }
             ]
           },
-          "0x03caf941b916a83550d8f6325802e0cb686c9a0c8b30a23fb9df531ae24d12d0": {
-            "name": "Game Settings",
-            "description": "Custom game settings contract (Dojo settings_systems)",
-            "methods": [
-              {
-                "name": "Add Settings",
-                "description": "Create custom game settings",
-                "entrypoint": "add_settings"
-              }
-            ]
-          },
-          "0x0199741822c2dc722f6f605204f35e56dbc23bceed54818168c4c49e4fb8737e": {
-            "name": "Ekubo Router",
-            "description": "DEX router for token swaps (pay with any token)",
-            "methods": [
-              {
-                "name": "Multihop Swap",
-                "description": "Execute a multi-hop token swap",
-                "entrypoint": "multihop_swap"
-              },
-              {
-                "name": "Multi Multihop Swap",
-                "description": "Execute a multi-split token swap",
-                "entrypoint": "multi_multihop_swap"
-              },
-              {
-                "name": "Clear",
-                "description": "Clear remaining input token from router",
-                "entrypoint": "clear"
-              },
-              {
-                "name": "Clear Minimum",
-                "description": "Clear output token with minimum amount check",
-                "entrypoint": "clear_minimum"
-              }
-            ]
-          },
-          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
-            "name": "STRK Token",
-            "description": "Starknet native token (ERC-20)",
-            "methods": [
-              {
-                "name": "Transfer",
-                "description": "Transfer STRK to the swap router",
-                "entrypoint": "transfer"
-              }
-            ]
-          },
           "0x033068f6539f8e6e6b131e6b2b814e6c34a5224bc66947c47dab9dfee93b35fb": {
             "name": "USDC Token",
             "description": "Native USDC stablecoin (ERC-20)",
             "methods": [
               {
-                "name": "Transfer",
-                "description": "Transfer USDC to the swap router",
-                "entrypoint": "transfer"
+                "name": "Approve",
+                "description": "Approve USDC spend for the game proxy",
+                "entrypoint": "approve",
+                "amount": "100000000",
+                "spender": "0x04ac8da1de9798f2f8f8c271a0e7a3907c20a73628258a176dd7ac3b599e0afc"
+              }
+            ]
+          },
+          "0x04ac8da1de9798f2f8f8c271a0e7a3907c20a73628258a176dd7ac3b599e0afc": {
+            "name": "USDC Game Proxy",
+            "description": "Proxy contract that swaps USDC to tickets and buys games in one call",
+            "methods": [
+              {
+                "name": "Buy Game With USDC",
+                "description": "Swap USDC to game tickets and purchase games via Ekubo DEX",
+                "entrypoint": "buy_game_with_usdc"
               }
             ]
           }
