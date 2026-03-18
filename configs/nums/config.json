@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x3d9811671990fa067ab9342840d0b7e00a3bfeaa2e7f31ad26329161c086c4b": {
+          "0x396a7f9c6ce8c75b32e855b0eb89d57b8f9cccdf2f23241e8843f0e59c0348": {
             "name": "Game Actions",
             "methods": [
               {
@@ -40,16 +40,6 @@
               }
             ]
           },
-          "0x74e02714d63e8f3da3a2ab56564414303127e71a9c13b5a60209100d3b37d87": {
-            "name": "Game Manager",
-            "methods": [
-              {
-                "name": "Claim Quest Reward",
-                "entrypoint": "quest_claim",
-                "description": "Claims a quest reward"
-              }
-            ]
-          },
           "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
             "name": "VRF Provider",
             "methods": [
@@ -60,7 +50,7 @@
               }
             ]
           },
-          "0x32abd3de87a3d5ec44cda9bddf005525f5d85177027fc778856b23792a0078b": {
+          "0x38f452d51f0d775dcd0189eb2a1b7a66a3464d2461373fa39be19456c1f68f4": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -68,11 +58,11 @@
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a"
+                "spender": "0x64aa2f0bacb3f39460416e2291d7423d26c320434ed06fcd8de7b02b2f13020"
               }
             ]
           },
-          "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a": {
+          "0x64aa2f0bacb3f39460416e2291d7423d26c320434ed06fcd8de7b02b2f13020": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
@@ -80,7 +70,7 @@
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x13ccae72662fdd05119e0e339fb3836f9d8a6eaa64a448f0190031566998b3a"
+                "spender": "0x64aa2f0bacb3f39460416e2291d7423d26c320434ed06fcd8de7b02b2f13020"
               },
               {
                 "name": "Claim",
