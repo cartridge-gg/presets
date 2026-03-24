@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x6a9d9e2bab0add166f9b706eca1d9fa37819645eb3d89f927ba24ae9c05d6ed": {
+          "0x3774eb7f309e2b2c9b02103ae7050d542ca3c75d55e59fed6ca3fa524d19cd1": {
             "name": "Game Actions",
             "methods": [
               {
@@ -32,11 +32,16 @@
                 "name": "Apply Power Up",
                 "entrypoint": "apply",
                 "description": "Applies a power up to the game"
-              },
+              }
+            ]
+          },
+          "0x6361108a877e3bf74e3d92242907d40315824555d50bd7cad08a021021ed8a4": {
+            "name": "Management Actions",
+            "methods": [
               {
-                "name": "Claim free games",
-                "entrypoint": "merkle_claim",
-                "description": "Claims free games"
+                "name": "Claim airdrop",
+                "entrypoint": "merkledrop_claim",
+                "description": "Claims an airdrop"
               }
             ]
           },
@@ -50,7 +55,7 @@
               }
             ]
           },
-          "0xa71dc25aea1c269dd23970e0b394b0fbd84f2f78e26a0b1e72b9dc896da447": {
+          "0x3c27ade072f09c834e94126979b4210f111ae15893716d44e73de5a7d04919c": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -58,22 +63,11 @@
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x7b40587e4f2c2261222c289bb609e253a5faf0f592f9fb659361622190b92e2"
+                "spender": "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e"
               }
             ]
           },
-          "0x5b0212f09cdab0a7234afc0f8b7e1301025753a00b443df4b22295ec06a80f4": {
-            "name": "USDC",
-            "description": "Money contract for payments",
-            "methods": [
-              {
-                "name": "Mint",
-                "entrypoint": "mint",
-                "description": "Mint USDC"
-              }
-            ]
-          },
-          "0x7b40587e4f2c2261222c289bb609e253a5faf0f592f9fb659361622190b92e2": {
+          "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
@@ -81,7 +75,7 @@
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x7b40587e4f2c2261222c289bb609e253a5faf0f592f9fb659361622190b92e2"
+                "spender": "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e"
               },
               {
                 "name": "Claim",
