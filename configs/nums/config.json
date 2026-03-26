@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x3774eb7f309e2b2c9b02103ae7050d542ca3c75d55e59fed6ca3fa524d19cd1": {
+          "0x523487f7d5adc7b6b041593ecac5e90e38465f60b6d07cbf448305f9e02114b": {
             "name": "Game Actions",
             "methods": [
               {
@@ -35,7 +35,7 @@
               }
             ]
           },
-          "0x6361108a877e3bf74e3d92242907d40315824555d50bd7cad08a021021ed8a4": {
+          "0x4912c0ecd00eb4ee1dae8aa7f10683740deda6a15a84360ff93e1eb803ca4b9": {
             "name": "Management Actions",
             "methods": [
               {
@@ -55,7 +55,7 @@
               }
             ]
           },
-          "0x3c27ade072f09c834e94126979b4210f111ae15893716d44e73de5a7d04919c": {
+          "0x67ffa7fe2e0a321b46d1df57ebbdc7540edb7f3b8df8a79d737776e771e44d0": {
             "name": "NUMS",
             "description": "Token contract for payments",
             "methods": [
@@ -63,11 +63,11 @@
                 "entrypoint": "approve",
                 "description": "Approve use of NUMS (assets)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e"
+                "spender": "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197"
               }
             ]
           },
-          "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e": {
+          "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
@@ -75,7 +75,7 @@
                 "entrypoint": "approve",
                 "description": "Approve use of vNUMS (shares)",
                 "amount": "0x84595161401484A000000",
-                "spender": "0x2ded562376646054bebdabded77594c93ffd6d5bd2838b630e6a2d35c21820e"
+                "spender": "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197"
               },
               {
                 "name": "Claim",
