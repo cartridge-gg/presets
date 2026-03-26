@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x523487f7d5adc7b6b041593ecac5e90e38465f60b6d07cbf448305f9e02114b": {
+          "0x329371ae36153ea617954776160ed5bd43fe3c460a5547ea742ad9b17218bb7": {
             "name": "Game Actions",
             "methods": [
               {
@@ -35,7 +35,7 @@
               }
             ]
           },
-          "0x4912c0ecd00eb4ee1dae8aa7f10683740deda6a15a84360ff93e1eb803ca4b9": {
+          "0x4494b8134a2540cdb91a8883f7b17b51f3647ec9f9ffa326fe32f7c39071e1b": {
             "name": "Management Actions",
             "methods": [
               {
@@ -55,52 +55,14 @@
               }
             ]
           },
-          "0x67ffa7fe2e0a321b46d1df57ebbdc7540edb7f3b8df8a79d737776e771e44d0": {
-            "name": "NUMS",
-            "description": "Token contract for payments",
-            "methods": [
-              {
-                "entrypoint": "approve",
-                "description": "Approve use of NUMS (assets)",
-                "amount": "0x84595161401484A000000",
-                "spender": "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197"
-              }
-            ]
-          },
-          "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197": {
+          "0x75fb58b25b51c146a45a436c5873449cdf65c4ea972688f7058ac575d00a458": {
             "name": "vNUMS",
             "description": "Vault contract for staking",
             "methods": [
               {
-                "entrypoint": "approve",
-                "description": "Approve use of vNUMS (shares)",
-                "amount": "0x84595161401484A000000",
-                "spender": "0x5737038082f708ea5adff66e588be197b7937e64565765dd41fc2ac89bb9197"
-              },
-              {
                 "name": "Claim",
                 "entrypoint": "claim",
                 "description": "Claim rewards"
-              },
-              {
-                "name": "Deposit",
-                "entrypoint": "deposit",
-                "description": "Deposit assets"
-              },
-              {
-                "name": "Mint",
-                "entrypoint": "mint",
-                "description": "Mint shares"
-              },
-              {
-                "name": "Withdraw",
-                "entrypoint": "withdraw",
-                "description": "Withdraw assets"
-              },
-              {
-                "name": "Redeem",
-                "entrypoint": "redeem",
-                "description": "Redeem shares"
               }
             ]
           }
