@@ -71,7 +71,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0xbccc22c70d2a6261df54543062996a2e7728c90abf70fa845cc1aabe53ade0": {
+          "0x575bd762ac42b1386a8da0d07f646ac631786eab359f3f39f1b53208208ab9c": {
             "name": "Game Actions",
             "methods": [
               {
