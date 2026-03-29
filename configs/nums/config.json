@@ -1,8 +1,7 @@
 {
   "origin": [
     "*.nums.gg",
-    "nums.gg",
-    "nums-blond.vercel.app"
+    "nums.gg"
   ],
   "apple-app-site-association": {
     "webcredentials": {
