@@ -15,7 +15,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x329371ae36153ea617954776160ed5bd43fe3c460a5547ea742ad9b17218bb7": {
+          "0x105dc0e5838d4893fa058ceb40b79f5e4c87d05c5d4a6c6a7f92ec4b0216c48": {
             "name": "Game Actions",
             "methods": [
               {
@@ -35,13 +35,24 @@
               }
             ]
           },
-          "0x4494b8134a2540cdb91a8883f7b17b51f3647ec9f9ffa326fe32f7c39071e1b": {
+          "0x3110295929fc665972ae2ea4b99d5fa57547aa56d140dc73a7e85ddcaf5eaf1": {
             "name": "Management Actions",
             "methods": [
               {
                 "name": "Claim airdrop",
                 "entrypoint": "merkledrop_claim",
                 "description": "Claims an airdrop"
+              }
+            ]
+          },
+          "0x21f1a25951d5679e029bbe49ef6db1cbb7a61ac8404c6e20c61f0bcc6f69561": {
+            "name": "vNUMS",
+            "description": "Vault contract for staking",
+            "methods": [
+              {
+                "name": "Claim",
+                "entrypoint": "claim",
+                "description": "Claim rewards"
               }
             ]
           },
@@ -54,17 +65,6 @@
                 "description": "Requests a random number from the VRF contract"
               }
             ]
-          },
-          "0x75fb58b25b51c146a45a436c5873449cdf65c4ea972688f7058ac575d00a458": {
-            "name": "vNUMS",
-            "description": "Vault contract for staking",
-            "methods": [
-              {
-                "name": "Claim",
-                "entrypoint": "claim",
-                "description": "Claim rewards"
-              }
-            ]
           }
         }
       }
@@ -72,19 +72,9 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0xcf4049fba4289d93ae577b7bb03d35047a537e20b3a06d95d36870db2ad50b": {
+          "0xbccc22c70d2a6261df54543062996a2e7728c90abf70fa845cc1aabe53ade0": {
             "name": "Game Actions",
             "methods": [
-              {
-                "name": "Claim Airdrop",
-                "entrypoint": "on_claim",
-                "description": "Claims an airdrop"
-              },
-              {
-                "name": "Purchase Starterpack",
-                "entrypoint": "on_issue",
-                "description": "Purchases a starterpack"
-              },
               {
                 "name": "Start Game",
                 "entrypoint": "start",
@@ -99,16 +89,27 @@
                 "name": "Apply Powerup",
                 "entrypoint": "apply",
                 "description": "Applies a powerup to the game"
-              },
+              }
+            ]
+          },
+          "0x1a8516498b484f209aefbbf5af67765a2b1e3889fd00902811f18576a4616b0": {
+            "name": "Management Actions",
+            "methods": [
               {
-                "name": "Sponsor Tournament",
-                "entrypoint": "sponsor",
-                "description": "Sponsors a tournament"
-              },
+                "name": "Claim airdrop",
+                "entrypoint": "merkledrop_claim",
+                "description": "Claims an airdrop"
+              }
+            ]
+          },
+          "0x6622cf22b64731ed444dbb07f4041268c503fa9573649571bfdfabe90c6ec2": {
+            "name": "vNUMS",
+            "description": "Vault contract for staking",
+            "methods": [
               {
-                "name": "Claim Reward",
+                "name": "Claim",
                 "entrypoint": "claim",
-                "description": "Claims a reward for the game"
+                "description": "Claim rewards"
               }
             ]
           },
@@ -119,27 +120,6 @@
                 "name": "Request Random",
                 "entrypoint": "request_random",
                 "description": "Requests a random number from the VRF contract"
-              }
-            ]
-          },
-          "0x04505a9f06f2bd639b6601f37a4dc0908bb70e8e0e0c34b1220827d64f4fc066": {
-            "name": "Ekubo",
-            "description": "Ekubo token contract",
-            "methods": [
-              {
-                "name": "Swap",
-                "entrypoint": "swap",
-                "description": "Swap tokens"
-              },
-              {
-                "name": "Clear Minimum",
-                "entrypoint": "clear_minimum",
-                "description": "Clear minimum swap"
-              },
-              {
-                "name": "Clear",
-                "entrypoint": "clear",
-                "description": "Clear swap"
               }
             ]
           }
