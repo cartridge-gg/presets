@@ -75,19 +75,19 @@
             "name": "Game Actions",
             "methods": [
               {
-                "name": "Start Game",
-                "entrypoint": "start",
-                "description": "Starts a game"
-              },
-              {
                 "name": "Set Slot",
                 "entrypoint": "set",
-                "description": "Starts a game"
+                "description": "Sets a slot"
               },
               {
-                "name": "Apply Powerup",
+                "name": "Select Power Up",
+                "entrypoint": "select",
+                "description": "Selects a powerup"
+              },
+              {
+                "name": "Apply Power Up",
                 "entrypoint": "apply",
-                "description": "Applies a powerup to the game"
+                "description": "Applies a power up to the game"
               }
             ]
           },
