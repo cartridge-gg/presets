@@ -314,7 +314,7 @@ export const metadata: EkuboERC20Metadata[] = [
     symbol: "NUMS",
     decimals: 18,
     l2_token_address:
-      "0x1b3f3ca84ad919ad8453709890ff0a7babd7556de583e5252545e678ca0ce42",
+      "0x2e82800f97afded96e8e88f9788f2d8f097edb04c9e9b920ceb1ec11f265158",
     sort_order: 1,
     total_supply: 1,
     hidden: true,
@@ -326,7 +326,7 @@ export const metadata: EkuboERC20Metadata[] = [
     symbol: "vNUMS",
     decimals: 18,
     l2_token_address:
-      "0x21f1a25951d5679e029bbe49ef6db1cbb7a61ac8404c6e20c61f0bcc6f69561",
+      "0x6622cf22b64731ed444dbb07f4041268c503fa9573649571bfdfabe90c6ec2",
     sort_order: 1,
     total_supply: 1,
     hidden: true,
