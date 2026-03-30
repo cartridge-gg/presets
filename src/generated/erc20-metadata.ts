@@ -310,6 +310,30 @@ export const metadata: EkuboERC20Metadata[] = [
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/90868d05-cb75-4c42-278c-5a540db2cf00/logo",
   },
   {
+    name: "Nums",
+    symbol: "NUMS",
+    decimals: 18,
+    l2_token_address:
+      "0x1b3f3ca84ad919ad8453709890ff0a7babd7556de583e5252545e678ca0ce42",
+    sort_order: 1,
+    total_supply: 1,
+    hidden: true,
+    logo_url:
+      "https://nums.gg/assets/token-nums.svg",
+  },
+  {
+    name: "vNums",
+    symbol: "vNUMS",
+    decimals: 18,
+    l2_token_address:
+      "0x21f1a25951d5679e029bbe49ef6db1cbb7a61ac8404c6e20c61f0bcc6f69561",
+    sort_order: 1,
+    total_supply: 1,
+    hidden: true,
+    logo_url:
+      "https://nums.gg/assets/token-vnums.svg",
+  },
+  {
     name: "Flip",
     symbol: "FLIP",
     decimals: 18,
