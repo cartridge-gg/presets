@@ -118,11 +118,20 @@ export type AppleAppSiteAssociation = {
   };
 };
 
+export type LocationGateOptions = {
+  /** Locations to allow. Country codes ("US") or region codes ("US-CA", "DE-BY"). */
+  allowed?: string[];
+  /** Locations to block. Country codes ("SG") or region codes ("US-HI"). Blocked wins over allowed. */
+  blocked?: string[];
+};
+
 export type ControllerConfig = {
   origin: string | string[];
   "apple-app-site-association"?: AppleAppSiteAssociation;
   chains?: Chains;
   theme?: ControllerTheme;
+  /** Optional location gating to enforce allowed regions before connect. */
+  locationGate?: LocationGateOptions;
 };
 
 export type ControllerConfigs = Record<string, ControllerConfig>;
