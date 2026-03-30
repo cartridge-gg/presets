@@ -3,6 +3,30 @@
     "*.nums.gg",
     "nums.gg"
   ],
+  "locationGate": {
+    "blocked": [
+      "US-HI",
+      "US-TN",
+      "US-ID",
+      "US-AR",
+      "US-LA",
+      "US-CT",
+      "US-MT",
+      "US-NV",
+      "US-WA",
+      "US-SD",
+      "CA-ON",
+      "CA-AB",
+      "FR",
+      "NL",
+      "AU",
+      "AT",
+      "GB",
+      "ES",
+      "SG",
+      "CN"
+    ]
+  },
   "apple-app-site-association": {
     "webcredentials": {
       "apps": [
