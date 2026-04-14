@@ -1,0 +1,208 @@
+{
+  "origin": [
+    "play.abyssgame.fun",
+    "abyssgame.fun"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#FFD700"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Abyss"
+  },
+  "chains": {
+    "SN_SEPOLIA": {
+      "policies": {
+        "contracts": {
+          "0x68352ad21e23327ec717de2a56c5dbc33fe3f672385c414e298417b2fa64c01": {
+            "name": "Abyss Play",
+            "description": "Core gameplay contract for Abyss sessions and spins",
+            "methods": [
+              {
+                "name": "Create Session",
+                "description": "Create a new Abyss game session",
+                "entrypoint": "create_session"
+              },
+              {
+                "name": "Mint Session",
+                "description": "Mint a session ticket for gameplay",
+                "entrypoint": "mint_session"
+              },
+              {
+                "name": "Request Spin",
+                "description": "Spin the reels during an active session",
+                "entrypoint": "request_spin"
+              },
+              {
+                "name": "End Session",
+                "description": "Finish the current session",
+                "entrypoint": "end_session"
+              },
+              {
+                "name": "Claim Chips",
+                "description": "Claim chip rewards earned in the session",
+                "entrypoint": "claim_chips"
+              }
+            ]
+          },
+          "0x680b1cfb8876ddc3b75f5bc88f7f1699366827d1756e9874e2536f2fb68704d": {
+            "name": "Abyss Market",
+            "description": "In-game market contract for trading session items",
+            "methods": [
+              {
+                "name": "Buy Item",
+                "description": "Buy an item from the market",
+                "entrypoint": "buy_item"
+              },
+              {
+                "name": "Refresh Market",
+                "description": "Refresh the market inventory",
+                "entrypoint": "refresh_market"
+              },
+              {
+                "name": "Sell Item",
+                "description": "Sell an item back to the market",
+                "entrypoint": "sell_item"
+              }
+            ]
+          },
+          "0x65a27caaa6ae6076678e8c3b0d4648bbb67f94e09beff81dd01eb242f7c15ea": {
+            "name": "Abyss Relics",
+            "description": "Relic management contract for equipping and activating relics",
+            "methods": [
+              {
+                "name": "Equip Relic",
+                "description": "Equip a relic for the current session",
+                "entrypoint": "equip_relic"
+              },
+              {
+                "name": "Activate Relic",
+                "description": "Activate an equipped relic ability",
+                "entrypoint": "activate_relic"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "Cartridge VRF Provider",
+            "description": "Verifiable random number provider used for Abyss spins",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Request randomness for gameplay outcomes",
+                "entrypoint": "request_random"
+              }
+            ]
+          },
+          "0x361679a02cd3c085d2bc8c14a0f0e7accd299d26497ba84155f66a846735e2d": {
+            "name": "Abyss Relic NFT",
+            "description": "Relic NFT collection contract",
+            "methods": [
+              {
+                "name": "Mint Relic",
+                "description": "Mint a relic NFT reward",
+                "entrypoint": "mint_relic"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0xba6f9a31d95d0e43568e76eb313818dacdced553379f2b69a4cf12dde1b93e": {
+            "name": "Abyss Play",
+            "description": "Core gameplay contract for Abyss sessions and spins",
+            "methods": [
+              {
+                "name": "Create Session",
+                "description": "Create a new Abyss game session",
+                "entrypoint": "create_session"
+              },
+              {
+                "name": "Mint Session",
+                "description": "Mint a session ticket for gameplay",
+                "entrypoint": "mint_session"
+              },
+              {
+                "name": "Request Spin",
+                "description": "Spin the reels during an active session",
+                "entrypoint": "request_spin"
+              },
+              {
+                "name": "End Session",
+                "description": "Finish the current session",
+                "entrypoint": "end_session"
+              },
+              {
+                "name": "Claim Chips",
+                "description": "Claim chip rewards earned in the session",
+                "entrypoint": "claim_chips"
+              }
+            ]
+          },
+          "0x20ad638ede68a2ca8dbae3a8b435b20b2b3b0bb0f89c915df9098c6c056a068": {
+            "name": "Abyss Market",
+            "description": "In-game market contract for trading session items",
+            "methods": [
+              {
+                "name": "Buy Item",
+                "description": "Buy an item from the market",
+                "entrypoint": "buy_item"
+              },
+              {
+                "name": "Refresh Market",
+                "description": "Refresh the market inventory",
+                "entrypoint": "refresh_market"
+              },
+              {
+                "name": "Sell Item",
+                "description": "Sell an item back to the market",
+                "entrypoint": "sell_item"
+              }
+            ]
+          },
+          "0x2ab93cb0eafd6caeb21fdde287736eb0f3a8de70209e84b9513270c3ba0ecb8": {
+            "name": "Abyss Relics",
+            "description": "Relic management contract for equipping and activating relics",
+            "methods": [
+              {
+                "name": "Equip Relic",
+                "description": "Equip a relic for the current session",
+                "entrypoint": "equip_relic"
+              },
+              {
+                "name": "Activate Relic",
+                "description": "Activate an equipped relic ability",
+                "entrypoint": "activate_relic"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "Cartridge VRF Provider",
+            "description": "Verifiable random number provider used for Abyss spins",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Request randomness for gameplay outcomes",
+                "entrypoint": "request_random"
+              }
+            ]
+          },
+          "0x2cf918770eddece49440bb1a0f1d382f504caa38a40888dde582c997b8a55cb": {
+            "name": "Abyss Relic NFT",
+            "description": "Relic NFT collection contract",
+            "methods": [
+              {
+                "name": "Mint Relic",
+                "description": "Mint a relic NFT reward",
+                "entrypoint": "mint_relic"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
