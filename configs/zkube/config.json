@@ -15,9 +15,9 @@
               }
             ]
           },
-          "0x4fd5df500e6c6615e4423258639f189455672bc841ba58f1c781ac7c5ff4bd8": {
+          "0x642f228f70b1ca7edb4ab7ff0bab067369c2e276ddc2570ca18802d4e758edc": {
             "name": "zKube Game",
-            "description": "Manages zKube game",
+            "description": "Manages zKube game creation and lifecycle",
             "methods": [
               {
                 "name": "Create Game",
@@ -25,14 +25,14 @@
                 "entrypoint": "create"
               },
               {
+                "name": "Create Run",
+                "description": "Create a new game run",
+                "entrypoint": "create_run"
+              },
+              {
                 "name": "Surrender Game",
                 "description": "Forfeit the current game",
                 "entrypoint": "surrender"
-              },
-              {
-                "name": "Make a Move",
-                "description": "Make a move in the current game",
-                "entrypoint": "move"
               },
               {
                 "name": "Use Bonus",
@@ -79,6 +79,86 @@
                 "name": "Set Approval For All NFTs",
                 "description": "Alternative method to approve an operator for all your NFTs",
                 "entrypoint": "setApprovalForAll"
+              }
+            ]
+          },
+          "0x7547efb9801fb1e1b6afb09ba614131e1e7511d82890e1db7a6a14482bd6ae1": {
+            "name": "zKube Moves",
+            "description": "Handles player moves in zKube",
+            "methods": [
+              {
+                "name": "Make a Move",
+                "description": "Make a move in the current game",
+                "entrypoint": "move"
+              }
+            ]
+          },
+          "0x5a6da65b5a4a7514df77276bd90011eecb21d61a3b86a9f83e588aaa1aa59a6": {
+            "name": "zKube Daily Challenge",
+            "description": "Manages daily challenge games",
+            "methods": [
+              {
+                "name": "Start Daily Game",
+                "description": "Start a new daily challenge game",
+                "entrypoint": "start_daily_game"
+              },
+              {
+                "name": "Replay Daily Level",
+                "description": "Replay a daily challenge level",
+                "entrypoint": "replay_daily_level"
+              },
+              {
+                "name": "Settle Challenge",
+                "description": "Settle a completed daily challenge",
+                "entrypoint": "settle_challenge"
+              }
+            ]
+          },
+          "0x375430f49bc0ca09b4bc36982e09c149cc4eb1aaed46387d3d9bda6ef9b313b": {
+            "name": "zKube Story",
+            "description": "Manages story mode gameplay",
+            "methods": [
+              {
+                "name": "Start Story Attempt",
+                "description": "Start a new story mode attempt",
+                "entrypoint": "start_story_attempt"
+              },
+              {
+                "name": "Replay Story Level",
+                "description": "Replay a story level",
+                "entrypoint": "replay_story_level"
+              },
+              {
+                "name": "Claim Zone Perfection",
+                "description": "Claim reward for zone perfection",
+                "entrypoint": "claim_zone_perfection"
+              }
+            ]
+          },
+          "0x2725b70dd1d5d2f074055b51ed1b45ab5bcb8e0d91b20dab0d0a0cb75c3fdb9": {
+            "name": "zKube Config",
+            "description": "Manages zone access and purchases",
+            "methods": [
+              {
+                "name": "Purchase Zone Access",
+                "description": "Purchase access to a game zone",
+                "entrypoint": "purchase_zone_access"
+              },
+              {
+                "name": "Unlock Zone with Stars",
+                "description": "Unlock a zone using earned stars",
+                "entrypoint": "unlock_zone_with_stars"
+              }
+            ]
+          },
+          "0x21fb4dd4c413821cca0232e45bfb81835d6df0d6ef877b787f3de6530716e09": {
+            "name": "zKube Progress",
+            "description": "Manages player progress and quests",
+            "methods": [
+              {
+                "name": "Claim Quest",
+                "description": "Claim a completed quest reward",
+                "entrypoint": "quest_claim"
               }
             ]
           }
