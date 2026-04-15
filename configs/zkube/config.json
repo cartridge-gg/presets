@@ -15,9 +15,9 @@
               }
             ]
           },
-          "0x4fd5df500e6c6615e4423258639f189455672bc841ba58f1c781ac7c5ff4bd8": {
+          "0x642f228f70b1ca7edb4ab7ff0bab067369c2e276ddc2570ca18802d4e758edc": {
             "name": "zKube Game",
-            "description": "Manages zKube game",
+            "description": "Manages zKube game creation and lifecycle",
             "methods": [
               {
                 "name": "Create Game",
@@ -25,14 +25,14 @@
                 "entrypoint": "create"
               },
               {
+                "name": "Create Run",
+                "description": "Create a new game run",
+                "entrypoint": "create_run"
+              },
+              {
                 "name": "Surrender Game",
                 "description": "Forfeit the current game",
                 "entrypoint": "surrender"
-              },
-              {
-                "name": "Make a Move",
-                "description": "Make a move in the current game",
-                "entrypoint": "move"
               },
               {
                 "name": "Use Bonus",
@@ -40,9 +40,9 @@
                 "entrypoint": "apply_bonus"
               },
               {
-                "name": "Mint Game NFT",
+                "name": "Mint Game",
                 "description": "Mint a new zKube game NFT",
-                "entrypoint": "mint"
+                "entrypoint": "mint_game"
               },
               {
                 "name": "Safe Transfer NFT",
@@ -58,7 +58,8 @@
                 "name": "Approve NFT Transfer",
                 "description": "Approve another address to transfer your zKube game NFT",
                 "entrypoint": "approve",
-                "amount": "*"
+                "amount": "*",
+                "spender": "*"
               },
               {
                 "name": "Set Approval For All NFTs",
@@ -79,6 +80,148 @@
                 "name": "Set Approval For All NFTs",
                 "description": "Alternative method to approve an operator for all your NFTs",
                 "entrypoint": "setApprovalForAll"
+              }
+            ]
+          },
+          "0x7547efb9801fb1e1b6afb09ba614131e1e7511d82890e1db7a6a14482bd6ae1": {
+            "name": "zKube Moves",
+            "description": "Handles player moves in zKube",
+            "methods": [
+              {
+                "name": "Make a Move",
+                "description": "Make a move in the current game",
+                "entrypoint": "move"
+              }
+            ]
+          },
+          "0x5a6da65b5a4a7514df77276bd90011eecb21d61a3b86a9f83e588aaa1aa59a6": {
+            "name": "zKube Daily Challenge",
+            "description": "Manages daily challenge games",
+            "methods": [
+              {
+                "name": "Start Daily Game",
+                "description": "Start a new daily challenge game",
+                "entrypoint": "start_daily_game"
+              },
+              {
+                "name": "Replay Daily Level",
+                "description": "Replay a daily challenge level",
+                "entrypoint": "replay_daily_level"
+              },
+              {
+                "name": "Settle Challenge",
+                "description": "Settle a completed daily challenge",
+                "entrypoint": "settle_challenge"
+              }
+            ]
+          },
+          "0x375430f49bc0ca09b4bc36982e09c149cc4eb1aaed46387d3d9bda6ef9b313b": {
+            "name": "zKube Story",
+            "description": "Manages story mode gameplay",
+            "methods": [
+              {
+                "name": "Start Story Attempt",
+                "description": "Start a new story mode attempt",
+                "entrypoint": "start_story_attempt"
+              },
+              {
+                "name": "Replay Story Level",
+                "description": "Replay a story level",
+                "entrypoint": "replay_story_level"
+              },
+              {
+                "name": "Claim Zone Perfection",
+                "description": "Claim reward for zone perfection",
+                "entrypoint": "claim_zone_perfection"
+              }
+            ]
+          },
+          "0x2725b70dd1d5d2f074055b51ed1b45ab5bcb8e0d91b20dab0d0a0cb75c3fdb9": {
+            "name": "zKube Config",
+            "description": "Manages game settings and zone access",
+            "methods": [
+              {
+                "name": "Add Custom Game Settings",
+                "description": "Create custom game settings",
+                "entrypoint": "add_custom_game_settings"
+              },
+              {
+                "name": "Purchase Zone Access",
+                "description": "Purchase access to a game zone",
+                "entrypoint": "purchase_zone_access"
+              },
+              {
+                "name": "Unlock Zone with Stars",
+                "description": "Unlock a zone using earned stars",
+                "entrypoint": "unlock_zone_with_stars"
+              }
+            ]
+          },
+          "0x207804835a74646fda655b8f2968307440f6b14fe8d52fdef2782d6075e527f": {
+            "name": "zKube Level",
+            "description": "Manages level initialization and progression",
+            "methods": [
+              {
+                "name": "Initialize Level",
+                "description": "Initialize a new level",
+                "entrypoint": "initialize_level"
+              },
+              {
+                "name": "Initialize Endless Level",
+                "description": "Initialize an endless mode level",
+                "entrypoint": "initialize_endless_level"
+              },
+              {
+                "name": "Finalize Level",
+                "description": "Finalize a completed level",
+                "entrypoint": "finalize_level"
+              },
+              {
+                "name": "Start Next Level",
+                "description": "Start the next level",
+                "entrypoint": "start_next_level"
+              },
+              {
+                "name": "Insert Line If Empty",
+                "description": "Insert a line if the grid is empty",
+                "entrypoint": "insert_line_if_empty"
+              }
+            ]
+          },
+          "0x21fb4dd4c413821cca0232e45bfb81835d6df0d6ef877b787f3de6530716e09": {
+            "name": "zKube Progress",
+            "description": "Manages player progress and quests",
+            "methods": [
+              {
+                "name": "Emit Progress",
+                "description": "Emit player progress",
+                "entrypoint": "emit_progress"
+              },
+              {
+                "name": "Emit Progress Bulk",
+                "description": "Emit player progress in bulk",
+                "entrypoint": "emit_progress_bulk"
+              },
+              {
+                "name": "Progress",
+                "description": "Record player progress",
+                "entrypoint": "progress"
+              },
+              {
+                "name": "Claim Quest",
+                "description": "Claim a completed quest reward",
+                "entrypoint": "quest_claim"
+              }
+            ]
+          },
+          "0x18e3ac77a56ea91ea9a575aceb252e2436d099ecb3bf9567963fd3c20782630": {
+            "name": "zKube Weekly Endless",
+            "description": "Manages weekly endless competitions",
+            "methods": [
+              {
+                "name": "Settle Weekly Endless",
+                "description": "Settle the weekly endless competition",
+                "entrypoint": "settle_weekly_endless"
               }
             ]
           }
