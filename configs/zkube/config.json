@@ -55,13 +55,6 @@
                 "entrypoint": "transfer_from"
               },
               {
-                "name": "Approve NFT Transfer",
-                "description": "Approve another address to transfer your zKube game NFT",
-                "entrypoint": "approve",
-                "amount": "*",
-                "spender": "*"
-              },
-              {
                 "name": "Set Approval For All NFTs",
                 "description": "Approve an operator to transfer all your zKube game NFTs",
                 "entrypoint": "set_approval_for_all"
