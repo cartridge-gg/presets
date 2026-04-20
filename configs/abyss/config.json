@@ -30,6 +30,11 @@
                 "entrypoint": "mint_session"
               },
               {
+                "name": "Equip Charms",
+                "description": "Seal the charm loadout for the current session before the first spin",
+                "entrypoint": "equip_charms"
+              },
+              {
                 "name": "Request Spin",
                 "description": "Spin the reels during an active session",
                 "entrypoint": "request_spin"
@@ -124,6 +129,11 @@
                 "name": "Mint Session",
                 "description": "Mint a session ticket for gameplay",
                 "entrypoint": "mint_session"
+              },
+              {
+                "name": "Equip Charms",
+                "description": "Seal the charm loadout for the current session before the first spin",
+                "entrypoint": "equip_charms"
               },
               {
                 "name": "Request Spin",
