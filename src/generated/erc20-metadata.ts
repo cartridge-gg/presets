@@ -298,6 +298,18 @@ export const metadata: EkuboERC20Metadata[] = [
     hidden: false,
   },
   {
+    name: "CHIP",
+    symbol: "CHIP",
+    decimals: 18,
+    l2_token_address:
+      "0x51d8401eef82153d10179238f5221489d0b4faae88c8b0b071734f44e647dd8",
+    sort_order: 1,
+    total_supply: 1,
+    hidden: true,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/fb745976-20e3-4af6-7599-baa8adad4500/logo",
+  },
+  {
     name: "Nums",
     symbol: "NUMS",
     decimals: 18,
@@ -314,12 +326,12 @@ export const metadata: EkuboERC20Metadata[] = [
     symbol: "NUMS",
     decimals: 18,
     l2_token_address:
-      "0x2e82800f97afded96e8e88f9788f2d8f097edb04c9e9b920ceb1ec11f265158",
-    sort_order: 1,
-    total_supply: 1,
-    hidden: true,
+      "0x02e82800f97afded96e8e88f9788f2d8f097edb04c9e9b920ceb1ec11f265158",
+    sort_order: 0,
+    total_supply: null,
     logo_url:
-      "https://nums.gg/assets/token-nums.svg",
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/7dfe5b35-9b42-4428-fdb5-9e48bac7a300/logo",
+    hidden: true,
   },
   {
     name: "vNums",
@@ -330,8 +342,7 @@ export const metadata: EkuboERC20Metadata[] = [
     sort_order: 1,
     total_supply: 1,
     hidden: true,
-    logo_url:
-      "https://nums.gg/assets/token-vnums.svg",
+    logo_url: "https://nums.gg/assets/token-vnums.svg",
   },
   {
     name: "Flip",
