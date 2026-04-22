@@ -1,0 +1,36 @@
+{
+  "origin": [
+    "guessmynft.com",
+    "www.guessmynft.com",
+    "guesschizodio.fun",
+    "localhost"
+  ],
+  "theme": {
+    "colors": { "primary": "#d4a853" },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "guessmyNFT"
+  },
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x561d264be3effa7dd35a3a8a77300e451afe64596c853255c8e74d5d73b4093": {
+            "name": "guessmyNFT Game",
+            "description": "NFT guessing game with ZK-proven answers",
+            "methods": [
+              { "name": "Create Game",       "description": "Start a new 1v1 guessing game",                   "entrypoint": "create_game" },
+              { "name": "Join Game",         "description": "Join an opponent's game by code",                 "entrypoint": "join_game" },
+              { "name": "Commit Character",  "description": "Commit your secret NFT choice (hashed) on-chain", "entrypoint": "commit_character" },
+              { "name": "Ask Question",      "description": "Ask a yes/no question about your opponent's NFT", "entrypoint": "ask_question" },
+              { "name": "Answer with Proof", "description": "Answer your opponent's question with a ZK proof", "entrypoint": "answer_question_with_proof" },
+              { "name": "Make Guess",        "description": "Guess your opponent's hidden NFT",                "entrypoint": "make_guess" },
+              { "name": "Reveal Character",  "description": "Reveal your NFT at game end",                     "entrypoint": "reveal_character" },
+              { "name": "Claim Timeout",     "description": "Claim victory if opponent abandons the game",     "entrypoint": "claim_timeout" }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
