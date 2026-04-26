@@ -15,6 +15,16 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "VRF Provider",
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random",
+                "description": "Requests a random number from the VRF contract"
+              }
+            ]
+          },
           "0x561d264be3effa7dd35a3a8a77300e451afe64596c853255c8e74d5d73b4093": {
             "name": "guessmyNFT Game",
             "description": "NFT guessing game with ZK-proven answers",
