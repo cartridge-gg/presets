@@ -4,7 +4,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x7e272112d9cb4c143184ddccb00471c407d9d167aa5f5a58b2a0a5d7314ae8e": {
+          "0x530ecb241ae6045989c28007b0d4fe2dc64485051b04147a046f0ccf8092036": {
             "name": "Game Actions",
             "methods": [
               {
@@ -33,11 +33,6 @@
                 "description": "Exit the shop"
               },
               {
-                "name": "Refresh Shop",
-                "entrypoint": "refresh",
-                "description": "Refresh shop items"
-              },
-              {
                 "name": "Burn Item",
                 "entrypoint": "burn",
                 "description": "Burn an item from bag"
@@ -54,9 +49,9 @@
               }
             ]
           },
-          "0x3ef7358dfe4f047e7e4f78d9cef0fd339bf54c7bf8711cebd3a96ef089bcc56": {
-            "name": "Token",
-            "description": "Token contract",
+          "0x6a90be0f7ad7d4f1336b5ebed9f709981f77636fc8ae1e96dbc998b788e3fd0": {
+            "name": "Faucet",
+            "description": "Faucet contract",
             "methods": [
               {
                 "name": "Mint",
