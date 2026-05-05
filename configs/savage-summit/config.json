@@ -123,7 +123,7 @@
               }
             ]
           },
-          "0x0103eafe79f8631932530cc687dfcdeb013c883a82619ebf81be393e2953a87a": {
+          "0x00c0337454f4dc908da50ca78e9c76b34f6846c39a50e901d2c375b4dd8eaa4d": {
             "name": "Corpse Token",
             "description": "ERC 20 token for Corpse Token",
             "methods": [
