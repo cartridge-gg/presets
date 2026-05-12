@@ -1,0 +1,14 @@
+{
+  "origin": [
+    "*.deathmountain.gg",
+    "deathmountain.gg"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#33FF33"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Death Mountain"
+  }
+}
