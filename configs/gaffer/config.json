@@ -9,7 +9,8 @@
     "icon": "icon.png",
     "cover": "cover.png",
     "colors": {
-      "primary": "#7c3aed"
+      "primary": "#7c3aed",
+      "primaryForeground": "#FFFFFF"
     }
   },
   "chains": {
