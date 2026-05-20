@@ -4,7 +4,7 @@
     "SN_SEPOLIA": {
       "policies": {
         "contracts": {
-          "0x530ecb241ae6045989c28007b0d4fe2dc64485051b04147a046f0ccf8092036": {
+          "0x1dcb2537358273e146f4b1b537e1e5ee2b2ef5d57b6666f93f1c9b047f607f0": {
             "name": "Game Actions",
             "methods": [
               {
@@ -49,7 +49,7 @@
               }
             ]
           },
-          "0x6a90be0f7ad7d4f1336b5ebed9f709981f77636fc8ae1e96dbc998b788e3fd0": {
+          "0x322c397d90409f1463a845af5e20e75b680b71c3798df881285f520e9a55343": {
             "name": "Faucet",
             "description": "Faucet contract",
             "methods": [
