@@ -3,6 +3,151 @@
     "*.deathmountain.gg",
     "deathmountain.gg"
   ],
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x023f86f5b4702f6ba114b82fb73448c58aad8f37a28b508b80bf129ee1edc405": {
+            "name": "Game Core",
+            "description": "Main game contract for all gameplay actions",
+            "methods": [
+              {
+                "name": "Start Game",
+                "description": "Start a new game",
+                "entrypoint": "start_game"
+              },
+              {
+                "name": "Attack",
+                "description": "Attack a beast",
+                "entrypoint": "attack"
+              },
+              {
+                "name": "Flee",
+                "description": "Flee from a beast",
+                "entrypoint": "flee"
+              },
+              {
+                "name": "Explore",
+                "description": "Explore the world",
+                "entrypoint": "explore"
+              },
+              {
+                "name": "Buy Items",
+                "description": "Buy items from the market",
+                "entrypoint": "buy_items"
+              },
+              {
+                "name": "Equip",
+                "description": "Equip an item",
+                "entrypoint": "equip"
+              },
+              {
+                "name": "Drop Items",
+                "description": "Drop items",
+                "entrypoint": "drop_items"
+              },
+              {
+                "name": "Select Stat Upgrades",
+                "description": "Select stat upgrades",
+                "entrypoint": "select_stat_upgrades"
+              },
+              {
+                "name": "Surrender",
+                "description": "Surrender the game",
+                "entrypoint": "surrender"
+              }
+            ]
+          },
+          "0x04de0351ceab4ecd50be6ee09329b0dcb3b96a9da88cc158f453823a389722fa": {
+            "name": "Game Token",
+            "description": "Game token contract",
+            "methods": [
+              {
+                "name": "Mint Game",
+                "description": "Mint a new game token",
+                "entrypoint": "mint_game"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "VRF Provider",
+            "description": "VRF provider contract",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Request random numbers from the VRF provider",
+                "entrypoint": "request_random"
+              }
+            ]
+          },
+          "0x046db77f066f1bec5ae53d2cf3686a262f308eb904e6b426251bcdf3a6bf34f0": {
+            "name": "Greed Dungeon",
+            "description": "Greed dungeon contract",
+            "methods": [
+              {
+                "name": "Buy Game",
+                "description": "Buy a game",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Claim Rewards",
+                "description": "Claim rewards from the greed dungeon",
+                "entrypoint": "claim_rewards"
+              }
+            ]
+          },
+          "0x04427c2cdd82bf2283deb39aa939e1ad61051ab932e0de714032fbe22ed0a419": {
+            "name": "Ducky Dungeon",
+            "description": "Ducky dungeon contract",
+            "methods": [
+              {
+                "name": "Enter Dungeon",
+                "description": "Enter the ducky dungeon",
+                "entrypoint": "enter_dungeon"
+              },
+              {
+                "name": "Claim Rewards",
+                "description": "Claim rewards from the ducky dungeon",
+                "entrypoint": "claim_reward"
+              }
+            ]
+          },
+          "0x0539d24dfdaa2866d975fa93db501b971c08786f2c88e719800be39903e43bbc": {
+            "name": "Beast Mode Dungeon",
+            "description": "Special dungeon mode with beast NFT rewards and jackpot system",
+            "methods": [
+              {
+                "name": "Buy Game",
+                "description": "Purchase access to Beast Mode Dungeon",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Claim Beast",
+                "description": "Claim your earned beast NFT",
+                "entrypoint": "claim_beast"
+              },
+              {
+                "name": "Claim Jackpot",
+                "description": "Claim the jackpot rewards",
+                "entrypoint": "claim_jackpot"
+              }
+            ]
+          },
+          "0x046da8955829adf2bda310099a0063451923f02e648cf25a1203aac6335cf0e4": {
+            "name": "Beasts",
+            "description": "beast NFT contract",
+            "methods": [
+              {
+                "name": "Refresh Dungeon Stats",
+                "description": "Updates beast dungeon stats",
+                "entrypoint": "refresh_dungeon_stats"
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
   "theme": {
     "colors": {
       "primary": "#33FF33"
