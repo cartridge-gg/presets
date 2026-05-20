@@ -30,12 +30,12 @@
                 "name": "Approve league vault",
                 "description": "Authorises the Gaffer league vault to escrow your entry fee.",
                 "entrypoint": "approve",
-                "spender": "0x058be508d8a7f4522b223b78d3f1388e378faf22ede08427b64b8b8bd9db600c",
+                "spender": "0x3dcf0ebba29b6912c239ed02e7f7b3e0d3e5df82f53d54a5507dc24738ce419",
                 "amount": "0x5f5e100"
               }
             ]
           },
-          "0x058be508d8a7f4522b223b78d3f1388e378faf22ede08427b64b8b8bd9db600c": {
+          "0x3dcf0ebba29b6912c239ed02e7f7b3e0d3e5df82f53d54a5507dc24738ce419": {
             "name": "Gaffer League Vault",
             "description": "Smart escrow that holds every league's prize pool until settlement.",
             "methods": [
