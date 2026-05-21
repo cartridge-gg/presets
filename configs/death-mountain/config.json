@@ -1,8 +1,5 @@
 {
-  "origin": [
-    "*.deathmountain.gg",
-    "deathmountain.gg"
-  ],
+  "origin": ["*.deathmountain.gg", "deathmountain.gg"],
   "chains": {
     "SN_MAIN": {
       "policies": {
@@ -141,6 +138,22 @@
                 "name": "Refresh Dungeon Stats",
                 "description": "Updates beast dungeon stats",
                 "entrypoint": "refresh_dungeon_stats"
+              }
+            ]
+          },
+          "0x04253e24220629b737512a24cb3172fc381db7be7a697d5af358ff21ef1172be": {
+            "name": "Norwich Games Festival Dungeon",
+            "description": "QR-claim dungeon for the Norwich Games Festival event. Scanning a leaflet QR mints free games; surviving to the level threshold mints a Black Shuck Beast collectible.",
+            "methods": [
+              {
+                "name": "Claim Game",
+                "description": "Redeem a scanned QR leaflet to mint free games",
+                "entrypoint": "claim_game"
+              },
+              {
+                "name": "Claim Reward",
+                "description": "Claim the Black Shuck Beast collectible after surviving to the dungeon's level threshold",
+                "entrypoint": "claim_reward"
               }
             ]
           }
