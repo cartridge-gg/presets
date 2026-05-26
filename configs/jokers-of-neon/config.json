@@ -39,38 +39,6 @@
                     }
                 ]
             },
-            "0x033068f6539f8e6e6b131e6b2b814e6c34a5224bc66947c47dab9dfee93b35fb": {
-                "methods": [
-                    {
-                        "name": "Approve",
-                        "entrypoint": "approve"
-                    }
-                ]
-            },
-            "0x04718f5a0Fc34cC1AF16A1cdee98fFB20C31f5cD61D6Ab07201858f4287c938D": {
-                "methods": [
-                    {
-                        "name": "Approve",
-                        "entrypoint": "approve"
-                    }
-                ]
-            },
-            "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7": {
-                "methods": [
-                    {
-                        "name": "Approve",
-                        "entrypoint": "approve"
-                    }
-                ]
-            },
-            "0x04ddbbab7aa237c1b73c931b6f836ded6036f5e12d4898fccdcde81d494f7956": {
-                "methods": [
-                    {
-                        "name": "Approve",
-                        "entrypoint": "approve"
-                    }
-                ]
-            },
             "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
                 "methods": [
                     {
