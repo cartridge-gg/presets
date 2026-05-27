@@ -93,6 +93,22 @@
               }
             ]
           },
+          "0x07875d8593815772a6def22f7e2fe23961253d734d400c827b57907c12dfccd3": {
+            "name": "OPUS Yield Dungeon",
+            "description": "OPUS yield dungeon contract",
+            "methods": [
+              {
+                "name": "Buy Game",
+                "description": "Buy a game",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Claim Tickets",
+                "description": "Claim tickets from the OPUS yield dungeon",
+                "entrypoint": "claim_tickets"
+              }
+            ]
+          },
           "0x04427c2cdd82bf2283deb39aa939e1ad61051ab932e0de714032fbe22ed0a419": {
             "name": "Ducky Dungeon",
             "description": "Ducky dungeon contract",
