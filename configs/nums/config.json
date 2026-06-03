@@ -27,6 +27,9 @@
       "CN"
     ]
   },
+  "ageGate": {
+    "minimumAge": 18
+  },
   "apple-app-site-association": {
     "webcredentials": {
       "apps": [
