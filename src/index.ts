@@ -125,6 +125,11 @@ export type LocationGateOptions = {
   blocked?: string[];
 };
 
+export type AgeGateOptions = {
+  /** Minimum age required to play (18+). Identity verification enforces legal age. */
+  minimumAge: number;
+};
+
 export type ControllerConfig = {
   origin: string | string[];
   "apple-app-site-association"?: AppleAppSiteAssociation;
@@ -132,6 +137,11 @@ export type ControllerConfig = {
   theme?: ControllerTheme;
   /** Optional location gating to enforce allowed regions before connect. */
   locationGate?: LocationGateOptions;
+  /**
+   * Optional age gating. When present, requires the user to complete identity
+   * verification (which guarantees they are of legal age) before connecting.
+   */
+  ageGate?: AgeGateOptions;
 };
 
 export type ControllerConfigs = Record<string, ControllerConfig>;
