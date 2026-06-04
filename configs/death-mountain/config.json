@@ -1,5 +1,5 @@
 {
-  "origin": ["*.deathmountain.gg", "deathmountain.gg"],
+  "origin": ["*.deathmountain.gg", "deathmountain.gg", "connect.provable.games"],
   "chains": {
     "SN_MAIN": {
       "policies": {
@@ -170,6 +170,17 @@
                 "name": "Claim Reward",
                 "description": "Claim the Black Shuck Beast collectible after surviving to the dungeon's level threshold",
                 "entrypoint": "claim_reward"
+              }
+            ]
+          },
+          "0x07afcee631a5b49fc745725e6a58f8d41dc63dc889c8b195e7b3ebf4894a2b19": {
+            "name": "Game Treasury",
+            "description": "Verified-human free game distribution — claim a sponsored game",
+            "methods": [
+              {
+                "name": "Claim Game",
+                "description": "Claim your free verified game",
+                "entrypoint": "claim_game"
               }
             ]
           }
