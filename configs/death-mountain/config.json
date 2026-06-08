@@ -173,7 +173,7 @@
               }
             ]
           },
-          "0x07afcee631a5b49fc745725e6a58f8d41dc63dc889c8b195e7b3ebf4894a2b19": {
+          "0x026663cefd82b58b0bdb56ff7d4b245a4b6b34c4761f5366ffb04fd58adc2fb9": {
             "name": "Game Treasury",
             "description": "Verified-human free game distribution — claim a sponsored game",
             "methods": [
