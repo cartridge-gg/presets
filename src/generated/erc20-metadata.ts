@@ -1081,4 +1081,26 @@ export const metadata: EkuboERC20Metadata[] = [
     logo_url:
       "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/1d016787-181b-4373-4aa5-962adddc6c00/logo",
   },
+  {
+    name: "Endur xstrkBTC",
+    symbol: "xstrkBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x047751b3532fabca89b0f2e35ca1cb45e5a7b11d5e3d3663dfa1f4406b45fd88",
+    sort_order: 0,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/7d68c794-c96b-4349-7d31-f669bf7a0100/logo",
+  },
+  {
+    name: "strkBTC",
+    symbol: "strkBTC",
+    decimals: 8,
+    l2_token_address:
+      "0x0787150e306e6eae6e3f79dea881770e8bbff2c1b8eb490f969669ee945b3135",
+    sort_order: 1,
+    total_supply: null,
+    logo_url:
+      "https://imagedelivery.net/0xPAQaDtnQhBs8IzYRIlNg/a620ca28-a7c9-40e9-58cc-626b5cd9f000/logo",
+  },
 ];
