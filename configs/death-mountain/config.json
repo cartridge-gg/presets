@@ -109,22 +109,6 @@
               }
             ]
           },
-          "0x04427c2cdd82bf2283deb39aa939e1ad61051ab932e0de714032fbe22ed0a419": {
-            "name": "Ducky Dungeon",
-            "description": "Ducky dungeon contract",
-            "methods": [
-              {
-                "name": "Enter Dungeon",
-                "description": "Enter the ducky dungeon",
-                "entrypoint": "enter_dungeon"
-              },
-              {
-                "name": "Claim Rewards",
-                "description": "Claim rewards from the ducky dungeon",
-                "entrypoint": "claim_reward"
-              }
-            ]
-          },
           "0x0539d24dfdaa2866d975fa93db501b971c08786f2c88e719800be39903e43bbc": {
             "name": "Beast Mode Dungeon",
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
@@ -157,22 +141,6 @@
               }
             ]
           },
-          "0x04253e24220629b737512a24cb3172fc381db7be7a697d5af358ff21ef1172be": {
-            "name": "Norwich Games Festival Dungeon",
-            "description": "QR-claim dungeon for the Norwich Games Festival event. Scanning a leaflet QR mints free games; surviving to the level threshold mints a Black Shuck Beast collectible.",
-            "methods": [
-              {
-                "name": "Claim Game",
-                "description": "Redeem a scanned QR leaflet to mint free games",
-                "entrypoint": "claim_game"
-              },
-              {
-                "name": "Claim Reward",
-                "description": "Claim the Black Shuck Beast collectible after surviving to the dungeon's level threshold",
-                "entrypoint": "claim_reward"
-              }
-            ]
-          },
           "0x026663cefd82b58b0bdb56ff7d4b245a4b6b34c4761f5366ffb04fd58adc2fb9": {
             "name": "Game Treasury",
             "description": "Verified-human free game distribution — claim a sponsored game",
@@ -181,6 +149,48 @@
                 "name": "Claim Game",
                 "description": "Claim your free verified game",
                 "entrypoint": "claim_game"
+              }
+            ]
+          },
+          "0x074294d212b0fa295445791b145f2d14e33396a4c2f8415a920f84b2ea3cd5ee": {
+            "name": "Onchain Heroes Dungeon",
+            "description": "Onchain Heroes Dungeon contract",
+            "methods": [
+              {
+                "name": "Claim Games",
+                "description": "Claim your free verified game",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "Claim Reward",
+                "description": "Claim your reward",
+                "entrypoint": "claim_reward"
+              },
+              {
+                "name": "Claim Bonus Reward",
+                "description": "Claim your bonus reward",
+                "entrypoint": "claim_bonus_reward"
+              },
+              {
+                "name": "Claim Funding Reward",
+                "description": "Claim your funding reward",
+                "entrypoint": "claim_funding_rewards"
+              },
+              {
+                "name": "Submit adventurers",
+                "description": "Submit your adventurers",
+                "entrypoint": "submit_adventurers"
+              }
+            ]
+          },
+          "0x03a664e858b0ae32105a7c433d23bf5f03a4a9237e66143b902c4684333e962e": {
+            "name": "Loot Survivor Lottery",
+            "description": "Loot Survivor Lottery contract",
+            "methods": [
+              {
+                "name": "Draw Prize",
+                "description": "Draw a prize from the lottery",
+                "entrypoint": "draw_prize"
               }
             ]
           }
