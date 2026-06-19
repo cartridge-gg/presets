@@ -193,6 +193,71 @@
                 "entrypoint": "draw_prize"
               }
             ]
+          },
+          "0x042DD777885AD2C116be96d4D634abC90A26A790ffB5871E037Dd5Ae7d2Ec86B": {
+            "name": "Survivor",
+            "description": "ERC20 token for Survivor",
+            "methods": [
+              {
+                "name": "Approve",
+                "amount": "183000000000000000000",
+                "spender": "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5",
+                "description": "Approve Survivor",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x0124aeb495b947201f5fac96fd1138e326ad86195b98df6dec9009158a533b49": {
+            "name": "Lords",
+            "description": "ERC20 token for Lords",
+            "methods": [
+              {
+                "name": "Approve",
+                "amount": "2810000000000000000000",
+                "spender": "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5",
+                "description": "Approve Lords",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d": {
+            "name": "STRK",
+            "description": "ERC20 token for STRK",
+            "methods": [
+              {
+                "name": "Approve",
+                "amount": "294000000000000000000",
+                "spender": "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5",
+                "description": "Approve STRK",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x033068F6539f8e6e6b131e6B2B814e6c34A5224bC66947c47DaB9dFeE93b35fb": {
+            "name": "USDC",
+            "description": "ERC20 token for USDC",
+            "methods": [
+              {
+                "name": "Approve",
+                "amount": "10000000",
+                "spender": "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5",
+                "description": "Approve USDC",
+                "entrypoint": "approve"
+              }
+            ]
+          },
+          "0x0452810188C4Cb3AEbD63711a3b445755BC0D6C4f27B923fDd99B1A118858136": {
+            "name": "Ticket",
+            "description": "ERC20 token for tickets",
+            "methods": [
+              {
+                "name": "Approve",
+                "amount": "100000000000000000000",
+                "spender": "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5",
+                "description": "Approve Tickets",
+                "entrypoint": "approve"
+              }
+            ]
           }
         }
       }
