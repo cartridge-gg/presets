@@ -194,6 +194,27 @@
               }
             ]
           },
+          "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5": {
+            "name": "Dungeon Entry Contract",
+            "description": "Dungeon entry contract",
+            "methods": [
+              {
+                "name": "Buy Lootsurvivor Game",
+                "description": "Buy a Lootsurvivor game",
+                "entrypoint": "buy_lootsurvivor_game"
+              },
+              {
+                "name": "Buy Greed Game",
+                "description": "Buy a Greed game",
+                "entrypoint": "buy_greed_game"
+              },
+              {
+                "name": "Buy Dungeon Game",
+                "description": "Buy a Dungeon game",
+                "entrypoint": "buy_game"
+              }
+            ]
+          },
           "0x042DD777885AD2C116be96d4D634abC90A26A790ffB5871E037Dd5Ae7d2Ec86B": {
             "name": "Survivor",
             "description": "ERC20 token for Survivor",
