@@ -1,0 +1,38 @@
+{
+  "origin": [
+    "axe.schizod.io",
+    "dev.schizod.io"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#3b82f6"
+    },
+    "cover": "cover.png",
+    "icon": "icon.png",
+    "name": "Schizodio"
+  },
+  "chains": {
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x0698e8898d421279e420eabae7c07d62f405d119483c99513c819d234b471fc9": {
+            "name": "Schizodio Cash",
+            "description": "In-game cash balance",
+            "methods": [
+              {
+                "name": "Add Cash",
+                "entrypoint": "add_cash",
+                "description": "Flush earned cash to your on-chain balance"
+              },
+              {
+                "name": "Spend Cash",
+                "entrypoint": "spend_cash",
+                "description": "Spend cash on in-game purchases"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
