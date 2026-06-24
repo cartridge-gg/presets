@@ -17,6 +17,12 @@
                                 "description": "A method to register a new world id verified user.",
                                 "entrypoint": "register_user",
                                 "is_paymastered": true
+                            },
+                            {
+                                "name": "Import Legacy Registration",
+                                "description": "A method to import an existing legacy registration.",
+                                "entrypoint": "import_legacy_registration",
+                                "is_paymastered": true
                             }
                         ]
                     },
