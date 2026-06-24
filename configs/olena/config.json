@@ -20,7 +20,7 @@
                             },
                             {
                                 "name": "Import Legacy Registration",
-                                "description": "A method to import an existing legacy registration.",
+                                "description": "A method to import an existing user registration from the legacy registry.",
                                 "entrypoint": "import_legacy_registration",
                                 "is_paymastered": true
                             }
