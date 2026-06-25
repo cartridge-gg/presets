@@ -4,7 +4,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x58f888ba5897efa811eca5e5818540d35b664f4281660cd839cd5a4b0bf4582": {
+          "0x012eb6054aa269c3e60013693f650650d81952de60072f446406d2a89f0b518e": {
             "name": "Budokan",
             "methods": [
               {
