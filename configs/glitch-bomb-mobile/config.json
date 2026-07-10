@@ -1,5 +1,51 @@
 {
   "origin": "glitchbomb-ten.preview.cartridge.gg",
+  "locationGate": {
+    "allowed": [
+      "US-AL",
+      "US-AK",
+      "US-AZ",
+      "US-CA",
+      "US-CO",
+      "US-FL",
+      "US-GA",
+      "US-HI",
+      "US-ID",
+      "US-IL",
+      "US-IN",
+      "US-IA",
+      "US-KS",
+      "US-KY",
+      "US-ME",
+      "US-MD",
+      "US-MA",
+      "US-MN",
+      "US-MS",
+      "US-MO",
+      "US-NE",
+      "US-NH",
+      "US-NJ",
+      "US-NM",
+      "US-NY",
+      "US-NC",
+      "US-ND",
+      "US-OH",
+      "US-OK",
+      "US-OR",
+      "US-RI",
+      "US-SD",
+      "US-TN",
+      "US-UT",
+      "US-VT",
+      "US-WA",
+      "US-WV",
+      "US-WI",
+      "US-WY"
+    ]
+  },
+  "ageGate": {
+    "minimumAge": 18
+  },
   "apple-app-site-association": {
     "webcredentials": {
       "apps": [
