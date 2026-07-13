@@ -1,5 +1,5 @@
 {
-  "origin": ["*.deathmountain.gg", "deathmountain.gg", "connect.provable.games"],
+  "origin": ["*.deathmountain.gg", "deathmountain.gg", "connect.provable.games", "*.lootsurvivor.io", "lootsurvivor.io"],
   "chains": {
     "SN_MAIN": {
       "policies": {
@@ -146,7 +146,7 @@
               }
             ]
           },
-          "0x026663cefd82b58b0bdb56ff7d4b245a4b6b34c4761f5366ffb04fd58adc2fb9": {
+          "0x02a71609e235998a5ac140764e768a72a4e40d73e87a0d0858ba561bf875ee87": {
             "name": "Game Treasury",
             "description": "Verified-human free game distribution — claim a sponsored game",
             "methods": [
@@ -154,6 +154,11 @@
                 "name": "Claim Game",
                 "description": "Claim your free verified game",
                 "entrypoint": "claim_game"
+              },
+              {
+                "name": "Claim Reward",
+                "description": "Claim your reward",
+                "entrypoint": "claim_reward"
               }
             ]
           },
