@@ -190,6 +190,128 @@
           }
         }
       }
+    },
+    "SN_MAIN": {
+      "policies": {
+        "contracts": {
+          "0x43d6d1c435333a6d27f99840fae3ee29cd5bc54bc4499464ed5410c7db50016": {
+            "name": "Game Actions",
+            "methods": [
+              {
+                "name": "Pull Orb",
+                "entrypoint": "pull",
+                "description": "Pull an orb"
+              },
+              {
+                "name": "Cash Out",
+                "entrypoint": "cash_out",
+                "description": "Cash out and end the game"
+              },
+              {
+                "name": "Enter Shop",
+                "entrypoint": "enter",
+                "description": "Enter the shop at milestone"
+              },
+              {
+                "name": "Buy Item",
+                "entrypoint": "buy",
+                "description": "Buy items in the shop"
+              },
+              {
+                "name": "Exit Shop",
+                "entrypoint": "exit",
+                "description": "Exit the shop"
+              },
+              {
+                "name": "Burn Item",
+                "entrypoint": "burn",
+                "description": "Burn an item from bag"
+              },
+              {
+                "name": "Claim Rewards",
+                "entrypoint": "claim",
+                "description": "Claim rewards from the game"
+              },
+              {
+                "name": "Redeem Rewards",
+                "entrypoint": "redeem",
+                "description": "Redeem rewards from the quests"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "VRF Provider",
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random",
+                "description": "Request a random number from the VRF contract"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "CARTRIDGE_MAINNET": {
+      "policies": {
+        "contracts": {
+          "0x43d6d1c435333a6d27f99840fae3ee29cd5bc54bc4499464ed5410c7db50016": {
+            "name": "Game Actions",
+            "methods": [
+              {
+                "name": "Pull Orb",
+                "entrypoint": "pull",
+                "description": "Pull an orb"
+              },
+              {
+                "name": "Cash Out",
+                "entrypoint": "cash_out",
+                "description": "Cash out and end the game"
+              },
+              {
+                "name": "Enter Shop",
+                "entrypoint": "enter",
+                "description": "Enter the shop at milestone"
+              },
+              {
+                "name": "Buy Item",
+                "entrypoint": "buy",
+                "description": "Buy items in the shop"
+              },
+              {
+                "name": "Exit Shop",
+                "entrypoint": "exit",
+                "description": "Exit the shop"
+              },
+              {
+                "name": "Burn Item",
+                "entrypoint": "burn",
+                "description": "Burn an item from bag"
+              },
+              {
+                "name": "Claim Rewards",
+                "entrypoint": "claim",
+                "description": "Claim rewards from the game"
+              },
+              {
+                "name": "Redeem Rewards",
+                "entrypoint": "redeem",
+                "description": "Redeem rewards from the quests"
+              }
+            ]
+          },
+          "0x4da58dd0cf16f001b618f5461632cd3cb1d3506254a5c5c62dce6b037de7490": {
+            "name": "VRF Provider",
+            "methods": [
+              {
+                "name": "Request Random",
+                "entrypoint": "request_random",
+                "description": "Request a random number from the VRF contract"
+              }
+            ]
+          }
+        }
+      }
     }
   },
   "theme": {
