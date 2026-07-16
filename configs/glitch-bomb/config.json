@@ -1,5 +1,5 @@
 {
-  "origin": "glitchbomb.game",
+  "origin": ["glitchbomb.game", "*.glitchbomb.game", "*.cartridge.gg"],
   "locationGate": {
     "allowed": [
       "US-AL",
