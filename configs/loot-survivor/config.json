@@ -1,71 +1,120 @@
 {
-  "origin": [
-    "lootsurvivor.io",
-    "claims.lootsurvivor.io",
-    "tournaments.lootsurvivor.io"
-  ],
+  "origin": ["connect.provable.games", "*.lootsurvivor.io", "lootsurvivor.io"],
   "chains": {
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x5e2dfbdc3c193de629e5beb116083b06bd944c1608c9c793351d5792ba29863": {
-            "name": "Death Mountain Token",
-            "description": "Token contract for Death Mountain utilising Denshokan",
-            "methods": [
-              {
-                "name": "Mint Game Token",
-                "description": "Mints a new Death Mountain game token",
-                "entrypoint": "mint_game"
-              }
-            ]
-          },
-          "0x6f7c4350d6d5ee926b3ac4fa0c9c351055456e75c92227468d84232fc493a9c": {
-            "name": "Loot Survivor Game",
-            "description": "Main game contract for Loot Survivor gameplay",
+          "0x023f86f5b4702f6ba114b82fb73448c58aad8f37a28b508b80bf129ee1edc405": {
+            "name": "Game Core",
+            "description": "Main game contract for all gameplay actions",
             "methods": [
               {
                 "name": "Start Game",
-                "description": "Starts a new adventure in Loot Survivor",
+                "description": "Start a new game",
                 "entrypoint": "start_game"
               },
               {
-                "name": "Explore",
-                "description": "Explore the dungeon",
-                "entrypoint": "explore"
-              },
-              {
                 "name": "Attack",
-                "description": "Attack enemies in combat",
+                "description": "Attack a beast",
                 "entrypoint": "attack"
               },
               {
                 "name": "Flee",
-                "description": "Attempt to flee from combat",
+                "description": "Flee from a beast",
                 "entrypoint": "flee"
               },
               {
+                "name": "Explore",
+                "description": "Explore the world",
+                "entrypoint": "explore"
+              },
+              {
                 "name": "Buy Items",
-                "description": "Purchase items from the market",
+                "description": "Buy items from the market",
                 "entrypoint": "buy_items"
               },
               {
-                "name": "Equip Item",
-                "description": "Equip an item from your inventory",
+                "name": "Equip",
+                "description": "Equip an item",
                 "entrypoint": "equip"
               },
               {
-                "name": "Drop Item",
-                "description": "Drop an item from your inventory",
-                "entrypoint": "drop"
+                "name": "Drop Items",
+                "description": "Drop items",
+                "entrypoint": "drop_items"
               },
               {
                 "name": "Select Stat Upgrades",
-                "description": "Choose which stats to upgrade when leveling up",
+                "description": "Select stat upgrades",
                 "entrypoint": "select_stat_upgrades"
+              },
+              {
+                "name": "Surrender",
+                "description": "Surrender the game",
+                "entrypoint": "surrender"
               }
             ]
           },
-          "0xa67ef20b61a9846e1c82b411175e6ab167ea9f8632bd6c2091823c3629ec42": {
+          "0x04de0351ceab4ecd50be6ee09329b0dcb3b96a9da88cc158f453823a389722fa": {
+            "name": "Game Token",
+            "description": "Game token contract",
+            "methods": [
+              {
+                "name": "Mint Game",
+                "description": "Mint a new game token",
+                "entrypoint": "mint_game"
+              }
+            ]
+          },
+          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
+            "name": "VRF Provider",
+            "description": "VRF provider contract",
+            "methods": [
+              {
+                "name": "Request Random",
+                "description": "Request random numbers from the VRF provider",
+                "entrypoint": "request_random"
+              }
+            ]
+          },
+          "0x046db77f066f1bec5ae53d2cf3686a262f308eb904e6b426251bcdf3a6bf34f0": {
+            "name": "Greed Dungeon",
+            "description": "Greed dungeon contract",
+            "methods": [
+              {
+                "name": "Buy Game",
+                "description": "Buy a game",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Claim Rewards",
+                "description": "Claim rewards from the greed dungeon",
+                "entrypoint": "claim_rewards"
+              }
+            ]
+          },
+          "0x012ac35cf5112dd1bacd2f1e7342eb5951566262ab52c3c7dddd2b9a77840741": {
+            "name": "Hyper Greed Dungeon",
+            "description": "Hyper Greed dungeon contract",
+            "methods": [
+              {
+                "name": "Buy Game",
+                "description": "Buy a game",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Buy Game with balance",
+                "description": "Buy a game with balance",
+                "entrypoint": "enter_with_credits"
+              },
+              {
+                "name": "Claim Rewards",
+                "description": "Claim rewards from the hyper greed dungeon",
+                "entrypoint": "claim_rewards"
+              }
+            ]
+          },
+          "0x0539d24dfdaa2866d975fa93db501b971c08786f2c88e719800be39903e43bbc": {
             "name": "Beast Mode Dungeon",
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
             "methods": [
@@ -78,11 +127,6 @@
                 "name": "Claim Beast",
                 "description": "Claim your earned beast NFT",
                 "entrypoint": "claim_beast"
-              },
-              {
-                "name": "Claim Reward Token",
-                "description": "Claim your reward tokens",
-                "entrypoint": "claim_reward_token"
               },
               {
                 "name": "Claim Jackpot",
@@ -102,25 +146,93 @@
               }
             ]
           },
-          "0x051fea4450da9d6aee758bdeba88b2f665bcbf549d2c61421aa724e9ac0ced8f": {
-            "name": "Cartridge VRF Provider",
-            "description": "Verifiable Random Function contract, allows randomness in the game",
+          "0x02a71609e235998a5ac140764e768a72a4e40d73e87a0d0858ba561bf875ee87": {
+            "name": "Game Treasury",
+            "description": "Verified-human free game distribution — claim a sponsored game",
             "methods": [
               {
-                "name": "Request Random",
-                "description": "Allows requesting random numbers from the VRF provider",
-                "entrypoint": "request_random"
+                "name": "Claim Game",
+                "description": "Claim your free verified game",
+                "entrypoint": "claim_game"
+              },
+              {
+                "name": "Claim Reward",
+                "description": "Claim your reward",
+                "entrypoint": "claim_reward"
               }
             ]
           },
-          "0x3299ace782ec54afcbf81e31e92d6146649b6c484173e41f4de529f6d504fe8": {
-            "name": "Free Games Claim",
-            "description": "Contract for claiming free game tokens through eligibility verification",
+          "0x065406785f89adb4c9f9b22d08358951ca78b2f952d7e5d0eab9e643872e9c8a": {
+            "name": "Gigaverse Dungeon",
+            "description": "Gigaverse Dungeon contract",
             "methods": [
               {
-                "name": "Verify and Forward",
-                "description": "Verify eligibility and claim free games",
-                "entrypoint": "verify_and_forward"
+                "name": "Claim Games",
+                "description": "Claim your free verified game",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "Claim Reward",
+                "description": "Claim your reward",
+                "entrypoint": "claim_reward"
+              },
+              {
+                "name": "Claim Wanted Beast Reward",
+                "description": "Claim your wanted beast reward",
+                "entrypoint": "claim_prize"
+              },
+              {
+                "name": "Submit adventurers",
+                "description": "Submit your adventurers",
+                "entrypoint": "submit_adventurers"
+              }
+            ]
+          },
+          "0x05c5d5fc26b4217d789fd6a4758916abc8ee12bb8943c07875791890ddb763de": {
+            "name": "Gigling Races",
+            "description": "Gigling Race contract",
+            "methods": [
+              {
+                "name": "Claim Games",
+                "description": "Claim your race rewards",
+                "entrypoint": "claim"
+              }
+            ]
+          },
+          "0x03a664e858b0ae32105a7c433d23bf5f03a4a9237e66143b902c4684333e962e": {
+            "name": "Loot Survivor Lottery",
+            "description": "Loot Survivor Lottery contract",
+            "methods": [
+              {
+                "name": "Draw Prize",
+                "description": "Draw a prize from the lottery",
+                "entrypoint": "draw_prize"
+              }
+            ]
+          },
+          "0x00bcda5aa421e6ea01a9917839551db741eb260713cd35c6a8e6f1a1293fd0a5": {
+            "name": "Dungeon Entry Contract",
+            "description": "Dungeon entry contract",
+            "methods": [
+              {
+                "name": "Buy Lootsurvivor Game",
+                "description": "Buy a Lootsurvivor game",
+                "entrypoint": "buy_lootsurvivor_game"
+              },
+              {
+                "name": "Buy Greed Game",
+                "description": "Buy a Greed game",
+                "entrypoint": "buy_greed_game"
+              },
+              {
+                "name": "Buy Dungeon Game",
+                "description": "Buy a Dungeon game",
+                "entrypoint": "buy_game"
+              },
+              {
+                "name": "Buy Wager Game",
+                "description": "Buy a Wager game",
+                "entrypoint": "buy_wager_game"
               }
             ]
           }
