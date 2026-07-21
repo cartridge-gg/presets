@@ -146,15 +146,10 @@
               }
             ]
           },
-          "0x02a71609e235998a5ac140764e768a72a4e40d73e87a0d0858ba561bf875ee87": {
-            "name": "Game Treasury",
-            "description": "Verified-human free game distribution — claim a sponsored game",
+          "0x0337e25669f6cc7b81a507ebe0d908249cacad9b6e2c0fa43fecb6b6b04b109e": {
+            "name": "Karats Dungeon",
+            "description": "Karats dungeon contract",
             "methods": [
-              {
-                "name": "Claim Game",
-                "description": "Claim your free verified game",
-                "entrypoint": "claim_game"
-              },
               {
                 "name": "Claim Reward",
                 "description": "Claim your reward",
