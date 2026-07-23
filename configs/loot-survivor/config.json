@@ -1,5 +1,9 @@
 {
-  "origin": ["connect.provable.games", "*.lootsurvivor.io", "lootsurvivor.io"],
+  "origin": [
+    "connect.provable.games",
+    "*.lootsurvivor.io",
+    "lootsurvivor.io"
+  ],
   "chains": {
     "SN_MAIN": {
       "policies": {
@@ -231,7 +235,87 @@
               }
             ]
           }
-        }
+        },
+        "messages": [
+          {
+            "name": "Wallet ownership proof",
+            "description": "Prove control of this wallet to Provable Games services (e.g. Discord-gated tournament entry)",
+            "types": {
+              "StarknetDomain": [
+                {
+                  "name": "name",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "version",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "chainId",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "revision",
+                  "type": "shortstring"
+                }
+              ],
+              "WalletProof": [
+                {
+                  "name": "purpose",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "timestamp",
+                  "type": "shortstring"
+                }
+              ]
+            },
+            "primaryType": "WalletProof",
+            "domain": {
+              "name": "Provable Games",
+              "version": "1",
+              "chainId": "SN_MAIN",
+              "revision": "1"
+            }
+          },
+          {
+            "name": "Discord wallet link",
+            "description": "Register this wallet with the Warden Discord bot (role eligibility)",
+            "types": {
+              "StarknetDomain": [
+                {
+                  "name": "name",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "version",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "chainId",
+                  "type": "shortstring"
+                },
+                {
+                  "name": "revision",
+                  "type": "shortstring"
+                }
+              ],
+              "Message": [
+                {
+                  "name": "message",
+                  "type": "shortstring"
+                }
+              ]
+            },
+            "primaryType": "Message",
+            "domain": {
+              "name": "Warden",
+              "version": "1",
+              "chainId": "SN_MAIN",
+              "revision": "1"
+            }
+          }
+        ]
       }
     }
   },
