@@ -234,6 +234,27 @@
                 "entrypoint": "buy_wager_game"
               }
             ]
+          },
+          "0x012eb6054aa269c3e60013693f650650d81952de60072f446406d2a89f0b518e": {
+            "name": "Budokan",
+            "description": "Budokan tournament contract",
+            "methods": [
+              {
+                "name": "Enter Tournament",
+                "description": "Enter a tournament",
+                "entrypoint": "enter_tournament"
+              },
+              {
+                "name": "Submit Score",
+                "description": "Submit your score to a tournament",
+                "entrypoint": "submit_score"
+              },
+              {
+                "name": "Claim Prize",
+                "description": "Claim your tournament prize",
+                "entrypoint": "claim_prize"
+              }
+            ]
           }
         },
         "messages": [
