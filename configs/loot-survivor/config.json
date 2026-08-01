@@ -255,6 +255,22 @@
                 "entrypoint": "claim_prize"
               }
             ]
+          },
+          "0x06bd91881370deb7b7baf55e73bc4c4a37cd29009b491f9fa993dd897c9aba80": {
+            "name": "Black Shuck Dungeon",
+            "description": "Black Shuck Dungeon contract",
+            "methods": [
+              {
+                "name": "Claim Game",
+                "description": "Claim the next free game on your festival code",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "Claim Black Shuck",
+                "description": "Claim the hound for a slain Tier-1 Hunter",
+                "entrypoint": "claim_reward"
+              }
+            ]
           }
         },
         "messages": [
