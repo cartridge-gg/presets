@@ -187,45 +187,14 @@
               }
             ]
           },
-          "0x0661b36ebfb5cda0d6b63053bfe76766de5827c75dda339ce05b2f8edaa54687": {
-            "name": "Multi Community Dungeon",
-            "description": "Multi Community Dungeon contract",
+          "0x00263cc540dac11334470a64759e03952ee2f84a290e99ba8cbc391245cd0bf9": {
+            "name": "Denshokan",
+            "description": "Denshokan contract",
             "methods": [
               {
-                "name": "Claim Games",
-                "description": "Claim your free verified game",
-                "entrypoint": "claim"
-              },
-              {
-                "name": "Claim Reward",
-                "description": "Claim your reward",
-                "entrypoint": "claim_reward"
-              },
-              {
-                "name": "Claim Wanted Beast Reward",
-                "description": "Claim your wanted beast reward",
-                "entrypoint": "claim_prize"
-              },
-              {
-                "name": "Claim Bonus Reward",
-                "description": "Claim your bonus reward",
-                "entrypoint": "claim_bonus_reward"
-              },
-              {
-                "name": "Submit adventurers",
-                "description": "Submit your adventurers",
-                "entrypoint": "submit_adventurers"
-              }
-            ]
-          },
-          "0x05c5d5fc26b4217d789fd6a4758916abc8ee12bb8943c07875791890ddb763de": {
-            "name": "Gigling Races",
-            "description": "Gigling Race contract",
-            "methods": [
-              {
-                "name": "Claim Games",
-                "description": "Claim your race rewards",
-                "entrypoint": "claim"
+                "name": "Update Game",
+                "description": "Update game state",
+                "entrypoint": "update_game"
               }
             ]
           },
