@@ -158,6 +158,11 @@
                 "name": "Claim Reward",
                 "description": "Claim your reward",
                 "entrypoint": "claim_reward"
+              },
+              {
+                "name": "Mint Game",
+                "description": "Mint a new game token",
+                "entrypoint": "mint_game"
               }
             ]
           },
