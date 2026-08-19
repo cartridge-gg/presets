@@ -266,7 +266,7 @@
               }
             ]
           },
-          "0x012eb6054aa269c3e60013693f650650d81952de60072f446406d2a89f0b518e": {
+          "0x01f2c86ab22ded7f2de9084578ce72a1f7b590d5be6bd5f912ac8053128c20c2": {
             "name": "Budokan",
             "description": "Budokan tournament contract",
             "methods": [
