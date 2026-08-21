@@ -41,6 +41,11 @@
                 "name": "Redeem",
                 "description": "Redeem winnings from a fight",
                 "entrypoint": "redeem"
+              },
+              {
+                "name": "Redeem with Roll",
+                "description": "Redeem fight winnings with a VRF bonus roll",
+                "entrypoint": "redeem_with_roll"
               }
             ]
           },
@@ -101,6 +106,11 @@
                 "name": "Redeem",
                 "description": "Redeem winnings from a fight",
                 "entrypoint": "redeem"
+              },
+              {
+                "name": "Redeem with Roll",
+                "description": "Redeem fight winnings with a VRF bonus roll",
+                "entrypoint": "redeem_with_roll"
               }
             ]
           },
