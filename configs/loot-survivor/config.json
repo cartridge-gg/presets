@@ -166,9 +166,9 @@
               }
             ]
           },
-          "0x065406785f89adb4c9f9b22d08358951ca78b2f952d7e5d0eab9e643872e9c8a": {
-            "name": "Gigaverse Dungeon",
-            "description": "Gigaverse Dungeon contract",
+          "0x045a1ef5f00a8b00e526d36a1d021b786db25ecf779e3fce391009571ead7fb9": {
+            "name": "Cambria Dungeon",
+            "description": "Cambria Dungeon contract",
             "methods": [
               {
                 "name": "Claim Games",
@@ -176,19 +176,9 @@
                 "entrypoint": "claim"
               },
               {
-                "name": "Claim Reward",
-                "description": "Claim your reward",
-                "entrypoint": "claim_reward"
-              },
-              {
                 "name": "Claim Wanted Beast Reward",
                 "description": "Claim your wanted beast reward",
                 "entrypoint": "claim_prize"
-              },
-              {
-                "name": "Submit adventurers",
-                "description": "Submit your adventurers",
-                "entrypoint": "submit_adventurers"
               }
             ]
           },
