@@ -8,6 +8,37 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
+          "0x0235fe8597adebb8cc6251797de251ba9fb95d9f13ecc53b8eb2734badf7df37": {
+            "name": "Game Core v2",
+            "description": "Game core contract for commit and validate game",
+            "methods": [
+              {
+                "name": "Commit Action",
+                "description": "Commit an action for a game",
+                "entrypoint": "commit_action"
+              },
+              {
+                "name": "Settle Game",
+                "description": "Validate a game",
+                "entrypoint": "settle_game"
+              },
+              {
+                "name": "Fold Chunk",
+                "description": "Fold part of a game",
+                "entrypoint": "fold_chunk"
+              },
+              {
+                "name": "Replay Chunk",
+                "description": "Replay part of a game",
+                "entrypoint": "replay_chunk"
+              },
+              {
+                "name": "Finish Attempt",
+                "description": "Finish after chunks are folded",
+                "entrypoint": "finish_attempt"
+              }
+            ]
+          },
           "0x023f86f5b4702f6ba114b82fb73448c58aad8f37a28b508b80bf129ee1edc405": {
             "name": "Game Core",
             "description": "Main game contract for all gameplay actions",
