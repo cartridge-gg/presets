@@ -154,11 +154,6 @@
             "description": "Special dungeon mode with beast NFT rewards and jackpot system",
             "methods": [
               {
-                "name": "Buy Game",
-                "description": "Purchase access to Beast Mode Dungeon",
-                "entrypoint": "buy_game"
-              },
-              {
                 "name": "Claim Beast",
                 "description": "Claim your earned beast NFT",
                 "entrypoint": "claim_beast"
@@ -239,11 +234,6 @@
             "name": "Dungeon Entry Contract",
             "description": "Dungeon entry contract",
             "methods": [
-              {
-                "name": "Buy Lootsurvivor Game",
-                "description": "Buy a Lootsurvivor game",
-                "entrypoint": "buy_lootsurvivor_game"
-              },
               {
                 "name": "Buy Greed Game",
                 "description": "Buy a Greed game",
