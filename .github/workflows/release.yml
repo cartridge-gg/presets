@@ -60,13 +60,6 @@ jobs:
           headers: |-
             content-type: application/json
 
-      # Uploading does not remove objects deleted from source. Retire the old
-      # preset at the origin before invalidating its cached config and assets.
-      - uses: "google-github-actions/setup-gcloud@v2"
-
-      - name: Retire Death Mountain preset
-        run: pnpm exec tsx scripts/retire-death-mountain.ts
-
       # Invalidate CDN cache for updated assets
       # TODO: Only invalidate the presets that have changed
       - name: Invalidate CDN Cache for Presets
