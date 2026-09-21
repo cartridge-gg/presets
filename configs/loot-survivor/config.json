@@ -8,7 +8,7 @@
     "SN_MAIN": {
       "policies": {
         "contracts": {
-          "0x0235fe8597adebb8cc6251797de251ba9fb95d9f13ecc53b8eb2734badf7df37": {
+          "0x06179f1c747672c08861da1df3b167eb337cba403778345db2aa9840cc3deb86": {
             "name": "Game Core v2",
             "description": "Game core contract for commit and validate game",
             "methods": [
@@ -16,26 +16,6 @@
                 "name": "Commit Action",
                 "description": "Commit an action for a game",
                 "entrypoint": "commit_action"
-              },
-              {
-                "name": "Settle Game",
-                "description": "Validate a game",
-                "entrypoint": "settle_game"
-              },
-              {
-                "name": "Fold Chunk",
-                "description": "Fold part of a game",
-                "entrypoint": "fold_chunk"
-              },
-              {
-                "name": "Replay Chunk",
-                "description": "Replay part of a game",
-                "entrypoint": "replay_chunk"
-              },
-              {
-                "name": "Finish Attempt",
-                "description": "Finish after chunks are folded",
-                "entrypoint": "finish_attempt"
               }
             ]
           },
@@ -192,22 +172,6 @@
               }
             ]
           },
-          "0x045a1ef5f00a8b00e526d36a1d021b786db25ecf779e3fce391009571ead7fb9": {
-            "name": "Cambria Dungeon",
-            "description": "Cambria Dungeon contract",
-            "methods": [
-              {
-                "name": "Claim Games",
-                "description": "Claim your free verified game",
-                "entrypoint": "claim"
-              },
-              {
-                "name": "Claim Wanted Beast Reward",
-                "description": "Claim your wanted beast reward",
-                "entrypoint": "claim_prize"
-              }
-            ]
-          },
           "0x00263cc540dac11334470a64759e03952ee2f84a290e99ba8cbc391245cd0bf9": {
             "name": "Denshokan",
             "description": "Denshokan contract",
@@ -269,22 +233,6 @@
                 "name": "Claim Prize",
                 "description": "Claim your tournament prize",
                 "entrypoint": "claim_prize"
-              }
-            ]
-          },
-          "0x06bd91881370deb7b7baf55e73bc4c4a37cd29009b491f9fa993dd897c9aba80": {
-            "name": "Black Shuck Dungeon",
-            "description": "Black Shuck Dungeon contract",
-            "methods": [
-              {
-                "name": "Claim Game",
-                "description": "Claim the next free game on your festival code",
-                "entrypoint": "claim"
-              },
-              {
-                "name": "Claim Black Shuck",
-                "description": "Claim the hound for a slain Tier-1 Hunter",
-                "entrypoint": "claim_reward"
               }
             ]
           }
