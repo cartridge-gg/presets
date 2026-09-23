@@ -172,6 +172,68 @@
               }
             ]
           },
+          "0x043bea791f4a70abd0b2d7544a7780fc24f729b61fcfff28ff9f09a37c6f147f": {
+            "name": "Ronkeverse Test Dungeon",
+            "description": "Ronkeverse test dungeon contract",
+            "methods": [
+              {
+                "name": "Commit Action",
+                "description": "Commit an action for a game",
+                "entrypoint": "commit_action"
+              },
+              {
+                "name": "claim games",
+                "description": "claim games",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "claim bound",
+                "description": "claim bound",
+                "entrypoint": "claim_bound"
+              },
+              {
+                "name": "claim super survivor games",
+                "description": "claim super survivor games",
+                "entrypoint": "claim_survivor"
+              },
+              {
+                "name": "claim prize",
+                "description": "claim prize",
+                "entrypoint": "claim_prize"
+              }
+            ]
+          },
+          "0x03ccf47cc8acfba6e5f46f7644fda7576bf668ca7041f25627fb4196d52f349c": {
+            "name": "Ronkeverse Dungeon",
+            "description": "Ronkeverse dungeon contract",
+            "methods": [
+              {
+                "name": "Commit Action",
+                "description": "Commit an action for a game",
+                "entrypoint": "commit_action"
+              },
+              {
+                "name": "claim games",
+                "description": "claim games",
+                "entrypoint": "claim"
+              },
+              {
+                "name": "claim bound",
+                "description": "claim bound",
+                "entrypoint": "claim_bound"
+              },
+              {
+                "name": "claim super survivor games",
+                "description": "claim super survivor games",
+                "entrypoint": "claim_survivor"
+              },
+              {
+                "name": "claim prize",
+                "description": "claim prize",
+                "entrypoint": "claim_prize"
+              }
+            ]
+          },
           "0x00263cc540dac11334470a64759e03952ee2f84a290e99ba8cbc391245cd0bf9": {
             "name": "Denshokan",
             "description": "Denshokan contract",
