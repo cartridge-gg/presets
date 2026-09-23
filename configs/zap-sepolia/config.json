@@ -1,0 +1,15 @@
+{
+  "origin": "playzap.vercel.app",
+  "chains": {
+    "SN_SEPOLIA": {
+      "policies": {
+        "contracts": {
+          "0x34e10b9de32efa9c7aacb23a4987c3755c9d6e2966b2840543b18d7ceb80413": { "name": "ZAP Game Actions", "description": "Solo match gameplay", "methods": [{ "name": "Start game", "entrypoint": "start_game", "isPaymastered": true }, { "name": "Submit turn", "entrypoint": "submit_turn_action", "isPaymastered": true }, { "name": "Continue after halftime", "entrypoint": "continue_after_halftime", "isPaymastered": true }, { "name": "Claim game reward", "entrypoint": "claim_game_reward", "isPaymastered": true }] },
+          "0x5b4df3975b458271e690b8823b8de83b72ffd36b3b1f41ba399d67b890a5c9f": { "name": "ZAP Player Actions", "description": "Player registration and squad management", "methods": [{ "name": "Register player", "entrypoint": "register_player", "isPaymastered": true }, { "name": "Set formation", "entrypoint": "set_formation", "isPaymastered": true }, { "name": "Equip starter", "entrypoint": "equip_starter", "isPaymastered": true }, { "name": "Unequip starter", "entrypoint": "unequip_starter", "isPaymastered": true }] },
+          "0x3a4e1b378d9de52028cd7770cef8956f2dba86548cd4eabf94aebe607949dd1": { "name": "ZAP Market Actions", "description": "Card shop actions", "methods": [{ "name": "Purchase card", "entrypoint": "purchase_card_from_shop", "isPaymastered": true }, { "name": "Sell card", "entrypoint": "sell_card_to_shop", "isPaymastered": true }] },
+          "0x3bc5d46fec7b12c142186126d4e0fc31e9f24a0d9afbcbdf7ced5ea399bee9f": { "name": "ZAP PvP Actions", "description": "Player-versus-player matches", "methods": [{ "name": "Create room", "entrypoint": "create_room", "isPaymastered": true }, { "name": "Join room", "entrypoint": "join_room", "isPaymastered": true }, { "name": "Cancel room", "entrypoint": "cancel_room", "isPaymastered": true }, { "name": "Commit turn", "entrypoint": "commit_turn", "isPaymastered": true }, { "name": "Reveal turn", "entrypoint": "reveal_turn", "isPaymastered": true }, { "name": "Continue after halftime", "entrypoint": "continue_after_halftime", "isPaymastered": true }, { "name": "Claim timeout", "entrypoint": "claim_timeout", "isPaymastered": true }] }
+        }
+      }
+    }
+  }
+}
